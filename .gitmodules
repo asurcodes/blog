@@ -1,0 +1,3 @@
+[submodule "themes/amperage"]
+	path = themes/amperage
+	url = git@github.com:asurbernardo/amperage.git
