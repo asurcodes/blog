@@ -84,15 +84,15 @@ Este site al ser estático no necesita de mucho en cuanto a infraestructura, lo 
 
 Github pages me parece una opción ideal, ya que lo iba a utilizar de todas formas para alojar los repositorios, así que mato dos pájaros de un tiro. Para poner un frontal con CDN, políticas personalizadas, así como mi propio dominio utilizo **Cloudflare**, que de nuevo es gratis (vais captando el patrón aquí?).
 
-La verdad es que lo único que me ha costado averiguar de esta parte es la convención que tiene Github para alojar tu site, por si no lo sabías, para que la web esté accesible en la url `{user}.github.io` tienes que crear un repositorio que se llame igual y esa es tu única opción y si no te gusta, pues baila. 
+La verdad es que lo único que me ha costado averiguar de esta parte es la convención que tiene Github para alojar tu site, por si no lo sabías, para que la web esté accesible en la url `{user}.github.io` tienes que crear un repositorio que se llame igual y esa es tu única opción y si no te gusta, pues bailas. 
 
 ### La estructura de repositorios
 
 Este proyecto va a estar organizado en tres repositorios:
 
-  - Blog 🠒 Todo el contenido del blog, con sus posts escritos en markdown y sus metadatos.
-  - Tema 🠒 El tema que he llamado amperage, donde estarán los estilos y la estructura básica de la web.
-  - Build 🠒 El contenido una vez ha sido compilado en HTML estático, esta es la parte que se hostea y estás leyendo ahora mismo.
+  - [Blog](https://github.com/asurbernardo/blog) 🠒 Todo el contenido del blog, con sus posts escritos en markdown y sus metadatos.
+  - [Tema](https://github.com/asurbernardo/amperage) 🠒 El tema que he llamado amperage, donde estarán los estilos y la estructura básica de la web.
+  - [Build](https://github.com/asurbernardo/asurbernardo.github.io) 🠒 El contenido una vez ha sido compilado en HTML estático, esta es la parte que se hostea y estás leyendo ahora mismo.
 
 A la hora de trabajar solo usaré un directorio, el repositorio de blog, pero los otros dos estarán configurados como submódulos de git, de esta manera la estructura de trabajo quedaría algo así:
 
@@ -163,3 +163,7 @@ De momento eso es todo, espero traer más novedades pronto, y también espero qu
  > \- *Lo dudo mucho!*  😒
 
  :suspiro: Bueno, pues eso, que hasta la próxima!
+
+Ver la versión original del post [aquí](http://web.archive.org/web/20191014123731/https://asurbernardo.com/posts/el-primer-post-en-mi-nuevo-blog/).
+
+Ver la versión original de la homepage [aquí](http://web.archive.org/web/20191014123830/https://asurbernardo.com/).
