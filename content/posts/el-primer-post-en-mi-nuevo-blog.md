@@ -164,6 +164,8 @@ De momento eso es todo, espero traer más novedades pronto, y también espero qu
 
  :suspiro: Bueno, pues eso, que hasta la próxima!
 
+## Wayback Machine
+
 Ver la versión original del post [aquí](http://web.archive.org/web/20191014123731/https://asurbernardo.com/posts/el-primer-post-en-mi-nuevo-blog/).
 
 Ver la versión original de la homepage [aquí](http://web.archive.org/web/20191014123830/https://asurbernardo.com/).
