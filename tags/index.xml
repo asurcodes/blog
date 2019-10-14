@@ -6,9 +6,28 @@
     <description>Recent content in Tags on Bienvenido a mi blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
+    <lastBuildDate>Mon, 14 Oct 2019 12:33:32 +0200</lastBuildDate>
     
 	<atom:link href="https://asurbernardo.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>deploy</title>
+      <link>https://asurbernardo.com/tags/deploy/</link>
+      <pubDate>Mon, 14 Oct 2019 12:33:32 +0200</pubDate>
+      
+      <guid>https://asurbernardo.com/tags/deploy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>git</title>
+      <link>https://asurbernardo.com/tags/git/</link>
+      <pubDate>Mon, 14 Oct 2019 12:33:32 +0200</pubDate>
+      
+      <guid>https://asurbernardo.com/tags/git/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
