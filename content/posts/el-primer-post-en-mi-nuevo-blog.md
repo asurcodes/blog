@@ -6,7 +6,6 @@ draft = false
 title = "El primer post en mi nuevo blog!"
 
 tags = ['git', 'deploy']
-categories = ['blog']
 
 [amp]
     elements = []
@@ -51,6 +50,7 @@ categories = ['blog']
 
 +++
 
+# El primer post en mi nuevo blog!
 
 Si, si, ya sé que estás pensando: ¿Que leches es esta web y cómo he llegado aquí? Espera, por favor, dame la oportunidad de explicarme. Me llamo Asur y este es mi nuevo proyecto...
 
@@ -158,7 +158,7 @@ Una vez configurado todo en tu cuenta de Github todo es muy sencillo, simplement
 
 ## Conclusión
 
-De momento eso es todo, espero traer más novedades pronto, y también espero que estén relacionadas con algún estilo básico, porque creeme que el estado actual de la web me duele más a mi que a tí...
+De momento eso es todo, espero traer más novedades pronto, y también espero que estén relacionadas con algún estilo básico, porque creeme que el estado actual de la web me duele más a mí que a tí...
 
  > *Lo dudo mucho!*  😒
 
