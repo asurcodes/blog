@@ -56,7 +56,7 @@ Si, si, ya sé que estás pensando: ¿Que leches es esta web y cómo he llegado 
 
 <!--more-->
 
- > \- *Pues menuda mierda de nuevo proyecto!* 🤣
+ > *Pues menuda mierda de nuevo proyecto!* 🤣
 
 Vale, estamos de acuerdo, pero escucha, la idea es que llegue a ser más que eso y alcance la categoría de pasable, déjame contarte cómo.
 
@@ -160,12 +160,12 @@ Una vez configurado todo en tu cuenta de Github todo es muy sencillo, simplement
 
 De momento eso es todo, espero traer más novedades pronto, y también espero que estén relacionadas con algún estilo básico, porque creeme que el estado actual de la web me duele más a mi que a tí...
 
- > \- *Lo dudo mucho!*  😒
+ > *Lo dudo mucho!*  😒
 
 Bueno, pues eso, que hasta la próxima!
 
 ## Wayback Machine
 
-Ver la [versión original del post](http://web.archive.org/web/20191014123731/https://asurbernardo.com/posts/el-primer-post-en-mi-nuevo-blog/ "Versión original del post").
+Ver la [versión original de este post](http://web.archive.org/web/20191014123731/https://asurbernardo.com/posts/el-primer-post-en-mi-nuevo-blog/ "Versión original del post").
 
 Ver la [versión original de la homepage](http://web.archive.org/web/20191014123830/https://asurbernardo.com/ "Versión original de la homepage").
