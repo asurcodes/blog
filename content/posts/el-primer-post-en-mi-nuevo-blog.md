@@ -162,10 +162,10 @@ De momento eso es todo, espero traer más novedades pronto, y también espero qu
 
  > \- *Lo dudo mucho!*  😒
 
- :suspiro: Bueno, pues eso, que hasta la próxima!
+Bueno, pues eso, que hasta la próxima!
 
 ## Wayback Machine
 
-Ver la versión original del post [aquí](http://web.archive.org/web/20191014123731/https://asurbernardo.com/posts/el-primer-post-en-mi-nuevo-blog/).
+Ver la [versión original del post](http://web.archive.org/web/20191014123731/https://asurbernardo.com/posts/el-primer-post-en-mi-nuevo-blog/ "Versión original del post").
 
-Ver la versión original de la homepage [aquí](http://web.archive.org/web/20191014123830/https://asurbernardo.com/).
+Ver la [versión original de la homepage](http://web.archive.org/web/20191014123830/https://asurbernardo.com/ "Versión original de la homepage").
