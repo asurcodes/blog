@@ -5,7 +5,9 @@ draft = false
 
 title = "El primer post en mi nuevo blog!"
 
-tags = ['git', 'deploy']
+tags = []
+
+keywords = ['blog', 'desarrollo', 'git', 'deploy']
 
 [amp]
     elements = []
