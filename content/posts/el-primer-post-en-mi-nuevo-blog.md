@@ -90,9 +90,9 @@ La verdad es que lo único que me ha costado averiguar de esta parte es la conve
 
 Este proyecto va a estar organizado en tres repositorios:
 
-  - [Blog](https://github.com/asurbernardo/blog) 🠒 Todo el contenido del blog, con sus posts escritos en markdown y sus metadatos.
-  - [Tema](https://github.com/asurbernardo/amperage) 🠒 El tema que he llamado amperage, donde estarán los estilos y la estructura básica de la web.
-  - [Build](https://github.com/asurbernardo/asurbernardo.github.io) 🠒 El contenido una vez ha sido compilado en HTML estático, esta es la parte que se hostea y estás leyendo ahora mismo.
+  - [Blog](https://github.com/asurbernardo/blog): Todo el contenido del blog, con sus posts escritos en markdown y sus metadatos.
+  - [Tema](https://github.com/asurbernardo/amperage): El tema que he llamado amperage, donde estarán los estilos y la estructura básica de la web. Aquí es donde se va a llevar a cabo la mayor parte del desarrollo.
+  - [Build](https://github.com/asurbernardo/asurbernardo.github.io): El contenido una vez ha sido compilado en HTML estático, esta es la parte que se hostea y estás leyendo ahora mismo.
 
 A la hora de trabajar solo usaré un directorio, el repositorio de blog, pero los otros dos estarán configurados como submódulos de git, de esta manera la estructura de trabajo quedaría algo así:
 
