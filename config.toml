@@ -3,6 +3,9 @@ languageCode = "es"
 title = "Bienvenido a mi blog"
 theme = "amperage"
 
+[taxonomies]
+    tag = "tags"
+
 [params]
     adsensePublisher = ""
     googleAnalytics = ""
