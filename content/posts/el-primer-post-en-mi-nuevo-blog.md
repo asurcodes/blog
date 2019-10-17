@@ -5,7 +5,7 @@ draft = false
 
 title = "El primer post en mi nuevo blog!"
 
-tags = ['Iteración']
+tags = ['Iteracion']
 
 keywords = ['blog', 'desarrollo', 'git', 'deploy']
 
