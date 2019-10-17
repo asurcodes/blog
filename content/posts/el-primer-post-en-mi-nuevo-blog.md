@@ -5,7 +5,7 @@ draft = false
 
 title = "El primer post en mi nuevo blog!"
 
-tags = []
+tags = ['Iteración']
 
 keywords = ['blog', 'desarrollo', 'git', 'deploy']
 
@@ -18,7 +18,7 @@ keywords = ['blog', 'desarrollo', 'git', 'deploy']
     related = []
 
 [author]
-    name = ""
+    name = "Asur"
     image = ""
     bio = ""
     homepage = ""
@@ -110,7 +110,6 @@ blog
 ├── public // Submódulo de build
 ├── README.md
 ├── resources
-│   └── _gen
 ├── static
 └── themes
     └── amperage // Submódulo de tema
