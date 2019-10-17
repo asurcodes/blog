@@ -86,7 +86,7 @@ Este site al ser estático no necesita de mucho en cuanto a infraestructura, lo 
 
 Github pages me parece una opción ideal, ya que lo iba a utilizar de todas formas para alojar los repositorios, así que mato dos pájaros de un tiro. Para poner un frontal con CDN, políticas personalizadas, así como mi propio dominio utilizo **Cloudflare**, que de nuevo es gratis (vais captando el patrón aquí?).
 
-La verdad es que lo único que me ha costado averiguar de esta parte es la convención que tiene Github para alojar tu site, por si no lo sabías, para que la web esté accesible en la url `{user}.github.io` tienes que crear un repositorio que se llame igual y esa es tu única opción y si no te gusta, pues bailas. 
+La verdad es que lo único que me ha costado averiguar de esta parte es la convención que tiene Github para alojar tu site. Para que la web esté accesible en la url `{user}.github.io` tienes que crear un repositorio que se llame igual y esa es tu única opción y si no te gusta, pues bailas. 
 
 ### La estructura de repositorios
 
@@ -155,11 +155,11 @@ git commit -m "$msg"
 git push origin master
 ```
 
-Una vez configurado todo en tu cuenta de Github todo es muy sencillo, simplemente compilamos el blog con `hugo -t amperage` y pusheamos los cambios en el submódulo de `/public` con un mensaje autogenerado a partir de la fecha.
+Una vez configurado todo en tu cuenta de Github simplemente compilamos el blog con `hugo -t amperage` y pusheamos los cambios en el submódulo de `/public` con un mensaje autogenerado a partir de la fecha.
 
 ## Conclusión
 
-De momento eso es todo, espero traer más novedades pronto, y también espero que estén relacionadas con algún estilo básico, porque creeme que el estado actual de la web me duele más a mí que a tí...
+De momento eso es todo, espero traer más novedades pronto, y también espero que estén relacionadas con algún estilo básico, porque creeme que el estado actual de la web me duele más a mí que a ti...
 
  > *Lo dudo mucho!*  😒
 
