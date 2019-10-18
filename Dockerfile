@@ -1,5 +1,7 @@
 FROM alpine:edge
 
+ARG GITHUB_TOKEN
+
 RUN apk update \
     && apk add git openssh hugo --no-cache \
     && rm -vrf /var/cache/apk/*
