@@ -1,7 +1,7 @@
 +++
-date = "2019-10-14T11:12:32+02:00"
-publishdate = "2019-10-14T11:12:32+02:00"
-draft = true
+date = "2019-10-15T11:12:32+02:00"
+publishdate = "2019-10-19T14:09:32+02:00"
+draft = false
 
 title = "La primera iteración ya está aquí! AMP, estilos y otras miscelaneas"
 
