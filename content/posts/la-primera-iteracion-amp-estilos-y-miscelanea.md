@@ -283,6 +283,6 @@ Para la próxima iteración espero poder tener las taxonomías de tags ya hechas
 
 ## Wayback machine
 
-Ver la [versión original de este post](# "Versión original del post").
+Ver la [versión original de este post](https://web.archive.org/web/20191019121743/https://asurbernardo.com/posts/la-primera-iteracion-amp-estilos-y-miscelanea/ "Versión original del post").
 
-Ver la [versión original de la homepage](# "Versión original de la homepage").
+Ver la [versión original de la homepage](https://web.archive.org/web/20191019121816/https://asurbernardo.com/ "Versión original de la homepage").
