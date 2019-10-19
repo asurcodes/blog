@@ -75,33 +75,33 @@ Si, si, ya sé que estás pensando: ¿Que leches es esta web y cómo he llegado 
 <p><em>Pues menuda mierda de nuevo proyecto!</em> 🤣</p>
 </blockquote>
 
-<p>Vale, estamos de acuerdo, pero escucha, la idea es que llegue a ser más que eso y alcance la categoría de pasable, déjame contarte cómo.</p>
+<p>Vale, estamos de acuerdo, pero escucha, la idea es que llegue a ser más que eso y alcance la categoría de pasable, déjame que te cuente cómo.</p>
 
 <h2 id="el-por-qué">El por qué</h2>
 
-<p>Para empezar, una pequeña presentación para quitarlo de delante, me llamo Asur, no espero que me conozcas, pero considero importante que sepas que, a parte de ganarme la vida con ello, me encanta programar, en concreto todo lo que tenga que ver con internet y este blog es uno de mis periódicos cacharreos tecnológicos.</p>
+<p>Para empezar, una pequeña presentación para quitarlo de delante, me llamo Asur, no espero que me conozcas pero considero importante que sepas que me encanta programar, en concreto me apasiona todo lo que tenga que ver con internet y este blog es uno de mis periódicos cacharreos tecnológicos.</p>
 
-<p>Hace ya tiempo que esta idea me ha estado rondando la cabeza, <strong>crear un blog personal el cual documente su propio proceso de desarrollo y mejora!</strong> Mi objetivo es ir desarrollando y documentar esas mejoras en forma de posts, registrar cada paso en la <a href="http://web.archive.org/">Wayback Machine</a> de <em>archive.org</em> para que cada post se pueda visitar en su estado original y poder ver la evolución paso a paso.</p>
+<p>Hace ya tiempo que esta idea me ha estado rondando la cabeza, <strong>crear un blog personal el cual documente su propio proceso de desarrollo y mejora!</strong> Mi objetivo es ir desarrollando y plasmar esas mejoras en forma de posts, registrar cada paso en la <a href="http://web.archive.org/">Wayback Machine</a> de <em>archive.org</em> para que cada entrada se pueda visitar en su estado original y poder ver la evolución pieza a pieza.</p>
 
-<p>Así pues, la idea de esta entrada es introducir este proyecto al mundo e invitarte a un viaje en el que hablaremos mucho de programación y otros familiares, así que si te gusta el desarrollo web, el SEO o la gestión de sistemas te recomiendo que te mantengas al tanto.</p>
+<p>Así pues, la idea es introducir este proyecto al mundo e invitarte a un viaje en el que hablaremos mucho de programación y otros familiares, así que si te gusta el desarrollo web, el SEO, la gestión de sistemas y demás te recomiendo que te mantengas al tanto.</p>
 
 <h2 id="el-cómo">El cómo</h2>
 
-<p>Para llevar a cabo este proyecto elegido <strong>GoHugo</strong>, un generador de sites estáticos, al estilo de Jekyll, pero desarrollado en Go. También he creado un tema llamado amperage, que será donde iremos haciendo las mejoras y añadiendo funcionalidades.</p>
+<p>Para llevar a cabo este proyecto he elegido <strong>GoHugo</strong>, un generador de sites estáticos, al estilo de Jekyll, pero desarrollado en Go. También he creado un tema llamado <strong>amperage</strong>, que será donde iremos haciendo las mejoras y añadiendo funcionalidades.</p>
 
-<p>Todo lo que ves es código abierto, así que si lo que ves te gusta, que de momento lo dudo, descárgatelo, pruébalo y si estás espléndid@ las aportaciones son siempre bienvenidas.</p>
+<p>El proyecto es <strong>100% código abierto</strong>, así que si lo que ves te gusta, que de momento lo dudo, descárgatelo, pruébalo y si estás espléndid@ las aportaciones son siempre bienvenidas.</p>
 
 <p>Todo está hosteado en <strong>Github Pages</strong>, porque es gratis, es fácil, es rápido y&hellip; ah si, es <strong>GRATIS</strong>.</p>
 
-<p>He estado trabajando en el workflow de desarrollo para este proyecto y seguramente sea mejorable, pero estoy bastante contento con el estado actual, así que voy a entrar un poco más en detalle de como está montado todo este tinglado.</p>
+<p>He estado trabajando en el workflow de desarrollo y seguramente sea mejorable, pero estoy bastante contento con el estado actual, así que voy a entrar un poco más en detalle de como está montado todo este tinglado.</p>
 
 <h3 id="el-hosting">El hosting</h3>
 
 <p>Este site al ser estático no necesita de mucho en cuanto a infraestructura, lo único que hace es escupir ficheros a tu navegador, lo que lo hace super rápido y sencillo de gestionar, pero como todo, el haber elegido este estilo de web implica ciertas limitaciones, no tener un backend significa que probablemente voy a tener que depender de servicios de terceros para posibles funcionalidades futuras, como comentarios en los posts o una newsletter.</p>
 
-<p>Github pages me parece una opción ideal, ya que lo iba a utilizar de todas formas para alojar los repositorios, así que mato dos pájaros de un tiro. Para poner un frontal con CDN, políticas personalizadas, así como mi propio dominio utilizo <strong>Cloudflare</strong>, que de nuevo es gratis (vais captando el patrón aquí?).</p>
+<p>Github pages me parece una opción ideal ya que lo iba a utilizar de todas formas para alojar los repositorios, así que mato dos pájaros de un tiro. Para poner un frontal con CDN, políticas personalizadas, así como mi propio dominio utilizo <strong>Cloudflare</strong>, que de nuevo es gratis (vais captando el patrón aquí?).</p>
 
-<p>La verdad es que lo único que me ha costado averiguar de esta parte es la convención que tiene Github para alojar tu site. Para que la web esté accesible en la url <code>{user}.github.io</code> tienes que crear un repositorio que se llame igual y esa es tu única opción y si no te gusta, pues bailas.</p>
+<p>La verdad es que lo único que me ha costado averiguar de esta parte es la convención que tiene Github para alojar tu site. Para que la web esté accesible en la url <code>{user}.github.io</code> tienes que crear un repositorio que se llame igual y esa es tu única opción, si no te gusta, pues bailas.</p>
 
 <h3 id="la-estructura-de-repositorios">La estructura de repositorios</h3>
 
@@ -131,7 +131,7 @@ Si, si, ya sé que estás pensando: ¿Que leches es esta web y cómo he llegado 
     └── amperage // Submódulo de tema
 </code></pre>
 
-<p>Todas las actualizaciones se subirán independientemente y a la hora de empezar a trabajar en un ordenador nuevo solo necesitaré clonar el repositorio y descargar sus submódulos, lo que considero bastante cómodo, algo así:</p>
+<p>Todas las actualizaciones se subirán independientemente y a la hora de empezar a trabajar en un entorno nuevo solo necesitaré clonar el repositorio y descargar sus submódulos, lo que considero bastante cómodo, algo así:</p>
 
 <pre><code>git clone git@github.com:asurbernardo/blog.git &amp;&amp; git submodule update --recursive --remote
 </code></pre>
@@ -169,7 +169,7 @@ git commit -m &quot;$msg&quot;
 git push origin master
 </code></pre>
 
-<p>Una vez configurado todo en tu cuenta de Github simplemente compilamos el blog con <code>hugo -t amperage</code> y pusheamos los cambios en el submódulo de <code>/public</code> con un mensaje autogenerado a partir de la fecha.</p>
+<p>Una vez configurado todo en tu cuenta de Github solo tenemos que compilar el blog con <code>hugo -t amperage</code> y pusheamos los cambios en el submódulo de <code>/public</code> con un mensaje autogenerado a partir de la fecha.</p>
 
 <h2 id="conclusión">Conclusión</h2>
 
