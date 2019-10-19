@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: amperage-blog
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: amperage
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: amperage
+      #annotations:
+      #  prometheus.io.scrape: "true"
+    spec:
+      terminationGracePeriodSeconds: 30
+      restartPolicy: Always
+      containers:
+      - name: amperage
+        image: amperage:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 1313
+          protocol: TCP
