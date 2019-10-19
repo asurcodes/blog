@@ -8,3 +8,9 @@ RUN git config --global url."https://$GITHUB_TOKEN:@github.com/".insteadOf "http
 RUN git config --global url."https://$GITHUB_TOKEN:@github.com/".insteadOf "git@github.com:"
 
 RUN git clone --recurse-submodules --remote-submodules https://github.com/asurbernardo/blog.git
+
+WORKDIR /blog 
+
+EXPOSE 1313
+
+CMD ["hugo","-t","amperage","server","--buildFuture","--bind","0.0.0.0"]
