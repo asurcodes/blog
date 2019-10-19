@@ -134,7 +134,7 @@ Hace poco en una newsletter semanal de la empresa que trabajo compartieron un [r
 
 ### Web safe fonts
 
-Este es un concepto al que he sido introducido hace poco, resulta que, sorpresa, cada vez las webs dependen más de fuentes externas alojadas en servicios como Google Fonts y similares. No me vais a ver echar culpas, que claramente son de la gente de UI (😜), pero ha habido que ponerle solución, y esta viene en forma de *fuentes seguras*, las fuentes que **siempre** vamos a tener disponibles en el navegador.
+Este es un concepto al que he sido introducido hace poco, resulta que, sorpresa, cada vez las webs dependen más de fuentes externas alojadas en servicios como Google Fonts y similares. No me vais a ver echar culpas, que claramente son de la gente de UI (😜), pero ha habido que ponerle solución, y esta viene en forma de *[fuentes seguras](https://www.w3schools.com/cssref/css_websafe_fonts.asp)*, las fuentes que **siempre** vamos a tener disponibles en el navegador.
 
 En mi humilde opinión se les da poco crédito a estas pobres fuentes, que si son feas, anticuadas, siendo relegadas a meros fallbacks... pues yo he decidido utilizarlas como fuentes principales del tema y no hacer uso de ninguno de los servicios de fuentes mencionados anteriormente.
 
@@ -142,7 +142,7 @@ Las fuentes que he utilizado son:
 
  - **Helvetica**: Para los títulos.
  - **Courier New**: Para el texto general y contenido.
- - **Monospace**: Para el código, tanto en bloque como inline.
+ - **Lucida Console**: Para el código, tanto en bloque como inline.
  - **Times New Roman**: Para las citas y menciones.
 
 Creo que el resultado es sublime, al menos desde mi limitado gusto estético, y es que además tiene otra ventaja, no tenemos que descargarnos fuentes, por lo que no vamos a tener que lidiar con el [FOUT](https://css-tricks.com/fout-foit-foft/), lo que mejorará tanto la experiencia de usuario como la velocidad de la web. *WIN WIN*.
