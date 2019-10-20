@@ -29,7 +29,7 @@ update_submodule_pointers:
 	# Update submodules to remote master
 	git submodule foreach git pull origin master
 	# Stage submodules
-	git add public/* themes/*
+	git add public themes/amperage
 	# Commit changes
 	msg="Updating submodule pointers - $(NOW)"
 	git commit -m "$msg"
