@@ -1,7 +1,9 @@
 baseURL = "https://asurbernardo.com"
 languageCode = "es"
-title = "Bienvenido a mi blog"
+title = "Bienvenid@ a mi blog | Asur"
 theme = "amperage"
+
+pygmentsUseClasses = true
 
 [taxonomies]
     tag = "tags"
