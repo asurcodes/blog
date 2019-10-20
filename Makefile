@@ -2,6 +2,8 @@ all: compile deploy update_submodule_pointers
 
 .PHONY: all
 
+NOW = $(shell date)
+
 compile:
 	@printf "\033[0;32mUpdating theme submodule...\033[0m\n"
 	# Update theme
@@ -17,7 +19,7 @@ deploy:
 	# Add changes to git.
 	git add .
 	# Commit changes.
-	msg="Rebuilding site $(date)"
+	msg="Rebuilding site - $(NOW)"
 	git commit -m "$msg"
 	# Push source
 	git push origin master
@@ -27,9 +29,9 @@ update_submodule_pointers:
 	# Update submodules to remote master
 	git submodule foreach git pull origin master
 	# Stage submodules
-	git add public themes
+	git add public/* themes/*
 	# Commit changes
-	msg="Updating submodule pointers $(date)"
+	msg="Updating submodule pointers - $(NOW)"
 	git commit -m "$msg"
 	# Push source
 	git push origin master
