@@ -15,10 +15,7 @@ compile:
 deploy:
 	@printf "\033[0;32mDeploying content to Github...\033[0m\n"
 	# Go to Public folder
-	cd public
-	# Add changes to git.
-	git add .
-	# Commit changes.
-	git commit -m "Rebuilding site - $(NOW)"
-	# Push source
-	git push origin master
+	cd public && \
+		git add . && \
+		git commit -m "Rebuilding site - $(NOW)" && \
+		git push origin master
