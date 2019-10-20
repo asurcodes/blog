@@ -1,6 +1,9 @@
 baseURL = "https://asurbernardo.com"
+
 languageCode = "es"
+
 title = "Bienvenid@ a mi blog | Asur"
+
 theme = "amperage"
 
 pygmentsUseClasses = true
@@ -12,7 +15,7 @@ pygmentsUseClasses = true
     adsensePublisher = ""
     googleAnalytics = ""
     
-    alternatePageName = ""
+    alternatePageName = "Blog de Asur"
     organizationLogo = ""
     organizationName = ""
     organizationAddress = ""

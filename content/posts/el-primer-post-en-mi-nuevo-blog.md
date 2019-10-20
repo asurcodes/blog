@@ -1,9 +1,13 @@
 +++
+draft = false
 date = "2019-10-14T12:33:32+02:00"
 publishdate = "2019-10-14T12:33:32+02:00"
-draft = false
 
-title = "El primer post en mi nuevo blog!"
+title = "Evolutivo #0 - El primer post en mi nuevo blog!"
+
+description = "Si, si, ya sé que estás pensando: ¿Que leches es esta web y cómo he llegado aquí? Espera, por favor, dame la oportunidad de explicarme. Me llamo Asur y este es mi nuevo proyecto..."
+
+summary = "Si, si, ya sé que estás pensando: ¿Que leches es esta web y cómo he llegado aquí? Espera, por favor, dame la oportunidad de explicarme. Me llamo Asur y este es mi nuevo proyecto..."
 
 tags = ['Evolutivo']
 
@@ -11,11 +15,6 @@ keywords = ['blog', 'desarrollo', 'git', 'deploy']
 
 [amp]
     elements = []
-
-[article]
-    lead = ""
-    category = ""
-    related = []
 
 [author]
     name = "Asur"
@@ -55,8 +54,6 @@ keywords = ['blog', 'desarrollo', 'git', 'deploy']
 # El primer post en mi nuevo blog!
 
 Si, si, ya sé que estás pensando: ¿Que leches es esta web y cómo he llegado aquí? Espera, por favor, dame la oportunidad de explicarme. Me llamo Asur y este es mi nuevo proyecto...
-
-<!--more-->
 
  > *Pues menuda mierda de nuevo proyecto!* 🤣
 

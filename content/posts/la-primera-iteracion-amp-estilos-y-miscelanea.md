@@ -1,9 +1,13 @@
 +++
+draft = false
 date = "2019-10-15T11:12:32+02:00"
 publishdate = "2019-10-19T14:09:32+02:00"
-draft = false
 
-title = "La primera iteración ya está aquí! AMP, estilos y otras miscelaneas"
+title = "Evolutivo #1 - AMP, estilos y otras miscelaneas"
+
+description = "La primera iteración del blog ya ha llegado, hablaré de AMP, diseño y estilos junto con otras miscelaneas como vulnerabilidades en los links de HTML, BEM y el position sticky"
+
+summary = "Bueno, bueno, bueno, parece que la primera iteración del blog ya está aquí! La verdad que antes de lo que me esperaba, he empezado este proyecto con muchas ganas. Hay bastantes novedades así que vamos a echarles un ojo, explicarlas y hablar sobre las cosas nuevas con las que he trasteado y que he aprendido."
 
 tags = ['Evolutivo']
 
@@ -11,11 +15,6 @@ keywords = ['blog', 'desarrollo', 'html', 'sass', 'amp', 'web safe fonts', 'grid
 
 [amp]
     elements = []
-
-[article]
-    lead = ""
-    category = ""
-    related = []
 
 [author]
     name = "Asur"
@@ -56,8 +55,6 @@ keywords = ['blog', 'desarrollo', 'html', 'sass', 'amp', 'web safe fonts', 'grid
 
 Bueno, bueno, bueno, parece que la primera iteración del blog ya está aquí! La verdad que antes de lo que me esperaba, he empezado este proyecto con muchas ganas. Hay bastantes novedades así que vamos a echarles un ojo, explicarlas y hablar sobre las cosas nuevas con las que he trasteado y que he aprendido.
 
-<!--more-->
-
 ## Los estilos
 
 Para bien o para mal este site siempre va a estar diseñado por mí, puedo pedir feedback o tomar inspiración de otros sites, pero estoy orgulloso de poder decir que todo lo que veis es **100% original**. 
@@ -68,7 +65,7 @@ Como guía de estilo inicial tomé esta web:
 
 <amp-img class="post__image"
     alt="Inspiración inicial para el estilo del blog"
-    src="https://images.typ.io/58-original"
+    src="/images/design-inspiration.jpg"
     width="1199"
     height="742"
     layout="responsive">
