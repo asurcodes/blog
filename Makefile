@@ -19,8 +19,7 @@ deploy:
 	# Add changes to git.
 	git add .
 	# Commit changes.
-	msg="Rebuilding site - $(NOW)"
-	git commit -m "$msg"
+	git commit -m "Rebuilding site - $(NOW)"
 	# Push source
 	git push origin master
 
@@ -31,7 +30,6 @@ update_submodule_pointers:
 	# Stage submodules
 	git add public themes/amperage
 	# Commit changes
-	msg="Updating submodule pointers - $(NOW)"
-	git commit -m "$msg"
+	git commit -m "Updating submodule pointers - $(NOW)"
 	# Push source
 	git push origin master
