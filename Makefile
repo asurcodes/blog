@@ -1,4 +1,4 @@
-all: compile deploy update_submodule_pointers
+all: compile deploy
 
 .PHONY: all
 
@@ -20,17 +20,5 @@ deploy:
 	git add .
 	# Commit changes.
 	git commit -m "Rebuilding site - $(NOW)"
-	# Push source
-	git push origin master
-
-update_submodule_pointers:
-	@printf "\033[0;32mUpdating submodule pointers...\033[0m\n"
-	# Update submodules to remote master
-	git submodule foreach git pull origin master
-	# Stage submodules
-	git add public
-	git add themes/amperage
-	# Commit changes
-	git commit -m "Updating submodule pointers - $(NOW)"
 	# Push source
 	git push origin master
