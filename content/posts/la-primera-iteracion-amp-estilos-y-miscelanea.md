@@ -5,7 +5,7 @@ draft = false
 
 title = "La primera iteración ya está aquí! AMP, estilos y otras miscelaneas"
 
-tags = ['Iteracion']
+tags = ['Evolutivo']
 
 keywords = ['blog', 'desarrollo', 'html', 'sass', 'amp', 'web safe fonts', 'grid', 'flexbox']
 
