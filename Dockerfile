@@ -11,6 +11,8 @@ RUN git clone --recurse-submodules --remote-submodules https://github.com/asurbe
 
 WORKDIR /blog 
 
+RUN rm -rf .git*
+
 EXPOSE 1313
 
 CMD ["hugo","-t","amperage","server","--buildFuture","--bind","0.0.0.0"]
