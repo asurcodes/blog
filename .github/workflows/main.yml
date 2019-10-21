@@ -8,11 +8,14 @@ jobs:
   build-deploy:
     runs-on: ubuntu-18.04
     steps:
-    - uses: actions/checkout@master
+
+    - name: Pull source
+      uses: actions/checkout@master
 
     - name: Update submodules
       uses: srt32/git-actions@v0.0.3
-      args: git submodules foreach git pull origin master
+      with:
+        args: git submodules foreach git pull origin master
 
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2.2.2
