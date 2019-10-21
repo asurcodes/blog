@@ -11,8 +11,8 @@ jobs:
     - uses: actions/checkout@master
 
     - name: Update submodules
-      uses: actions/checkout@master
-      args: "git submodules foreach git pull origin master"
+      uses: srt32/git-actions@v0.0.3
+      args: git submodules foreach git pull origin master
 
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2.2.2
