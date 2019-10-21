@@ -1,4 +1,4 @@
-.name: Deploy blog
+name: Deploy blog
 on:
   push:
     branches:
