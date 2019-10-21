@@ -9,9 +9,7 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
     - uses: actions/checkout@master
-      with:
-        submodules: true
-        
+
     - name: Update submodules
       run: git submodules foreach git pull origin master
 
