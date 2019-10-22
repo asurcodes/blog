@@ -2,7 +2,3 @@
 	path = themes/amperage
 	url = https://github.com/asurbernardo/amperage.git
 	branch = master
-[submodule "public"]
-	path = public
-	url = https://github.com/asurbernardo/asurbernardo.github.io.git
-	branch = master
