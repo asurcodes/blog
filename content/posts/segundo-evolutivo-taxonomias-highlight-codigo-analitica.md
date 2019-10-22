@@ -53,7 +53,7 @@ keywords = ['blog', 'desarrollo', 'tags', 'syntax highlighting', 'google analyti
 
 # Taxonomía de tags, highlighting de código y analítica
 
-Seguimos adelante, esta vez avanzamos un poco más con el interlinking creando una taxonomías de tags, además de server-side code highlighting y montamos todo lo necesario para recaudar los datos y analizarlos con Cloudflare, Google Analytics y Search Console.
+Seguimos adelante, esta vez avanzamos un poco más con el interlinking creando una taxonomía de tags, además de server-side code highlighting y he montado todo lo necesario para recopilar datos y analizarlos con Cloudflare, Google Analytics y Search Console, además de un pequeño análisis de lo más interesante de cada uno.
 
 ## Highlighting de código ✨
 
@@ -99,7 +99,7 @@ Como detalle final, la librería de Chroma es compatible con los temas de Pygmen
 
 ## Taxonomía de tags 🏷️
 
-Las taxonomías son maneras de agrupar elementos por características comunes. La primera implementación que voy a hacer al respecto es la de tags. Es una estrategia muy común a la hora de crear una estructura de links para SEO, también ayudará por supuesto a los usuarios a encontrar contenido que les interese.
+Las taxonomías **son maneras de agrupar elementos por características comunes**. La primera implementación que voy a hacer al respecto es la de tags. Es una estrategia muy común a la hora de crear una estructura de links para SEO, también ayudará por supuesto a los usuarios a encontrar contenido que les interese.
 
 Hugo ya incluye por defecto dos taxonomías: tags y categorías, además de poder crear las tuyas propias. He empezado por tags por mera comodidad, creo que las categorías las dejaré para cuando implemente unas migas de pan y lo haré todo junto.
 
@@ -144,15 +144,15 @@ Por último tenemos que crear una plantilla para las páginas de taxonomía. Es 
 {{ end }}
 {{< / highlight >}}
 
-Finiquitado, ya tenemos una taxonomía básica montada.
+Finiquitado, ya tenemos una taxonomía básica montada y la estructura básica para añadir más en el futuro!
 
 ## Analítica 📊
 
-Soy un *nerd* para los números y las gráficas, no tengo ni idea de análisis ni representación de datos pero me encanta mirar gráficas, por lo que la parte de analítica iba a llegar más pronto que tarde. Por el momento he decidido utilizar tres fuentes de datos: Google Analytics, Search console y Cloudflare.
+Soy un *nerd* para los números, no tengo ni idea de análisis ni representación de datos pero me encanta mirar gráficas, por lo que la parte de analítica iba a llegar más pronto que tarde. Por el momento he decidido utilizar tres fuentes de datos: Google Analytics, Search console y Cloudflare.
 
 ### Google Analytics
 
-Google Analytics es una navaja suiza, con el conocimiento suficiente que espero ir adquiriendo con el tiempo puedes hacer prácticamente lo que quieras en lo que recolección de datos se refiere.
+Google Analytics **es una navaja suiza**, con el conocimiento suficiente que espero ir adquiriendo con el tiempo puedes hacer prácticamente lo que quieras en lo que recolección de datos se refiere.
 
 Para añadirlo en una página AMP tenemos que usar el componente `amp-analytics` de la siguiente manera:
 
@@ -181,25 +181,81 @@ Para añadirlo en una página AMP tenemos que usar el componente `amp-analytics`
 
 Los datos que más me interesan son:
 
- - Visitas
- - Adquisición
- - Tiempo en página de posts
+**Usuarios y sesiones:** De manera general puedo ver la cantidad de usuarios y sesiones de la web, así como el porcentaje de rebote y las páginas visitadas por cada sesión.
 
-**@TODO**
+<amp-img class="post__image"
+    alt="Usuarios y sesiones - Google Analytics"
+    src="/images/google-analytics-audiencia-general.jpg"
+    width="1617"
+    height="623"
+    layout="responsive">
+</amp-img>
+
+**Adquisición:** También me gusta ver como han llegado los usuarios al sitio y la diferencia de calidad de los diferentes tipos.
+
+<amp-img class="post__image"
+    alt="Adquisición de usuarios - Google Analytics"
+    src="/images/google-analytics-adquisicion.jpg"
+    width="1131"
+    height="331"
+    layout="responsive">
+</amp-img>
+
+**Tiempo en página de posts:** Una vista algo más atómica de como están funcionando cada uno de los posts, para posteriormente poder analizarlo e iterar.
+
+<amp-img class="post__image"
+    alt="Comportamiento por post - Google Analytics"
+    src="/images/google-analytics-comportamiento-posts.jpg"
+    width="1620"
+    height="417"
+    layout="responsive">
+</amp-img>
+
+Por supuesto hay muchos más datos, como demográfica y flujos de navegación pero no me interesan tanto en la fase actual en la que está el blog, en un futuro quizás los revisite.
 
 ### Search console
 
-Search console te muestra datos de la indexación de tu web en Google, así como las mejoras que ha detectado en tu web, como AMP, usabilidad móvil y datos estructurados.
+Search console te muestra **datos de la indexación de tu web en Google**, así como las mejoras manuales que ha detectado en tu web.
 
-El proceso de validación es a través de DNS, lo único que hay que añadir es un registro CNAME con el contenido que se nos indica al registrarnos y listo, ya tenemos acceso.
+El proceso de validación es a través de DNS, lo único que hay que añadir es un registro TXT con el contenido que se nos indica al registrarnos y listo, ya tenemos acceso.
+
+```
+Type  | Name              | Content                         | TTL
+------|-------------------|---------------------------------|------
+TXT   | asurbernardo.com  | google-site-verification=drV... | 5 min
+```
 
 Las partes a las que prestaré más atención son:
 
- - Rendimiento
- - Cobertura
- - Mejoras
+**Rendimiento:** Las veces que aparecen una página de esta web en Google listada, en que posición y que CTR tiene.
 
-**@TODO**
+<amp-img class="post__image"
+    alt="Rendimiento - Search Console"
+    src="/images/search-console-rendimiento.jpg"
+    width="913"
+    height="363"
+    layout="responsive">
+</amp-img>
+
+**Cobertura:** Información sobre como está indexado este site en Google, las páginas correctas y los posibles errores.
+
+<amp-img class="post__image"
+    alt="Cobertura - Search Console"
+    src="/images/search-console-cobertura.jpg"
+    width="909"
+    height="430"
+    layout="responsive">
+</amp-img>
+
+**Mejoras:** Todas las señales que indican a Google la calidad de la página más allá del contenido, como datos estructurados, AMP, etc.
+
+<amp-img class="post__image"
+    alt="Mejoras - Search console"
+    src="/images/search-console-mejoras.jpg"
+    width="908"
+    height="210"
+    layout="responsive">
+</amp-img>
 
 ### Cloudflare
 
@@ -207,14 +263,29 @@ Con Cloudflare no he tenido que hacer nada, ya estaba montado desde el principio
 
 Las partes más interesantes son:
 
- - Requests cacheados y no cacheados
- - Performance pies
+**Requests:** Esto es más por curiosidad que otra cosa, al final el ancho de banda consumido y los hits cacheados le concierne a Github, no a mí, pero aún así me encanta saberlo.
 
-**@TODO**
+<amp-img class="post__image"
+    alt="Mejoras - Search console"
+    src="/images/cloudflare-ancho-de-banda.jpg"
+    width="1018"
+    height="520"
+    layout="responsive">
+</amp-img>
+
+**Datos técnicos:** Ver que porcentaje de uso de *http/2*, la cantidad de datos ahorrados por la compresión *gzip* y la descomposición de como se usa el ancho de banda, de nuevo, no es que sea imprescindible pero puede dar información relavante dependiendo del contexto, y qué mejor manera de hacerlo que en forma de quesitos?
+
+<amp-img class="post__image"
+    alt="Mejoras - Search console"
+    src="/images/cloudflare-datos-tecnicos.jpg"
+    width="1025"
+    height="378"
+    layout="responsive">
+</amp-img>
 
 ## Siguientes pasos 👣
 
-Para el siguiente evolutivo ya tengo bastante claro en que va a consistir, ya he empezado a trabajar (con mucha ayuda) en una mejora del workflow de desarrollo y redacción de contenido, vamos a crear un flujo con Docker y Makefiles, además también me voy a apuntar a la beta abierta de Github Actions y haremos algo de despliegue continuo. *Stay tuned!* 😎
+Para el siguiente evolutivo ya tengo bastante claro en que va a consistir, ya he empezado a trabajar (con ayuda) en una mejora del workflow de desarrollo y redacción de contenido, vamos a crear un flujo con Docker y `docker-compose` y Makefiles, además también me voy a apuntar a la beta abierta de Github Actions y haremos algo de despliegue continuo. *Stay tuned!* 😎
 
 ## Wayback Machine ⏰
 
