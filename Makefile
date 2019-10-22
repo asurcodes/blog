@@ -1,4 +1,4 @@
-all: compile deploy
+all: clone_site compile deploy
 
 .PHONY: all
 
