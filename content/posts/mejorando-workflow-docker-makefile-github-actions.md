@@ -159,6 +159,12 @@ Al ejecutarlo todo junto se ve algo así:
 
 ## Github Actions 🐱
 
+Microsoft parece que le está dando bastante amor a Github en forma de $$$ porque ya no solo parece que tengamos repositorios privados gratuitos, ahora también tenemos una pipeline de CI/CD en Beta!
+
+La Beta es abierta y mientras tengas un repositorio puedes activarlo.
+
+Los ficheros son formato `yml` y tienen una sintaxis parecida a otros proveedores de funcionalidades pareceidas como Travis o CircleCI.
+
 **@TODO** Documentar el proceso de registro en la beta
 
 ### Despliegue continuo
