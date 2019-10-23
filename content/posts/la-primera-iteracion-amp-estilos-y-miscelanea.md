@@ -79,7 +79,8 @@ Aquí me he decidido a experimentar, el front no es mi especialidad y últimamen
 
 Por lo que he estado investigando, ambos son intercambiables en muchos casos, con algunas limitaciones aquí y allá, pero la convención que más me ha gustado es el utilizar grid para el layout general y flexbox para colocar los elementos dentro de sus contenedores. Lo que he acabo haciendo sería algo así:
 
-```
+{{< highlight scss "linenos=table" >}}
+
 /* Configuramos el padre como grid con 5 columnas y un margen entre ellas de 1em */
 
 body {
@@ -119,7 +120,8 @@ aside {
         justify-content: flex-start;
     }
 }
-```
+
+{{< / highlight >}}
 
 Una distribución clásica pero efectiva, aunque estoy seguro de que la voy a ir cambiando y extendiendo con el tiempo.
 
@@ -158,7 +160,8 @@ Han dado en el clavo, lo único que nos tenemos que asegurar es que el elemento 
 
 La implemetación pinta algo así:
 
-```
+{{< highlight go-html-template "linenos=table" >}}
+
 <aside>
     <div class="aside__wrapper">
         <!-- Table of contents -->
@@ -167,19 +170,22 @@ La implemetación pinta algo así:
         [...]
     </div>
 </aside>
-```
+
+{{< / highlight >}}
 
 Como os comentaba, el elemento `aside__wrapper` se ajusta al contenido y se puede *deslizar* por toda la altura del `aside`.
 
 En el CSS solo tenemos que especificar el tipo de posición y el breakpoint (que dirá en que momento el elemento se vuelve sticky):
 
-```
+{{< highlight scss "linenos=table" >}}
+
 .aside__wrapper {
     position: sticky;
     position: -webkit-sticky;
     top: 1em; /* required breakpoint */
 }
-```
+
+{{< / highlight >}}
 
 ## El AMP
 
@@ -193,17 +199,19 @@ No me he roto mucho la cabeza con esto al principio, mi objetivo era que pasase 
 
 Para empezar el primer problema que me encontré es el tener que incrustar los estilos en la cabecera. Me da la impresión de que Hugo, en un principio no esperaba contemplar esta posibilidad, en especial con la llegada de *http/2*, el *package multiplexing* y las *push directives*, pero esto no quiere decir que no sea posible, solo que hay que darle una vuelta extra:
 
-```
+{{< highlight go-html-template "linenos=table" >}}
+
 <style amp-custom>
     {{ with resources.Get "styles.scss" | resources.ToCSS | resources.Minify }}
         {{ .Content | safeCSS }}
     {{ end }}
 </style>
-```
+
+{{< / highlight >}}
 
 Lo que tenemos que hacer en vez de compilar en resource en un archivo directamente, es leer el contenido de ese archivo, meterlo en un bloque y transformarlo en CSS, puede parecer una tontería visto así, pero la información sobre este procedimiento es escasa o deprecada, así que a lo tonto me ha llevado un buen rato hacerlo funcionar.
 
-Para acabar, como no tengo ningún elemento especial de momento solo he tenido que añadir la tag de HTML el emoji del rayo (⚡)    y el script raíz de AMP (la primera vez que le dije a alguien que se podía sustituir el `<html amp lang="es">` por un emoji pensó que le estaba tomando el pelo, pero os juro que es verdad!)
+Para acabar, como no tengo ningún elemento especial de momento solo he tenido que añadir la tag de HTML el emoji del rayo (⚡) y el script raíz de AMP (la primera vez que le dije a alguien que se podía sustituir el `<html amp lang="es">` por un emoji pensó que le estaba tomando el pelo, pero os juro que es verdad!)
 
 ```
 <!DOCTYPE html>
@@ -221,7 +229,8 @@ Para empezar a meter el pie en las aguas del *SEO on-page* he implementado las o
 
 Ambos son implementaciones muy directas, ya que están soportados por Hugo de manera nativa (*god bless*).
 
-```
+{{< highlight go-html-template "linenos=table" >}}
+
 <!-- Table of contents -->
 
 <h3>Tabla de contenidos</h3>
@@ -240,7 +249,8 @@ Ambos son implementaciones muy directas, ya que están soportados por Hugo de ma
     {{ end }}
 </ul>
 {{ end }}
-```
+
+{{< / highlight >}}
 
 Como podéis ver, esto de programar está mitificado, para añadir la tabla de contenidos solo hay que incluir en la plantilla `{{ .TableOfContents }}`, Hugo ya detecta por su cuenta los títulos en tu contenido y genera los links.
 

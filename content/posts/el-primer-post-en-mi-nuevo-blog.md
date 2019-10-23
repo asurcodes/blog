@@ -124,7 +124,8 @@ Por supuesto esto también aplica para alguién que quiera aportar su granito de
 
 Para desplegar la web de manera rápida y sencilla he creado un script siguiendo la [documentación oficial](https://gohugo.io/hosting-and-deployment/hosting-on-github/#put-it-into-a-script) de Hugo:
 
-```
+{{< highlight bash "linenos=table" >}}
+
 #!/bin/sh
 
 # If a command fails then the deploy stops
@@ -150,7 +151,8 @@ fi
 git commit -m "$msg"
 
 git push origin master
-```
+
+{{< / highlight >}}
 
 Una vez configurado todo en tu cuenta de Github solo tenemos que compilar el blog con `hugo -t amperage` y pusheamos los cambios en el submódulo de `/public` con un mensaje autogenerado a partir de la fecha.
 
