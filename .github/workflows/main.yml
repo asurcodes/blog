@@ -15,7 +15,7 @@ jobs:
         submodules: true
 
     - name: Update submodules to latests master
-      run: git submodule update --remote
+      run: git submodule foreach git pull origin master
 
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2.2.2
