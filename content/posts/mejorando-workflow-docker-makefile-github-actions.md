@@ -146,7 +146,14 @@ Como se puede ver en este snippet, hay 4 partes bien diferenciadas, aunque todas
 
 Al ejecutarlo todo junto se ve algo así:
 
-**@TODO** Grabar en ANSICinema el proceso de despliegue con make
+<amp-anim 
+    layout="responsive"
+    width=1200
+    height=663
+    src="/images/make-command.gif"
+    alt="Ejecución de Makefile">
+</amp-anim>
+
 
 **OJO**: He descubierto por las malas que **cada línea de un Makefile se ejecuta en un entorno independiente**, siempre partiendo de la raiz desde donde se ha ejecutado el `make`, así que olvídate de cambiarte de directorio y hacer algo en una línea nueva por que no te va a funcionar (la que he armado en mi historial de git probando esto es muy gorda).
 
