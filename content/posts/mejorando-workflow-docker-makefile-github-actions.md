@@ -63,7 +63,7 @@ Para empezar, ¿qué repositorio moderno que se precie no tiene un `Dockerfile`?
 
 Exacto! Y para evitar que la gente (yo) tenga que andar instalándose Golang y Hugo por cada ordenador donde quiera desarrollar, pues mejor hacerlo con docker, no? **NO**?
 
-Este proceso tiene dos partes, un `Dockerfile` para construir la imagen y un `docker-compose.yml` para parametrizar y levantar el entorno.
+Este proceso tiene dos partes, un `Dockerfile` para construir la imagen:
 
 {{< highlight dockerfile "linenos=table" >}}
 
@@ -83,7 +83,7 @@ EXPOSE 1313
 
 {{< / highlight >}}
 
-y
+ y un `docker-compose.yml` para parametrizar y levantar el entorno:
 
 {{< highlight yaml "linenos=table" >}}
 
@@ -99,7 +99,23 @@ services:
 
 {{< / highlight >}}
 
-**@TODO** Documentar snippets
+La imagen que se crea con el `Dockerfile` ocupa aproximadamente \~80Mb, utiliza la base `alpine` que es una imagen basada en [Alpine Linux](https://alpinelinux.org/) que solo ocupa 5Mb! No hacemos más que instalar Hugo y descargarnos el repositorio, creando así una build agnóstica del entorno.
+
+En el `docker-compose` ya es donde configuramos las cosas necesarias para nuestro entorno actual, en este caso el local. Vamos a ver línea por línea:
+
+ - **Línea 1**: Declarar la versión del *compose file*, ojo aquí que depende del *Docker engine* que uses hay que [usar una versión u otra](https://docs.docker.com/compose/compose-file/).
+
+ - **Línea 2-3**: Declarar los servicios, en este caso solo hay uno, pero por ejemplo, en el caso de tener una aplicación estilo LAMP, podrías tu Apache, tu MySQL y tu PHP-fpm.
+
+ - **Línea 4**: Que imagen utilizar para el servicio, se puede elegir una subida en un repositorio público como [Docker Hub](https://hub.docker.com/) o como en este caso, usar un `Dockerfile` local utilizando un path relativo.
+
+ - **Línea 5-6**: El mapeo de puertos. Aquí siempre me lío, siempre lo tengo que consultar, el orden es `HOST:CONTAINER` Asur, `HOST:CONTAINER`, `HOST:CONTAINER`, `HOST:CONTAINER`!
+
+ - **Línea 7-8**: El mapeo de volúmenes. Lo mismo que los puertos pero con directorios... Ah sí, `HOST:CONTAINER`.
+
+ - **Línea 9**: El comando inicial al ejecutar un `docker-compose up` para ya tener el servidor montado y funcionando.
+
+Es un ejemplo muy simple pero tiene los casos de uso más comunes, seguiré investigando funcionalidades más avanzadas.
 
 ## El Makefile 🏗️
 
@@ -147,9 +163,10 @@ Como se puede ver en este snippet, hay 4 partes bien diferenciadas, aunque todas
 Al ejecutarlo todo junto se ve algo así:
 
 <amp-anim 
+    class="post__image"
     layout="responsive"
-    width=1200
-    height=663
+    width=1367
+    height=1112
     src="/images/make-command.gif"
     alt="Ejecución de Makefile">
 </amp-anim>
@@ -159,26 +176,73 @@ Al ejecutarlo todo junto se ve algo así:
 
 ## Github Actions 🐱
 
-Microsoft parece que le está dando bastante amor a Github en forma de $$$ porque ya no solo parece que tengamos repositorios privados gratuitos, ahora también tenemos una pipeline de CI/CD en Beta!
+Microsoft parece que le está dando bastante amor a Github en forma de $$$ porque ya no solo tenemos repositorios privados gratuitos, ahora también tenemos una pipeline de CI/CD en Beta!
 
-La Beta es abierta y mientras tengas un repositorio puedes activarlo.
+La Beta es abierta y mientras tengas un repositorio puedes activarla, las inscripciones se hacen en la [página de actions](https://github.com/features/actions). Una vez apuntado se añadirá una pestaña de *Actions* para tu repositorio donde puedes acceder a un marketplace de snippets, pero sinceramente yo prefiero escribir la pipeline por mi cuenta a instalar los workflows como si fuesen apps, así que solo lo utilizo como un buscador.
 
-Los ficheros son formato `yml` y tienen una sintaxis parecida a otros proveedores de funcionalidades pareceidas como Travis o CircleCI.
+Los límites de uso son **MUY** generosos, de la [documentación oficial de GH actions](https://help.github.com/es/github/automating-your-workflow-with-github-actions/about-github-actions#usage-limits):
 
-**@TODO** Documentar el proceso de registro en la beta
+ - Puedes ejecutar hasta 20 flujos de trabajo simultáneamente por repositorio.
+ - Puedes ejecutar hasta 1000 solicitudes API en una hora en todas las acciones dentro de un repositorio.
+ - Cada trabajo en un flujo de trabajo puede ejecutarse por hasta 6 horas de tiempo de ejecución.
+ - Puedes ejecutar hasta 20 trabajos simultáneamente por repositorio en todos los flujos de trabajo.
+
+Por supuesto, todo esto está hosteado en **Azure**, eso le permite a Github dar estos usos tan amplios. En concreto cada entorno virtual está hosteado en una instancia de tipo `Standard_DS2_v2`, que tienen **2 core CPUs, 7 GB of RAM memory, 14 GB of SSD disk space**, de nuevo... *Holy $hit!*
+
+Los ficheros de configuraciónson formato `yml` y tienen una sintaxis parecida a otros proveedores de funcionalidades pareceidas como Travis o CircleCI. Siempre viene bien tener las cosas unificadas, aunque Travis y compañia para repositorios abiertos suele ser gratis también, además es algo nuevo y había que probarlo.
 
 ### Despliegue continuo
 
 Desde mi punto de vista, **el mejor workflow es no tener workflow** y como esto es un site estático y no necesito ningún tipo de integración, os presento a mi mejor amigo desde hace una semana: el *Continuous Deployment*.
 
+Para que GH te detecte el fichero hay que crealo en la ruta `.github/workflows/main.yml` y mi resultado final se ve así:
+
+{{< highlight yml "linenos=table" >}}
+
+name: Deploy blog
+on:
+  push:
+    branches:
+    - master
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+
+    - name: Pull source
+      uses: actions/checkout@master
+      with:
+        submodules: true
+
+    - name: Update submodules to latests master
+      run: git submodule foreach git pull origin master
+
+    - name: Setup Hugo
+      uses: peaceiris/actions-hugo@v2.2.2
+      with:
+        hugo-version: '0.58.3'
+        extended: true
+
+    - name: Build
+      run: hugo -t amperage --gc --minify
+
+    - name: Deploy script
+      uses: peaceiris/actions-gh-pages@v2.5.0
+      env:
+        ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+        EXTERNAL_REPOSITORY: asurbernardo/asurbernardo.github.io
+        PUBLISH_BRANCH: master
+        PUBLISH_DIR: ./public
+
+{{< / highlight >}}
+
+**@TODO** Describir paso a paso el fichero
+
+La verdad es que una vez lo tienes funcionando es algo muy satisfactorio de ver:
+
 **@TODO** Añadir vídeo de la pipeline de despliegue
 
 ## Siguientes pasos 👣
 
-**@TODO**
-
-## Wayback Machine ⏰
-
-Ver la [versión original de este post](# "Versión original del post").
-
-Ver la [versión original de la homepage](# "Versión original de la homepage").
+Botones de compartir, intentar nuevo logo y redistribución del contenido a una sola columna.
