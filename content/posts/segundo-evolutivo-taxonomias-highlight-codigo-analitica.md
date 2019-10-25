@@ -99,7 +99,7 @@ Como detalle final, la librería de Chroma es compatible con los temas de Pygmen
 
 ## Taxonomía de tags 🏷️
 
-Las taxonomías **son maneras de agrupar elementos por características comunes**. La primera implementación que voy a hacer al respecto es la de tags. Es una estrategia muy común a la hora de crear una estructura de links para SEO, también ayudará por supuesto a los usuarios a encontrar contenido que les interese.
+Las taxonomías **son maneras de agrupar elementos por características comunes**. La primera implementación que voy a hacer al respecto es la de tags. Es una estrategia muy común a la hora de crear una estructura de links para SEO, también ayudará, por supuesto, a los usuarios a encontrar contenido que les interese más fácilmente.
 
 Hugo ya incluye por defecto dos taxonomías: tags y categorías, además de poder crear las tuyas propias. He empezado por tags por mera comodidad, creo que las categorías las dejaré para cuando implemente unas migas de pan y lo haré todo junto.
 
@@ -285,7 +285,7 @@ Las partes más interesantes son:
 
 ## Siguientes pasos 👣
 
-Para el siguiente evolutivo ya tengo bastante claro en que va a consistir, ya he empezado a trabajar (con ayuda) en una mejora del workflow de desarrollo y redacción de contenido, vamos a crear un flujo con Docker y `docker-compose` y Makefiles, además también me voy a apuntar a la beta abierta de Github Actions y haremos algo de despliegue continuo. *Stay tuned!* 😎
+Para el siguiente evolutivo ya tengo bastante claro en que va a consistir, ya he empezado a trabajar (con ayuda) en una mejora del workflow de desarrollo y redacción de contenido, vamos a crear un flujo con Docker, `docker-compose` y Makefiles, además también me voy a apuntar a la beta abierta de Github Actions y haremos algo de despliegue continuo. *Stay tuned!* 😎
 
 ## Wayback Machine ⏰
 
