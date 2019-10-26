@@ -1,7 +1,7 @@
 +++
-draft = true
-date = "2019-10-18T12:33:32+02:00"
-publishdate = "2019-10-18T12:33:32+02:00"
+draft = false
+date = "2019-10-26T11:27:32+02:00"
+publishdate = "2019-10-26T11:27:32+02:00"
 
 title = "#2 Taxonomía de tags, highlighting de código y analítica"
 
