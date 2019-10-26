@@ -12,17 +12,21 @@ pygmentsUseClasses = true
     tag = "tags"
 
 [params]
+    description = "Bienvenid@ a mi blog, si te gusta el desarrollo web, el SEO, el open source y la tecnología en general echa un vistazo, seguro que encuentras algo interesante."
+
     adsensePublisher = ""
-    googleAnalytics = ""
-    
+    googleAnalytics = "UA-128498798-1"
+
+    ampElements = ["amp-analytics"]
+
     alternatePageName = "Blog de Asur"
     organizationLogo = ""
     organizationName = ""
     organizationAddress = ""
 
-    socialProfiles = ["https://www.facebook.com/your-profile","http://instagram.com/yourProfile"]
-    
-    publisherName = ""
+    socialProfiles = ["https://twitter.com/asurbernardo","https://www.linkedin.com/in/asur-bernardo/","https://github.com/asurbernardo","https://stackoverflow.com/users/4524353/asur"]
+
+    publisherName = "Asur"
     publisherLogo = ""
     publisherLogoWidth = 600
     publisherLogoHeight = 60
