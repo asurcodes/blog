@@ -14,7 +14,7 @@ tags = ['Evolutivo']
 keywords = ['blog', 'desarrollo', 'despliegue continuo', 'github actions', 'makefile', 'docker']
 
 [amp]
-    elements = []
+    elements = ['amp-video', 'amp-anim']
 
 [author]
     name = "Asur"
