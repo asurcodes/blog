@@ -289,6 +289,4 @@ Para el siguiente evolutivo ya tengo bastante claro en que va a consistir, ya he
 
 ## Wayback Machine ⏰
 
-Ver la [versión original de este post](# "Versión original del post").
-
-Ver la [versión original de la homepage](# "Versión original de la homepage").
+Ver la [versión original de este post](https://web.archive.org/web/20191026093302/https://asurbernardo.com/evolutivos/taxonomia-de-tags-highlight-codigo-analitica/ "Versión original del post").
