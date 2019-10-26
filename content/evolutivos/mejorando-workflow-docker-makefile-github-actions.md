@@ -238,6 +238,8 @@ jobs:
 
 {{< / highlight >}}
 
+Para empezar tenemos que declarar el nombre del workflow y en que casos se ejecuta, para mi situación, lo mejor es con un push a master.
+
 **@TODO** Describir paso a paso el fichero
 
 La verdad es que una vez lo tienes funcionando, aunque la interfaz de Github a veces tiene algún bug es algo muy satisfactorio de ver:
