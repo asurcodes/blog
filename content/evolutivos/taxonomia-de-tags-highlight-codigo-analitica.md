@@ -53,7 +53,7 @@ keywords = ['blog', 'desarrollo', 'tags', 'syntax highlighting', 'google analyti
 
 # Taxonomía de tags, highlighting de código y analítica
 
-Seguimos adelante, esta vez avanzamos un poco más con el interlinking creando una taxonomía de tags, además de server-side code highlighting y he montado todo lo necesario para recopilar datos y analizarlos con Cloudflare, Google Analytics y Search Console, además de un pequeño análisis de lo más interesante de cada uno.
+Seguimos adelante, esta vez avanzo un poco más con el interlinking creando una taxonomía de tags, además de server-side code highlighting y he montado todo lo necesario para recopilar datos y analizarlos con Cloudflare, Google Analytics y Search Console, además de un pequeño análisis de lo más interesante de cada uno.
 
 ## Highlighting de código ✨
 
