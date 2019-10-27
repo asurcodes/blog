@@ -18,7 +18,7 @@ clone_site:
 
 compile:
 	@printf "\033[0;32mCompiling content...\033[0m\n"
-	hugo -t amperage --minify
+	hugo -t amperage --minify --gc
 
 deploy:
 	@printf "\033[0;32mDeploying content to Github...\033[0m\n"
