@@ -53,7 +53,11 @@ keywords = ['blog', 'desarrollo', 'git', 'deploy']
 
 # El primer post en mi nuevo blog!
 
+{{% under-title %}}
+
 Si, si, ya sé que estás pensando: ¿Que leches es esta web y cómo he llegado aquí? Espera, por favor, dame la oportunidad de explicarme. Me llamo Asur y este es mi nuevo proyecto...
+
+{{% toc %}}
 
  > *Pues menuda mierda de nuevo proyecto!* 🤣
 

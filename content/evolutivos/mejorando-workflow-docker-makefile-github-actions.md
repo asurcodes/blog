@@ -1,7 +1,7 @@
 +++
 draft = true
-date = "2019-10-19T12:33:32+02:00"
-publishdate = "2019-10-19T12:33:32+02:00"
+date = "2019-11-04T10:12:32+02:00"
+publishdate = "2019-11-04T10:12:32+02:00"
 
 title = "#3 Workflow con docker, makefile y Github actions"
 
@@ -11,7 +11,7 @@ summary = "Si antes comento en el primer post que he escrito en el blog que esto
 
 tags = ['Evolutivo']
 
-keywords = ['blog', 'desarrollo', 'despliegue continuo', 'github actions', 'makefile', 'docker']
+keywords = ['blog', 'desarrollo', 'gohugo', 'despliegue continuo', 'github actions', 'makefile', 'docker', 'contenedores']
 
 [amp]
     elements = ['amp-video', 'amp-anim']
@@ -51,19 +51,23 @@ keywords = ['blog', 'desarrollo', 'despliegue continuo', 'github actions', 'make
 
 +++
 
-# Nuevo workflow: docker, makefile y CD con Github actions
+# Nuevo workflow: docker, makefile y CD con GH actions
 
-Si antes comento en el primer post que he escrito en el blog que estoy contento con el workflow antes lo cambio, ahora cuento con un **entorno dockerizado**, un **Makefile** para mantener todos mis scripts ordenados y **despliegue continuo**, que se dice pronto.
+{{% under-title %}}
+
+Si antes comento en el primer post que he escrito en el blog que estoy contento con el workflow antes lo cambio, ahora cuento con un **entorno dockerizado**, un **Makefile** para mantener todos mis scripts ordenados y **despliegue continuo** con Github Actions, que se dice pronto.
+
+{{% toc %}}
 
 ## Dockerizando 🐳
 
-Para empezar, ¿qué repositorio moderno que se precie no tiene un `Dockerfile`?
+Para empezar, ¿qué repositorio moderno que se precie no está dockerizado?
 
  > *Ninguno!!*
 
-Exacto! Y para evitar que la gente (yo) tenga que andar instalándose Golang y Hugo por cada ordenador donde quiera desarrollar, pues mejor hacerlo con docker, no? **NO**?
+Exacto! Y para evitar que la gente (yo) tenga que andar instalándose Golang y Hugo por cada ordenador en el que quiera desarrollar o escribir, pues mejor hacerlo con docker, no? **NO**?
 
-Por supuesto esto no habría sido posible sin la inestimable ayuda de [Javier](https://www.linkedin.com/in/javier-coscolla-cabrera-95948224/), un compañero de trabajo que me ha estado ayudando a afianzar conceptos sobre este maravilloso mundo de los contenedores!
+Por supuesto esto no habría sido posible sin la inestimable ayuda de [Javier](https://www.linkedin.com/in/javier-coscolla-cabrera-95948224/), un compañero de trabajo que me ha estado ayudando a afianzar conceptos sobre este maravilloso mundo de los contenedores y los sitemas informáticos!
 
 Bien, vamos a ello... Este proceso tiene dos partes, un `Dockerfile` para construir la imagen:
 
@@ -97,11 +101,11 @@ services:
       - "1313:1313"
     volumes:
       - .:/blog
-    command: hugo server --watch -D --bind 0.0.0.0
+    command: hugo server --verbose --watch --buildFuture --buildDrafts -D --bind 0.0.0.0
 
 {{< / highlight >}}
 
-La imagen que se crea con el `Dockerfile` ocupa aproximadamente \~80Mb, utiliza la base `alpine` que es una imagen basada en [Alpine Linux](https://alpinelinux.org/) que solo ocupa 5Mb! No hacemos más que instalar Hugo y descargarnos el repositorio, creando así una build agnóstica del entorno.
+La imagen que se crea con el `Dockerfile` ocupa aproximadamente \~80Mb, utiliza la base `alpine` que es una imagen basada en [Alpine Linux](https://alpinelinux.org/) que solo ocupa 5Mb! No hace más que instalar Hugo y descargar el repositorio, creando así una build agnóstica del entorno.
 
 En el `docker-compose` ya es donde configuramos todo lo necesario para nuestro entorno actual, en este caso el local. Vamos a ver línea por línea:
 
@@ -117,11 +121,11 @@ En el `docker-compose` ya es donde configuramos todo lo necesario para nuestro e
 
  - **Línea 9**: El comando inicial al ejecutar un `docker-compose up` para ya tener el servidor levantado y funcionando.
 
-Es un ejemplo muy simple pero tiene los casos de uso más comunes, seguiré investigando funcionalidades más avanzadas y os iré contando.
+Es un ejemplo muy simple pero tiene los casos de uso más comunes, seguiré investigando funcionalidades más avanzadas y os iré contando si cambio algo.
 
 ## El Makefile 🏗️
 
-Esto ha sido la sorpresa de mi vida, como me comenta Javier, el Makefile es más viejo que muchos de nosotros y es verdad, lo he buscado en la Wikipedia, es de Abril de 1976!
+Esto ha sido la sorpresa del mes, como me comenta Javier, el Makefile es más viejo que muchos de nosotros y es verdad, lo he buscado en la Wikipedia, es de Abril de 1976!
 
 Todo esto porque ha resurgido últimamente la moda de utilizar uno de estos ficheros para organizar los comandos de tu proyecto, para que los puedas ejecutar todos de manera secuencial o cada uno individualmente y he de admitir que me gusta mucho, igual es algo *hipster*, si, pero es cómodo al fin y al cabo.
 
@@ -173,13 +177,13 @@ Al ejecutarlo todo junto se ve algo así:
     alt="Ejecución de Makefile">
 </amp-anim>
 
-**OJO**: He descubierto por las malas que **cada línea de un Makefile se ejecuta en un entorno independiente**, siempre partiendo de la raiz desde donde se ha ejecutado el `make`, así que olvídate de cambiarte de directorio y hacer algo en una línea nueva por que no te va a funcionar (la que he armado en mi historial de git probando esto es muy gorda).
+**OJO**: He descubierto por las malas que **cada línea de un Makefile se ejecuta en un entorno independiente**, siempre partiendo de la raiz desde donde se ha ejecutado el `make`, así que olvídate de cambiarte de directorio y hacer algo en una línea nueva por que no te va a funcionar (la que he armado en mi historial de git probando esto fué muy gorda).
 
 ## Github Actions 🐱
 
-Microsoft parece que le está dando bastante amor a Github en forma de $$$ porque ya no solo tenemos repositorios privados gratuitos, ahora también tenemos una pipeline de CI/CD en Beta!
+Microsoft parece que le está dando bastante amor a Github en forma de $$$ porque ya no solo tenemos repositorios privados gratuitos, ahora también tenemos una pipeline de CI/CD en Beta, es casi como si estuviesen copiando a GitLab!!
 
-La Beta es abierta y mientras tengas un repositorio puedes activarla, las inscripciones se hacen en la [página de actions](https://github.com/features/actions). Una vez apuntado se añadirá una pestaña de *Actions* para tu repositorio donde puedes acceder a un marketplace de snippets, pero sinceramente yo prefiero escribir la pipeline por mi cuenta a instalar los workflows como si fuesen apps, así que solo lo utilizo como un buscador.
+La Beta es abierta y mientras tengas un repositorio puedes activarla, las inscripciones se hacen en la [página oficial de actions](https://github.com/features/actions). Una vez apuntado se añadirá una pestaña de *Actions* para tu repositorio donde puedes acceder a un marketplace de snippets, pero sinceramente yo prefiero escribir la pipeline por mi cuenta a instalar los workflows como si fuesen apps, así que solo lo utilizo como un buscador.
 
 Los límites de uso son **MUY** generosos, de la [documentación oficial de GH actions](https://help.github.com/es/github/automating-your-workflow-with-github-actions/about-github-actions#usage-limits):
 
@@ -190,7 +194,7 @@ Los límites de uso son **MUY** generosos, de la [documentación oficial de GH a
 
 Por supuesto, todo esto está hosteado en **Azure**, eso le permite a Github dar estos usos tan amplios. En concreto cada entorno virtual está hosteado en una instancia de tipo `Standard_DS2_v2`, que tienen **2 core CPUs, 7 GB of RAM memory, 14 GB of SSD disk space**, de nuevo... *Holy $hit!*
 
-Los ficheros de configuración son formato `yml` y tienen una sintaxis parecida a otros proveedores de funcionalidades pareceidas como Travis o CircleCI. Siempre viene bien tener las cosas unificadas, aunque Travis y compañia para repositorios abiertos suele ser gratis también, además es algo nuevo y había que probarlo.
+Los ficheros de configuración son formato `yml` y tienen una sintaxis parecida a otros proveedores de funcionalidades pareceidas como Travis o CircleCI. Siempre viene bien tener las cosas unificadas (aunque Travis y compañia para repositorios abiertos son gratis también) y además es algo nuevo y había que probarlo.
 
 ### Despliegue continuo
 
@@ -238,9 +242,17 @@ jobs:
 
 {{< / highlight >}}
 
-Para empezar tenemos que declarar el nombre del workflow y en que casos se ejecuta, para mi situación, lo mejor es con un push a master.
+Para empezar tenemos que declarar el nombre del workflow (línea 1) y en que casos se ejecuta, para mi situación, lo mejor es con cada push a master (línea 2-5).
 
-**@TODO** Describir paso a paso el fichero
+Después hay que crear la pipeline, primero el SO en el que se ejecutará, en mi caso Ubuntu (línea x) y después cada uno de los pasos:
+
+ - **Pull source:** Este es un paso bastante estandar entre todas las GH actions que he investigado, su función es hacer accesible el código del repositorio a la pipeline.
+ - **Update submodules to latests master:** Este es un *step* que ejecuta un comando que se descarga la última versión del tema Amperage.
+ - **Setup Hugo:** Primer ejemplo de como podemos usar una action externa, las configuraciones suelen estar explicadas en el *README.md* del repositorio con el mismo nombre que el contenido del campo `uses`.
+ - **Build:** Otro comando, pero en este caso utiliza el entorno configurado en el paso anterior, es decir, en cada paso puedes configurar el entorno.
+ - **Deploy script:** De nuevo, una action externa con algo más de configuración, lo único destacable es que los secrets se pueden añadir en la configuración del repositorio y son accesibles desde la pipeline, muy útiles si necesitas una clave de despliegue como es mi caso.
+
+Si quieres ver como se han configurado los pasos 3 y 5 puedes visitar el [perfil de *peaceiris*](https://github.com/peaceiris), parece que ha pasado sus horas pegándose con GH actions y es una máquina ([con soporte incluido!](https://github.com/peaceiris/actions-gh-pages/issues/45)).
 
 La verdad es que una vez lo tienes funcionando, aunque la interfaz de Github a veces tiene algún bug es algo muy satisfactorio de ver:
 
@@ -251,7 +263,7 @@ La verdad es que una vez lo tienes funcionando, aunque la interfaz de Github a v
   src="/videos/gh-actions-workflow.m4v">
 </amp-video>
 
-De media suele tardar unos 30 segundos desde que hago el push en estar ya desplegado, no está nada mal.
+De media suele tardar unos 30 segundos desde que hago el push en estar ya desplegado, no está nada mal, lo único que espero es no levantarme un día y ver que me van a quitar esta funcionalidad a no ser que empiece a pagar.
 
 ## Siguientes pasos 👣
 

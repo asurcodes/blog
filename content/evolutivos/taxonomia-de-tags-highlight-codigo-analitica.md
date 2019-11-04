@@ -53,13 +53,17 @@ keywords = ['blog', 'desarrollo', 'tags', 'syntax highlighting', 'google analyti
 
 # Taxonomía de tags, highlighting de código y analítica
 
+{{% under-title %}}
+
 Seguimos adelante, esta vez avanzo un poco más con el interlinking creando una taxonomía de tags, además de server-side code highlighting y he montado todo lo necesario para recopilar datos y analizarlos con Cloudflare, Google Analytics y Search Console, además de un pequeño análisis de lo más interesante de cada uno.
+
+{{% toc %}}
 
 ## Highlighting de código ✨
 
 Desde un principio esta funcionalidad ha estado en el punto de mira, me encanta escribir snippets en mis posts, porque *talk is cheap, show me the code* es un mantra con el que me identifico y me gusta ir de *hardcore programmer*.
 
-Me gusta mucho como está implementado esto en Hugo, se puede considerar *server-side highlighting*, ya que a la hora de compilar tu contenido a HTML se utiliza [Chroma](https://github.com/alecthomas/chroma), una librería escrita en Go que analiza y aplica markup a tus snippets y luego a través de CSS puedes darles estilos.
+Me encanta como está implementado esto en Hugo, se puede considerar *server-side highlighting*, ya que a la hora de compilar tu contenido a HTML se utiliza [Chroma](https://github.com/alecthomas/chroma), una librería escrita en Go que analiza y aplica markup a tus snippets y luego a través de CSS puedes darles estilos.
 
 En mi opinión esto es un acercamiento mucho más óptimo que al highlight en el cliente, como el de [highlight.js](https://highlightjs.org/) ya que además de no ocupar tiempo en el hilo de javascript analizando texto al vuelo, no habrá ningún parpadeo en el que el código salga sin estilos.
 
