@@ -17,16 +17,16 @@ pygmentsUseClasses = true
     adsensePublisher = ""
     googleAnalytics = "UA-128498798-1"
 
-    ampElements = ["amp-analytics"]
+    ampElements = ["amp-analytics", "amp-social-share"]
 
     alternatePageName = "Blog de Asur"
-    organizationLogo = ""
-    organizationName = ""
+    organizationLogo = "/logo.png"
+    organizationName = "Asur"
     organizationAddress = ""
 
     socialProfiles = ["https://twitter.com/asurbernardo","https://www.linkedin.com/in/asur-bernardo/","https://github.com/asurbernardo","https://stackoverflow.com/users/4524353/asur"]
 
-    publisherName = "Asur"
-    publisherLogo = ""
+    publisherName = "Asur Bernardo"
+    publisherLogo = "/logo-amp-article.png"
     publisherLogoWidth = 600
     publisherLogoHeight = 60
