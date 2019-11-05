@@ -23,7 +23,7 @@ keywords = ['blog', 'desarrollo', 'html', 'sass', 'amp', 'web safe fonts', 'grid
     homepage = ""
 
 [image]
-    src = ""
+    src = "https://asurbernardo.com/images/la-primera-iteracion-amp-estilos-y-miscelanea.png"
     title = ""
     author = ""
     link = ""
@@ -59,7 +59,7 @@ Bueno, bueno, bueno, parece que la primera iteración del blog ya está aquí! L
 
 {{% toc %}}
 
-## Los estilos
+## Los estilos 💅🏻
 
 Para bien o para mal este site siempre va a estar diseñado por mí, puedo pedir feedback o tomar inspiración de otros sites, pero estoy orgulloso de poder decir que todo lo que veis es **100% original**. 
 
@@ -191,7 +191,7 @@ En el CSS solo tenemos que especificar el tipo de posición y el breakpoint (que
 
 {{< / highlight >}}
 
-## El AMP
+## El AMP ⚡
 
 La primera persona con la que compartí en primicia la web para que me diese su feedback, en cuanto le echó un vistazo lo primero que me dijo fué:
 
@@ -227,7 +227,7 @@ Para acabar, como no tengo ningún elemento especial de momento solo he tenido q
 
 Después de asegurarnos de que los posts tienen la etiqueta title y un par de validaciones menores más, listo, ya tenemos una página AMP super básica, pero funcional! 🥳
 
-## La TOC y posts relacionados
+## La TOC y posts relacionados 🔗
 
 Para empezar a meter el pie en las aguas del *SEO on-page* he implementado las opciones más básicas de interlinking, una tabla de contenidos y una sección de posts relacionados.
 
@@ -264,7 +264,7 @@ En cuanto a los contenidos relacionados tenemos que acceder a los elementos rela
 
 Muy buena pregunta, y la respuesta la verdad es que me ha volado la cabeza... Seguramente pensaseis, como yo, que lo podemos introducir en los metadatos del post al crear el contenido, pero no! Hugo lo detecta automágicamente, y te digo más, puedes [ajustar el algoritmo](https://gohugo.io/content-management/related/#configure-related-content) a tu gusto! Brutal!
 
-## Miscelanea
+## Miscelanea 🧪
 
 Como miscelanea ha habido un par de cosas que creo que merece la pena comentar.
 
@@ -286,13 +286,13 @@ Otra de las cosas que nunca he tenido la oportunidad de practicar, la convenció
 
 Pues por lo visto esto es algo que les encanta a la gente de frontend, cosa que no entiendo, me parece una nomenclatura bastante verbosa y simplemente **fea de ver**, por no hablar de que ya van 2 veces que hago un push con los identificadores de elemento y modificador intercambiados (la dislexia...), pero lo que si me gusta son las convenciones, y como esto aspira a ser un proyecto que use más gente y resulta estar absurdamente extendido pues me he tenido que subir al carro.
 
-## Siguientes pasos
+## Siguientes pasos 👣
 
 Estoy bastatante contento con la vida que le han dado estos cambios a la web, dicho esto, este viaje no ha hecho más que empezar.
 
 Para la próxima iteración espero poder tener las taxonomías de tags ya hechas con sus listas y todo, Google Analytics y Search Console ya en funcionamiento para ver algunas estadísticas y quizás el highlight de código, así que *stay tuned!* 😎
 
-## Wayback machine
+## Wayback machine ⏰
 
 Ver la [versión original de este post](https://web.archive.org/web/20191019121743/https://asurbernardo.com/posts/la-primera-iteracion-amp-estilos-y-miscelanea/ "Versión original del post").
 

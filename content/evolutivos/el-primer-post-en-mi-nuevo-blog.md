@@ -23,7 +23,7 @@ keywords = ['blog', 'desarrollo', 'git', 'deploy']
     homepage = ""
 
 [image]
-    src = ""
+    src = "https://asurbernardo.com/images/el-primer-post-en-mi-nuevo-blog-share.png"
     title = ""
     author = ""
     link = ""
@@ -63,7 +63,7 @@ Si, si, ya sé que estás pensando: ¿Que leches es esta web y cómo he llegado 
 
 Vale, estamos de acuerdo, pero escucha, la idea es que llegue a ser más que eso y alcance la categoría de pasable, déjame que te cuente cómo.
 
-## El por qué
+## El por qué 🤔
 
 Para empezar, una pequeña presentación para quitarlo de delante, me llamo Asur, no espero que me conozcas pero considero importante que sepas que me encanta programar, en concreto me apasiona todo lo que tenga que ver con internet y este blog es uno de mis periódicos cacharreos tecnológicos.
 
@@ -71,7 +71,7 @@ Hace ya tiempo que esta idea me ha estado rondando la cabeza, **crear un blog pe
 
 Así pues, la idea es introducir este proyecto al mundo e invitarte a un viaje en el que hablaremos mucho de programación y otros familiares, así que si te gusta el desarrollo web, el SEO, la gestión de sistemas y demás te recomiendo que te mantengas al tanto.
 
-## El cómo
+## El cómo 💡
 
 Para llevar a cabo este proyecto he elegido **GoHugo**, un generador de sites estáticos, al estilo de Jekyll, pero desarrollado en Go. También he creado un tema llamado **amperage**, que será donde iremos haciendo las mejoras y añadiendo funcionalidades.
 
@@ -160,7 +160,7 @@ git push origin master
 
 Una vez configurado todo en tu cuenta de Github solo tenemos que compilar el blog con `hugo -t amperage` y pusheamos los cambios en el submódulo de `/public` con un mensaje autogenerado a partir de la fecha.
 
-## Conclusión
+## Siguientes pasos 👣
 
 De momento eso es todo, espero traer más novedades pronto, y también espero que estén relacionadas con algún estilo básico, porque creeme que el estado actual de la web me duele más a mí que a ti...
 
@@ -168,7 +168,7 @@ De momento eso es todo, espero traer más novedades pronto, y también espero qu
 
 Bueno, pues eso, que hasta la próxima!
 
-## Wayback Machine
+## Wayback Machine ⏰
 
 Ver la [versión original de este post](http://web.archive.org/web/20191014123731/https://asurbernardo.com/posts/el-primer-post-en-mi-nuevo-blog/ "Versión original del post").
 

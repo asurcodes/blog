@@ -23,7 +23,7 @@ keywords = ['blog', 'desarrollo', 'gohugo', 'despliegue continuo', 'github actio
     homepage = ""
 
 [image]
-    src = ""
+    src = "https://asurbernardo.com/images/mejorando-workflow-docker-makefile-github-actions.png"
     title = ""
     author = ""
     link = ""
