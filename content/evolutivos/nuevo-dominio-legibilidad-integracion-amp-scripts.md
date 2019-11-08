@@ -23,7 +23,7 @@ keywords = ['blog', 'desarrollo', 'amp', 'compartir', 'redes sociales', 'datos e
     homepage = ""
 
 [image]
-    src = "https://asurbernardo.com/images/nuevo-dominio-legibilidad-integracion-amp-scripts-share.png"
+    src = "https://asur.dev/images/nuevo-dominio-legibilidad-integracion-amp-scripts-share.png"
     title = ""
     author = ""
     link = ""
