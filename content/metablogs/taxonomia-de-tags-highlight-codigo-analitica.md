@@ -3,7 +3,7 @@ draft = false
 date = "2019-10-26T11:27:32+02:00"
 publishdate = "2019-10-26T11:27:32+02:00"
 
-title = "#2 Taxonomía de tags, highlighting de código y analítica"
+title = "Metablog #2 - Taxonomía de tags, highlighting de código y analítica"
 
 description = "Seguimos adelante, esta vez avanzamos un poco más con el interlinking creando una taxonomías de tags, además de server-side code highlighting y montamos todo lo necesario para recaudar los datos y analizarlos con Cloudflare, Google Analytics y Search Console."
 

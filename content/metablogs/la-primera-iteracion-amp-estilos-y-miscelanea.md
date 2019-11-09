@@ -3,7 +3,7 @@ draft = false
 date = "2019-10-15T11:12:32+02:00"
 publishdate = "2019-10-19T14:09:32+02:00"
 
-title = "#1 AMP, estilos y otras miscelaneas"
+title = "Metablog #1 - AMP, estilos y otras miscelaneas"
 
 description = "La primera iteración del blog ya ha llegado, hablaré de AMP, diseño y estilos junto con otras miscelaneas como vulnerabilidades en los links de HTML, BEM y el position sticky"
 
