@@ -7,11 +7,11 @@ title = "Metablog #4 - Nuevo dominio, nuevo layout y más AMP!"
 
 description = "Sigo desarrollando el tema amperage, añadiendo botones para compartir en redes sociales, mejorando la integración del tema con AMP y haciendo más sencillo el layout para facilitar la lectura y mejorar la UX."
 
-summary = "Sigo desarrollando el tema amperage, añadiendo datos estructurados de artículo para los posts y botones para compartir en redes sociales, mejorando la integración del tema con AMP y haciendo más sencillo el layout para facilitar la lectura y mejorar la UX."
+summary = "Cambio el **dominio** del blog, sigo desarrollando el tema **Amperage**, añadiendo botones para compartir en redes sociales, mejorando la integración del tema con **AMP** y haciendo más sencillo el **layout** para mejorar la legibilidad y la UX."
 
 tags = ['Evolutivo']
 
-keywords = ['blog', 'desarrollo', 'amp', 'compartir', 'redes sociales', 'datos estructurados', 'artículo', 'UX', 'legibilidad']
+keywords = ['blog', 'desarrollo', 'amp', 'compartir', 'redes sociales', 'dominio', 'tablas', 'UX', 'legibilidad']
 
 [amp]
     elements = []
@@ -55,21 +55,61 @@ keywords = ['blog', 'desarrollo', 'amp', 'compartir', 'redes sociales', 'datos e
 
 {{% under-title %}}
 
-Un nuevo lavado de cara del blog, no solo visual, sino que **he cambiado el dominio!** Atrás quedan los días de `asurbernardo.com`, un dominio largo y dificil de recordar, el nuevo dominio es **asur.dev**, algo mejor eh? Ah, y también he mejorado algunas cosas de AMP, pero que bonito mi nuevo dominio...
+Un nuevo lavado de cara del blog, no solo visual, sino que **he cambiado el dominio!** Atrás quedan los días de **asurbernardo.com**, un dominio largo y dificil de recordar, el nuevo dominio es **asur.dev**, algo mejor eh? Ah, y también he mejorado algunas cosas de **AMP**, pero que bonito mi nuevo dominio...
 
 {{% toc %}}
 
 ## Nuevo dominio! 🌍
 
-Este proceso ha sido un poco tedioso, con varios pasos para evitar que se desindexase alguna página...
+Este proceso ha sido un poco tedioso, he tenido que ser cuidadoso y seguir varios pasos en un orden estricto para evitar que se desindexasen páginas!
 
- - DNS
+ > Tampoco es que haya mucho que desindexar! 😬
 
- - Redirects
+Bueno, bueno, pero nunca viene mal investigar el proceso y las mejores prácticas por si este blog llegase a tener millones de usuarios algún día y tengo que volver hacerlo, no?!
 
- - GH Pages
+El proceso que he seguido ha sido el siguiente:
 
- - Analítica
+**1.- DNS**
+
+Lo primero es lo primero, hay que configurar el DNS del nuevo dominio para apuntar a los servidores de Github, de esta manera cuando ejecutemos los siguientes pasos el cambio va a tener *zero downtime*. Los registros son estos:
+
+| Type     | Name          | Content         | TTL     |
+|:--------:|:-------------:|:---------------:|:-------:|
+| A        | asur.dev      | 185.199.108.153 | Auto    |
+| A        | asur.dev      | 185.199.109.153 | Auto    |
+| A        | asur.dev      | 185.199.110.153 | Auto    |
+| A        | asur.dev      | 185.199.111.153 | Auto    |
+
+Yo como DNS utilizo Cloudflare, pero la configuración es la misma para cualquier provider, lo único que puede cambiar es la GUI en la que introduces los datos.
+
+**OJO:** Los cambios en los DNS es posible que tarden en propagarse, dale un momento antes de pegarte cabezazos contra el teclado. 😉
+
+**2.- Github Pages**
+
+Una vez el dominio es funcional hay que cambiar la configuración de Github pages para que apunte a la nueva dirección. Esto se podría hacer en la pestaña de ajustes de tu repositorio, pero esto lo único que hace es crear un fichero llamado `CNAME` en la raíz de tu proyecto.
+
+Pues para eso creo yo el mío en el directorio `static`, lo pusheo y así de paso se despliega automáticamente con mi pipeline de Github Actions. 😎
+
+**3.- Redirect**
+
+Para este paso también he usado Cloudflare, en concreto sus Page Rules. Al estar migrando un dominio completo se puede utilizar un redirect con wildcard como este:
+
+| Type     | From                   | To                           |
+|:--------:|:----------------------:|:----------------------------:|
+| 301      | \*asurbernardo.com/\*  | https\://asur.dev/$1         |
+
+
+**4.- Google Search Console**
+
+Como paso extra y para mejorar la indexación de la nueva dirección de la web se puede notificar a Google a través de Search Console del cambio en una **propiedad de dominio**. Para hacerlo hay que ir a `Configuración > Cambio de dirección`. Se comprobará que tu nuevo dominio esté operativo y registrado como propiedad y que existe una redirección de tipo 301 ya configurada. Listo, el proceso lleva un tiempo (como todo en Search Console) pero al menos ya tengo confirmación:
+
+<amp-img class="post__image"
+    alt="Inspiración inicial para el estilo del blog"
+    src="/images/mensaje-confirmación-cambio-dominio-search-console.jpg"
+    width="916"
+    height="305"
+    layout="responsive">
+</amp-img>
 
 ## Mejora del layout 🧩
 
@@ -77,11 +117,27 @@ Con el objetivo de mejorar la lectura en todas las plataformas y aplicar un poco
 
 El primer cambio y el más evidente es la eliminación de la columna sticky derecha en desktop (RIP `display:sticky` 😔). Esto hace que en mobile, que es un \~25% del tráfico, no se mueva la tabla de contenidos al final de la página, donde pierde su función. La tabla de contenidos se ha movido dentro del propio contenido, debajo de la introducción y los posts relacionados al final, por si se quiere seguir leyendo, mejor UX en general!
 
-El segundo es mover el autor y las tags debajo del título.
+El segundo es mover el autor y las tags debajo del título. Para conseguir meter estos datos y tabla de contenidos dentro del cuerpo del artículo hay que hacer un workaround en Hugo, ya que no es HTML, es markdown, por lo que hay que crear un shortcode como `{{%/* toc */%}}` en tu carpeta `layouts > shortcodes > toc.html` y usarlo donde lo veas preciso dentro del post. Esto conyeva que hay que meter estos shortcodes manualmente cuando se redacta el post pero también puedes elegir si incluirlos o no, lo que da flexibilidad.
 
 ### Nuevo logo!
 
-El último cambio es la creación de un logo. No tengo ni idea de diseño entonces lo único que he hecho es abrir InkScape y hacer pruebas con fuentes y colores.
+El último cambio es la creación de un logo. No tengo ni idea de diseño entonces lo único que he hecho es abrir [InkScape](https://inkscape.org/es/) y hacer pruebas con fuentes. Lamentablemente se ha quedado ya anticuado tras el cambio de dominio pero aun cumple su función, que es tener algo que tenga un link a la homepage y algo extra de lo que hablaré en futuros metablogs.
+
+Lo he creado en forma de **svg** por tres razones: Escala infinitamente al ser un formato vectorial, es super ligero (2Kb aprox.) y en AMP no tienes el flicker del lazy loading al ir directamente incrustado en el DOM.
+
+Para que cualquier usuario del tema pueda introducir su propio logo se incluye a través de un partial que puedes sobreescribir en tu propio site en la ruta `layouts > partials > logo.html` e incrustar el `<svg></svg>` directamente:
+
+{{< highlight go-html-template "linenos=table" >}}
+
+<div class="header__logo">
+  <a href="/">
+    {{- partial "logo.html" -}}
+  </a>
+</div>
+
+{{< / highlight >}}
+
+**TIP:** En InkScape cuando creas un svg para una web hay que tener cuidado porque por defecto se crean como un texto con estilos y fuentes aplicadas. Esto no es un problema si esa fuente ya está descargada, pero si usas una fuente que está exclusivamente en el logo merece más la pena convertir el texto a vectores aunque pese un poco más, lo compensas al no tener que descargar la fuente.
 
 ## Mejorar integración de AMP con Hugo ⚡
 
@@ -214,7 +270,7 @@ se ve así:
 | col 2 is |    centered   |   $12 |
 | col 3 is | right-aligned |    $1 |
 
-Los estilos han quedado bastante comedidos, que siempre viene bien para mantenerse por debajo de los 50Kb de máximo (aunque nunca vaya a llegar pero son buenas prácticas):
+Los estilos han quedado bastante comedidos, que siempre viene bien para mantenerse por debajo de los 50Kb de máximo permitido por AMP (aunque nunca vaya a llegar pero bueno...):
 
 {{< highlight scss "linenos=table" >}}
 
@@ -255,7 +311,7 @@ Ahora que ya tengo botones de compartir creo que al menos hacer que se vea decen
     layout="responsive">
 </amp-img>
 
-La verdad es que es difícil elegir una imágen para un post técnico, así que esta es mi manera de salir del paso... No está mal pero es mejorable, así que iteraré sobre esto en el futuro cercano.
+La verdad es que es difícil elegir una imágen para un post técnico, así que esta es mi manera de salir del paso... No está mal pero es mejorable, seguro que iteraré sobre esto en el futuro cercano.
 
 ## Siguientes pasos 👣
 
@@ -264,3 +320,4 @@ Para la próxima iteración, como comenté en el anterior post, no solo voy a in
 ## Wayback Machine ⏰
 
 Ver la [versión original de este post](# "Versión original del post").
+Ver la [versión original de la homepage](# "Versión original de la homepage").
