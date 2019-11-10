@@ -1,7 +1,7 @@
 +++
-draft = true
-date = "2019-11-09T11:27:32+02:00"
-publishdate = "2019-11-09T11:27:32+02:00"
+draft = false
+date = "2019-11-10T11:39:32+02:00"
+publishdate = "2019-11-10T11:39:32+02:00"
 
 title = "Metablog #4 - Nuevo dominio, nuevo layout y más AMP!"
 
@@ -44,7 +44,7 @@ keywords = ['blog', 'desarrollo', 'amp', 'compartir', 'redes sociales', 'dominio
 
 {{% under-title %}}
 
-Un nuevo lavado de cara del blog, no solo visual, sino que **he cambiado el dominio!** Atrás quedan los días de **asurbernardo.com**, un dominio largo y dificil de recordar, el nuevo dominio es **asur.dev**, algo mejor eh? Ah, y también he mejorado algunas cosas de **AMP**, pero que bonito mi nuevo dominio...
+Un nuevo lavado de cara del blog, no solo visual, sino que **he cambiado el dominio!** Atrás quedan los días de **asurbernardo.com**, un dominio largo y dificil de recordar, el nuevo dominio es **asur.dev**, algo mejor eh? Ah, y también he mejorado algunas cosas de **AMP** y alguna miscelanea, pero que bonito mi nuevo dominio...
 
 {{% toc %}}
 
@@ -54,9 +54,9 @@ Este proceso ha sido un poco tedioso, he tenido que ser cuidadoso y seguir vario
 
  > Tampoco es que haya mucho que desindexar! 😬
 
-Bueno, bueno, pero nunca viene mal investigar el proceso y las mejores prácticas por si este blog llegase a tener millones de usuarios algún día y tengo que volver hacerlo, no?!
+Bueno, pero nunca viene mal investigar el proceso y las mejores prácticas por si este blog llegase a tener millones de usuarios algún día y tengo que volver hacerlo, no?!
 
-El proceso que he seguido ha sido el siguiente:
+La secuencia que he seguido es la siguiente:
 
 **1.- DNS**
 
@@ -75,18 +75,23 @@ Yo como DNS utilizo Cloudflare, pero la configuración es la misma para cualquie
 
 **2.- Github Pages**
 
-Una vez el dominio es funcional hay que cambiar la configuración de Github pages para que apunte a la nueva dirección. Esto se podría hacer en la pestaña de ajustes de tu repositorio, pero esto lo único que hace es crear un fichero llamado `CNAME` en la raíz de tu proyecto que contiene el dominio personalizado.
+Una vez el dominio es funcional hay que cambiar la configuración de Github pages para que apunte a la nueva dirección. Esto se podría hacer en la pestaña de ajustes de tu repositorio, pero esto lo único que hace es crear un fichero llamado `CNAME` en la raíz de tu proyecto que contiene el dominio personalizado:
 
-Pues para eso creo yo el mío en el directorio `static`, lo pusheo y así de paso se despliega automáticamente con mi pipeline de Github Actions. 😎
+```
+asur.dev
+```
+
+Pues para eso creo yo el mío en el directorio `static`, lo pusheo y así de paso se despliega automáticamente con mi pipeline de Github Actions y puedo tomar un *code oriented approach* que mola más. 😎
 
 **3.- Redirect**
 
-Para este paso también he usado Cloudflare, en concreto sus Page Rules. Al estar migrando un dominio completo se puede utilizar un redirect con wildcard como este:
+Para este paso también he usado Cloudflare, en concreto sus *Page Rules*. Al estar migrando un dominio completo se puede utilizar un redirect con *wildcards* como este:
 
-| Type     | From                   | To                           |
-|:--------:|:----------------------:|:----------------------------:|
-| 301      | \*asurbernardo.com/\*  | https\://asur.dev/$1         |
+| Type     | From                 | To                           |
+|:--------:|:--------------------:|:----------------------------:|
+| 301      | asurbernardo.com/\*  | https\://asur.dev/$1         |
 
+El símbolo `$1` simboliza la selección del wildcard, así que concatenará el slug en la url origen en la de destino. Un redirect para dominarlos a todos.
 
 **4.- Google Search Console**
 
@@ -104,11 +109,11 @@ Como paso extra y para mejorar la indexación de la nueva dirección de la web s
 
 Con el objetivo de mejorar la lectura en todas las plataformas y aplicar un poco el paradigma de *mobile first* he simplificado la distribución.
 
-El primer cambio y el más evidente es la eliminación de la columna sticky derecha en desktop (RIP `display:sticky` 😔). Esto hace que en mobile, que es un \~25% del tráfico, no se mueva la tabla de contenidos al final de la página, donde pierde su función. La tabla de contenidos se ha movido dentro del propio contenido, debajo de la introducción y los posts relacionados al final, por si se quiere seguir leyendo, mejor UX en general!
+El primer cambio y el más evidente es la eliminación de la columna sticky derecha en desktop (RIP `display:sticky` 😔). Esto hace que en mobile, que es un \~25% del tráfico, no se mueva la tabla de contenidos al final de la página, donde pierde su función. La tabla de contenidos se ha movido dentro del propio contenido, debajo de la introducción y los posts relacionados al final, por si se quiere seguir leyendo, mejor UX en general en mi opinión!
 
 El segundo es mover el autor y las tags debajo del título. Para conseguir meter estos datos y tabla de contenidos dentro del cuerpo del artículo hay que hacer un workaround en Hugo, ya que no es HTML, es markdown, por lo que hay que crear un shortcode como `{{%/* toc */%}}` en tu carpeta `layouts > shortcodes > toc.html` y usarlo donde lo veas preciso dentro del post. Esto conyeva que hay que meter estos shortcodes manualmente cuando se redacta el post pero también puedes elegir si incluirlos o no, lo que da flexibilidad.
 
-### Nuevo logo!
+### Nuevo logo
 
 El último cambio es la creación de un logo. No tengo ni idea de diseño entonces lo único que he hecho es abrir [InkScape](https://inkscape.org/es/) y hacer pruebas con fuentes. Lamentablemente se ha quedado ya anticuado tras el cambio de dominio pero aun cumple su función, que es tener algo que tenga un link a la homepage y algo extra de lo que hablaré en futuros metablogs.
 
@@ -126,7 +131,7 @@ Para que cualquier usuario del tema pueda introducir su propio logo se incluye a
 
 {{< / highlight >}}
 
-**TIP:** En InkScape cuando creas un svg para una web hay que tener cuidado porque por defecto se crean como un texto con estilos y fuentes aplicadas. Esto no es un problema si esa fuente ya está descargada, pero si usas una fuente que está exclusivamente en el logo merece más la pena convertir el texto a vectores aunque pese un poco más, lo compensas al no tener que descargar la fuente.
+**TIP:** En InkScape cuando creas un svg para una web hay que tener cuidado porque por defecto se crean como un texto con estilos y fuentes aplicadas. Esto no es un problema si esa fuente ya está descargada, pero si usas una fuente que está exclusivamente en el logo no funciona y merece más la pena convertir el texto a vectores aunque pese un poco más, lo compensas al no tener que descargar la fuente.
 
 ## Mejorar integración de AMP con Hugo ⚡
 
@@ -134,11 +139,9 @@ Ahora llega la parte de AMP, con un par de cambios en Amperage para mejorar aun 
 
 ### Scripts configurables
 
-Los scripts ahora son configurables por cada post, así solo se añaden los necesarios para cada caso, si quieres poner un video en el post pues añades el script pertinente, pero no a toda la web. ¿Parece lógico no? Pues lleva más trabajo de lo que parece!
+Los scripts ahora son configurables por cada post, así solo se añaden los necesarios para cada caso, si quieres poner un video en el post pues añades el script pertinente, pero no a toda la web. ¿Parece lógico no? Pues lleva más trabajo de lo que parece! Lo he hecho de la siguiente forma:
 
-Lo he hecho de la siguiente forma:
-
-Para empezar he tenido que crear un fichero json con todos los scripts disponibles de AMP, no os creáis que lo he hecho yo desde cero, lo he sacado de el [boilerplate gohugo-amp](https://github.com/wildhaber/gohugo-amp/blob/develop/data/amp-modules.json) y he actualizado un par de scripts que faltaban. Es algo así:
+Para empezar he tenido que crear un fichero json con todos los scripts disponibles de AMP, no os creáis que lo he hecho yo desde cero, lo he sacado de el [boilerplate gohugo-amp](https://github.com/wildhaber/gohugo-amp/blob/develop/data/amp-modules.json) y he actualizado un par de scripts que faltaban.
 
 {{< highlight json "linenos=table" >}}
 
@@ -154,7 +157,7 @@ Para empezar he tenido que crear un fichero json con todos los scripts disponibl
 
 {{< / highlight >}}
 
-Esto me permite tener una relación clave-valor más *friendly* de añadir, que una url completa que tendría que andar consultando cada vez.
+Esto me permite tener una relación clave-valor más *friendly* de escribir y recordar, que una url completa que tendría que andar consultando cada vez.
 
 Para añadir en cada entrada los scripts le he añadido a la metadata del fichero un array de módulos:
 
@@ -163,7 +166,9 @@ Para añadir en cada entrada los scripts le he añadido a la metadata del ficher
     elements = ['amp-video', 'amp-anim']
 ```
 
-También he aprovechado y he hecho lo mismo para la configuración global de la web, de esta manera se pueden añadir scripts globales también desde la configuración sin tocar código. ¿Ya véis por donde van los tiros? Ahora al transpilar cada post puedo mirar los scripts especificados en estas dos configuraciones, matchearlos con el fichero json e insertarlos en el HTML!!
+También he aprovechado y he hecho lo mismo para la configuración global de la web, de esta manera se pueden añadir scripts globales también desde la configuración sin tocar código. ¿Ya véis por donde van los tiros? 
+
+Ahora al transpilar cada post puedo mirar los scripts especificados en estas dos configuraciones, matchearlos con el fichero json e insertarlos en el HTML!!
 
 {{< highlight go-html-template "linenos=table" >}}
 
@@ -280,11 +285,11 @@ table {
 
 {{< / highlight >}}
 
-**TIP:** Si tenéis que escribir muchas tablas en markdown por cualquier razón, os recomiendo [TablesGenerator](https://www.tablesgenerator.com/markdown_tables), puedes elegir la cantidad de filas y columnas y el alineamiento, todo con sus tabulados y espacios bien puestos, súper útil si el TOC no os deja dormir pensando en la distribución de las tablas de markdown como a mí.
+**TIP:** Si tenéis que escribir muchas tablas en markdown por cualquier razón, os recomiendo [TablesGenerator](https://www.tablesgenerator.com/markdown_tables), puedes elegir la cantidad de filas y columnas y el alineamiento, todo con sus tabulados y espacios bien puestos, súper útil si el TOC no os deja dormir pensando en la distribución de las tablas como a mí.
 
 ### Nuevas imágenes para compartir
 
-Ahora que ya tengo botones de compartir creo que al menos hacer que se vea decente la tarjeta, así que he añadido unas imágenes, de momento son solo imágenes de la tabla de contenidos generadas con [carbon.sh.now](https://carbon.sh.now). Se ven así:
+Ahora que ya tengo botones de compartir creo que al menos hay que hacer que se vea decente la tarjeta, así que he añadido unas imágenes, de momento son solo representaciones de la tabla de contenidos generadas con [carbon.sh.now](https://carbon.sh.now).
 
 <amp-img class="post__image"
     alt="Inspiración inicial para el estilo del blog"
@@ -293,6 +298,8 @@ Ahora que ya tengo botones de compartir creo que al menos hacer que se vea decen
     height="852"
     layout="responsive">
 </amp-img>
+
+Las etiquetas de [Open Graph Protocol](https://ogp.me/) y Twitter Cards ya las tenía configuradas así que me bastó con meter la url en la configuración de cada post.
 
 La verdad es que es difícil elegir una imágen para un post técnico, así que esta es mi manera de salir del paso... No está mal pero es mejorable, seguro que iteraré sobre esto en el futuro cercano.
 
