@@ -14,6 +14,8 @@ pygmentsUseClasses = true
 [params]
     description = "Bienvenid@ a mi blog, si te gusta el desarrollo web, el SEO, el open source y la tecnología en general echa un vistazo, seguro que encuentras algo interesante."
 
+    themeColor = "#ef8b80"
+
     adsensePublisher = ""
     googleAnalytics = "UA-128498798-1"
 
