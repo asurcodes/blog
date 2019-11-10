@@ -299,7 +299,7 @@ Ahora que ya tengo botones de compartir creo que al menos hay que hacer que se v
     layout="responsive">
 </amp-img>
 
-Las etiquetas de [Open Graph Protocol](https://ogp.me/) y Twitter Cards ya las tenía configuradas así que me bastó con meter la url en la configuración de cada post.
+Las etiquetas de [Open Graph Protocol](https://ogp.me/) y Twitter Cards ya las tenía añadidas así que me bastó con meter la url en la configuración de cada post.
 
 La verdad es que es difícil elegir una imágen para un post técnico, así que esta es mi manera de salir del paso... No está mal pero es mejorable, seguro que iteraré sobre esto en el futuro cercano.
 
@@ -309,6 +309,6 @@ Para la próxima iteración, como comenté en el anterior post, no solo voy a in
 
 ## Wayback Machine ⏰
 
-Ver la [versión original de este post](# "Versión original del post").
+Ver la [versión original de este post](https://web.archive.org/web/20191110172247/https://asur.dev/metablogs/nuevo-dominio-legibilidad-integracion-amp-scripts/ "Versión original del post").
 
-Ver la [versión original de la homepage](# "Versión original de la homepage").
+Ver la [versión original de la homepage](https://web.archive.org/web/20191110172347/https://asur.dev/ "Versión original de la homepage").
