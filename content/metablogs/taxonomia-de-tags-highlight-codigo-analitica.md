@@ -5,9 +5,9 @@ publishdate = "2019-10-26T11:27:32+02:00"
 
 title = "Metablog #2 - Taxonomía de tags, highlighting de código y analítica"
 
-description = "Seguimos adelante, esta vez avanzamos un poco más con el interlinking creando una taxonomías de tags, además de server-side code highlighting y montamos todo lo necesario para recaudar los datos y analizarlos con Cloudflare, Google Analytics y Search Console."
+description = "Seguimos adelante, esta vez avanzamos un poco más con el interlinking creando una taxonomías de tags, además de server-side code highlighting y monto todo lo necesario para recaudar los datos y analizarlos con Cloudflare, Google Analytics y Search Console."
 
-summary = "Seguimos adelante, esta vez avanzamos un poco más con el interlinking creando una taxonomías de tags, además de server-side code highlighting y montamos todo lo necesario para recaudar los datos y analizarlos con Cloudflare, Google Analytics y Search Console."
+summary = "Seguimos adelante, esta vez avanzamos un poco más con el interlinking creando una **taxonomías de tags**, además de server-side **code highlighting** y monto todo lo necesario para recaudar los datos y analizarlos con **Cloudflare**, **Google Analytics** y **Search Console**."
 
 tags = ['Evolutivo']
 
@@ -30,19 +30,8 @@ keywords = ['blog', 'desarrollo', 'tags', 'syntax highlighting', 'google analyti
     license = ""
     licenseLink = ""
 
-[ogp]
-    title = ""
-    url = ""
-    description = ""
-    image = ""
-    site = ""
-
 [twitter]
-    title = ""
-    url = ""
-    description = ""
-    image = ""
-    site = ""
+    site = "@asurbernardo"
 
 [sitemap]
   changefreq = "monthly"

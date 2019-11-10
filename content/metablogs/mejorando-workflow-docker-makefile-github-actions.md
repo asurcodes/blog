@@ -30,19 +30,8 @@ keywords = ['blog', 'desarrollo', 'gohugo', 'despliegue continuo', 'github actio
     license = ""
     licenseLink = ""
 
-[ogp]
-    title = ""
-    url = ""
-    description = ""
-    image = ""
-    site = ""
-
 [twitter]
-    title = ""
-    url = ""
-    description = ""
-    image = ""
-    site = ""
+    site = "@asurbernardo"
 
 [sitemap]
   changefreq = "monthly"

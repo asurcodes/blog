@@ -30,19 +30,8 @@ keywords = ['blog', 'desarrollo', 'amp', 'compartir', 'redes sociales', 'dominio
     license = ""
     licenseLink = ""
 
-[ogp]
-    title = ""
-    url = ""
-    description = ""
-    image = ""
-    site = ""
-
 [twitter]
-    title = ""
-    url = ""
-    description = ""
-    image = ""
-    site = ""
+    site = "@asurbernardo"
 
 [sitemap]
   changefreq = "monthly"
@@ -86,7 +75,7 @@ Yo como DNS utilizo Cloudflare, pero la configuración es la misma para cualquie
 
 **2.- Github Pages**
 
-Una vez el dominio es funcional hay que cambiar la configuración de Github pages para que apunte a la nueva dirección. Esto se podría hacer en la pestaña de ajustes de tu repositorio, pero esto lo único que hace es crear un fichero llamado `CNAME` en la raíz de tu proyecto.
+Una vez el dominio es funcional hay que cambiar la configuración de Github pages para que apunte a la nueva dirección. Esto se podría hacer en la pestaña de ajustes de tu repositorio, pero esto lo único que hace es crear un fichero llamado `CNAME` en la raíz de tu proyecto que contiene el dominio personalizado.
 
 Pues para eso creo yo el mío en el directorio `static`, lo pusheo y así de paso se despliega automáticamente con mi pipeline de Github Actions. 😎
 
@@ -160,14 +149,6 @@ Para empezar he tenido que crear un fichero json con todos los scripts disponibl
   "amp-accordion" : "https://cdn.ampproject.org/v0/amp-accordion-0.1.js",
   "amp-ad" : "https://cdn.ampproject.org/v0/amp-ad-0.1.js",
   "amp-anim" : "https://cdn.ampproject.org/v0/amp-anim-0.1.js",
-  "amp-animation" : "https://cdn.ampproject.org/v0/amp-animation-0.1.js",
-  "amp-apester-media" : "https://cdn.ampproject.org/v0/amp-apester-media-0.1.js",
-  "amp-app-banner" : "https://cdn.ampproject.org/v0/amp-app-banner-0.1.js",
-  "amp-audio" : "https://cdn.ampproject.org/v0/amp-audio-0.1.js",
-  "amp-bind" : "https://cdn.ampproject.org/v0/amp-bind-0.1.js",
-  "amp-brid-player" : "https://cdn.ampproject.org/v0/amp-brid-player-0.1.js",
-  "amp-brightcove" : "https://cdn.ampproject.org/v0/amp-brightcove-0.1.js",
-  "amp-carousel" : "https://cdn.ampproject.org/v0/amp-carousel-0.1.js",
   [...]
 }
 
@@ -256,7 +237,7 @@ Algunos temas de GoHugo se olvidan de que en markdown se pueden crear tablas y n
 
 ```
 | Tables   |      Are      |  Cool |
-|----------|:-------------:|------:|
+|:---------|:-------------:|------:|
 | col 1 is |  left-aligned | $1600 |
 | col 2 is |    centered   |   $12 |
 | col 3 is | right-aligned |    $1 |
@@ -265,7 +246,7 @@ Algunos temas de GoHugo se olvidan de que en markdown se pueden crear tablas y n
 se ve así:
 
 | Tables   |      Are      |  Cool |
-|----------|:-------------:|------:|
+|:---------|:-------------:|------:|
 | col 1 is |  left-aligned | $1600 |
 | col 2 is |    centered   |   $12 |
 | col 3 is | right-aligned |    $1 |
@@ -275,23 +256,25 @@ Los estilos han quedado bastante comedidos, que siempre viene bien para mantener
 {{< highlight scss "linenos=table" >}}
 
 table {
-    overflow: auto;
+    display: block;
+    overflow-x: auto;
     border-collapse: collapse;
-    width: 100%;
     td, th {
         border: 1px solid #ddd;
-        padding: 8px;
+    }
+    td {
+        padding: .5em 1em;
+    }
+    th {
+        padding: 1em 2em;
+        background-color: $main-color;
+        color: white;
     }
     tr:nth-child(even) {
         background-color: #F1F1F1;
     }
     tr:hover {
         background-color: #ddd;
-    }
-    th {
-        padding: 1em 0.5em;
-        background-color: $main-color;
-        color: white;
     }
 }
 
@@ -320,4 +303,5 @@ Para la próxima iteración, como comenté en el anterior post, no solo voy a in
 ## Wayback Machine ⏰
 
 Ver la [versión original de este post](# "Versión original del post").
+
 Ver la [versión original de la homepage](# "Versión original de la homepage").

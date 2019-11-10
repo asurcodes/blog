@@ -30,19 +30,8 @@ keywords = ['blog', 'desarrollo', 'git', 'deploy']
     license = ""
     licenseLink = ""
 
-[ogp]
-    title = ""
-    url = ""
-    description = ""
-    image = ""
-    site = ""
-
 [twitter]
-    title = ""
-    url = ""
-    description = ""
-    image = ""
-    site = ""
+    site = "@asurbernardo"
 
 [sitemap]
   changefreq = "monthly"
