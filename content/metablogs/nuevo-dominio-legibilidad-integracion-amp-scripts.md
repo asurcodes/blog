@@ -115,11 +115,13 @@ El segundo es mover el autor y las tags debajo del título. Para conseguir meter
 
 ### Nuevo logo
 
-El último cambio es la creación de un logo. No tengo ni idea de diseño entonces lo único que he hecho es abrir [InkScape](https://inkscape.org/es/) y hacer pruebas con fuentes. Lamentablemente se ha quedado ya anticuado tras el cambio de dominio pero aun cumple su función, que es tener algo que tenga un link a la homepage y algo extra de lo que hablaré en futuros metablogs.
+El último cambio es la creación de un logo. No tengo ni idea de diseño entonces lo único que he hecho es abrir [InkScape](https://inkscape.org/es/) y hacer pruebas con fuentes, finalmente me he decantado por `<asurbernardo/>` con la fuente [Fira Code](https://github.com/tonsky/FiraCode) que permite ligaduras y creo que le da algo más de personalidad.
 
-Lo he creado en forma de **svg** por tres razones: Escala infinitamente al ser un formato vectorial, es super ligero (2Kb aprox.) y en AMP no tienes el flicker del lazy loading al ir directamente incrustado en el DOM.
+Lamentablemente se ha quedado ya anticuado tras el cambio de dominio pero aún cumple su función, que es tener un link a la homepage y algo extra de lo que hablaré en futuros metablogs.
 
-Para que cualquier usuario del tema pueda introducir su propio logo se incluye a través de un partial que puedes sobreescribir en tu propio site en la ruta `layouts > partials > logo.html` e incrustar el `<svg></svg>` directamente:
+Lo he creado en formato **svg** por tres razones: Escala infinitamente al ser vectorial, es super ligero (2Kb aprox.) y en AMP no tienes el flicker del *lazy loading* de una imagen normal al ir directamente incrustado en el DOM.
+
+Para que cualquier usuario del tema pueda introducir su propio logo se incluye a través de un partial en la ruta `layouts > partials > logo.html` que contenga el `<svg></svg>` directamente:
 
 {{< highlight go-html-template "linenos=table" >}}
 
@@ -135,7 +137,7 @@ Para que cualquier usuario del tema pueda introducir su propio logo se incluye a
 
 ## Mejorar integración de AMP con Hugo ⚡
 
-Ahora llega la parte de AMP, con un par de cambios en Amperage para mejorar aun más la integración.
+Ahora llega la parte de AMP, con un par de cambios en Amperage para mejorar aún más la integración.
 
 ### Scripts configurables
 
@@ -157,7 +159,7 @@ Para empezar he tenido que crear un fichero json con todos los scripts disponibl
 
 {{< / highlight >}}
 
-Esto me permite tener una relación clave-valor más *friendly* de escribir y recordar, que una url completa que tendría que andar consultando cada vez.
+Esto me permite tener una relación clave-valor más *friendly* de escribir y recordar que una url completa, que de otra manera tendría que andar consultando todo el rato.
 
 Para añadir en cada entrada los scripts le he añadido a la metadata del fichero un array de módulos:
 
@@ -166,7 +168,7 @@ Para añadir en cada entrada los scripts le he añadido a la metadata del ficher
     elements = ['amp-video', 'amp-anim']
 ```
 
-También he aprovechado y he hecho lo mismo para la configuración global de la web, de esta manera se pueden añadir scripts globales también desde la configuración sin tocar código. ¿Ya véis por donde van los tiros? 
+También he aprovechado y he hecho lo mismo para la configuración global de la web, de esta manera se pueden añadir scripts globales también sin tocar código. ¿Ya véis por donde van los tiros? 
 
 Ahora al transpilar cada post puedo mirar los scripts especificados en estas dos configuraciones, matchearlos con el fichero json e insertarlos en el HTML!!
 
