@@ -159,6 +159,7 @@ Al ejecutarlo todo junto se ve algo así:
 
 <amp-anim 
     class="post__image"
+    alt="Output de consola del comando make"
     layout="responsive"
     width=1367
     height=1112
