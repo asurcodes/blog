@@ -97,13 +97,13 @@ El símbolo `$1` simboliza la selección del wildcard, así que concatenará el 
 
 Como paso extra y para mejorar la indexación de la nueva dirección de la web se puede notificar a Google a través de Search Console del cambio en una **propiedad de dominio**. Para hacerlo hay que ir a `Configuración > Cambio de dirección`. Se comprobará que tu nuevo dominio esté operativo y registrado como propiedad y que existe una redirección de tipo 301 ya configurada. Listo, el proceso lleva un tiempo (como todo en Search Console) pero al menos ya tengo confirmación:
 
-<amp-img class="post__image"
+{{< amp-image
+    class="post__image"
     alt="Confirmación de la migración del dominio en Google Search Console"
     src="/images/mensaje-confirmación-cambio-dominio-search-console.jpg"
     width="916"
     height="305"
-    layout="responsive">
-</amp-img>
+    layout="responsive" >}}
 
 ## Mejora del layout 🧩
 
@@ -293,13 +293,13 @@ table {
 
 Ahora que ya tengo botones de compartir creo que al menos hay que hacer que se vea decente la tarjeta, así que he añadido unas imágenes, de momento son solo representaciones de la tabla de contenidos generadas con [carbon.sh.now](https://carbon.sh.now).
 
-<amp-img class="post__image"
+{{< amp-image
+    class="post__image"
     alt="Ejemplo de imagen generada por carbon.sh.now"
     src="/images/nuevo-dominio-legibilidad-integracion-amp-scripts-share.png"
     width="1760"
     height="852"
-    layout="responsive">
-</amp-img>
+    layout="responsive" >}}
 
 Las etiquetas de [Open Graph Protocol](https://ogp.me/) y Twitter Cards ya las tenía añadidas así que me bastó con meter la url en la configuración de cada post.
 

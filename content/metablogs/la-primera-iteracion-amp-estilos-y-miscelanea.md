@@ -56,13 +56,13 @@ Ya os habréis dado cuenta de que esto ya tiene otra pinta, atrás han quedado l
 
 Como guía de estilo inicial tomé esta web:
 
-<amp-img class="post__image"
+{{< amp-image
+    class="post__image"
     alt="Inspiración inicial para el estilo del blog"
     src="/images/design-inspiration.jpg"
     width="1199"
     height="742"
-    layout="responsive">
-</amp-img>
+    layout="responsive" >}}
 
 Pero me parecía algo sobrecargado y decidí no implementar algunas características, aún así se puede ver que la elección de fuentes y el estilo de los links son muy similares.
 

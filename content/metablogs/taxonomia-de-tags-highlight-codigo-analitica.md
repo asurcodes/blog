@@ -176,33 +176,35 @@ Los datos que más me interesan son:
 
 **Usuarios y sesiones:** De manera general puedo ver la cantidad de usuarios y sesiones de la web, así como el porcentaje de rebote y las páginas visitadas por cada sesión.
 
-<amp-img class="post__image"
+{{< amp-image
+    class="post__image"
     alt="Usuarios y sesiones - Google Analytics"
     src="/images/google-analytics-audiencia-general.jpg"
     width="1617"
     height="623"
-    layout="responsive">
-</amp-img>
+    layout="responsive" >}}
+
 
 **Adquisición:** También me gusta ver como han llegado los usuarios al sitio y la diferencia de calidad de los diferentes tipos.
 
-<amp-img class="post__image"
+{{< amp-image
+    class="post__image"
     alt="Adquisición de usuarios - Google Analytics"
     src="/images/google-analytics-adquisicion.jpg"
     width="1131"
     height="331"
-    layout="responsive">
-</amp-img>
+    layout="responsive" >}}
+
 
 **Tiempo en página de posts:** Una vista algo más atómica de como están funcionando cada uno de los posts, para posteriormente poder analizarlo e iterar.
 
-<amp-img class="post__image"
+{{< amp-image
+    class="post__image"
     alt="Comportamiento por post - Google Analytics"
     src="/images/google-analytics-comportamiento-posts.jpg"
     width="1620"
     height="417"
-    layout="responsive">
-</amp-img>
+    layout="responsive" >}}
 
 Por supuesto hay muchos más datos, como demográfica y flujos de navegación pero no me interesan tanto en la fase actual en la que está el blog, en un futuro quizás los revisite.
 
@@ -222,33 +224,33 @@ Las partes a las que prestaré más atención son:
 
 **Rendimiento:** Las veces que aparecen una página de esta web en Google listada, en que posición y que CTR tiene.
 
-<amp-img class="post__image"
+{{< amp-image
+    class="post__image"
     alt="Rendimiento - Search Console"
     src="/images/search-console-rendimiento.jpg"
     width="913"
     height="363"
-    layout="responsive">
-</amp-img>
+    layout="responsive" >}}
 
 **Cobertura:** Información sobre como está indexado este site en Google, las páginas correctas y los posibles errores.
 
-<amp-img class="post__image"
+{{< amp-image
+    class="post__image"
     alt="Cobertura - Search Console"
     src="/images/search-console-cobertura.jpg"
     width="909"
     height="430"
-    layout="responsive">
-</amp-img>
+    layout="responsive" >}}
 
 **Mejoras:** Todas las señales que indican a Google la calidad de la página más allá del contenido, como datos estructurados, AMP, etc.
 
-<amp-img class="post__image"
+{{< amp-image
+    class="post__image"
     alt="Mejoras - Search console"
     src="/images/search-console-mejoras.jpg"
     width="908"
     height="210"
-    layout="responsive">
-</amp-img>
+    layout="responsive" >}}
 
 ### Cloudflare
 
@@ -258,23 +260,23 @@ Las partes más interesantes son:
 
 **Requests:** Esto es más por curiosidad que otra cosa, al final el ancho de banda consumido y los hits cacheados le concierne a Github, no a mí, pero aún así me encanta saberlo.
 
-<amp-img class="post__image"
-    alt="Mejoras - Search console"
+{{< amp-image
+    class="post__image"
+    alt="Ancho de banda - Cloudflare"
     src="/images/cloudflare-ancho-de-banda.jpg"
     width="1018"
     height="520"
-    layout="responsive">
-</amp-img>
+    layout="responsive" >}}
 
 **Datos técnicos:** Ver que porcentaje de uso de *http/2*, la cantidad de datos ahorrados por la compresión *gzip* y la descomposición de como se usa el ancho de banda, de nuevo, no es que sea imprescindible pero puede dar información relavante dependiendo del contexto, y qué mejor manera de hacerlo que en forma de quesitos?
 
-<amp-img class="post__image"
-    alt="Mejoras - Search console"
+{{< amp-image
+    class="post__image"
+    alt="Datos técnicos - Cloudflare"
     src="/images/cloudflare-datos-tecnicos.jpg"
     width="1025"
     height="378"
-    layout="responsive">
-</amp-img>
+    layout="responsive" >}}
 
 ## Siguientes pasos 👣
 
