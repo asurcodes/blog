@@ -25,7 +25,6 @@ pygmentsUseClasses = true
     alternatePageName = "Blog de Asur"
     organizationLogo = "/logo.png"
     organizationName = "Asur"
-    organizationAddress = ""
 
     facebookSite = "asur.dev"
     twitterSite = "@asurbernardo"
