@@ -23,7 +23,7 @@ keywords = ['blog', 'desarrollo', 'tags', 'syntax highlighting', 'google analyti
     homepage = ""
 
 [image]
-    src = "https://asurbernardo.com/images/taxonomia-de-tags-highlight-codigo-analitica-share.png"
+    src = "/images/taxonomia-de-tags-highlight-codigo-analitica.jpg"
     title = ""
     author = ""
     link = ""

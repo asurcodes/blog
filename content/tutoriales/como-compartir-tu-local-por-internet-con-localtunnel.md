@@ -23,7 +23,7 @@ keywords = ['tutorial', 'http tunneling', 'ngrok', 'localtunnel', 'docker']
     homepage = ""
 
 [image]
-    src = "https://asur.dev/images/demo-ngrok-client.jpg"
+    src = "/images/como-compartir-tu-local-por-internet-con-localtunnel.jpg"
     title = ""
     author = ""
     link = ""

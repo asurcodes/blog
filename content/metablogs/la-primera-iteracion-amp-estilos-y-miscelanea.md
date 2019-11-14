@@ -23,7 +23,7 @@ keywords = ['blog', 'desarrollo', 'html', 'sass', 'amp', 'web safe fonts', 'grid
     homepage = ""
 
 [image]
-    src = "https://asur.dev/images/la-primera-iteracion-amp-estilos-y-miscelanea-share.png"
+    src = "/images/la-primera-iteracion-amp-estilos-y-miscelanea.jpg"
     title = ""
     author = ""
     link = ""
