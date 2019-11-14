@@ -279,5 +279,4 @@ He hecho una presentación sobre este tema recientemente, dejo por aquí las dia
     src="https://slides.com/asurbernardo/como-exponer-tu-local-a-internet-con-http-tunneling/embed"
     sandbox="allow-scripts allow-same-origin"
     width="576" height="420" layout="responsive"
-    scrolling="no" frameborder="0" 
-    webkitallowfullscreen mozallowfullscreen allowfullscreen></amp-iframe>
+    scrolling="no" frameborder="0" allowfullscreen></amp-iframe>
