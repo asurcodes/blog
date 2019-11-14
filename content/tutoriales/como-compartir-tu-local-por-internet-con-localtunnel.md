@@ -64,7 +64,7 @@ Todos estos casos de uso, aunque se aplican a tecnologías distintas, suelen gir
 
 ### Exponer tu entorno local al internet para demos
 
-Este es el caso de uso por excelencia y es en lo que se especializan varias de las librerias que vamos a hablar a continuación. 
+Este es el caso de uso por excelencia y es en lo que se especializan varias de las librerias de las que vamos a hablar a continuación. 
 
 Consiste en generar una url por la que se puede acceder al servidor de tunneling, este servidor consume datos del cliente y devuelve una respuesta HTTP, de esta manera podemos acceder al servidor como si estuviesemos viendo nuestro local, pero desde cualquier sitio que tenga acceso a internet.
 
@@ -110,7 +110,7 @@ Prácticamente todas las aplicaciones dinámicas y aparatos IOT requieren algún
 
 ### Otras ideas...
 
-Como veis solo hay que echarle originalidad, seguro que hay muchas más aplicaciones que se me escapan pero estas son algunas que se me han quedado en el tintero:
+Como veis solo hay que echarle originalidad, seguro que hay muchas más aplicaciones que se me escapan pero estas son algunas extra que se me han ido ocurriendo:
 
  - Acceder a tu app a través de https cuando tu local tan solo soporta http.
 
@@ -122,7 +122,7 @@ Como veis solo hay que echarle originalidad, seguro que hay muchas más aplicaci
 
 ## ¿Qué herramientas hay de http tunneling? ⚒️
 
-Ahora que ya hemos visto algún caso de uso y hemos echado a andar la imaginación, vamos a ver de que herramientas disponemos para llevar a cabo nuestra idea feliz:
+Ahora que ya hemos visto algún caso de uso y hemos echado a andar la imaginación, vamos a ver de que herramientas disponemos para llevar a cabo nuestra idea:
 
 ### Ngrok - secure introspectable tunnels to localhost
 
@@ -137,6 +137,8 @@ Ngrok es quizás el nombre más reconocible en esta materia, es un SaaS que tien
  - Cuenta con una GUI web en la que puedes analizar los request y hacer respuestas custom.
 
  - Posibilidad de acceder a un dashboard con analítica si te registras en su web.
+
+ - Al ser un negocio te asegura el mantenimiento y futuras actualizaciones.
 
 **Contras**
 
@@ -186,7 +188,7 @@ Repositorio: https://github.com/jpillora/chisel
 
 ## ¿Cómo utilizar ngrok en tu proyecto web? 👩‍🏭
 
-Nos ponemos manos a la obra, al final me he decantado por publicar mi webapp al internet utilizando ngrok porque como proporcionan un binario descargable es muy fácil y rápido, ni siquiera requiere instalación. El proceso a seguir es el siguiente:
+Nos ponemos manos a la obra, al final me he decantado por publicar mi webapp al internet utilizando ngrok porque al proporcionar un binario descargable es muy fácil y rápido, ni siquiera requiere instalación. El proceso a seguir es el siguiente:
 
 Nos descargamos el zip con el código de la web oficial:
 
@@ -232,7 +234,7 @@ Ya tengo un [entorno dockerizado para este mismo blog](https://asur.dev/metablog
 
 He encontrado una [imagen de docker](https://hub.docker.com/r/efrecon/localtunnel) que es genial, pesa solo 20Mb y tiene más de 1 millón de descargas, así que el 90% del trabajo ya está hecho, la comunidad de docker es una pasada!
 
-Lo podemos hacer todo desde el `docker-compose.yml`, no hace falta ni siquiera tocar la parte que ya estaba hecha.
+Lo podemos hacer todo desde el `docker-compose.yml`, no hace falta ni siquiera tocar la parte que ya estaba hecha, tan solo añadir el nuevo servicio:
 
 {{< highlight yaml "linenos=table" >}}
 
