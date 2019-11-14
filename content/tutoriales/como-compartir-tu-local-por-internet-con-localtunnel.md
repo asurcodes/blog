@@ -7,7 +7,7 @@ title = "¿Cómo compartir tu entorno local por internet con ngrok? 📡"
 
 description = "Explico http tunneling, una técnica que permite exponer tu entorno local al internet, como funciona, las herramientas disponibles y como usar ngrok y localtunnel para nuestros proyectos"
 
-summary = "¿Alguna vez te has preguntado como puedo hacer una demo a ese cliente sin un entorno de staging? ¿O cómo puedo probar esos webhooks que estoy programando sin hacer un despliegue? La respuesta viene de la mano de **http tunneling**, una técnica que te permite compartir tu entorno local a internet. Vamos a averiguar como funciona, las diferentes herramientas disponibles y como utilizar la librerías **ngrok** y **localtunnel** en nuestros propios proyectos."
+summary = "¿Alguna vez te has preguntado como puedo hacer una demo a ese cliente sin un entorno de staging? La respuesta viene de la mano de **http tunneling**, una técnica que te permite compartir tu entorno local a internet. Vamos a averiguar como funciona, las diferentes herramientas disponibles y como utilizar la librerías **ngrok** y **localtunnel** en nuestros propios proyectos."
 
 tags = ['Tutorial']
 
@@ -44,7 +44,9 @@ keywords = ['tutorial', 'http tunneling', 'ngrok', 'localtunnel', 'docker']
 
 {{% under-title %}}
 
-¿Alguna vez te has preguntado como puedo hacer una demo a ese cliente sin un entorno de staging? ¿O cómo puedo probar esos webhooks que estoy programando sin hacer un despliegue? La respuesta viene de la mano de **http tunneling**, una técnica que te permite compartir tu entorno local a internet. Vamos a averiguar como funciona, las diferentes herramientas disponibles y como utilizar la librerías **ngrok** y **localtunnel** en nuestros propios proyectos.
+¿Alguna vez te has preguntado como puedo hacer una demo a ese cliente sin un entorno de staging? ¿O cómo puedo probar esos webhooks que estoy programando sin hacer un despliegue? La respuesta viene de la mano de **http tunneling**, una técnica que te permite compartir tu entorno local a internet.
+
+Vamos a averiguar como funciona, las diferentes herramientas disponibles y como utilizar la librerías **ngrok** y **localtunnel** en nuestros propios proyectos.
 
 {{% toc %}}
 
@@ -204,7 +206,7 @@ Ejecutamos el comando especificando el procolo y el puerto de escucha:
 ./ngrok http 80
 ```
 
-En la se nos mostrará un output con todos los datos de nuestro nuevo túnel, con ambos links para entrar a nuestro túnel, tanto http como https, pinta algo así:
+La consola nos mostrará todos los datos de nuestro nuevo túnel, con ambos links para entrar a nuestro túnel, tanto http como https. Pinta algo así:
 
 {{< amp-image
     class="post__image"
