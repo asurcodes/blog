@@ -5,7 +5,7 @@ publishdate = "2019-11-10T11:39:32+02:00"
 
 title = "Metablog #4 - Nuevo dominio, nuevo layout y más AMP!"
 
-description = "Sigo desarrollando el tema amperage, añadiendo botones para compartir en redes sociales, mejorando la integración del tema con AMP y haciendo más sencillo el layout para facilitar la lectura y mejorar la UX."
+description = "Cambio de dominio, añado botones para compartir en redes sociales, mejoro la integración del tema con AMP y simplifico el layout para facilitar la lectura"
 
 summary = "Cambio el **dominio** del blog, sigo desarrollando el tema **Amperage**, añadiendo botones para compartir en redes sociales, mejorando la integración del tema con **AMP** y haciendo más sencillo el **layout** para mejorar la legibilidad y la UX."
 

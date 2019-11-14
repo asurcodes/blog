@@ -5,7 +5,7 @@ publishdate = "2019-11-04T10:12:32+02:00"
 
 title = "Metablog #3 - Workflow con docker, makefile y Github actions"
 
-description = "Si antes comento en el primer post que he escrito en el blog que estoy contento con el workflow antes lo cambio, ahora cuento con un entorno dockerizado, un Makefile para mantener todos mis scripts ordenados y despliegue continuo."
+description = "Actualizo el workflow, dockerizo el entorno, creo un Makefile para mantener todos mis scripts ordenados y añado despliegue continuo con Github Actions"
 
 summary = "Si antes comento en el primer post que he escrito en el blog que estoy contento con el workflow antes lo cambio, ahora cuento con un **entorno dockerizado**, un **Makefile** para mantener todos mis scripts ordenados y **despliegue continuo**, que se dice pronto."
 

@@ -5,9 +5,9 @@ publishdate = "2019-11-14T21:08:32+02:00"
 
 title = "¿Cómo compartir tu entorno local por internet con ngrok? 📡"
 
-description = "Explico http tunneling, una técnica que permite exponer tu entorno local al internet, como funciona, las herramientas disponibles y como usar ngrok y localtunnel para nuestros proyectos"
+description = "Explico http tunneling, cómo exponer tu entorno local al internet, su funcionamiento y a usar ngrok, localtunnel y docker en nuestro proyecto"
 
-summary = "¿Alguna vez te has preguntado como puedo hacer una demo a ese cliente sin un entorno de staging? La respuesta viene de la mano de **http tunneling**, una técnica que te permite compartir tu entorno local a internet. Vamos a averiguar como funciona, las diferentes herramientas disponibles y como utilizar la librerías **ngrok** y **localtunnel** en nuestros propios proyectos."
+summary = "¿Alguna vez te has preguntado como puedo hacer una demo a ese cliente sin un entorno de staging? La respuesta viene de la mano de **http tunneling**, una técnica que te permite compartir tu entorno local a internet. Vamos a averiguar cómo funciona, las diferentes herramientas disponibles y como utilizar la librerías **ngrok** y **localtunnel** en nuestros propios proyectos."
 
 tags = ['Tutorial']
 

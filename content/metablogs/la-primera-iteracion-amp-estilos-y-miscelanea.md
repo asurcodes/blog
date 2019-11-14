@@ -5,7 +5,7 @@ publishdate = "2019-10-19T14:09:32+02:00"
 
 title = "Metablog #1 - AMP, estilos y otras miscelaneas"
 
-description = "La primera iteración del blog ya ha llegado, hablaré de AMP, diseño y estilos junto con otras miscelaneas como vulnerabilidades en los links de HTML, BEM y el position sticky"
+description = "La primera iteración del blog está aquí, hablaré de AMP, diseño, estilos y otras miscelaneas como vulnerabilidades de links, BEM y el elementos sticky"
 
 summary = "Bueno, bueno, bueno, parece que la primera iteración del blog ya está aquí! Hay bastantes novedades como una mejora de **layout**, la implementación inicial de **AMP** y más, así que vamos a echarles un ojo, explicarlas y hablar sobre lo que he trasteado y que he aprendido."
 

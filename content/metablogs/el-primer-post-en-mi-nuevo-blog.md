@@ -5,7 +5,7 @@ publishdate = "2019-10-14T12:33:32+02:00"
 
 title = "Metablog #0 - El primer post en mi nuevo blog!"
 
-description = "Si, si, ya sé que estás pensando: ¿Que leches es esta web y cómo he llegado aquí? Espera, por favor, dame la oportunidad de explicarme. Me llamo Asur y este es mi nuevo proyecto..."
+description = "Ya sé que estás pensando: ¿Que es esta web y cómo he llegado aquí? Por favor, dame la oportunidad de explicarme. Me llamo Asur y este es mi nuevo proyecto"
 
 summary = "Si, si, ya sé que estás pensando: ¿Que leches es esta web y cómo he llegado aquí? Espera, por favor, dame la oportunidad de explicarme. Me llamo Asur y este es mi nuevo proyecto..."
 
