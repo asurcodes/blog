@@ -20,7 +20,7 @@ pygmentsUseClasses = true
     adsensePublisher = ""
     googleAnalytics = "UA-128498798-1"
 
-    ampElements = ["amp-analytics", "amp-social-share"]
+    ampElements = ["amp-analytics", "amp-social-share", "amp-iframe"]
 
     alternatePageName = "Blog de Asur"
     organizationLogo = "/logo.png"
