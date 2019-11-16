@@ -163,8 +163,7 @@ Al ejecutarlo todo junto se ve algo así:
     layout="responsive"
     width=1367
     height=1112
-    src="/images/make-command.gif"
-    alt="Ejecución de Makefile">
+    src="/images/make-command.gif">
 </amp-anim>
 
 **OJO**: He descubierto por las malas que **cada línea de un Makefile se ejecuta en un entorno independiente**, siempre partiendo de la raiz desde donde se ha ejecutado el `make`, así que olvídate de cambiarte de directorio y hacer algo en una línea nueva por que no te va a funcionar (la que he armado en mi historial de git probando esto fué muy gorda).
