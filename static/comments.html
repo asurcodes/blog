@@ -18,4 +18,10 @@
       (d.head || d.body).appendChild(s);
     }
   })(remark_config.components || ['embed']);
+
+  window.parent.postMessage({
+    sentinel: 'amp',
+    type: 'embed-size',
+    height: document.body.scrollHeight
+  }, '*');
 </script>
