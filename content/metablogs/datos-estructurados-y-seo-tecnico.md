@@ -5,9 +5,9 @@ publishdate = "2019-11-24T11:27:32+02:00"
 
 title = "Metablog #5 - Datos estructurados y más SEO técnico"
 
-description = "Lorem ipsum."
+description = "Añado datos estructurados a mi blog de tipo artículo, carrusel, migas de pan y website junto con más SEO técnico"
 
-summary = "Lorem ipsum."
+summary = "Le doy otro empujon al SEO técnico añadiendo datos estructurados en toda la web del tipo website, carousel, migas de pan y blog posting."
 
 tags = ['Evolutivo']
 
@@ -23,7 +23,7 @@ keywords = ['blog', 'desarrollo', 'SEO', 'datos estructurados', 'breadcrumbs', '
     homepage = ""
 
 [image]
-    src = "/images/"
+    src = "/images/datos-estructurados-y-seo-tecnico.jpg"
     title = ""
     author = ""
     link = ""
