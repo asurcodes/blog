@@ -7,9 +7,3 @@ services:
     volumes:
       - .:/blog
     command: hugo server --verbose --watch --buildFuture --buildDrafts -D --bind 0.0.0.0
-  localtunnel:
-    image: efrecon/localtunnel
-    depends_on:
-      - web
-    command:
-      --local-host web --port 1313
