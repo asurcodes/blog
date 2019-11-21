@@ -113,6 +113,16 @@ El primer cambio y el más evidente es la eliminación de la columna sticky dere
 
 El segundo es mover el autor y las tags debajo del título. Para conseguir meter estos datos y tabla de contenidos dentro del cuerpo del artículo hay que hacer un workaround en Hugo, ya que no es HTML, es markdown, por lo que hay que crear un shortcode como `{{%/* toc */%}}` en tu carpeta `layouts > shortcodes > toc.html` y usarlo donde lo veas preciso dentro del post. Esto conyeva que hay que meter estos shortcodes manualmente cuando se redacta el post pero también puedes elegir si incluirlos o no, lo que da flexibilidad.
 
+**UPDATE**
+
+He decidido actualizar también la fuente de la página, no me disgustaba la `Courier New` pero si es verdad que se hacía un poco pesada de leer, ahora mis fuentes son una sopa de fallbacks:
+
+```
+font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Open Sans,Helvetica Neue,Courier New;
+```
+
+Están ordenados por prioridad e irá buscando hasta que encuentre una dependiendo del sistema operativo, aunque todas comparten el mismo estilo `Roboto` que también me gusta mucho y creo que es más ligero.
+
 ### Nuevo logo
 
 El último cambio es la creación de un logo. No tengo ni idea de diseño entonces lo único que he hecho es abrir [InkScape](https://inkscape.org/es/) y hacer pruebas con fuentes, finalmente me he decantado por `<asurbernardo/>` con la fuente [Fira Code](https://github.com/tonsky/FiraCode) que permite ligaduras y creo que le da algo más de personalidad.
