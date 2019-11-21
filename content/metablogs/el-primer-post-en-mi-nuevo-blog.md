@@ -20,7 +20,7 @@ keywords = ['blog', 'desarrollo', 'git', 'deploy']
     name = "Asur"
     image = ""
     bio = ""
-    homepage = ""
+    homepage = "/"
 
 [image]
     src = "/images/el-primer-post-en-mi-nuevo-blog.jpg"

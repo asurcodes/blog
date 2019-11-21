@@ -20,7 +20,7 @@ keywords = ['blog', 'desarrollo', 'tags', 'syntax highlighting', 'google analyti
     name = "Asur"
     image = ""
     bio = ""
-    homepage = ""
+    homepage = "/"
 
 [image]
     src = "/images/taxonomia-de-tags-highlight-codigo-analitica.jpg"

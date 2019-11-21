@@ -20,7 +20,7 @@ keywords = ['blog', 'desarrollo', 'amp', 'compartir', 'redes sociales', 'dominio
     name = "Asur"
     image = ""
     bio = ""
-    homepage = ""
+    homepage = "/"
 
 [image]
     src = "/images/nuevo-dominio-legibilidad-integracion-amp-scripts.jpg"

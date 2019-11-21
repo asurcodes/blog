@@ -20,7 +20,7 @@ keywords = ['blog', 'desarrollo', 'html', 'sass', 'amp', 'web safe fonts', 'grid
     name = "Asur"
     image = ""
     bio = ""
-    homepage = ""
+    homepage = "/"
 
 [image]
     src = "/images/la-primera-iteracion-amp-estilos-y-miscelanea.jpg"

@@ -20,7 +20,7 @@ keywords = ['blog', 'desarrollo', 'comentarios', 'remark', 'GPC', 'Compute engin
     name = "Asur"
     image = ""
     bio = ""
-    homepage = ""
+    homepage = "/"
 
 [image]
     src = "/images/sistema-de-comentarios-gcp-y-datos-estructurados.jpg"
