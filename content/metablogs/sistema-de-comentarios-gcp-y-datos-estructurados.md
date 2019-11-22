@@ -1,7 +1,7 @@
 +++
 draft = false
-date = "2019-11-24T11:27:32+02:00"
-publishdate = "2019-11-24T11:27:32+02:00"
+date = "2019-11-22T10:17:32+02:00"
+publishdate = "2019-11-22T10:17:32+02:00"
 
 title = "Metablog #5 - Sistema de comentarios y datos estructurados"
 
@@ -250,7 +250,7 @@ Aún así se puede comprabar si está validado e incluso hacer una preview, solo
     height="500"
     layout="responsive" >}}
 
-El json queda así:
+El json para el resultado anterior sería como este:
 
 {{< highlight javascript "linenos=table" >}}
 
@@ -302,6 +302,10 @@ El json queda así:
 }
 
 {{< / highlight >}}
+
+No sé si habéis leido el [metablog #4](https://asur.dev/metablogs/nuevo-dominio-legibilidad-integracion-amp-scripts/), de ser así os acordaréis que mencioné que el logo de `<asurbernardo/>` era para linkear a la home y para algo más que diría más adelante.
+
+Pues aquí está, resulta que para mostrar un artículo necesitas un logo de organización con [unas medidas bastante concretas](https://developers.google.com/search/docs/data-types/article#logo-guidelines) y es **obligatorio**, así que no me quedaba otra para probar este tipo de dato estructurado que tener uno.
 
 ### Dato estructurado de Carousel
 
