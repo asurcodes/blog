@@ -378,4 +378,4 @@ Tengo un proyecto en proceso muy muy chulo del que voy a hacer un post en detall
 
 ## Wayback Machine ⏰
 
-Ver la [versión original de este post](# "Versión original del post").
+Ver la [versión original de este post](https://web.archive.org/web/20191122094719/https://asur.dev/metablogs/sistema-de-comentarios-gcp-y-datos-estructurados/ "Versión original del post").
