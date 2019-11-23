@@ -105,7 +105,7 @@ services:
 
 {{< / highlight >}}
 
-Tiene muchísima configuración como notificaciones en Telegram y autenticación Oauth con muchos proveedores, pero de momento lo he dejado como login anónimo y con Github, creo que es suficiente de momento.
+Tiene muchísima configuración como notificaciones en Telegram y autenticación Oauth con muchos proveedores, pero lo he dejado como login anónimo y con Github, creo que es suficiente de momento.
 
 La segunda odisea empezó al querer añadirlo en los posts, porque claro, el código HTML no soporta AMP, así que toca meterlo embebido como un iframe.
 
