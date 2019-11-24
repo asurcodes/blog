@@ -1,3 +1,5 @@
+DefaultContentLanguage = "es"
+
 baseURL = "https://asur.dev"
 
 languageCode = "es"
@@ -12,7 +14,6 @@ pygmentsUseClasses = true
     tag = "tags"
 
 [params]
-
     description = "Bienvenid@ a mi blog, si te gusta el desarrollo web, el SEO, el open source y la tecnología en general echa un vistazo, seguro que encuentras algo interesante."
 
     themeColor = "#ef8b80"
