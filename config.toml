@@ -2,35 +2,44 @@ DefaultContentLanguage = "es"
 
 baseURL = "https://asur.dev"
 
-languageCode = "es"
-
-title = "Bienvenid@ a mi blog | By Asur 🧐"
-
 theme = "amperage"
 
 pygmentsUseClasses = true
+
+[languages]
+    [languages.es]
+        contentDir = "content"
+        languageName = "Español"
+        languageCode = "es"
+        title = "Bienvenid@ a mi blog | By Asur 🧐"
+        description = "Bienvenid@ a mi blog, si te gusta el desarrollo web, el SEO, el open source y la tecnología en general echa un vistazo, seguro que encuentras algo interesante."
+        weight = 1
+    [languages.en]
+        contentDir = "content/english"
+        languageName = "English"
+        languageCode = "en"
+        title = "Welcome to my blog | By Asur 🧐"
+        description = "This is the English section of my site. It's still work in progress but hey news are coming! Stay tuned!"
+        weight = 2
 
 [taxonomies]
     tag = "tags"
 
 [params]
-    description = "Bienvenid@ a mi blog, si te gusta el desarrollo web, el SEO, el open source y la tecnología en general echa un vistazo, seguro que encuentras algo interesante."
-
     themeColor = "#ef8b80"
+
+    ampElements = ["amp-analytics", "amp-social-share", "amp-install-serviceworker", "amp-iframe"]
 
     adsensePublisher = ""
     googleAnalytics = "UA-128498798-1"
 
-    ampElements = ["amp-analytics", "amp-social-share", "amp-install-serviceworker", "amp-iframe"]
-
-    alternatePageName = "Blog de Asur"
-    organizationLogo = "/logo.png"
-    organizationName = "Asur"
-
     facebookSite = "asur.dev"
     twitterSite = "@asurbernardo"
-
     socialProfiles = ["https://twitter.com/asurbernardo","https://www.linkedin.com/in/asur-bernardo/","https://github.com/asurbernardo","https://stackoverflow.com/users/4524353/asur"]
+
+    alternatePageName = "asur.dev"
+    organizationLogo = "/logo.png"
+    organizationName = "Asur"
 
     publisherName = "Asur Bernardo"
     publisherLogo = "/logo-amp-article.png"
