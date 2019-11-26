@@ -1,13 +1,13 @@
 +++
 draft = true
-date = "2019-12-02T10:12:32+02:00"
-publishdate = "2019-12-02T10:12:32+02:00"
+date = "2019-11-29T10:19:05+02:00"
+publishdate = "2019-11-29T10:19:05+02:00"
 
-title = "Metablog #6 - Una PWA en AMP y con multi-idioma"
+title = "Metablog #6 - PWA y soporte multi-idioma"
 
 description = "Creo una PWA en AMP utilizando service workers para poder instalarla en tu móvil y accder offline, además añado i18n con una nueva sección en inglés!"
 
-summary = "Añado al tema de Amperage integración con service workers para convertir esta web en una PWA y poder instalarla en tu móvil y acceder offline, además de soporte para internacionalización (i18n) y multi-idioma con una nueva sección en inglés incluida!"
+summary = "Añado al tema de Amperage integración con **service workers** para convertir esta web en una **PWA** y poder instalarla en tu móvil y acceder offline, además de soporte para **internacionalización** (i18n) y multi-idioma con una nueva sección en inglés incluida!"
 
 tags = ['Evolutivo']
 
@@ -33,17 +33,17 @@ keywords = ['blog', 'desarrollo', 'gohugo', 'amperage', 'i18n', 'amp', 'service 
 
 +++
 
-# PWA en AMP con multi-idioma
+# PWA y soporte multi-idioma
 
 {{% under-title %}}
 
 Una nueva semana, una nueva mejora! No os voy a engañar, van quedando pocas cosas que hacer además de seguir iterando en estilos y cambios pequeños, pero estos dos son muy top.
 
-Para empezar he transformado mi web en una PWA (Progressive Web App) utilizando una librería de service workers para AMP, además he añadido soporte a mi tema Amperage para multi-idioma, traducciones y con una nueva sección en inglés incluida! 🎉
+Para empezar he transformado mi web en una **PWA** (Progressive Web App) utilizando una librería de **service workers** para AMP, además he añadido soporte a mi tema Amperage para **multi-idioma**, traducciones y con una nueva sección en inglés incluida! 🎉
 
 {{% toc %}}
 
-## Convirtiendo una página AMP en PWA 🤖
+## Convirtiendo una web con AMP en PWA 🤖
 
 Hace poco puse un tweet que incluía un spoiler:
 
@@ -53,7 +53,7 @@ Hace poco puse un tweet que incluía un spoiler:
   layout="fixed"
   data-tweetid="1197989534484619264"></amp-twitter>
 
-Después de ir a la [CommitConf 2019](https://2019.commit-conf.com/) este fin de semana pasado, la noche del Viernes llegué a casa con las pilas creativas recargadas y contra toda lógica me puse a hacer unas pruebas de rendimiento. Sin querer acabeé posteando que mi blog ya era oficialmente una PWA! 😬
+Después de ir a la [CommitConf 2019](https://2019.commit-conf.com/) este fin de semana pasado, la noche del Viernes llegué a casa con las pilas creativas recargadas y contra toda lógica me puse a hacer unas pruebas de rendimiento. Sin querer acabé posteando que mi blog ya era oficialmente una PWA! 😬
 
 Tras investigar el tema, parece que los propios creadores de AMP son fanáticos del concepto de webs progresivas, porque han creado una [librería maravillosa](https://github.com/ampproject/amp-sw) facilita muchísimo la parte de programar el service worker.
 
@@ -81,7 +81,7 @@ Exactamente lo mismo que me pregunté yo. Pues parece que cuando se accede desde
 
 >When the document is accessed via the Google AMP Cache, the HTML document noted in the data-iframe-src attribute is used to install the service worker. We recommend using both attributes.
 
-El porqué es **seguridad**, los navegadores no pueden instalar service workers de dominios que no son el actual. Para más detalles os recomiendo una lectura rápida a las [especificaciones de w3.org sobre service workers](https://www.w3.org/TR/service-workers/#origin-restriction).
+El porqué es la seguridad, **los navegadores no pueden instalar service workers de dominios que no son el actual**. Para más detalles os recomiendo una lectura rápida a las [especificaciones de w3.org sobre service workers](https://www.w3.org/TR/service-workers/#origin-restriction).
 
 Lo más gracioso es la url del `data-iframe-source` tenemos que tener exactamente el mismo código que el `<amp-install-serviceworker>` de origen, como en *Inception*.
 
@@ -263,4 +263,4 @@ Aprovechando la nueva sección en inglés creo que la voy a aprovechar y a escri
 
 Ver la [versión original de este post](# "Versión original del post").
 
-Ver la [versión original la sección en inglés](# "Versión original de la sección en inglés").
+Ver la [versión original de la sección en inglés](# "Versión original de la sección en inglés").
