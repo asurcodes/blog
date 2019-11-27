@@ -107,7 +107,7 @@ AMP_SW.init({
 
 En mi caso la única configuración que he puesto es el cacheo de assets estáticos como imágenes, fuentes, javascript y css.
 
-Además he especificado el fichero que se mostrará cuando un usuario intente acceder offline a la aplicación y no tenga cacheada esa url en concreto.
+Además he especificado el fichero que se mostrará cuando un usuario intente acceder offline a la aplicación y no tenga cacheada esa url en concreto. Auqí puedes ver [el fichero que se mostraría cuando no tienes internet](https://asur.dev/offline.html).
 
 Con esto el service worker ya se registra correctamente. Lo podemos confirmar con *Google DevTools*:
 
