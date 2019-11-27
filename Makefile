@@ -1,4 +1,4 @@
-all: update_theme clone_site compile deploy
+all: update_theme clone_site compile optimize deploy
 
 .PHONY: all
 
@@ -19,6 +19,10 @@ clone_site:
 compile:
 	@printf "\033[0;32mCompiling content...\033[0m\n"
 	hugo -t amperage --minify --gc
+
+compile:
+	@printf "\033[0;32mOptimizing files...\033[0m\n"
+	./optimize.sh
 
 deploy:
 	@printf "\033[0;32mDeploying content to Github...\033[0m\n"
