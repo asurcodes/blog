@@ -3,11 +3,48 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-        <title>No tienes internet</title>
+        <title>No tienes internet! 😵</title>
+        <style type="text/css">
+            html, body {
+                height: 100%;
+            }
+            body {
+                font-family: Courier New;
+                margin: 0;
+            }
+            .flex-container {
+                height: 100%;
+                padding: 0;
+                margin: 0;
+                display: -webkit-box;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+            .row {
+                width: auto;
+                border: 1px solid blue;
+            }
+            .flex-item {
+                font-weight: bold;
+                font-size: 5em;
+                text-align: center;
+            }
+            @media only screen and (max-width: 768px) {
+                .flex-item {
+                    font-size: 3.5em;
+                }
+            }
+        </style>
     </head>
     <body>
-        <main>
-            <h1> Parece que no tienes internet! </h1>
+        <main class="flex-container">
+            <h1 class="flex-item">No tienes internet!</h1>
+            <h2 class="flex-item"> 😵 </h2>
         </main>
     </body>
 </html>
