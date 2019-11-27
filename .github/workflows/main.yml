@@ -26,6 +26,11 @@ jobs:
     - name: Build
       run: hugo -t amperage --gc --minify
 
+    - name: Optimize AMP
+      uses: asurbernardo/amp-optimizer-action@v0.1.0
+      with:
+        root: './public'
+
     - name: Deploy script
       uses: peaceiris/actions-gh-pages@v2.5.0
       env:
