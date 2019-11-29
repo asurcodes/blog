@@ -61,7 +61,7 @@ Tras investigar el tema, parece que los propios creadores de AMP son fanáticos 
 
 Bien, para empezar hay que dejar claro que por lo especialito que es AMP para con el javascript hay que hacer las cosas de una manera particular.
 
-Por supuesto contamos con un componente específico para esta tarea llamado `amp-install-serviceworker`. La forma que tiene es la siguiente:
+Por supuesto hay un componente específico para esta tarea llamado `amp-install-serviceworker`. La forma que tiene es la siguiente:
 
 {{< highlight html "linenos=table" >}}
 
@@ -83,9 +83,9 @@ Exactamente lo mismo que me pregunté yo. Pues parece que cuando se accede desde
 
 El porqué es la seguridad, **los navegadores no pueden instalar service workers de dominios que no son el actual**. Para más detalles os recomiendo una lectura rápida a las [especificaciones de w3.org sobre service workers](https://www.w3.org/TR/service-workers/#origin-restriction).
 
-Lo más gracioso es la url del `data-iframe-source` tenemos que tener exactamente el mismo código que el `<amp-install-serviceworker>` de origen, como en *Inception*.
+Lo más gracioso es la url del `data-iframe-source` hay que tener exactamente el mismo código que el `<amp-install-serviceworker>` de origen, como en *Inception*.
 
-Para instalar el service worker utilizamos la librería que mencioné al principio, lo único que tenemos que hacer es inicializarla con la configuración que mejor se adapte a nuestro caso:
+Para instalar el service worker he usado la librería que mencioné al principio, lo único que hay que hacer es inicializarla con la configuración que mejor se adapte a nuestro caso:
 
 {{< highlight javascript "linenos=table" >}}
 
@@ -107,7 +107,7 @@ AMP_SW.init({
 
 En mi caso la única configuración que he puesto es el cacheo de assets estáticos como imágenes, fuentes, javascript y css.
 
-Además he especificado el fichero que se mostrará cuando un usuario intente acceder offline a la aplicación y no tenga cacheada esa url en concreto. Aquí puedes ver [el fichero que se mostraría cuando no tienes internet](https://asur.dev/offline.html).
+Además he especificado el fichero que se mostrará cuando un usuario intente acceder offline a la aplicación y no tenga cacheada esa url en concreto. Aquí puedes ver [qué se mostraría cuando no tienes internet](https://asur.dev/offline.html).
 
 Con esto el service worker ya se registra correctamente. Lo podemos confirmar con *Google DevTools*:
 
@@ -119,13 +119,13 @@ Con esto el service worker ya se registra correctamente. Lo podemos confirmar co
     height="525"
     layout="responsive" >}}
 
-Para probarlo definitivamente podemos probar a desconectarnos de internet y recargar la página, debería seguir apareciendo el contenido. 😄
+Para probarlo definitivamente puedes desconectarte de internet y recargar la página, debería seguir apareciendo el contenido. 😄
 
-Pero todavía no somos una Progressive Web App, nos faltan un par de cosas para que Google nos de su bendición, aunque lo más difícil ya está hecho!
+Pero todavía el blog no es una Progressive Web App, faltan un par de cosas para que Google de su bendición, aunque lo más difícil ya está hecho!
 
 ### Convertir en PWA instalable
 
-El service worker ya está funcionando pero aún nos quedan un par de cosas por hacer para validar nuestra PWA.
+El service worker ya está funcionando pero aún quedan un par de cosas por hacer para validar nuestra PWA.
 
 La más importante es un `manifest.json` un fichero donde se almacena la información necesaria para instalar la app.
 
@@ -173,7 +173,7 @@ Ya casi estamos ahora con linkearlo en nuestras metatags junto con los iconos de
 
 {{< / highlight >}}
 
-Listo, ya podemos comprobar de nuevo en *DevTools Lighthouse* que nuestra página es una PWA válida:
+Listo, al comprobar de nuevo en *DevTools Lighthouse* se puede ver que la página es una PWA válida:
 
 {{< amp-image
     class="post__image"
@@ -183,7 +183,7 @@ Listo, ya podemos comprobar de nuevo en *DevTools Lighthouse* que nuestra págin
     height="845"
     layout="responsive" >}}
 
-Ahora cada persona que visite mi web desde un móvil puede disfrutar del maravilloso formulario para instalar la web como una aplicación nativa en su escritorio.
+Ahora cada persona que visite mi web desde un móvil puede disfrutar del maravilloso formulario de instalación.
 
 **AVISO:** Por supuesto, he omitido los pasos que ya tenía hechos como utilizar https, que la web sea responsive, etc.
 
@@ -197,7 +197,7 @@ Para no empezar la casa por el tejado he hecho traducibles los literales del tem
 
 GoHugo soporta traducciones de manera nativa así que ha sido rápido de implementar.
 
-Sustituyendo las cadenas con una función como `{{ i18n "goBackHome" }}` hacemos que al procesar el contenido Hugo busque en la ruta `/i18n/{laguange_code}.toml` por esa clave y aplique su valor.
+Sustituyendo las cadenas con una función como `{{ i18n "goBackHome" }}` hace que al procesar el contenido Hugo busque en la ruta `/i18n/{laguange_code}.toml` por esa clave y aplique su valor.
 
 {{< highlight toml "linenos=table" >}}
 
@@ -219,7 +219,7 @@ De momento solo tengo español e inglés, porque hasta ahí llego, pero por el p
 
 ### Nueva sección en inglés
 
-Ahora que ya tenemos soporte de multi-idioma puedo crear una nueva sección en mi web y que esta use un idioma distinto a la de por defecto.
+Ahora que ya hay soporte para traducciones puedo crear una nueva sección en mi web y que esta use un idioma distinto a la de por defecto.
 
 Para eso hay que especificarla en la configuración del site:
 
@@ -261,7 +261,7 @@ Ah si! El link? [Aquí podéis ver la sección en inglés](https://asur.dev/en).
 
 ## Siguientes pasos 👣
 
-Aprovechando la nueva sección en inglés creo que la voy a aprovechar y a escribir mi primer post en otro idioma, ya tengo una idea bastante aterrizada de que puede tratar y es la leche, pero vais a tener que esperar para verlo, *stay tuned!* 😜
+Aprovechando la nueva sección en inglés creo que la voy a escribir mi primer post en otro idioma, ya tengo una idea bastante aterrizada de que puede tratar y es la leche, pero vais a tener que esperar para verlo, *stay tuned!* 😜
 
 ## Wayback Machine ⏰
 
