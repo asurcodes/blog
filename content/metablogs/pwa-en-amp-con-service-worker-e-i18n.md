@@ -55,7 +55,7 @@ Hace poco puse un tweet que incluía un spoiler:
 
 Después de ir a la [CommitConf 2019](https://2019.commit-conf.com/) este fin de semana pasado, la noche del Viernes llegué a casa con las pilas creativas recargadas y contra toda lógica me puse a hacer unas pruebas de rendimiento. Sin querer acabé posteando que mi blog ya era oficialmente una PWA! 😬
 
-Tras investigar el tema, parece que los propios creadores de AMP son fanáticos del concepto de webs progresivas, porque han creado una [librería maravillosa](https://github.com/ampproject/amp-sw) facilita muchísimo la parte de programar el service worker.
+Tras investigar el tema parece que los propios creadores de AMP son fanáticos del concepto de webs progresivas, porque han creado una [librería maravillosa](https://github.com/ampproject/amp-sw) que facilita muchísimo la parte de programar el service worker.
 
 ### Registrar el service worker
 
@@ -153,7 +153,7 @@ La más importante es un `manifest.json` un fichero donde se almacena la informa
 
 {{< / highlight >}}
 
-Algunas caracteristicas a destacar son:
+Algunos campos a destacar son:
 
  - **name**: El nombre de tu aplicación, esto aparecerá en la splash screen cuando abras la app.
  - **start_url**: La url que es la home desde la que se inicia la app, suele ser `/` el 99% de las veces aunque también le podrías configurar un subdirectorio o parámetros extra para analítica.
@@ -162,7 +162,7 @@ Algunas caracteristicas a destacar son:
  - **theme_color**: El color de la barra de tareas de tu móvil cuando estás en la app.
  - **icons**: Las imágenes centrales que aparecen en la splash screen. Se recomiendan varias resoluciones, para adaptarlas a la resolución de pantalla de cada teléfono.
 
-Ya casi estamos ahora con linkearlo en nuestras metatags junto con los iconos de aplicación que aparecerán en android e ios estaría listo:
+Ya casi estamos, ahora con linkearlo en nuestras metatags junto con los iconos de aplicación que aparecerán en android e ios estaría listo:
 
 {{< highlight html "linenos=table" >}}
 
