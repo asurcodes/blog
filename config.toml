@@ -28,7 +28,7 @@ pygmentsUseClasses = true
 [params]
     themeColor = "#ef8b80"
 
-    ampElements = ["amp-analytics", "amp-social-share", "amp-install-serviceworker", "amp-script"]
+    ampElements = ["amp-analytics", "amp-social-share", "amp-install-serviceworker", "amp-iframe"]
 
     adsensePublisher = ""
     googleAnalytics = "UA-128498798-1"
