@@ -265,6 +265,6 @@ Aprovechando la nueva sección en inglés creo que la voy a escribir mi primer p
 
 ## Wayback Machine ⏰
 
-Ver la [versión original de este post](# "Versión original del post").
+Ver la [versión original de este post](https://web.archive.org/web/20191202111737/https://asur.dev/metablogs/pwa-en-amp-con-service-worker-e-i18n/ "Versión original del post").
 
-Ver la [versión original de la sección en inglés](# "Versión original de la sección en inglés").
+Ver la [versión original de la sección en inglés](https://web.archive.org/web/20191202111805/https://asur.dev/en/ "Versión original de la sección en inglés").
