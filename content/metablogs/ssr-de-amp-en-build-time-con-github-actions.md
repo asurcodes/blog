@@ -37,7 +37,7 @@ keywords = ['blog', 'desarrollo', 'gohugo', 'github actions', 'ssr', 'amp', 'opt
 
 {{% under-title %}}
 
-Toda la idea sobre el proyecto de **AMP** es ofrecer una web más rápida y segura, ¿pero sabías que aún se puede optimizar más con **Server Side Rendering**? Pues si, y adivina qué, lo he implementado en mi propia **GitHub Action**!
+Toda la idea sobre el proyecto de **AMP** es ofrecer una web más rápida y segura, ¿pero sabías que se puede optimizar aún más con **Server Side Rendering**? Pues si, y adivina qué, lo he implementado en mi propia **GitHub Action**!
 
 {{% toc %}}
 
@@ -45,15 +45,15 @@ Toda la idea sobre el proyecto de **AMP** es ofrecer una web más rápida y segu
 
 Esa es la pregunta del millón, AMP se supone que ya proporciona un rendimiento excelente, pero nada es perfecto y hay algunos puntos de mejora.
 
-El cambio más destacable se ve en el tiempo de FCP (First Contentful Paint), que **puede reducirse hasta un 50%**!!
+El cambio más destacable se ve en el tiempo de FCP (*First Contentful Paint*), que **puede reducirse hasta un 50%**!!
 
-Todo esto es gracias a que el script de preprocesado elimina el código de `<style amp-boilerplate>` y creando el layout en el servidor, para evitar recálculos en el cliente.
+Esta mejora se debe a que el script de preprocesado elimina el código de `<style amp-boilerplate>`.
 
-El kit de la cuestión es que ese estilo de **AMP boilerplate oculta el contenido mientras se calcula la distribución de la página**, si eliminamos la necesidad de ese cálculo nuestra página se muestra directamente, sin esperas.
+El kit de la cuestión es que ese estilo de **AMP boilerplate oculta el contenido mientras se calcula la distribución del layout**, si eliminamos la necesidad de ese cálculo haciendolo de antemano nuestra página se muestra directamente, sin esperas.
 
 > ¿Y por qué no aplicamos estas mejoras a mano?
 
-Ese es el problema, estas mejoras se podrían implementar a mano, pero es surrealista por la mera cantidad de propiedades y variaciones que hay que aplicar. Un ejemplo:
+En efecto, estas mejoras se podrían picar a mano, pero no es viable por la mera cantidad de propiedades y variaciones. Un ejemplo de HTML antes y después:
 
 {{< amp-image
     class="post__image"
@@ -63,37 +63,37 @@ Ese es el problema, estas mejoras se podrían implementar a mano, pero es surrea
     height="480"
     layout="responsive" >}}
 
-La única opción viable es automatizarlo con un script que busque los elementos en el DOM y les aplique los cambios necesarios.
+La única opción es automatizarlo con un script que busque los elementos en el DOM y les aplique los cambios necesarios.
 
-Para esto ya existen dos librerías opensource:
+Para esto ya existen dos librerías open source:
 
  - [AMP Optimizer](https://www.npmjs.com/package/amp-toolbox-optimizer): Escrita en JavaScript, se puede descargar e instalar por NPM. También cuenta con un middleware para Express.
- - [AMP Packager](https://github.com/ampproject/amppackager/tree/releases/transformer/): Escrita en Golang, algo más rápido. Requiere de *Signed exchages* para que los cambios sean válidos.
+ - [AMP Packager](https://github.com/ampproject/amppackager/tree/releases/transformer/): Escrita en Golang, algo más rápida. Requiere de *Signed exchages* para que los cambios sean válidos.
 
-Estas librerías no solo eliminan el boilerplate de AMP, hacen muchas más cosas, como dns-prefetchs automáticos, elimina comentarios y mucho más ([Lista completa de cambios](https://github.com/ampproject/amphtml/blob/master/spec/amp-cache-modifications.md)).
+Estas librerías no solo eliminan el boilerplate de AMP, hacen más cosas, como **dns-prefetchs automáticos**, elimina comentarios y muchas más ([Lista completa de cambios](https://github.com/ampproject/amphtml/blob/master/spec/amp-cache-modifications.md)).
 
-Si te interesa puedes ver una [comparativa de rendimiento detallada](https://blog.amp.dev/2018/10/08/how-to-make-amp-even-faster/) en el blog oficial de AMP, en el que hacen un antes y después en distintos escenarios.
+Si te interesa puedes ver una [comparativa de rendimiento detallada](https://blog.amp.dev/2018/10/08/how-to-make-amp-even-faster/) en el blog oficial de AMP, en el que comparan cifras antes y después en distintos escenarios.
 
-**DATO**: Este mismo procesado lo realiza Google sobre tu AMP antes de guardarlo en la cache, lo que le da esa sensación de carga instantanea.
+**DATO CURIOSO**: Este mismo procesado lo realiza Google sobre tu AMP antes de guardarlo en su cache, lo que le da esa sensación de carga instantanea.
 
 ## Creación y despliegue en GitHub Actions 😺
 
-Vale, una vez ya me he informado y leído sobre el tema tengo claro que **lo quiero en mi blog**, así que me descargo las librerías y empiezo a probar.
+Vale, una vez ya me he informado y leído sobre el tema tengo claro que **lo quiero en mi blog**.
 
-Según ponen en la documentación, **la manera ideal de aplicar las tranformaciones en en build time**, dejando como alternativa tranformar y cachear los request on the fly.
+Según ponen en la documentación, **la manera ideal de aplicar las tranformaciones en en build time**, dejando como alternativa tranformar y cachear los request *on the fly*.
 
-Como algunos ya sabréis, para buildear y desplegar este site utilizo GitHub Actions, pero no había nada en el Marketplace, así que decidí hacer la mía propia.
+Como algunos ya sabréis, para buildear y desplegar mi blog utilizo GitHub Actions, pero no había ninguna en el Marketplace que hiciese esto, así que decidí hacer la mía propia y publicarla! 🤓
 
 ### Script de bash
 
 La primera decisión es cual de las dos librerías utilizo. Cloudflare ya da la opción de habilitar *signed exchages* para AMP, así que elijo la librería de Go ya que no tengo esa limitación.
 
-Ahora me encuentro con dos problemas:
+Al empezar a probar la librería me encuentro con dos problemas:
 
  - El contenido formateado se escribe en *stdout* y no hay una opción en el comando para que modificase el fichero directamente.
  - No solo cuento con un fichero, si no con N y encima en un directorio sin una estructura concreta, así que necesito algún tipo de recursividad.
 
-Esta es a la solución que he llegado utilizando un script de bash:
+Esta es a la solución a la que he llegado utilizando un script de bash:
 
 {{< highlight bash "linenos=table" >}}
 
@@ -110,17 +110,19 @@ done
 
 Con el comando `find` puedo buscar recursivamente todos los ficheros con la extensión `html`.
 
-Ejecuto el transformador y pongo el contenido en un fichero intermedio. Puede parecer un paso innecesario, pero resulta que `$GOPATH/bin/transform $file > $file` no funciona, necesito un buffer!
+Ejecuto el transformador y pongo el contenido en un fichero intermedio. Puede parecer un paso innecesario, pero resulta que `$GOPATH/bin/transform $file | > $file` no funciona, necesito un buffer!
 
-Una vez guardado el contenido en el fichero buffer ya se puede sobreescribir el contenido del fichero original.
+Una vez guardado el contenido en el fichero temporal ya se puede sobreescribir el fichero original!
+
+Con esta base ya puedo empezar a pensar en como integrarlo en una Action de verdad.
 
 ### Dockerización
 
 Hay dos opciones para crear una GitHub Actions, que se base en una imagen de docker o que ejecute javascript.
 
-He elegido la primera porque al utilizar solo bash me es más cómodo y el build time de mi contenedor es mínimo, pero si que normalmente **la opción de javascript se ejecuta más rápido**  al no necesitar construir la imagen.
+He elegido la primera porque al utilizar solo bash me es más cómodo y el build time de mi contenedor es mínimo, pero si que normalmente **la opción de javascript se ejecuta más rápido**  al no necesitar construir una imagen.
 
-Me he limitado a instalar el paquete del tranformadora y empaquetar el script anterior de bash en un `entrypoint.sh`. Así queda mi extensísimo Dockerfile:
+Para el *Dockerfile* me he limitado a instalar el paquete del tranformadora y empaquetar el script anterior de bash en un `entrypoint.sh`. Así queda mi extensísimo fichero:
 
 {{< highlight dockerfile "linenos=table" >}}
 
@@ -136,7 +138,7 @@ ENTRYPOINT [ "/entrypoint.sh" ]
 
 ### Publicación en el marketplace
 
-A la hora de publicar el proyecto en el marketplace de GitHub necesitas pasar ciertas validaciones. Lo más importante es tener tu action documentada en el `README.md`.
+A la hora de publicar el proyecto en el marketplace de GitHub necesitas pasar ciertas validaciones. Lo más importante es tener tu action documentada en el `README.md` al menos con los parámetros aceptados y un ejemplo de uso.
 
 También necesitas un fichero de configuración:
 
