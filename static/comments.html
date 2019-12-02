@@ -2,11 +2,16 @@
 <script src="https://cdn.commento.io/js/commento.js"></script>
 
 <script type="text/javascript">
-    window.requestAnimationFrame(() => {
-      window.parent.postMessage({
-        sentinel: 'amp',
-        type: 'embed-size',
-        height: document.body.scrollHeight
-      }, '*');
-    })
+    document.addEventListener("readystatechange", resize);
+
+    function resize() {
+      var readyState = document.readyState;
+      if (readyState !== "loading") {
+        window.parent.postMessage({
+          sentinel: 'amp',
+          type: 'embed-size',
+          height: document.body.scrollHeight
+        }, '*');
+      }
+    };
 </script>
