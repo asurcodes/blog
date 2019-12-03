@@ -12,8 +12,11 @@ jobs:
     - name: Pull source
       uses: actions/checkout@master
 
-    - name: Update submodules to latests master
-      run: git submodule foreach git pull origin master
+    - name: Pull theme
+      uses: actions/checkout@v2-beta
+      with:
+        repository: 'asurbernardo/amperage'
+        path: 'themes/amperage'
 
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2.2.2
