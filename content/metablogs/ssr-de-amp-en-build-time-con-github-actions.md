@@ -21,7 +21,7 @@ keywords = ['blog', 'desarrollo', 'gohugo', 'github actions', 'ssr', 'amp', 'opt
     homepage = "/"
 
 [image]
-    src = "/images/amp-ssr-en-build-time-con-github-actions.jpg"
+    src = "/images/amp-ssr-en-build-time-con-github-actions/share-card.jpg"
 
 [twitter]
     site = "@asurbernardo"
@@ -56,9 +56,8 @@ El kit de la cuestión es que ese estilo de **AMP boilerplate oculta el contenid
 En efecto, estas mejoras se podrían picar a mano, pero no es viable por la mera cantidad de propiedades y variaciones. Un ejemplo de HTML antes y después:
 
 {{< amp-image
-    class="post__image"
     alt="Comparación de página AMP normal contra procesada"
-    src="/images/comparacion-amp-normal-vs-ssr.png"
+    src="/images/amp-ssr-en-build-time-con-github-actions/comparacion-amp-normal-vs-ssr.png"
     width="1600"
     height="480"
     layout="responsive" >}}
@@ -103,7 +102,8 @@ for file in $(find ${INPUT_ROOT} -name "*.html"); do
     [ -f "$file" ] || break
     echo "Optimizing $file" 
     ! $GOPATH/bin/transform $file > /tmp/optimized.txt
-    [ -s /tmp/optimized.txt ] && cat /tmp/optimized.txt > $file || echo "Not a valid AMP page. Omitting..."
+    [ -s /tmp/optimized.txt ] && cat /tmp/optimized.txt > $file \
+      || echo "Not a valid AMP page. Omitting..."
 done
 
 {{< / highlight >}}
@@ -179,4 +179,4 @@ CLAP! CLAP! CLAP! 👏
 
 ## Próximo destino 🛣️
 
-He publicado hace poco un *side project* para probar el soporte de h3 en un solo paso online: [http3.support](https://http3.support), estoy preparando un post para la nueva sección en inglés sobre el proceso. *Stay tuned!* 😎 🇬🇧
+Ahora si que si, he tardado un poco más de lo que pensaba en preparar el siguiente post pero confirmo que voy a estrenar la sección en inglés con un post sobre monetización online. *Stay tuned!* 😎 🇬🇧

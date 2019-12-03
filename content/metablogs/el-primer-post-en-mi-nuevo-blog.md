@@ -23,7 +23,7 @@ keywords = ['blog', 'desarrollo', 'git', 'deploy']
     homepage = "/"
 
 [image]
-    src = "/images/el-primer-post-en-mi-nuevo-blog.jpg"
+    src = "/images/el-primer-post-en-mi-nuevo-blog/share-card.jpg"
     title = ""
     author = ""
     link = ""

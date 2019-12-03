@@ -23,7 +23,7 @@ keywords = ['blog', 'desarrollo', 'amp', 'compartir', 'redes sociales', 'dominio
     homepage = "/"
 
 [image]
-    src = "/images/nuevo-dominio-legibilidad-integracion-amp-scripts.jpg"
+    src = "/images/nuevo-dominio-legibilidad-integracion-amp-scripts/share-card.jpg"
     title = ""
     author = ""
     link = ""
@@ -98,9 +98,8 @@ El símbolo `$1` simboliza la selección del wildcard, así que concatenará el 
 Como paso extra y para mejorar la indexación de la nueva dirección de la web se puede notificar a Google a través de Search Console del cambio en una **propiedad de dominio**. Para hacerlo hay que ir a `Configuración > Cambio de dirección`. Se comprobará que tu nuevo dominio esté operativo y registrado como propiedad y que existe una redirección de tipo 301 ya configurada. Listo, el proceso lleva un tiempo (como todo en Search Console) pero al menos ya tengo confirmación:
 
 {{< amp-image
-    class="post__image"
     alt="Confirmación de la migración del dominio en Google Search Console"
-    src="/images/mensaje-confirmación-cambio-dominio-search-console.jpg"
+    src="/images/nuevo-dominio-legibilidad-integracion-amp-scripts/mensaje-confirmación-cambio-dominio-search-console.jpg"
     width="916"
     height="305"
     layout="responsive" >}}
@@ -181,7 +180,8 @@ Ahora al transpilar cada post puedo mirar los scripts especificados en estas dos
 <!-- Incluir los scripts globales de la web -->
 {{- range $.Site.Params.ampElements -}}
     {{- if (index (index $.Site.Data "amp-modules") .) -}}
-        <script async custom-element="{{ . }}" src="{{ (index (index $.Site.Data "amp-modules") .) }}"></script>
+        <script async custom-element="{{ . }}"
+          src="{{ (index (index $.Site.Data "amp-modules") .) }}"></script>
     {{- end }}
 {{- end }}
 
@@ -191,7 +191,8 @@ Ahora al transpilar cada post puedo mirar los scripts especificados en estas dos
         {{ if in $.Site.Params.ampElements . }}
         {{ else }}
             {{- if (index (index $.Site.Data "amp-modules") .) -}}
-                <script async custom-element="{{ . }}" src="{{ (index (index $.Site.Data "amp-modules") .) }}"></script>
+                <script async custom-element="{{ . }}" 
+                  src="{{ (index (index $.Site.Data "amp-modules") .) }}"></script>
             {{- end }}
         {{ end }}
     {{ end }}
@@ -207,15 +208,20 @@ Al poner los metadatos del post debajo del título quedaba algo vacío, y como A
 
 <div class="under-title__right social-share">
     <amp-social-share class="social-share__button"
-        aria-label="Compartir contenido" type="system" width="50" height="50"></amp-social-share>
+        aria-label="Compartir contenido" type="system" width="50" height="50">
+    </amp-social-share>
     <amp-social-share class="social-share__button"
-        aria-label="Compartir en Facebook" type="facebook" width="50" height="50"></amp-social-share>
+        aria-label="Compartir en Facebook" type="facebook" width="50" height="50">
+    </amp-social-share>
     <amp-social-share class="social-share__button"
-        aria-label="Compartir en Twitter" type="twitter" width="50" height="50"></amp-social-share>
+        aria-label="Compartir en Twitter" type="twitter" width="50" height="50">
+    </amp-social-share>
     <amp-social-share class="social-share__button"
-        aria-label="Compartir en Linkedin" type="linkedin" width="50" height="50"></amp-social-share>
+        aria-label="Compartir en Linkedin" type="linkedin" width="50" height="50">
+    </amp-social-share>
     <amp-social-share class="social-share__button"
-        aria-label="Compartir en pinterest" type="pinterest" width="50" height="50"></amp-social-share>
+        aria-label="Compartir en pinterest" type="pinterest" width="50" height="50">
+    </amp-social-share>
 </div>
 
 {{< / highlight >}}
@@ -294,9 +300,8 @@ table {
 Ahora que ya tengo botones de compartir creo que al menos hay que hacer que se vea decente la tarjeta, así que he añadido unas imágenes, de momento son solo representaciones de la tabla de contenidos generadas con [carbon.sh.now](https://carbon.sh.now).
 
 {{< amp-image
-    class="post__image"
     alt="Ejemplo de imagen generada por carbon.sh.now"
-    src="/images/nuevo-dominio-legibilidad-integracion-amp-scripts-share.png"
+    src="/images/nuevo-dominio-legibilidad-integracion-amp-scripts/nuevo-dominio-legibilidad-integracion-amp-scripts-share.png"
     width="1760"
     height="852"
     layout="responsive" >}}

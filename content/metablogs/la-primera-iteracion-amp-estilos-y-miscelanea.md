@@ -23,7 +23,7 @@ keywords = ['blog', 'desarrollo', 'html', 'sass', 'amp', 'web safe fonts', 'grid
     homepage = "/"
 
 [image]
-    src = "/images/la-primera-iteracion-amp-estilos-y-miscelanea.jpg"
+    src = "/images/la-primera-iteracion-amp-estilos-y-miscelanea/share-card.jpg"
     title = ""
     author = ""
     link = ""
@@ -57,9 +57,8 @@ Ya os habréis dado cuenta de que esto ya tiene otra pinta, atrás han quedado l
 Como guía de estilo inicial tomé esta web:
 
 {{< amp-image
-    class="post__image"
     alt="Inspiración inicial para el estilo del blog"
-    src="/images/design-inspiration.jpg"
+    src="/images/la-primera-iteracion-amp-estilos-y-miscelanea/design-inspiration.jpg"
     width="1199"
     height="742"
     layout="responsive" >}}
@@ -74,34 +73,35 @@ Por lo que he estado investigando, ambos son intercambiables en muchos casos, co
 
 {{< highlight scss "linenos=table" >}}
 
-/* Configuramos el padre como grid con 5 columnas y un margen entre ellas de 1em */
-
+/*
+Configuramos el padre como grid con 5 columnas y un margen entre ellas de 1em
+*/
 body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1em 1em;
 }
-
-/* Damos un ancho completo al footer y al header */
-
+/*
+Damos un ancho completo al footer y al header
+*/
 header,
 footer {
     grid-column: 1 / span 5;
     display: flex;
     justify-content: flex-end;
 }
-
-/* Al main le damos 3/5 y al aside 2/5 a continuación del main, por lo que quedará a su derecha */
-
+/*
+Al main le damos 3/5 y al aside 2/5 a continuación del main, así quedará a su derecha 
+*/
 main {
     grid-column: 1 / span 3;
 }
 aside {
     grid-column: span 2;
 }
-
-/* Como responsive, si la pantalla es pequeña poner el main y el aside a 100% de ancho */
-
+/*
+Como responsive, si la pantalla es pequeña poner el main y el aside a 100% de ancho
+*/
 @media (max-width: 1200px) {
     main,
     aside {

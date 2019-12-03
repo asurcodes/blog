@@ -23,7 +23,7 @@ keywords = ['blog', 'desarrollo', 'tags', 'syntax highlighting', 'google analyti
     homepage = "/"
 
 [image]
-    src = "/images/taxonomia-de-tags-highlight-codigo-analitica.jpg"
+    src = "/images/taxonomia-de-tags-highlight-codigo-analitica/share-card.jpg"
     title = ""
     author = ""
     link = ""
@@ -129,7 +129,9 @@ Por último tenemos que crear una plantilla para las páginas de taxonomía. Es 
     <ul>
         {{ range .Pages }}
             <li>
-                <a href="{{ .Permalink }}">{{.PublishDate.Format "02-01-2006"}} | {{ .Title }}</a>
+                <a href="{{ .Permalink }}">
+                    {{.PublishDate.Format "02-01-2006"}} | {{ .Title }}
+                </a>
             </li>
         {{ end }}
     </ul>
@@ -177,9 +179,8 @@ Los datos que más me interesan son:
 **Usuarios y sesiones:** De manera general puedo ver la cantidad de usuarios y sesiones de la web, así como el porcentaje de rebote y las páginas visitadas por cada sesión.
 
 {{< amp-image
-    class="post__image"
     alt="Usuarios y sesiones - Google Analytics"
-    src="/images/google-analytics-audiencia-general.jpg"
+    src="/images/taxonomia-de-tags-highlight-codigo-analitica/google-analytics-audiencia-general.jpg"
     width="1617"
     height="623"
     layout="responsive" >}}
@@ -188,9 +189,8 @@ Los datos que más me interesan son:
 **Adquisición:** También me gusta ver como han llegado los usuarios al sitio y la diferencia de calidad de los diferentes tipos.
 
 {{< amp-image
-    class="post__image"
     alt="Adquisición de usuarios - Google Analytics"
-    src="/images/google-analytics-adquisicion.jpg"
+    src="/images/taxonomia-de-tags-highlight-codigo-analitica/google-analytics-adquisicion.jpg"
     width="1131"
     height="331"
     layout="responsive" >}}
@@ -199,9 +199,8 @@ Los datos que más me interesan son:
 **Tiempo en página de posts:** Una vista algo más atómica de como están funcionando cada uno de los posts, para posteriormente poder analizarlo e iterar.
 
 {{< amp-image
-    class="post__image"
     alt="Comportamiento por post - Google Analytics"
-    src="/images/google-analytics-comportamiento-posts.jpg"
+    src="/images/taxonomia-de-tags-highlight-codigo-analitica/google-analytics-comportamiento-posts.jpg"
     width="1620"
     height="417"
     layout="responsive" >}}
@@ -225,9 +224,8 @@ Las partes a las que prestaré más atención son:
 **Rendimiento:** Las veces que aparecen una página de esta web en Google listada, en que posición y que CTR tiene.
 
 {{< amp-image
-    class="post__image"
     alt="Rendimiento - Search Console"
-    src="/images/search-console-rendimiento.jpg"
+    src="/images/taxonomia-de-tags-highlight-codigo-analitica/search-console-rendimiento.jpg"
     width="913"
     height="363"
     layout="responsive" >}}
@@ -235,9 +233,8 @@ Las partes a las que prestaré más atención son:
 **Cobertura:** Información sobre como está indexado este site en Google, las páginas correctas y los posibles errores.
 
 {{< amp-image
-    class="post__image"
     alt="Cobertura - Search Console"
-    src="/images/search-console-cobertura.jpg"
+    src="/images/taxonomia-de-tags-highlight-codigo-analitica/search-console-cobertura.jpg"
     width="909"
     height="430"
     layout="responsive" >}}
@@ -245,9 +242,8 @@ Las partes a las que prestaré más atención son:
 **Mejoras:** Todas las señales que indican a Google la calidad de la página más allá del contenido, como datos estructurados, AMP, etc.
 
 {{< amp-image
-    class="post__image"
     alt="Mejoras - Search console"
-    src="/images/search-console-mejoras.jpg"
+    src="/images/taxonomia-de-tags-highlight-codigo-analitica/search-console-mejoras.jpg"
     width="908"
     height="210"
     layout="responsive" >}}
@@ -261,9 +257,8 @@ Las partes más interesantes son:
 **Requests:** Esto es más por curiosidad que otra cosa, al final el ancho de banda consumido y los hits cacheados le concierne a Github, no a mí, pero aún así me encanta saberlo.
 
 {{< amp-image
-    class="post__image"
     alt="Ancho de banda - Cloudflare"
-    src="/images/cloudflare-ancho-de-banda.jpg"
+    src="/images/taxonomia-de-tags-highlight-codigo-analitica/cloudflare-ancho-de-banda.jpg"
     width="1018"
     height="520"
     layout="responsive" >}}
@@ -271,9 +266,8 @@ Las partes más interesantes son:
 **Datos técnicos:** Ver que porcentaje de uso de *http/2*, la cantidad de datos ahorrados por la compresión *gzip* y la descomposición de como se usa el ancho de banda, de nuevo, no es que sea imprescindible pero puede dar información relavante dependiendo del contexto, y qué mejor manera de hacerlo que en forma de quesitos?
 
 {{< amp-image
-    class="post__image"
     alt="Datos técnicos - Cloudflare"
-    src="/images/cloudflare-datos-tecnicos.jpg"
+    src="/images/taxonomia-de-tags-highlight-codigo-analitica/cloudflare-datos-tecnicos.jpg"
     width="1025"
     height="378"
     layout="responsive" >}}

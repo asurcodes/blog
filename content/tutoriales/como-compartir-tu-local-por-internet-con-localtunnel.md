@@ -23,7 +23,7 @@ keywords = ['tutorial', 'http tunneling', 'ngrok', 'localtunnel', 'docker']
     homepage = "/"
 
 [image]
-    src = "/images/como-compartir-tu-local-por-internet-con-localtunnel.jpg"
+    src = "/images/como-compartir-tu-local-por-internet-con-localtunnel/share-card.jpg"
     title = ""
     author = ""
     link = ""
@@ -69,8 +69,7 @@ Este es el caso de uso por excelencia y es en lo que se especializan varias de l
 Consiste en generar una url por la que se puede acceder al servidor de tunneling, este servidor consume datos del cliente y devuelve una respuesta HTTP, de esta manera podemos acceder al servidor como si estuviesemos viendo nuestro local, pero desde cualquier sitio que tenga acceso a internet.
 
 {{< amp-image
-    class="post__image"
-    src="/images/demo-ngrok-cliente.jpg" 
+    src="/images/como-compartir-tu-local-por-internet-con-localtunnel/demo-ngrok-cliente.jpg"
     alt="Esquema de ngrok describiendo una demo a un cliente"
     width="1200"
     height="678"
@@ -85,9 +84,8 @@ Probar webhooks es también un caso bastante conocido, incluso los desarrollador
 Las aplicaciones que soportan webhooks suelen requerir una url de la que consumir datos que sea accesible desde internet, al levantar un túnel puedes configurar la url que te proporciona y hacer cambios en tiempo real (con ngrok incluso puedes lanzar request custom desde su GUI).
 
 {{< amp-image
-    class="post__image"
     alt="Esquema de ngrok describiendo un testeo de webhooks"
-    src="/images/demo-ngrok-webhooks.jpg"
+    src="/images/como-compartir-tu-local-por-internet-con-localtunnel/demo-ngrok-webhooks.jpg"
     width="750"
     height="422"
     layout="responsive" >}}
@@ -99,9 +97,8 @@ Las aplicaciones que soportan webhooks suelen requerir una url de la que consumi
 Prácticamente todas las aplicaciones dinámicas y aparatos IOT requieren algún tipo de API de la que consumir datos, para hacer pruebas en tiempo real mientras se desarrolla puedes configurar el endpoint de tu túnel en tu consumidor y ponerte a testear.
 
 {{< amp-image
-    class="post__image"
     alt="Esquema de ngrok describiendo un testeo de API en aparatos IOT"
-    src="/images/demo-ngrok-iot.jpg"
+    src="/images/como-compartir-tu-local-por-internet-con-localtunnel/demo-ngrok-iot.jpg"
     width="1200"
     height="800"
     layout="responsive" >}}
@@ -211,9 +208,8 @@ Ejecutamos el comando especificando el procolo y el puerto de escucha:
 La consola nos mostrará todos los datos de nuestro nuevo túnel, con ambos links para entrar a nuestro túnel, tanto http como https. Pinta algo así:
 
 {{< amp-image
-    class="post__image"
     alt="Output de consola del cliente de ngrok"
-    src="/images/ngrok-output-consola.jpg"
+    src="/images/como-compartir-tu-local-por-internet-con-localtunnel/ngrok-output-consola.jpg"
     width="1970"
     height="932"
     layout="responsive" >}}

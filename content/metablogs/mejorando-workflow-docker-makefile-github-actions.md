@@ -23,7 +23,7 @@ keywords = ['blog', 'desarrollo', 'gohugo', 'despliegue continuo', 'github actio
     homepage = "/"
 
 [image]
-    src = "/images/mejorando-workflow-docker-makefile-github-actions.jpg"
+    src = "/images/mejorando-workflow-docker-makefile-github-actions/share-card.jpg"
     title = ""
     author = ""
     link = ""
@@ -157,13 +157,12 @@ Como se puede ver en este snippet, hay 4 partes bien diferenciadas, aunque todas
 
 Al ejecutarlo todo junto se ve algo así:
 
-<amp-anim 
-    class="post__image"
+<amp-anim
     alt="Output de consola del comando make"
     layout="responsive"
     width=1367
     height=1112
-    src="/images/make-command.gif">
+    src="/images/mejorando-workflow-docker-makefile-github-actions/make-command.gif">
 </amp-anim>
 
 **OJO**: He descubierto por las malas que **cada línea de un Makefile se ejecuta en un entorno independiente**, siempre partiendo de la raiz desde donde se ha ejecutado el `make`, así que olvídate de cambiarte de directorio y hacer algo en una línea nueva por que no te va a funcionar (la que he armado en mi historial de git probando esto fué muy gorda).

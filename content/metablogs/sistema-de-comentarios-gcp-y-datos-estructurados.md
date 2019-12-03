@@ -23,7 +23,7 @@ keywords = ['blog', 'desarrollo', 'comentarios', 'remark', 'GPC', 'Compute engin
     homepage = "/"
 
 [image]
-    src = "/images/sistema-de-comentarios-gcp-y-datos-estructurados.jpg"
+    src = "/images/sistema-de-comentarios-gcp-y-datos-estructurados/share-card.jpg"
     title = ""
     author = ""
     link = ""
@@ -114,7 +114,7 @@ AMP es un poco especial en este sentido, no debes añadir un iframe desde tu pro
 El flujo de requests quedaría:
 
 ```
-https://asur.dev -> https://comments.asur.dev -> https://asur.dev/comments.html -> https://remark.asur.dev
+asur.dev -> comments.asur.dev -> asur.dev/comments.html -> remark.asur.dev
 ```
 
 Con esto ya validaría el dominio del iframe, pero también hay que permitir **explicitamente** las cosas que ese iframe puede y no puede hacer.
@@ -170,9 +170,8 @@ Lametablemente este site es estático e implementar una búsqueda requiere algú
 El resultado se podría ver algo así:
 
 {{< amp-image
-    class="post__image"
     alt="Datos estructurados de Website en SERP"
-    src="/images/datos-estructurados-website-serp.jpg"
+    src="/images/sistema-de-comentarios-gcp-y-datos-estructurados/datos-estructurados-website-serp.jpg"
     width="945"
     height="624"
     layout="responsive" >}}
@@ -202,34 +201,34 @@ El json queda así:
 {{< highlight javascript "linenos=table" >}}
 
 {
-    "@context": "http://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-        {
-            "@type": "ListItem",
-            "position":  1 ,
-            "item": {
-                "@id": "https://asur.dev/",
-                "name": "Inicio"
-            }
-        },
-        {
-            "@type": "ListItem",
-            "position":  2 ,
-            "item": {
-                "@id": "https://asur.dev/metablogs/",
-                "name": "Metablogs"
-            }
-        },
-        {
-            "@type": "ListItem",
-            "position":  3 ,
-            "item": {
-                "@id": "https://asur.dev/metablogs/sistema-de-comentarios-gcp-y-datos-estructurados/",
-                "name": "Sistema de comentarios gcp y datos estructurados"
-            }
-        }
-    ]
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "item": {
+        "@id": "https://asur.dev/",
+        "name": "Inicio"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "item": {
+        "@id": "https://asur.dev/metablogs/",
+        "name": "Metablogs"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "item": {
+        "@id": "https://asur.dev/metablogs/sistema-de-comentarios-gcp-y-datos-estructurados/",
+        "name": "Sistema de comentarios gcp y datos estructurados"
+      }
+    }
+  ]
 }
 
 {{< / highlight >}}
@@ -243,9 +242,8 @@ Este tipo está aplicado en esta misma página, pero parece que aún no ha sido 
 Aún así se puede comprabar si está validado e incluso hacer una preview, solo tienes que acceder al *structured data test tool* que mencioné arriba en un navegador **Chrome**, si lo haces te aparecerá un botón que pone *OBTENER VISTA PREVIA*.
 
 {{< amp-image
-    class="post__image"
     alt="Vista previa de artículo en Structured Data Testing Tool"
-    src="/images/obtener-vista-previa-datos-estructurados-google.jpg"
+    src="/images/sistema-de-comentarios-gcp-y-datos-estructurados/obtener-vista-previa-datos-estructurados-google.jpg"
     width="1183"
     height="500"
     layout="responsive" >}}
@@ -255,50 +253,50 @@ El json para el resultado anterior sería como este:
 {{< highlight javascript "linenos=table" >}}
 
 {
-    "@context":"http://schema.org",
-    "@type": "BlogPosting",
-    "image": "https://asur.dev/images/sistema-de-comentarios-gcp-y-datos-estructurados.jpg",
-    "url": "https://asur.dev/metablogs/sistema-de-comentarios-gcp-y-datos-estructurados/",
-    "headline": "Metablog #5 - Sistema de comentarios y datos estructurados",
-    "alternativeHeadline": "Metablog #5 - Sistema de comentarios y datos estructurados",
-    "dateCreated": "2019-11-24T11:27:32",
-    "datePublished": "2019-11-24T11:27:32",
-    "dateModified": "2019-11-24T11:27:32",
-    "inLanguage": "es",
-    "isFamilyFriendly": "true",
-    "copyrightYear": "2019",
-    "copyrightHolder": "Asur",
-    "accountablePerson": {
-        "@type": "Person",
-        "name": "Asur",
-        "url": "https://asur.dev/"
-    },
-    "author": {
-        "@type": "Person",
-        "name": "Asur",
-        "url": "https://asur.dev/"
-    },
-    "creator": {
-        "@type": "Person",
-        "name": "Asur",
-        "url": "https://asur.dev/"
-    },
-    "publisher": {
-        "@type": "Organization",
-        "name": "Asur Bernardo",
-        "url": "https://asur.dev/",
-        "logo": {
-            "@type": "ImageObject",
-            "url": "https://asur.dev/logo-amp-article.png",
-            "width":"600",
-            "height":"60"
-        }
-    },
-    "mainEntityOfPage": "https://asur.dev/metablogs/sistema-de-comentarios-gcp-y-datos-estructurados/",
-    "keywords": "["blog","desarrollo","comentarios","remark","GPC","Compute engine","SEO",
-        "datos estructurados","breadcrumbs","website","carousel"]",
-    "genre": "["Evolutivo"]",
-    "articleSection": "Los metablogs | By Asur 🧐"
+  "@context":"http://schema.org",
+  "@type": "BlogPosting",
+  "image": "https://asur.dev/images/sistema-de-comentarios-gcp-y-datos-estructurados.jpg",
+  "url": "https://asur.dev/metablogs/sistema-de-comentarios-gcp-y-datos-estructurados/",
+  "headline": "Metablog #5 - Sistema de comentarios y datos estructurados",
+  "alternativeHeadline": "Metablog #5 - Sistema de comentarios y datos estructurados",
+  "dateCreated": "2019-11-24T11:27:32",
+  "datePublished": "2019-11-24T11:27:32",
+  "dateModified": "2019-11-24T11:27:32",
+  "inLanguage": "es",
+  "isFamilyFriendly": "true",
+  "copyrightYear": "2019",
+  "copyrightHolder": "Asur",
+  "accountablePerson": {
+    "@type": "Person",
+    "name": "Asur",
+    "url": "https://asur.dev/"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Asur",
+    "url": "https://asur.dev/"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Asur",
+    "url": "https://asur.dev/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Asur Bernardo",
+    "url": "https://asur.dev/",
+    "logo": {
+        "@type": "ImageObject",
+        "url": "https://asur.dev/logo-amp-article.png",
+        "width":"600",
+        "height":"60"
+    }
+  },
+  "mainEntityOfPage": "https://asur.dev/metablogs/sistema-de-comentarios-gcp-y-datos-estructurados/",
+  "keywords": "["blog","desarrollo","comentarios","remark","GPC","Compute engine","SEO",
+      "datos estructurados","breadcrumbs","website","carousel"]",
+  "genre": "["Evolutivo"]",
+  "articleSection": "Los metablogs | By Asur 🧐"
 }
 
 {{< / highlight >}}
@@ -316,9 +314,8 @@ Este es uno de mis favoritos, porque si tu página es reconocida como carrusel e
 Es uno de los más efectivos pero también es de los más difíciles de ser reconocidos, aun así el resultado es espectacular:
 
 {{< amp-image
-    class="post__image"
     alt="Datos estructurados de Carousel en SERP"
-    src="/images/datos-estructurados-carousel-serp.jpg"
+    src="/images/sistema-de-comentarios-gcp-y-datos-estructurados/datos-estructurados-carousel-serp.jpg"
     width="1167"
     height="539"
     layout="responsive" >}}
@@ -328,46 +325,46 @@ El json que necesitariamos, teniendo en cuenta que las urls de los links tengas 
 {{< highlight javascript "linenos=table" >}}
 
 {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    "itemListElement": [
-        {
-            "@type": "ListItem",
-            "position": "1",
-            "url": "https://asur.dev/metablogs/sistema-de-comentarios-gcp-y-datos-estructurados/",
-            "name": "Metablog #5 - Sistema de comentarios y datos estructurados"
-        },
-        {
-            "@type": "ListItem",
-            "position": "2",
-            "url": "https://asur.dev/metablogs/nuevo-dominio-legibilidad-integracion-amp-scripts/",
-            "name": "Metablog #4 - Nuevo dominio, nuevo layout y más AMP!"
-        },
-        {
-            "@type": "ListItem",
-            "position": "3",
-            "url": "https://asur.dev/metablogs/mejorando-workflow-docker-makefile-github-actions/",
-            "name": "Metablog #3 - Workflow con docker, makefile y Github actions"
-        },
-        {
-            "@type": "ListItem",
-            "position": "4",
-            "url": "https://asur.dev/metablogs/taxonomia-de-tags-highlight-codigo-analitica/",
-            "name": "Metablog #2 - Tags, highlighting de código y analítica"
-        },
-        {
-            "@type": "ListItem",
-            "position": "5",
-            "url": "https://asur.dev/metablogs/la-primera-iteracion-amp-estilos-y-miscelanea/",
-            "name": "Metablog #1 - AMP, estilos y otras miscelaneas"
-        },
-        {
-            "@type": "ListItem",
-            "position": "6",
-            "url": "https://asur.dev/metablogs/el-primer-post-en-mi-nuevo-blog/",
-            "name": "Metablog #0 - El primer post en mi nuevo blog!"
-        }
-    ]
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": "1",
+      "url": "https://asur.dev/metablogs/sistema-de-comentarios-gcp-y-datos-estructurados/",
+      "name": "Metablog #5 - Sistema de comentarios y datos estructurados"
+    },
+    {
+      "@type": "ListItem",
+      "position": "2",
+      "url": "https://asur.dev/metablogs/nuevo-dominio-legibilidad-integracion-amp-scripts/",
+      "name": "Metablog #4 - Nuevo dominio, nuevo layout y más AMP!"
+    },
+    {
+      "@type": "ListItem",
+      "position": "3",
+      "url": "https://asur.dev/metablogs/mejorando-workflow-docker-makefile-github-actions/",
+      "name": "Metablog #3 - Workflow con docker, makefile y Github actions"
+    },
+    {
+      "@type": "ListItem",
+      "position": "4",
+      "url": "https://asur.dev/metablogs/taxonomia-de-tags-highlight-codigo-analitica/",
+      "name": "Metablog #2 - Tags, highlighting de código y analítica"
+    },
+    {
+      "@type": "ListItem",
+      "position": "5",
+      "url": "https://asur.dev/metablogs/la-primera-iteracion-amp-estilos-y-miscelanea/",
+      "name": "Metablog #1 - AMP, estilos y otras miscelaneas"
+    },
+    {
+      "@type": "ListItem",
+      "position": "6",
+      "url": "https://asur.dev/metablogs/el-primer-post-en-mi-nuevo-blog/",
+      "name": "Metablog #0 - El primer post en mi nuevo blog!"
+    }
+  ]
 }
 
 {{< / highlight >}}

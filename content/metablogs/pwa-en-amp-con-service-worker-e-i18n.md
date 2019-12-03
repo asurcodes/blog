@@ -21,7 +21,7 @@ keywords = ['blog', 'desarrollo', 'gohugo', 'amperage', 'i18n', 'amp', 'service 
     homepage = "/"
 
 [image]
-    src = "/images/pwa-en-amp-con-service-worker-e-i18n.jpg"
+    src = "/images/pwa-en-amp-con-service-worker-e-i18n/share-card.jpg"
 
 [twitter]
     site = "@asurbernardo"
@@ -112,9 +112,8 @@ Además he especificado el fichero que se mostrará cuando un usuario intente ac
 Con esto el service worker ya se registra correctamente. Lo podemos confirmar con *Google DevTools*:
 
 {{< amp-image
-    class="post__image"
     alt="Éxito instalación service worker en DevTools"
-    src="/images/exito-instalacion-service-worker-dev-tools.jpg"
+    src="/images/pwa-en-amp-con-service-worker-e-i18n/exito-instalacion-service-worker-dev-tools.jpg"
     width="1048"
     height="525"
     layout="responsive" >}}
@@ -167,18 +166,20 @@ Ya casi estamos, ahora con linkearlo en nuestras metatags junto con los iconos d
 {{< highlight html "linenos=table" >}}
 
 <link rel="manifest" href="https://asur.dev/manifest.json">
-<link rel="icon" type="image/png" sizes="32x32" href="https://asur.dev/icons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="https://asur.dev/icons/favicon-16x16.png">
-<link rel="apple-touch-icon" sizes="180x180" href="https://asur.dev/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" 
+    sizes="32x32" href="https://asur.dev/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" 
+    sizes="16x16" href="https://asur.dev/icons/favicon-16x16.png">
+<link rel="apple-touch-icon" 
+    sizes="180x180" href="https://asur.dev/icons/apple-touch-icon.png">
 
 {{< / highlight >}}
 
 Listo, al comprobar de nuevo en *DevTools Lighthouse* se puede ver que la página es una PWA válida:
 
 {{< amp-image
-    class="post__image"
     alt="Éxito validación de PWA en DevTools Lighthouse"
-    src="/images/exito-validacion-dev-tools-lighthouse.jpg"
+    src="/images/pwa-en-amp-con-service-worker-e-i18n/exito-validacion-dev-tools-lighthouse.jpg"
     width="924"
     height="845"
     layout="responsive" >}}
@@ -233,8 +234,9 @@ DefaultContentLanguage = "es"
         languageName = "Español"
         languageCode = "es"
         title = "Bienvenid@ a mi blog | By Asur 🧐"
-        description = "Bienvenid@ a mi blog, si te gusta el desarrollo web, el SEO, el open source
-          y la tecnología en general echa un vistazo, seguro que encuentras algo interesante."
+        description = "Bienvenid@ a mi blog, si te gusta el desarrollo web, el SEO, 
+          el open source y la tecnología en general echa un vistazo, seguro que 
+          encuentras algo interesante."
         weight = 1
     [languages.en]
         contentDir = "content/english"
