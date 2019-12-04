@@ -22,6 +22,27 @@ pygmentsUseClasses = true
         description = "This is the English section of my site. It's still work in progress but hey news are coming! Stay tuned!"
         weight = 2
 
+[[menu.main]]
+    identifier = "linkedin"
+    name = "LinkedIn"
+    url = "https://www.linkedin.com/in/asur-bernardo/"
+    weight = 10
+[[menu.main]]
+    identifier = "twitter"
+    name = "Twitter"
+    url = "https://twitter.com/asurbernardo"
+    weight = 10
+[[menu.main]]
+    identifier = "stackoverflow"
+    name = "StackOverflow"
+    url = "https://stackoverflow.com/users/4524353/asur"
+    weight = 10
+[[menu.main]]
+    identifier = "github"
+    name = "GitHub"
+    url = "https://github.com/asurbernardo"
+    weight = 10
+
 [taxonomies]
     tag = "tags"
 
