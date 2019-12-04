@@ -181,7 +181,7 @@ Listo, al comprobar de nuevo en *DevTools Lighthouse* se puede ver que la págin
     alt="Éxito validación de PWA en DevTools Lighthouse"
     src="/images/pwa-en-amp-con-service-worker-e-i18n/exito-validacion-dev-tools-lighthouse.jpg"
     width="924"
-    height="845"
+    height="895"
     layout="responsive" >}}
 
 Ahora cada persona que visite mi web desde un móvil puede disfrutar del maravilloso formulario de instalación.
