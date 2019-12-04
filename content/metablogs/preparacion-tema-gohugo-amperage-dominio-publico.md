@@ -33,5 +33,18 @@ keywords = ['blog', 'desarrollo', 'gohugo', 'amperage', 'publicación', 'tema']
 
 +++
 
-github.com/gohugoio/hugoThemes/blob/master/README.md#adding-a-theme-to-the-list
-github.com/gohugoio/HugoBasicExample
+# Preparando Amperage para el dominio público
+
+**LINKS**
+
+- github.com/gohugoio/hugoThemes/blob/master/README.md#adding-a-theme-to-the-list
+- github.com/gohugoio/HugoBasicExample
+
+**TEMAS**
+
+- Links entre idiomas
+- Etiquetas hreflang
+- Paginación
+- Traducción de fechas
+- Sobreescribir estilos
+- Menu
