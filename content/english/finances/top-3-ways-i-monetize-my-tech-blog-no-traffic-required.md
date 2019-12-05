@@ -11,7 +11,7 @@ summary = "Many people dream to become a freelance blogger and make a living onl
 
 tags = ['Monetization']
 
-keywords = ['post', 'monetize', 'money', 'tech', 'blog', 'freelance', 'FIRE']
+keywords = ['post', 'monetize', 'money', 'tech', 'blog', 'freelance', 'FIRE', 'online']
 
 [amp]
     elements = []
