@@ -9,7 +9,7 @@ description = "Many people dream to make a living online, it's not an easy endea
 
 summary = "Many people dream to become a freelance blogger and make a living online. It's not an easy endeavor but here are the best ways to make money with your blog with no intial traffic requirements, check it out!"
 
-tags = ['Blog']
+tags = ['Monetization']
 
 keywords = ['post', 'monetize', 'money', 'tech', 'blog', 'freelance', 'FIRE']
 
