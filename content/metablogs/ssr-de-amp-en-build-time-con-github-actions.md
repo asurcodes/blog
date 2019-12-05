@@ -49,7 +49,7 @@ El cambio más destacable se ve en el tiempo de FCP (*First Contentful Paint*), 
 
 Esta mejora se debe a que el script de preprocesado elimina el código de `<style amp-boilerplate>`.
 
-El kit de la cuestión es que ese estilo de **AMP boilerplate oculta el contenido mientras se calcula la distribución del layout**, si eliminamos la necesidad de ese cálculo haciendolo de antemano nuestra página se muestra directamente, sin esperas.
+El kit de la cuestión es que ese estilo de **AMP boilerplate oculta el contenido mientras se calcula la distribución del layout**, si eliminamos la necesidad de ese cálculo haciéndolo de antemano nuestra página se muestra directamente, sin esperas.
 
 > ¿Y por qué no aplicamos estas mejoras a mano?
 
@@ -162,9 +162,9 @@ inputs:
 
 {{< / highlight >}}
 
-Con esto ya está todo listo! Podemos crear una versión y [publicarla en el marketplace](https://github.com/marketplace/actions/amp-optimizer-action)!
+Con esto ya está todo listo! Podemos crear una versión de nuestro proyecto en GitHub y [publicarla en el marketplace](https://github.com/marketplace/actions/amp-optimizer-action)!
 
-Ahora cualquier persona que quiera utilizarla en su proceso lo único que tiene que añadir es un *step* a su fichero `yml` como este:
+Ahora cualquier persona que quiera utilizarla en su proceso de despliegue lo único que tiene que añadir es un *step* a su fichero `yml` como este:
 
 {{< highlight bash "linenos=table" >}}
 
@@ -179,4 +179,4 @@ CLAP! CLAP! CLAP! 👏
 
 ## Próximo destino 🛣️
 
-Ahora si que si, he tardado un poco más de lo que pensaba en preparar el siguiente post pero confirmo que voy a estrenar la sección en inglés con un post sobre monetización online. *Stay tuned!* 😎 🇬🇧
+Ahora si que si, he tardado un poco más de lo que pensaba en preparar el siguiente post pero confirmo que voy a estrenar la sección en inglés con un post piloto sobre monetización online. *Stay tuned!* 😎 🇬🇧
