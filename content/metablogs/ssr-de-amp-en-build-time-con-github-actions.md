@@ -79,13 +79,13 @@ Si te interesa puedes ver una [comparativa de rendimiento detallada](https://blo
 
 Vale, una vez ya me he informado y leído sobre el tema tengo claro que **lo quiero en mi blog**.
 
-Según ponen en la documentación, **la manera ideal de aplicar las tranformaciones en en build time**, dejando como alternativa tranformar y cachear los request *on the fly*.
+Según ponen en la documentación, **la manera ideal de aplicar las tranformaciones en en build time**, dejando como alternativa menos recomendable tranformar y cachear los request *on the fly*.
 
 Como algunos ya sabréis, para buildear y desplegar mi blog utilizo GitHub Actions, pero no había ninguna en el Marketplace que hiciese esto, así que decidí hacer la mía propia y publicarla! 🤓
 
 ### Script de bash
 
-La primera decisión es cual de las dos librerías utilizo. Cloudflare ya da la opción de habilitar *signed exchages* para AMP, así que elijo la librería de Go ya que no tengo esa limitación.
+La primera decisión es cual de las dos librerías utilizo. Cloudflare ya da la opción de habilitar *signed exchages* para AMP, así que elijo la librería de Go ya que no tengo esa limitación y soy un poco *fanboy*, no te voy a engañar.
 
 Al empezar a probar la librería me encuentro con dos problemas:
 
