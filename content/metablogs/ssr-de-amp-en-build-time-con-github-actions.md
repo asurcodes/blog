@@ -1,7 +1,7 @@
 +++
 draft = true
-date = "2019-12-06T16:52:05+02:00"
-publishdate = "2019-12-06T16:52:05+02:00"
+date = "2019-12-05T09:52:05+02:00"
+publishdate = "2019-12-05T09:52:05+02:00"
 
 title = "Metablog #7 - SSR de AMP en build time con GH actions"
 
