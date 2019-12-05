@@ -164,7 +164,7 @@ Lo he conseguido jugando un poco con el *lookup order* de Hugo:
 
 ## Soportar menú 🍔
 
-Si has visitado la lista de requisitos que he linkeado arriba, puedes ver que un tema tiene que soportar el [ejemplo básico de site de Hugo](https://github.com/gohugoio/hugoBasicExample). Pues adivina, este ejemplo tiene menús, así que otra cosa más a la lista.
+Si has visitado la lista de requisitos que he linkeado arriba, puedes ver que un tema tiene que soportar el [ejemplo básico de site de Hugo](https://github.com/gohugoio/hugoBasicExample). Pues adivina, este ejemplo tiene menús, así que otra cosa más para la lista.
 
 Los menús en Hugo se configuran en el `config.toml` y es algo custom de cada site. Queda así:
 
