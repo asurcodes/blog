@@ -74,7 +74,7 @@ La plantilla de paginación queda así:
 
 {{< / highlight >}}
 
-Y con estos estilos todo listo:
+Y con estos estilos básicos quedaría presentable:
 
 {{< highlight scss "linenos=table" >}}
 
@@ -92,6 +92,23 @@ Y con estos estilos todo listo:
 
 {{< / highlight >}}
 
+Por supuesto también he añadido las metatags con `rel="next"` y `rel="prev"` de la siguiente manera:
+
+{{< highlight go-html-template "linenos=table" >}}
+
+{{ with .Paginator }}
+  {{ if gt .TotalPages 1 }}
+    {{ if .HasPrev }}
+      <link rel="prev" href="{{ .Prev.URL | absLangURL }}">
+    {{ end }}
+    {{ if .HasNext }}
+      <link rel="next" href="{{ .Next.URL | absLangURL }}">
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{< / highlight >}}
+
 Para verlo me temo que vas a tener que esperar al siguiente post porque he puesto la paginación a 10 y es justo la cantidad que llevo! 😁
 
 ## Traducción de fechas 📅
@@ -105,23 +122,21 @@ Para esto he tenido que hacer un *workaround* algo raro:
 {{< highlight go-html-template "linenos=table" >}}
 
 <time datetime="{{ .Page.PublishDate.Format "2006-01-02T15:04:05" | safeHTMLAttr }}">
-    {{ $months := index .Site.Data (i18n "months") }}
-    {{ $month := index $months (printf "%d" .Page.PublishDate.Month) }}
-    {{ i18n "published" (dict
-      "Day" .Page.PublishDate.Day
-      "Month" $month
-      "Year" .Page.PublishDate.Year) }}
+  {{ $months := index .Site.Data (i18n "months") }}
+  {{ $month := index $months (printf "%d" .Page.PublishDate.Month) }}
+  {{ i18n "published" (dict
+    "Day" .Page.PublishDate.Day
+    "Month" $month
+    "Year" .Page.PublishDate.Year) }}
 </time>
 
 {{< / highlight >}}
 
 La idea es que con esta línea `{{ $months := index .Site.Data (i18n "months") }}` puedo mirar un fichero en la carpeta data del tenga el nombre de `meses` en el idioma correspondiente, por ejemplo si la página está en inglés buscará `months.yml`.
 
-Con esto si creo ese fichero con los meses y como clave su número en el año los puedo imprimir:
+Con esto si creo ese fichero con los meses y como clave su número en el año los puedo imprimir. Así quedaría por ejemplo el `months.yml`:
 
 ```
-# months.yml
-
 1: "January"
 2: "February"
 3: "March"
@@ -162,7 +177,7 @@ Lo he conseguido jugando un poco con el *lookup order* de Hugo:
 {{< / highlight >}}
 
 
-## Soportar menú 🍔
+## Soportar menús 🍔
 
 Si has visitado la lista de requisitos que he linkeado arriba, puedes ver que un tema tiene que soportar el [ejemplo básico de site de Hugo](https://github.com/gohugoio/hugoBasicExample). Pues adivina, este ejemplo tiene menús, así que otra cosa más para la lista.
 
@@ -226,9 +241,7 @@ El snippet:
 
 {{< / highlight >}}
 
-## Etiquetas hreflang 🏷️
-
-Pues para mejorar un poco el SEO y el reconocimiento multi-idioma he añadido las tags de *hreflang* a la web, pero **solo en las homepages**.
+También para mejorar un poco el SEO y el reconocimiento multi-idioma he añadido las tags de *hreflang* a la web, pero **solo en las homepages**.
 
 {{< highlight go-html-template "linenos=table" >}}
 
@@ -240,6 +253,28 @@ Pues para mejorar un poco el SEO y el reconocimiento multi-idioma he añadido la
 
 {{< / highlight >}}
 
+## Soporte para publicidad 💰
+
+La posibilidad de añadir monetización facilmente al tema es una feature importante, al fin y al cabo la gente quiere sacar partido a lo que escribe.
+
+## Shortcodes para usabilidad 💻
+
+A la hora de escribir no es muy cómodo tener que utilizar HTML directamente para añadir componentes de AMP así que he creado *shortcodes* para los más comunes.
+
+Los shortcodes son una funcionalidad de Hugo, son plantillas que luego puedes usar al escribir en markdown.
+
+## Parcialización del tema 🍱
+
+Cuando te instalas un tema es muy útil que esté parcializado. ¿Por qué? Pues por el [lookup order de Hugo](https://gohugo.io/templates/lookup-order/).
+
+El *lookup order* es una especie de sistema de herencia y puedes usarlo sobreescribir elementos concretos de tu tema.
+
 ## Próximo destino 🛣️
 
 Pues creo que ha quedado claro lo que me queda por hacer, voy a preparar el *Pull Request* y el resto de requisitos que no he mencionado en este *metablog* para que mi tema sea oficializado! *Stay tuned!* 😎
+
+## Wayback Machine ⏰
+
+Ver la [versión original de este post](# "Versión original del post").
+
+Ver la [versión original de la homepage](# "Versión original de la homepage").
