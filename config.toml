@@ -33,11 +33,6 @@ pygmentsUseClasses = true
     url = "https://twitter.com/asurbernardo"
     weight = 10
 [[menu.main]]
-    identifier = "stackoverflow"
-    name = "StackOverflow"
-    url = "https://stackoverflow.com/users/4524353/asur"
-    weight = 10
-[[menu.main]]
     identifier = "github"
     name = "GitHub"
     url = "https://github.com/asurbernardo"
