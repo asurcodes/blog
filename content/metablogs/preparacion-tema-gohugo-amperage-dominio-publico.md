@@ -253,9 +253,11 @@ También para mejorar un poco el SEO y el reconocimiento multi-idioma he añadid
 
 {{< / highlight >}}
 
-## Soporte para publicidad 💰
+## Navegación instantanea ⚡
 
-La posibilidad de añadir monetización facilmente al tema es una feature importante, al fin y al cabo la gente quiere sacar partido a lo que escribe.
+Una de las features que no estaba aprovechando de los service workers es el *link prefetch*. Esta feature permite que un link se cargue de manera proactiva (*eager loading*). De esta manera al navegar la página se recupera de cache en vez de hacer una petición, lo que da la impresión de navegación instantanea.
+
+Para que el sw detecte los links tengo que añadir `data-rel="prefetch"`.
 
 ## Shortcodes para usabilidad 💻
 
@@ -263,11 +265,61 @@ A la hora de escribir no es muy cómodo tener que utilizar HTML directamente par
 
 Los shortcodes son una funcionalidad de Hugo, son plantillas que luego puedes usar al escribir en markdown.
 
+He creado los shortcodes:
+
+ - toc.html
+ - under-title.html
+ - amp-image
+ - amp-gif
+ - amp-video
+ - amp-iframe.html
+
+Algunos de estos shortcodes los he sacado del tema [gohugo-amp toolbox](https://gohugo-amp.gohugohq.com/) y los he modificado un poco.
+
 ## Parcialización del tema 🍱
 
 Cuando te instalas un tema es muy útil que esté parcializado. ¿Por qué? Pues por el [lookup order de Hugo](https://gohugo.io/templates/lookup-order/).
 
 El *lookup order* es una especie de sistema de herencia y puedes usarlo sobreescribir elementos concretos de tu tema.
+
+He convertido en *partials* mucho código y reorganizado todo de nuevo para mejor *dev experience*. La nueva estructura es esta:
+
+ - page/
+   - install-sw.html
+   - analytics.html
+   - pagination.html
+ - head/
+   - base.html
+   - pagination-metatags.html
+   - language-metatags.html
+   - og-metatags.html
+   - twitter-cards-metatags.html
+   - pwa-metatags.html
+   - styles.html
+   - amp-components.html
+ - structured-data/
+   - base.html
+   - article.html
+   - breadcrumbs.html
+   - carousel.html
+   - website.html
+ - header/
+   - base.html
+   - logo.html
+   - menu.html
+ - footer/
+   - base.html
+   - language-menu.html
+ - post/
+   - base.html
+   - related-content.html
+ - shortcodes/
+   - under-title.html
+   - toc.html
+   - amp-image.html
+   - amp-gif.html
+   - amp-video.html
+   - amp-iframe.html
 
 ## Próximo destino 🛣️
 
