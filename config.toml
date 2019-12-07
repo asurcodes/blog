@@ -11,14 +11,14 @@ pygmentsUseClasses = true
         contentDir = "content"
         languageName = "Español"
         languageCode = "es"
-        title = "Bienvenid@ a mi blog | By Asur 🧐"
+        title = "Blog by Asur 🧐"
         description = "Bienvenid@ a mi blog, si te gusta el desarrollo web, el SEO, el open source y la tecnología en general echa un vistazo, seguro que encuentras algo interesante."
         weight = 1
     [languages.en]
         contentDir = "content/english"
         languageName = "English"
         languageCode = "en"
-        title = "Welcome to my blog | By Asur 🧐"
+        title = "Blog by Asur 🧐"
         description = "This is the English section of my site. It's still work in progress but hey news are coming! Stay tuned!"
         weight = 2
 
@@ -42,6 +42,7 @@ pygmentsUseClasses = true
     tag = "tags"
 
 [params]
+    copyright = "asur.dev"
     themeColor = "#ef8b80"
 
     ampElements = ["amp-analytics", "amp-social-share", "amp-install-serviceworker"]
