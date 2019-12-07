@@ -105,7 +105,7 @@ AMP_SW.init({
 
 {{< / highlight >}}
 
-En mi caso la única configuración que he puesto es el cacheo de assets estáticos como imágenes, fuentes, javascript y css.
+En mi caso la única configuración que he puesto es el cacheo de assets estáticos como imágenes, fuentes, javascript, css, etc y el *prefetch* de los links de la página para una navegación instantanea.
 
 Además he especificado el fichero que se mostrará cuando un usuario intente acceder offline a la aplicación y no tenga cacheada esa url en concreto. Aquí puedes ver [qué se mostraría cuando no tienes internet](https://asur.dev/offline.html).
 
