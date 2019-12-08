@@ -43,7 +43,7 @@ La fecha de publicación de **Amperage** cada vez está más cerca. Ha llegado u
 
 Pues resulta que GoHugo tiene una [página con sus temas oficiales](https://themes.gohugo.io/). **Mi objetivo es que Amperage llegue a estar listado en esa página.**
 
-Existe un [procedimiento a seguir](github.com/gohugoio/hugoThemes/blob/master/README.md#adding-a-theme-to-the-list) para conseguirlo, hay que hacer un *Pull Request* al repositorio de esa página, pero antes hay que cumplir una serie de requisitos básicos y por supuesto tener unas features que atraigan a la gente a usar tu tema.
+Existe un [procedimiento a seguir](https://github.com/gohugoio/hugoThemes/blob/master/README.md#adding-a-theme-to-the-list) para conseguirlo, hay que hacer un *Pull Request* al repositorio de esa página, pero antes hay que cumplir una serie de requisitos básicos y por supuesto tener unas features que atraigan a la gente a usar tu tema.
 
 De esto voy a hablar en este metablog, de los toques finales antes de mandar mi solicitud! A por ello!!
 
@@ -280,7 +280,7 @@ Algunos de estos shortcodes los he sacado del tema [gohugo-amp toolbox](https://
 
 Cuando te instalas un tema es muy útil que esté parcializado. ¿Por qué? Pues por el [lookup order de Hugo](https://gohugo.io/templates/lookup-order/).
 
-El *lookup order* es una especie de sistema de herencia y puedes usarlo sobreescribir elementos concretos de tu tema.
+El *lookup order* es una especie de sistema de herencia y puedes usarlo sobreescribir elementos concretos de tu tema. La idea es que cuanto más atómicos sean estos elementos menos hay que sobreescribir y más fácil es personalizar el tema a tu gusto.
 
 He convertido en *partials* mucho código y reorganizado todo de nuevo para mejor *dev experience*. La nueva estructura es esta:
 
