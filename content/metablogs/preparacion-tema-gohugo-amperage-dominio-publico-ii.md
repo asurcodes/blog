@@ -7,7 +7,7 @@ title = "Metablog #9 - Preparando Amperage para el dominio público (II)"
 
 description = "Segunda tanta de funcionalidades antes de publicar Amperage, hay que reorganizar el código, hacer un proyecto de ejemplo y una demo para mostrar los componentes"
 
-summary = "Segunda tanda de funcionalidades preparando la publicación de Amperage, toca **reorganizar el código**, crear un **proyecto de ejemplo** para poder empezar rápido con tu propia web y un **kitchen sink** para mostrar los componentes del tema!"
+summary = "Segunda tanda de funcionalidades preparando la publicación de Amperage, toca **reorganizar el código**, crear un **proyecto de ejemplo** para que los usuarios puedan empezar rápido con su propia web y un **kitchen sink** para demostrar todos los componentes del tema en el mismo sitio!"
 
 tags = ['Evolutivo']
 

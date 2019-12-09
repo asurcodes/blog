@@ -43,7 +43,7 @@ La fecha de publicación de **Amperage** cada vez está más cerca. Ha llegado u
 
 Pues resulta que GoHugo tiene una [página con sus temas oficiales](https://themes.gohugo.io/). **Mi objetivo es que Amperage llegue a estar listado en esa página.**
 
-Existe un [procedimiento a seguir](https://github.com/gohugoio/hugoThemes/blob/master/README.md#adding-a-theme-to-the-list) para conseguirlo, hay que hacer un *Pull Request* al repositorio de esa página, pero antes hay que cumplir una serie de requisitos básicos y por supuesto tener unas features que atraigan a la gente a usar tu tema.
+Existe un [procedimiento a seguir](https://github.com/gohugoio/hugoThemes/blob/master/README.md#adding-a-theme-to-the-list) para conseguirlo, hay que crear un *Issue* en el repositorio de esa página, pero antes hay que cumplir una serie de requisitos básicos y por supuesto tener unas features que atraigan a la gente a usar tu tema.
 
 De esto voy a hablar en este metablog, de los toques finales antes de mandar mi solicitud! A por ello!!
 
@@ -205,13 +205,14 @@ Esta configuración se bindea a la variable `.Site` en *build time* y podemos ac
 {{< highlight go-html-template "linenos=table" >}}
 
 <ul class="header__menu__list">
-  {{ $internal := in .URL .Site.BaseURL }}
   {{ range .Site.Menus.main }}
+    {{ $url := .URL | absURL }}
+    {{ $isInternal := hasPrefix $url $.Site.BaseURL }}
     <li>
-      <a href="{{ .URL }}"
-        {{ if not $internal }} target="_blank" rel="nofollow noopener noreferrer" {{ end }}>
-        {{ .Pre }}
-        <span>{{ .Name }}</span>
+      <a href="{{ $url }}"
+        {{ if not $isInternal }} target="_blank" rel="nofollow noopener noreferrer"
+        {{ else }} data-rel="prefetch" {{ end }}>
+        {{ .Pre }}<span>{{ .Name }}</span>
       </a>
     </li>
   {{ end }}
