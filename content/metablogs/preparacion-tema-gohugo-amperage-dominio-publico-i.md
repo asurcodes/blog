@@ -1,9 +1,9 @@
 +++
-draft = true
-date = "2019-12-15T10:19:05+02:00"
-publishdate = "2019-12-15T10:19:05+02:00"
+draft = false
+date = "2019-12-13T10:19:05+02:00"
+publishdate = "2019-12-13T10:19:05+02:00"
 
-title = "Metablog #8 - Preparando Amperage para el dominio público"
+title = "Metablog #8 - Preparando Amperage para el dominio público (I)"
 
 description = "La publicación de mi tema **Amperage** está cerca. Preparo funcionalidades que la gente probablemente necesite como paginación, poder sobreescribir estilos y más"
 
@@ -21,7 +21,7 @@ keywords = ['blog', 'desarrollo', 'gohugo', 'amperage', 'publicación', 'tema']
     homepage = "/"
 
 [image]
-    src = ""
+    src = "/images/preparacion-tema-gohugo-amperage-dominio-publico/share-card.jpg"
 
 [twitter]
     site = "@asurbernardo"
@@ -33,7 +33,7 @@ keywords = ['blog', 'desarrollo', 'gohugo', 'amperage', 'publicación', 'tema']
 
 +++
 
-# Preparando Amperage para el dominio público
+# Preparando Amperage para el dominio público (I)
 
 {{% under-title %}}
 
@@ -259,74 +259,6 @@ Una de las features que no estaba aprovechando de los service workers es el *lin
 
 Para que el sw detecte los links tengo que añadir `data-rel="prefetch"`.
 
-## Shortcodes para usabilidad 💻
-
-A la hora de escribir no es muy cómodo tener que utilizar HTML directamente para añadir componentes de AMP así que he creado *shortcodes* para los más comunes.
-
-Los shortcodes son una funcionalidad de Hugo, son plantillas que luego puedes usar al escribir en markdown.
-
-He creado los shortcodes:
-
- - toc.html
- - under-title.html
- - amp-image
- - amp-gif
- - amp-video
- - amp-iframe.html
-
-Algunos de estos shortcodes los he sacado del tema [gohugo-amp toolbox](https://gohugo-amp.gohugohq.com/) y los he modificado un poco.
-
-## Parcialización del tema 🍱
-
-Cuando te instalas un tema es muy útil que esté parcializado. ¿Por qué? Pues por el [lookup order de Hugo](https://gohugo.io/templates/lookup-order/).
-
-El *lookup order* es una especie de sistema de herencia y puedes usarlo sobreescribir elementos concretos de tu tema. La idea es que cuanto más atómicos sean estos elementos menos hay que sobreescribir y más fácil es personalizar el tema a tu gusto.
-
-He convertido en *partials* mucho código y reorganizado todo de nuevo para mejor *dev experience*. La nueva estructura es esta:
-
- - page/
-   - install-sw.html
-   - analytics.html
-   - pagination.html
- - head/
-   - base.html
-   - pagination-metatags.html
-   - language-metatags.html
-   - og-metatags.html
-   - twitter-cards-metatags.html
-   - pwa-metatags.html
-   - styles.html
-   - amp-components.html
- - structured-data/
-   - base.html
-   - article.html
-   - breadcrumbs.html
-   - carousel.html
-   - website.html
- - header/
-   - base.html
-   - logo.html
-   - menu.html
- - footer/
-   - base.html
-   - language-menu.html
- - post/
-   - base.html
-   - related-content.html
- - shortcodes/
-   - under-title.html
-   - toc.html
-   - amp-image.html
-   - amp-gif.html
-   - amp-video.html
-   - amp-iframe.html
-
 ## Próximo destino 🛣️
 
-Pues creo que ha quedado claro lo que me queda por hacer, voy a preparar el *Pull Request* y el resto de requisitos que no he mencionado en este *metablog* para que mi tema sea oficializado! *Stay tuned!* 😎
-
-## Wayback Machine ⏰
-
-Ver la [versión original de este post](# "Versión original del post").
-
-Ver la [versión original de la homepage](# "Versión original de la homepage").
+Voy a hacer una segunda parte para este post, parece que tenía más cosas que preparar de las que esperaba. Ya no queda nada! *Stay tuned!* 😎
