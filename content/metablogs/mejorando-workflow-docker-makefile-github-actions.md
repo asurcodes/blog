@@ -157,13 +157,12 @@ Como se puede ver en este snippet, hay 4 partes bien diferenciadas, aunque todas
 
 Al ejecutarlo todo junto se ve algo así:
 
-<amp-anim
+{{< amp-gif
     alt="Output de consola del comando make"
-    layout="responsive"
-    width=1367
-    height=1112
-    src="/images/mejorando-workflow-docker-makefile-github-actions/make-command.gif">
-</amp-anim>
+    src="/images/mejorando-workflow-docker-makefile-github-actions/make-command.gif"
+    width="1367"
+    height="1112"
+    layout="responsive" >}}
 
 **OJO**: He descubierto por las malas que **cada línea de un Makefile se ejecuta en un entorno independiente**, siempre partiendo de la raiz desde donde se ha ejecutado el `make`, así que olvídate de cambiarte de directorio y hacer algo en una línea nueva por que no te va a funcionar (la que he armado en mi historial de git probando esto fué muy gorda).
 
@@ -244,12 +243,12 @@ Si quieres ver como se han configurado los pasos 3 y 5 puedes visitar el [perfil
 
 La verdad es que una vez lo tienes funcionando, aunque la interfaz de Github a veces tiene algún bug es algo muy satisfactorio de ver:
 
-<amp-video controls
-  width="1280"
-  height="576"
-  layout="responsive"
-  src="/videos/gh-actions-workflow.m4v">
-</amp-video>
+{{< amp-video
+    alt="Output de consola del comando make"
+    src="/videos/gh-actions-workflow.m4v"
+    width="1280"
+    height="576"
+    layout="responsive" >}}
 
 De media suele tardar unos 30 segundos desde que hago el push en estar ya desplegado, no está nada mal, lo único que espero es no levantarme un día y ver que me van a quitar esta funcionalidad a no ser que empiece a pagar.
 

@@ -271,8 +271,10 @@ Y eso es todo, al lanzarlo se nos inicia un cliente de localtunnel listo para us
 
 He hecho una presentación sobre este tema recientemente, dejo por aquí las diapositivas por si alguien les quiere echar un vistazo o las quiere reutilizar:
 
-<amp-iframe 
-    src="https://slides.com/asurbernardo/como-exponer-tu-local-a-internet-con-http-tunneling/embed"
+{{< amp-iframe
+    alt="Diapositivas para presentación"
     sandbox="allow-scripts allow-same-origin"
-    width="576" height="420" layout="responsive"
-    scrolling="no" frameborder="0" allowfullscreen></amp-iframe>
+    src="https://slides.com/asurbernardo/como-exponer-tu-local-a-internet-con-http-tunneling/embed"
+    width="576"
+    height="420"
+    layout="responsive" >}}
