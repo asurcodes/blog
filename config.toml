@@ -43,7 +43,7 @@ pygmentsUseClasses = true
 
 [params]
     copyright = "asur.dev"
-    themeColor = "#ef8b80"
+    themeColor = "#333"
 
     ampElements = ["amp-analytics", "amp-social-share", "amp-install-serviceworker"]
 
