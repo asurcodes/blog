@@ -5,7 +5,7 @@ publishdate = "2019-12-05T17:24:05+02:00"
 
 title = "Top 3 ways I monetize my tech blog! (no traffic required) 💸"
 
-description = "Many people dream to make a living online, it's not an easy endeavor but here are the best ways to make money with your blog with no intial traffic requirements"
+description = "Many people dream to make a living online, it's not an easy endeavour but here are the best ways to make money with your blog with no intial traffic requirements"
 
 summary = "Many people dream to become a freelance blogger and make a living online. It's not an easy endeavor but here are the best ways to make money with your blog with no intial traffic requirements, check it out!"
 
