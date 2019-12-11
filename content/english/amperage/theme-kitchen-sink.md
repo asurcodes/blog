@@ -1,7 +1,7 @@
 +++
 draft = false
-date = "2019-12-15T16:14:05+02:00"
-publishdate = "2019-12-15T16:14:05+02:00"
+date = "2019-12-11T15:47:05+02:00"
+publishdate = "2019-12-11T15:47:05+02:00"
 
 title = "Amperage theme kitchen sink"
 
@@ -56,6 +56,26 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. **Fusce eget mauris aug
 
 **Code highlight:**
 
+How to:
+
+{{< highlight md "linenos=table" >}}
+
+{{</* highlight html "linenos=table" */>}}
+
+<link rel="manifest" href="https://asur.dev/manifest.json">
+<link rel="icon" type="image/png" 
+    sizes="32x32" href="https://asur.dev/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" 
+    sizes="16x16" href="https://asur.dev/icons/favicon-16x16.png">
+<link rel="apple-touch-icon" 
+    sizes="180x180" href="https://asur.dev/icons/apple-touch-icon.png">
+
+{{</* /highlight */>}}
+
+{{< / highlight >}}
+
+Result:
+
 {{< highlight html "linenos=table" >}}
 
 <link rel="manifest" href="https://asur.dev/manifest.json">
@@ -70,6 +90,20 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. **Fusce eget mauris aug
 
 **Table:**
 
+How to:
+
+{{< highlight markdown "linenos=table" >}}
+
+| Tables   |      Are      |  Cool |
+|----------|:-------------:|------:|
+| col 1 is |  left-aligned | $1600 |
+| col 2 is |    centered   |   $12 |
+| col 3 is | right-aligned |    $1 |
+
+{{< / highlight >}}
+
+Result:
+
 | Tables   |      Are      |  Cool |
 |----------|:-------------:|------:|
 | col 1 is |  left-aligned | $1600 |
@@ -78,8 +112,23 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. **Fusce eget mauris aug
 
 **Image:**
 
+How to:
+
+{{< highlight md "linenos=table" >}}
+
+{{</* amp-image
+    alt="Amperage image demo"
+    src="/images/amperage-theme-kitchen-sink/share-card.jpg"
+    width="1280"
+    height="720"
+    layout="responsive" */>}}
+
+{{< / highlight >}}
+
+Result:
+
 {{< amp-image
-    alt="Amperage demo image"
+    alt="Amperage image demo"
     src="/images/amperage-theme-kitchen-sink/share-card.jpg"
     width="1280"
     height="720"
@@ -87,8 +136,23 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. **Fusce eget mauris aug
 
 **Video:**
 
+How to:
+
+{{< highlight md "linenos=table" >}}
+
+{{</* amp-video
+    alt="Amperage video demo"
+    src="/videos/gh-actions-workflow.m4v"
+    width="1280"
+    height="576"
+    layout="responsive" */>}}
+
+{{< / highlight >}}
+
+Result:
+
 {{< amp-video
-    alt="Amperage demo video"
+    alt="Amperage video demo"
     src="/videos/gh-actions-workflow.m4v"
     width="1280"
     height="576"
@@ -96,8 +160,23 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. **Fusce eget mauris aug
 
 **GIF:**
 
+How to:
+
+{{< highlight md "linenos=table" >}}
+
+{{</* amp-gif
+    alt="Amperage GIF demo"
+    src="/images/mejorando-workflow-docker-makefile-github-actions/make-command.gif"
+    width="1367"
+    height="1112"
+    layout="responsive" */>}}
+
+{{< / highlight >}}
+
+Result:
+
 {{< amp-gif
-    alt="Amperage demo GIF"
+    alt="Amperage GIF demo"
     src="/images/mejorando-workflow-docker-makefile-github-actions/make-command.gif"
     width="1367"
     height="1112"
@@ -105,8 +184,24 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. **Fusce eget mauris aug
 
 **Iframe:**
 
+How to:
+
+{{< highlight md "linenos=table" >}}
+
+{{</* amp-iframe
+    alt="Amperage iframe demo"
+    sandbox="allow-scripts allow-same-origin"
+    src="https://giphy.com/embed/rihCLlGLlTYm4"
+    width="480"
+    height="321"
+    layout="responsive" */>}}
+
+{{< / highlight >}}
+
+Result:
+
 {{< amp-iframe
-    alt="Amperage demo iframe"
+    alt="Amperage iframe demo"
     sandbox="allow-scripts allow-same-origin"
     src="https://giphy.com/embed/rihCLlGLlTYm4"
     width="480"
