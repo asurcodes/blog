@@ -7,7 +7,7 @@ title = "Amperage theme kitchen sink"
 
 description = "This a demo page for all the components in the Amperage theme for GoHugo"
 
-summary = "This is a demo page for all the components in the Amperage theme. This posts is updated on every version release of Amperage. **Last updated on December 9th, 2019**."
+summary = "This is a demo page for all the components in the Amperage theme. This posts is updated on every version release of Amperage. **Last updated on December 11th, 2019**."
 
 tags = ['Amperage']
 
@@ -36,11 +36,9 @@ keywords = ['amperage', 'theme', 'gohugo', 'kitchen sink', 'demo', 'components']
 
 {{% under-title %}}
 
-This is a demo page for all the components in the Amperage theme. This posts is updated on every version release of Amperage. **Last updated on December 9th, 2019**.
+This is a demo page for all the components in the Amperage theme. This posts is updated on every version release of Amperage. **Last updated on December 11th, 2019**.
 
-{{% toc %}}
-
-**Titles:**
+## Titles
 
 # Heading 1
 
@@ -50,11 +48,11 @@ This is a demo page for all the components in the Amperage theme. This posts is 
 
 #### Heading 4
 
-**Paragraph:**
+## Paragraphs and inline modifications
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. **Fusce eget mauris augue**. Ut auctor nunc nec blandit malesuada. Suspendisse posuere tincidunt magna consequat pretium. In facilisis ultricies aliquam. *Ut vitae quam convallis*, facilisis lacus eget, tempus dolor. `Pellentesque eu justo` nec turpis sollicitudin malesuada. Proin vel mattis nisl.
 
-**Code highlight:**
+## Code highlights
 
 How to:
 
@@ -88,7 +86,7 @@ Result:
 
 {{< / highlight >}}
 
-**Table:**
+## Tables
 
 How to:
 
@@ -110,7 +108,7 @@ Result:
 | col 2 is |    centered   |   $12 |
 | col 3 is | right-aligned |    $1 |
 
-**Image:**
+## Images
 
 How to:
 
@@ -134,7 +132,7 @@ Result:
     height="720"
     layout="responsive" >}}
 
-**Video:**
+## Videos
 
 How to:
 
@@ -158,7 +156,7 @@ Result:
     height="576"
     layout="responsive" >}}
 
-**GIF:**
+## GIFs
 
 How to:
 
@@ -182,7 +180,7 @@ Result:
     height="1112"
     layout="responsive" >}}
 
-**Iframe:**
+## Iframes
 
 How to:
 
