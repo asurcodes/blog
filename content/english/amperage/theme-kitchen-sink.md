@@ -7,7 +7,7 @@ title = "Amperage theme kitchen sink"
 
 description = "This a demo page for all the components in the Amperage theme for GoHugo"
 
-summary = "This is a demo page for all the components in the Amperage theme. This posts is updated on every version release of Amperage. **Last updated on 9th of December 2019**."
+summary = "This is a demo page for all the components in the Amperage theme. This posts is updated on every version release of Amperage. **Last updated on December 9th, 2019**."
 
 tags = ['Amperage']
 
@@ -36,7 +36,7 @@ keywords = ['amperage', 'theme', 'gohugo', 'kitchen sink', 'demo', 'components']
 
 {{% under-title %}}
 
-This is a demo page for all the components in the Amperage theme. This posts is updated on every version release of Amperage. **Last updated on 9th of December 2019**.
+This is a demo page for all the components in the Amperage theme. This posts is updated on every version release of Amperage. **Last updated on December 9th, 2019**.
 
 {{% toc %}}
 
