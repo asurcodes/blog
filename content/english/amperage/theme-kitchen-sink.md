@@ -60,13 +60,13 @@ How to:
 
 {{</* highlight html "linenos=table" */>}}
 
-<link rel="manifest" href="https://asur.dev/manifest.json">
+<link rel="manifest" href="https://example.com/manifest.json">
 <link rel="icon" type="image/png" 
-    sizes="32x32" href="https://asur.dev/icons/favicon-32x32.png">
+    sizes="32x32" href="https://example.com/icons/favicon-32x32.png">
 <link rel="icon" type="image/png" 
-    sizes="16x16" href="https://asur.dev/icons/favicon-16x16.png">
+    sizes="16x16" href="https://example.com/icons/favicon-16x16.png">
 <link rel="apple-touch-icon" 
-    sizes="180x180" href="https://asur.dev/icons/apple-touch-icon.png">
+    sizes="180x180" href="https://example.com/icons/apple-touch-icon.png">
 
 {{</* /highlight */>}}
 
@@ -76,13 +76,13 @@ Result:
 
 {{< highlight html "linenos=table" >}}
 
-<link rel="manifest" href="https://asur.dev/manifest.json">
+<link rel="manifest" href="https://example.com/manifest.json">
 <link rel="icon" type="image/png" 
-    sizes="32x32" href="https://asur.dev/icons/favicon-32x32.png">
+    sizes="32x32" href="https://example.com/icons/favicon-32x32.png">
 <link rel="icon" type="image/png" 
-    sizes="16x16" href="https://asur.dev/icons/favicon-16x16.png">
+    sizes="16x16" href="https://example.com/icons/favicon-16x16.png">
 <link rel="apple-touch-icon" 
-    sizes="180x180" href="https://asur.dev/icons/apple-touch-icon.png">
+    sizes="180x180" href="https://example.com/icons/apple-touch-icon.png">
 
 {{< / highlight >}}
 
@@ -116,7 +116,7 @@ How to:
 
 {{</* amp-image
     alt="Amperage image demo"
-    src="/images/amperage-theme-kitchen-sink/share-card.jpg"
+    src="/images/your-image.jpg"
     width="1280"
     height="720"
     layout="responsive" */>}}
@@ -140,7 +140,7 @@ How to:
 
 {{</* amp-video
     alt="Amperage video demo"
-    src="/videos/gh-actions-workflow.m4v"
+    src="/videos/your-video.m4v"
     width="1280"
     height="576"
     layout="responsive" */>}}
@@ -164,7 +164,7 @@ How to:
 
 {{</* amp-gif
     alt="Amperage GIF demo"
-    src="/images/mejorando-workflow-docker-makefile-github-actions/make-command.gif"
+    src="/images/your-animation.gif"
     width="1367"
     height="1112"
     layout="responsive" */>}}
@@ -189,7 +189,7 @@ How to:
 {{</* amp-iframe
     alt="Amperage iframe demo"
     sandbox="allow-scripts allow-same-origin"
-    src="https://giphy.com/embed/rihCLlGLlTYm4"
+    src="https://example.com/embed/rihCLlGLlTYm4"
     width="480"
     height="321"
     layout="responsive" */>}}
