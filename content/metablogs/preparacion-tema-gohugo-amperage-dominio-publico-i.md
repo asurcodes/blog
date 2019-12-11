@@ -53,9 +53,9 @@ De esto voy a hablar en este metablog, de los toques finales antes de mandar mi 
 
 De momento la cantidad de posts que tengo en el blog no es descomunal, por lo que puedo ir tirando sin paginación, además mi homepage pesa 6Kb así que tampoco es que se vaya a sobrecargar el DOM.
 
-Pero esto no es escalable y tampoco significa que alguien que vaya a usar el tema no necesite esta funcionalidad, así que toca implementarla.
+Aún así carecer de paginación no es escalable y tampoco significa que alguien que vaya a usar el tema no necesite esta funcionalidad, así que toca implementarla.
 
-Este es otro ejemplo de funcionalidad con soporte nativo por parte de Hugo. Lo único que he tenido que hacer es darle unos estilos para que sea consecuente con el resto de la web.
+Este es otro ejemplo de funcionalidad con soporte nativo por parte de Hugo. Lo único que he tenido que hacer es una plantilla de paginación simple (*anterior/siguiente*) y darle unos estilos para que sea consecuente con el resto de la web.
 
 La plantilla de paginación queda así:
 
@@ -92,7 +92,7 @@ Y con estos estilos básicos quedaría presentable:
 
 {{< / highlight >}}
 
-Por supuesto también he añadido las metatags con `rel="next"` y `rel="prev"` de la siguiente manera:
+Por supuesto para que los robots detecten esta paginación también he añadido las metatags con `rel="next"` y `rel="prev"` en el head de la siguiente manera:
 
 {{< highlight go-html-template "linenos=table" >}}
 
@@ -109,15 +109,13 @@ Por supuesto también he añadido las metatags con `rel="next"` y `rel="prev"` d
 
 {{< / highlight >}}
 
-Para verlo me temo que vas a tener que esperar al siguiente post porque he puesto la paginación a 10 y es justo la cantidad que llevo! 😁
+Para verlo me temo que vas a tener que esperar al siguiente post porque he puesto la paginación a 10 y es justo la cantidad que llevo, así que todavía no se ve nada! 😁
 
 ## Traducción de fechas 📅
 
-Quedaba un poco raro en los posts que la fecha saliese con el formato `5-9-1994`. Además en otros paises como EEUU el mes va delante del día, así que me ha tocado cambiarlo.
+Quedaba un poco raro en los posts que la fecha saliese con el formato numérico (`05-09-1994`). Además en otros paises como EEUU el mes va delante del día, así que me ha tocado echar un ojo a esto también.
 
-He decidido además escribir el mes en letra, en vez de en cifra, creo que queda mejor en general.
-
-Para esto he tenido que hacer un *workaround* algo raro:
+Al final he decidido escribir el mes en letra, en vez de en cifra, creo que queda mejor en general. Para esto he tenido que hacer un *workaround* algo raro:
 
 {{< highlight go-html-template "linenos=table" >}}
 
@@ -134,7 +132,7 @@ Para esto he tenido que hacer un *workaround* algo raro:
 
 La idea es que con esta línea `{{ $months := index .Site.Data (i18n "months") }}` puedo mirar un fichero en la carpeta data del tenga el nombre de `meses` en el idioma correspondiente, por ejemplo si la página está en inglés buscará `months.yml`.
 
-Con esto si creo ese fichero con los meses y como clave su número en el año los puedo imprimir. Así quedaría por ejemplo el `months.yml`:
+Ahora si creo ese fichero con los meses y como clave su número en el año los puedo imprimir. Así quedaría por ejemplo el `months.yml`:
 
 ```
 1: "January"
@@ -153,9 +151,9 @@ Con esto si creo ese fichero con los meses y como clave su número en el año lo
 
 ## Poder sobreescribir estilos 💅
 
-Pues claro! La gente es poco probable que tenga el mismo gusto que yo, así que he metido la posibilidad de sobreescribir los estilos por default.
+Pues claro! La gente es poco probable que tenga el mismo gusto que yo, así que he implementado la posibilidad de sobreescribir los estilos por defecto.
 
-Por defecto el CSS minificado solo pesa 5Kb así que deja otros 45Kb extra de margen para que la gente lo deje a su gusto!
+El CSS original minificado solo pesa 5Kb así que deja otros 45Kb extra de margen para que la gente lo deje a su gusto!
 
 Lo único que tienen que hacer es añadirlos en `assets/custom.scss` y ya se transpila, minifica e inserta automáticamente. 👍
 
@@ -179,9 +177,9 @@ Lo he conseguido jugando un poco con el *lookup order* de Hugo:
 
 ## Soportar menús 🍔
 
-Si has visitado la lista de requisitos que he linkeado arriba, puedes ver que un tema tiene que soportar el [ejemplo básico de site de Hugo](https://github.com/gohugoio/hugoBasicExample). Pues adivina, este ejemplo tiene menús, así que otra cosa más para la lista.
+Si has visitado la lista de requisitos que he linkeado arriba, puedes ver que una de las condiciones es soportar el [ejemplo básico de site de Hugo](https://github.com/gohugoio/hugoBasicExample). Pues adivina, este ejemplo tiene menús, así que otra cosa más para la lista.
 
-Los menús en Hugo se configuran en el `config.toml` y es algo custom de cada site. Queda así:
+Los menús en Hugo se configuran en el `config.toml` y es algo *custom* de cada site. Queda así:
 
 {{< highlight toml "linenos=table" >}}
 
@@ -222,7 +220,7 @@ Esta configuración se bindea a la variable `.Site` en *build time* y podemos ac
 
 ## Links entre idiomas 🌏
 
-Esto ha sido preferencia personal. Para mejorar el interlinking entre idiomas y que hereden el pagerank de la página padre he decidido añadir en el footer una lista de todas las homepages de los distintos idiomas.
+Esto ha sido preferencia personal. Para mejorar el interlinking entre idiomas y que hereden el *pagerank* de la página padre he decidido añadir en el footer una lista de todas las homepages en los distintos idiomas.
 
 El snippet:
 
@@ -242,7 +240,7 @@ El snippet:
 
 {{< / highlight >}}
 
-También para mejorar un poco el SEO y el reconocimiento multi-idioma he añadido las tags de *hreflang* a la web, pero **solo en las homepages**.
+También para mejorar el reconocimiento multi-idioma por los bots he añadido las tags de *hreflang* a la web, pero **solo en las homepages**.
 
 {{< highlight go-html-template "linenos=table" >}}
 
@@ -253,12 +251,6 @@ También para mejorar un poco el SEO y el reconocimiento multi-idioma he añadid
 {{ end }}
 
 {{< / highlight >}}
-
-## Navegación instantanea ⚡
-
-Una de las features que no estaba aprovechando de los service workers es el *link prefetch*. Esta feature permite que un link se cargue de manera proactiva (*eager loading*). De esta manera al navegar la página se recupera de cache en vez de hacer una petición, lo que da la impresión de navegación instantanea.
-
-Para que el sw detecte los links tengo que añadir `data-rel="prefetch"`.
 
 ## Próximo destino 🛣️
 

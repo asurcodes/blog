@@ -39,6 +39,8 @@ keywords = ['blog', 'desarrollo', 'gohugo', 'amperage', 'publicación', 'tema']
 
 Un solo post se me quedó corto la semana pasada así que aquí está la segunda remesa de cambios para el tema!
 
+Estos cambios son bastante menos interesantes (*IMHO*) pero son necesarios para poder llegar a publicar Amperage y he querido documentarlos igualmente.
+
 {{% toc %}}
 
 ## Shortcodes para usabilidad 💻
@@ -111,7 +113,16 @@ Para registrar tu tema necesitas una demo funcional que se buildea automáticame
 
 He optado por la segunda opción para poder proporcionar ya funcionalidad de PWA y datos estructurados *out of the box*.
 
-Este es el paso que con diferencia más me ha llevado porque me he ido dando cuenta de todas las cosas que me faltaban!
+Este es el paso que con diferencia más me ha llevado porque me he ido dando cuenta de todas las cosas que me faltaban, que eran muchas!
+
+Una vez acabé el site de ejemplo se puede probar a buildear en la página de [hugoThemes](https://github.com/gohugoio/hugoThemes). Al ser un proyecto público se puede descargar e introducir tu propio tema para ver si en tu local se ve bien! El resultado:
+
+{{< amp-image
+    alt="Inspiración inicial para el estilo del blog"
+    src="/images/preparacion-tema-gohugo-amperage-dominio-publico/amperage-en-hugo-themes.jpg"
+    width="1887"
+    height="714"
+    layout="responsive" >}}
 
 ## Kitchen sink ⏲️
 
@@ -122,6 +133,14 @@ No conocía este término hasta que empecé a investigar cómo crear un tema y r
 Significa literalmente *"todo lo que te puedas imaginar"* y se utiliza en el contexto de programación para demos con todos los componentes de un proyecto.
 
 Pues a eso me he dedicado. De momento no es muy extenso pero espero ir actualizándolo a medida que el tema vaya creciendo! ([Kitchen sink de Amperage](https://asur.dev/en/amperage/theme-kitchen-sink))
+
+## Navegación instantanea ⚡
+
+Una de las features que no estaba aprovechando de los service workers es el *link prefetch*. 
+
+Esta feature permite que un link se cargue de manera proactiva (*eager loading*). De esta manera al navegar la página se recupera de cache en vez de hacer una petición, lo que da la impresión de navegación instantanea.
+
+Para que la librería de `amp-sw` detecte los links tengo que añadir `data-rel="prefetch"` a los *anchors*, el resto es automático.
 
 ## Próximo destino 🛣️
 
