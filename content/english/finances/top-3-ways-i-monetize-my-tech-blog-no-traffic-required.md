@@ -61,12 +61,12 @@ There are many ad networks to work with, you can choose your own, I went with th
 Advertising is highly traffic dependent, but AdSense doesn't have a minimum threshold, they just review your site to make sure the content is good and legitimate.
 
 <amp-ad type="adsense"
-    width="300"
-    height="300"
-    layout="fixed"
+    width="100vw" height="320"
     data-ad-client="ca-pub-8268925024957381"
-    data-ad-slot="1552750432">
-    </amp-ad>
+    data-ad-slot="1552750432"
+    data-auto-format="rspv"
+    data-full-width="">
+</amp-ad>
 
 To register just sign up and follow the steps on Adsense official page. You will need to add a script to your web, they also have a Wordpress plugin that does it automatically.
 
