@@ -64,12 +64,12 @@ Los shortcodes son una funcionalidad de Hugo, son plantillas que luego puedes us
 
 He creado los shortcodes:
 
- - toc: Permite añadir la tabla de contenidos dentro del propio cuerpo del post.
- - under-title: Imprime el *bajotítulo*, que incluye la fecha, las tags y los botones para compartir.
- - amp-image: Facilita el uso de imagenes de AMP dentro del post.
- - amp-gif: Idem pero para `amp-anim`.
- - amp-video: Idem pero para `amp-video`.
- - amp-iframe:  Idem pero para `amp-iframe`.
+ - **toc**: Permite añadir la tabla de contenidos dentro del propio cuerpo del post.
+ - **under-title**: Imprime el *bajotítulo*, que incluye la fecha, las tags y los botones para compartir.
+ - **amp-image**: Facilita el uso de imagenes de AMP dentro del post.
+ - **amp-gif**: Idem pero para `amp-anim`.
+ - **amp-video**: Idem pero para `amp-video`.
+ - **amp-iframe**:  Idem pero para `amp-iframe`.
 
 Algunos shortcodes son muy similares al HTML que imprimen (como el de `amp-image`), pero usarlos me permite añadirles lógica en sus respectivas plantillas, como convertir las URLs de `src` en absolutas o validar algunos atributos.
 
