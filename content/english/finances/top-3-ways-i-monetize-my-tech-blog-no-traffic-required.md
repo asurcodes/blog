@@ -61,7 +61,7 @@ There are many ad networks to work with, you can choose your own, I went with th
 Advertising is highly traffic dependent, but AdSense doesn't have a minimum threshold, they just review your site to make sure the content is good and legitimate.
 
 {{< amp-adsense
-    height="320px"
+    height="320"
     layout="fixed-height"
     slot="1552750432" >}}
 
