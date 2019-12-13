@@ -187,7 +187,6 @@ How to:
 {{< highlight md "linenos=table" >}}
 
 {{</* amp-iframe
-    alt="Amperage iframe demo"
     sandbox="allow-scripts allow-same-origin"
     src="https://example.com/embed/rihCLlGLlTYm4"
     width="480"
@@ -199,7 +198,6 @@ How to:
 Result:
 
 {{< amp-iframe
-    alt="Amperage iframe demo"
     sandbox="allow-scripts allow-same-origin"
     src="https://giphy.com/embed/rihCLlGLlTYm4"
     width="480"
