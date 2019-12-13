@@ -66,6 +66,11 @@ Advertising is highly traffic dependent, but AdSense doesn't have a minimum thre
     layout="fixed"
     slot="9425131909" >}}
 
+<amp-ad type="adsense"
+    width="320" height="320" layout="fixed"
+    data-ad-client="ca-pub-8268925024957381"
+    data-ad-slot="9425131909">
+
 To register just sign up and follow the steps on Adsense official page. You will need to add a script to your web, they also have a Wordpress plugin that does it automatically.
 
 A typical AdSense CPM can be around the $2-3, not a huge amount as I said but better than nothing. Keep in mind that the goal is to create multiple streams of income and let them add up, don't be discouraged.
