@@ -1,7 +1,7 @@
 +++
 draft = false
-date = "2019-12-15T10:19:05+02:00"
-publishdate = "2019-12-15T10:19:05+02:00"
+date = "2019-12-13T12:39:05+02:00"
+publishdate = "2019-12-13T12:39:05+02:00"
 
 title = "Metablog #9 - Preparando Amperage para el dominio público (II)"
 
