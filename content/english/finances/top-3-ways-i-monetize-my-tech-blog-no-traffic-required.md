@@ -61,9 +61,10 @@ There are many ad networks to work with, you can choose your own, I went with th
 Advertising is highly traffic dependent, but AdSense doesn't have a minimum threshold, they just review your site to make sure the content is good and legitimate.
 
 {{< amp-adsense
-    height="320px"
-    layout="fixed-height"
-    slot="1552750432" >}}
+    width="320"
+    height="320"
+    layout="fixed"
+    slot="9425131909" >}}
 
 To register just sign up and follow the steps on Adsense official page. You will need to add a script to your web, they also have a Wordpress plugin that does it automatically.
 
