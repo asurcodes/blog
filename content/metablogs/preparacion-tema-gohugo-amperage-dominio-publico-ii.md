@@ -161,6 +161,6 @@ Pues creo que ha quedado claro lo que me queda por hacer, voy a preparar el issu
 
 ## Wayback Machine ⏰
 
-Ver la [versión original de este post](# "Versión original del post").
+Ver la [versión original de este post](https://web.archive.org/web/20191214175550/https://asur.dev/metablogs/preparacion-tema-gohugo-amperage-dominio-publico-ii/ "Versión original del post").
 
-Ver la [versión original de la homepage](# "Versión original de la homepage").
+Ver la [versión original de la homepage](https://web.archive.org/web/20191214175520/https://asur.dev/ "Versión original de la homepage").
