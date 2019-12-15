@@ -14,7 +14,7 @@ tags = ['Amperage']
 keywords = ['amperage', 'theme', 'gohugo', 'kitchen sink', 'demo', 'components']
 
 [amp]
-    elements = ['amp-anim', 'amp-iframe']
+    elements = ['amp-anim', 'amp-iframe', 'amp-video']
 
 [author]
     name = "Asur"
