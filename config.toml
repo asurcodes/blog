@@ -49,8 +49,7 @@ pygmentsUseClasses = true
 
     adsensePublisher = "ca-pub-8268925024957381"
     googleAnalytics = "UA-128498798-1"
-    disqusShortname = "asurbernardo"
-    disqusDomain = "disqus.asur.dev"
+    disqusUrl = "https://disqus.asur.dev"
 
     facebookSite = "asur.dev"
     twitterSite = "@asurbernardo"
