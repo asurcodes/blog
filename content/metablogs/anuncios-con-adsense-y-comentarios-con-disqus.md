@@ -110,13 +110,13 @@ Efectivamente el iframe funcionaba sin problemas y no daba ningún fallo, pero n
 
 Me pasé horas debugueando, pero no había ningún error, el `postMessage` se enviaba bien, con la altura correcta pero el componente parecía ignorarlo.
 
-Tras varias horas de prueba y error me dió por montar un túnel a mi local para poder probar el iframe sin tener que hacer ningún despliegue y el resize FUNCIONÓ!
+Un tiempo después me dió por montar un túnel a mi local para poder probar el iframe sin tener que hacer ningún despliegue y el resize funcionaba! WTF?
 
-Parece que el truco de la redirección funciona genial a no ser que quieras hacer un resize por alguna razón interna de AMP...
+Parece que **el truco de la redirección funciona genial a no ser que quieras hacer un resize** por alguna razón interna de AMP...
 
 Tras este descubrimiento lo que hice fué deshacer los registros en el DNS y alojar un [nuevo proyecto en Github Pages](https://github.com/asurbernardo/blog-comments) con el fichero de la guía de instalación de Disqus y el dominio `disqus.asur.dev`, en esta ocasión 100% independiente del principal (`asur.dev`).
 
-**¡Y funcionó!** 😭
+**¡Y FUNCIONÓ!** 😭
 
 La verdad es que no es la manera más fácil e intuitiva de añadir comentarios a un blog, pero es lo que hay, seguiré iterando y probando otros sistemas de comentarios.
 
@@ -136,7 +136,7 @@ Les twitee al respecto:
   layout="fixed"
   data-tweetid="1204358886112804864"></amp-twitter>
 
-No sé si ha tenido que ver, lo dudo la verdad, pero a las 24 horas tenía la web validada, sin script ni nada! 🥳
+No sé si ha tenido que ver, lo dudo la verdad, pero **a las 24 horas tenía la web validada, sin script ni nada!** 🥳
 
 Con la web ya habilitada en Adsense me puedo poner a hacer pruebas, porque déjame decirte que esto de los anuncios tiene más miga de lo que parece.
 
@@ -178,9 +178,9 @@ Un ejemplo de uso:
     slot="9425131909" */>}}
 ```
 
-Lo único que hay que hacer para empezar a utilizarlo es añadir tu código de *publisher* en la configuración del site. Y por supuesto todo esto genera un código de anuncio válido para AMP.
+Lo único que hay que hacer para empezar a utilizarlo es añadir tu código de *publisher* en la configuración del site. 
 
-El resultado final:
+Por supuesto todo esto genera un código de anuncio válido para AMP. El resultado final:
 
 {{< amp-adsense
     width="320"
@@ -190,7 +190,7 @@ El resultado final:
 
 ## Próximo destino 🛣️
 
-Voy a crear nuevos componentes visuales para los artículos, como nuevos bloques, leyendas para las imágenes, etc. Todo para darle un poco más de flexibilidad al blog y mejorar la experiencia de lectura. *Stay tuned!* 😎
+Voy a crear nuevos componentes visuales para los artículos, como nuevos bloques para hacer comparativas, bloques para linkear productos de Amazon, leyendas para las imágenes y más... Todo para darle un poco más de flexibilidad al blog y mejorar la experiencia de lectura. *Stay tuned!* 😎
 
 ## Wayback machine ⏰
 
