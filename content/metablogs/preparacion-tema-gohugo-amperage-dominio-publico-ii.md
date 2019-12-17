@@ -128,7 +128,7 @@ He optado por la segunda opción para que ya tuviese funcionalidad de PWA y dato
 
 Este es el paso que con diferencia más tiempo me ha llevado porque a medido que iba avanzando me he ido dando cuenta de todas las cosas que me faltaban, que eran bastantes!
 
-Una vez acabé el site de ejemplo se puede probar a buildear en la página de [hugoThemes](https://github.com/gohugoio/hugoThemes). Al ser un proyecto público se puede descargar e introducir tu propio tema para ver si en tu local se ve bien! El resultado:
+Una vez acabé el site de ejemplo se puede probar a buildear en la página de [hugoThemes](https://github.com/gohugoio/hugoThemes). Al ser *open source* se puede descargar e introducir tu propio tema a mano para ver si en tu local esta todo bien! El resultado:
 
 {{< amp-image
     alt="Inspiración inicial para el estilo del blog"
@@ -137,13 +137,15 @@ Una vez acabé el site de ejemplo se puede probar a buildear en la página de [h
     height="714"
     layout="responsive" >}}
 
+Tiene buena pinta! 👍
+
 ## Kitchen sink ⏲️
 
-No conocía este término hasta que empecé a investigar cómo crear un tema y resulta que hay un término llamado *kitchen sink*. Por lo visto hay un dicho en inglés:
+No conocía este término hasta que empecé a investigar cómo crear un tema y resulta que existe algo llamado *kitchen sink*. Por lo visto viene de un dicho en inglés:
 
 > Everything but the kitchen sink
 
-Significa literalmente *"todo lo que te puedas imaginar"* y se utiliza en el contexto de programación para demos con todos los componentes de un proyecto.
+Significa literalmente *"todo lo que te puedas imaginar"* y se utiliza en el contexto de programación para demos que incluyen todos los componentes de un proyecto.
 
 Pues a eso me he dedicado. De momento no es muy extenso pero espero ir actualizándolo a medida que el tema vaya creciendo! ([Kitchen sink de Amperage](https://asur.dev/en/amperage/theme-kitchen-sink))
 
@@ -158,6 +160,8 @@ Para que la librería de `amp-sw` detecte los links tengo que añadir `data-rel=
 ## Próximo destino 🛣️
 
 Pues creo que ha quedado claro lo que me queda por hacer, voy a preparar el issue para que mi tema sea oficializado! *Stay tuned!* 😎
+
+**UPDATE** Puedes seguir el [issue en el proyecto de hugoThemes](https://github.com/gohugoio/hugoThemes/issues/782#issuecomment-566133671) que he creado para solicitar que incluyan Amperage.
 
 ## Wayback Machine ⏰
 
