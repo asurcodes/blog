@@ -122,7 +122,7 @@ He convertido en *partials* mucho código y reorganizado todo de nuevo para mejo
 
 ## Example site 🦆
 
-Para registrar tu tema necesitas una demo funcional que se buildea automáticamente al publicar tu tema. Para esto necesitas que tu tema sea compatible con el proyecto `hugo-basic-example` o proporcionar tú mismo la demo en el directorio `/exampleSite`.
+Para registrar tu tema necesitas una demo funcional que se buildea automáticamente al publicarlo. Para esto necesitas que sea compatible con el proyecto `hugo-basic-example` o proporcionar tú mismo la demo en el directorio `/exampleSite`.
 
 He optado por la segunda opción para que ya tuviese funcionalidad de PWA y datos estructurados *out of the box*.
 
