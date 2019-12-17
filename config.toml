@@ -49,7 +49,7 @@ pygmentsUseClasses = true
 
     adsensePublisher = "ca-pub-8268925024957381"
     googleAnalytics = "UA-128498798-1"
-    commentsEmbedUrl = "https://disqus.asur.dev"
+    commentsEmbedUrl = "https://comments.asur.dev"
 
     facebookSite = "asur.dev"
     twitterSite = "@asurbernardo"
