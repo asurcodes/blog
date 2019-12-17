@@ -86,12 +86,12 @@ Pero la cosa no queda ahí, tu iframe tiene que venir **obligatoriamente** de un
 
 {{< highlight go-html-template "linenos=table" >}}
 
-{{ if isset .Site.Params "disqusurl" }}
+{{ if isset .Site.Params "commentsembedurl" }}
     <amp-iframe width=600 height=180
         layout="responsive"
         sandbox="allow-scripts allow-same-origin allow-modals allow-popups allow-forms"
         resizable
-        src="{{ .Site.Params.DisqusUrl }}#{{ .Page.URL }}">
+        src="{{ .Site.Params.CommentsEmbedUrl }}#{{ .Page.URL }}">
         <div overflow
             tabindex=0
             role=button
