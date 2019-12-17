@@ -161,7 +161,7 @@ Para que la librería de `amp-sw` detecte los links tengo que añadir `data-rel=
 
 Pues creo que ha quedado claro lo que me queda por hacer, voy a preparar el issue para que mi tema sea oficializado! *Stay tuned!* 😎
 
-**UPDATE** Puedes seguir el [issue en el proyecto de hugoThemes](https://github.com/gohugoio/hugoThemes/issues/782#issuecomment-566133671) que he creado para solicitar que incluyan Amperage.
+**UPDATE:** Puedes seguir el [issue en el proyecto de hugoThemes](https://github.com/gohugoio/hugoThemes/issues/782#issuecomment-566133671) que he creado para solicitar que incluyan Amperage.
 
 ## Wayback Machine ⏰
 
