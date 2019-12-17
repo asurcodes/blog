@@ -5,7 +5,7 @@ publishdate = "2019-12-21T14:09:32+02:00"
 
 title = "Metablog #10 - Comentarios con Disqus y anuncios con Adsense"
 
-description = "Una vez probados varios sistemas de comentarios he decidido integrar Disqus en Amperage. Para hacer posible la monetización también he añadido shortcodes de Adsense"
+description = "He probado varios sistemas de comentarios y me he decantado por meter Disqus en Amperage. Para monetizar también he integrado anuncios de Adsense compatibles con AMP"
 
 summary = "Después de probar **sistemas de comentarios** como Commento o Remark lo he descartado en favor de una opción más accesible a todos los usuarios de Amperage: **Disqus**. Para dar una opción de monetización también he dado soporte a **Google Adsense** en forma de shortcodes."
 
@@ -44,7 +44,7 @@ keywords = ['blog', 'desarrollo', 'anuncios', 'adsense', 'amp', 'comentarios', '
 
 {{% under-title %}}
 
-Pues parece que si que había tareas en la recámara al final. La versión 1.1.0 de Amperage ya está aquí y trae novedades muy top! 😬
+Pues parece que sí que había tareas en la recámara al final, ¿no? Una nueva revisión de Amperage ya está aquí y trae novedades muy top con historias de superación incluidas! 😬
 
 {{% toc %}}
 
@@ -60,17 +60,17 @@ Por esto he decidido que, para llegar a la mayor cantidad de gente posible la me
 
 El mayor problema de crear cualquier sistema de comentarios en Amperage es la integración con AMP y Disqus no es ninguna excepción.
 
-Por suerte el equipo de Disqus han creado [una guía de integración](https://github.com/disqus/disqus-install-examples/tree/master/google-amp) para hacerlo más fácil.
+Por suerte el equipo de Disqus ha creado [una guía de integración](https://github.com/disqus/disqus-install-examples/tree/master/google-amp) para hacerle la vida más fácil a los desarrolladores.
 
 Aún así he estado a punto de tirar la toalla con esta feature debido a un comportamiento inesperado del componente `amp-iframe` que casi me vuelve loco.
 
 Todo empieza con la necesidad por parte de AMP de asignar un espacio inicial a todos los componentes para evitar el [content jumping](https://css-tricks.com/content-jumping-avoid/).
 
-> Todo bien, ¿no? ¡Esto mejora la experiencia de usuario! 🤩
+> Todo bien, ¿no? ¡Esto mejora la experiencia de usuario! ¿no? ¿NO? 🤩
 
-Si claro, el problema viene cuando tienes que asignar un tamaño fijo a un contenido de tamaño variable, como una caja de comentarios. El resultado es que o bien aparece un espacio en blanco o bien el contenido está cortado.
+Si por supuesto, ¡a tope con UX! **El problema viene cuando tienes que asignar un tamaño fijo a un contenido de tamaño variable**, como una caja de comentarios. El resultado es que o bien aparece un espacio en blanco o bien el contenido está cortado.
 
-El equipo de AMP ya había pensado en esto y hay una [manera oficial de hacer resize de un iframe](https://amp.dev/es/documentation/components/amp-iframe/#cambio-de-tama%C3%B1o-del-iframe) una vez cargado. El contenido embebido debe postear un mensaje del tipo `embed-size` al centinela `amp`. Algo así:
+El equipo de AMP ya había pensado en esto y hay una [manera oficial de hacer resize de un iframe](https://amp.dev/es/documentation/components/amp-iframe/#cambio-de-tama%C3%B1o-del-iframe) una vez este se ha cargado. El contenido embebido debe postear un mensaje del tipo `embed-size` al centinela `amp`. Algo así:
 
 {{< highlight javascript "linenos=table" >}}
 
@@ -104,21 +104,21 @@ Pero la cosa no queda ahí, tu iframe tiene que venir **obligatoriamente** de un
 
 {{< / highlight >}}
 
-Leí por ahí que con hacer un subdominio con una redirección a mi dominio principal valdría, es decir, crear un `disqus.asur.dev` que redireccionase a `asur.dev/disqus`.
+Leí por ahí que con hacer un subdominio con una redirección a mi dominio principal valdría, es decir, crear un `disqus.asur.dev` que redireccionase a `asur.dev/disqus.html`.
 
 Efectivamente el iframe funcionaba sin problemas y no daba ningún fallo, pero no hacía el resize!
 
 Me pasé horas debugueando, pero no había ningún error, el `postMessage` se enviaba bien, con la altura correcta pero el componente parecía ignorarlo.
 
-Un tiempo después me dió por montar un túnel a mi local para poder probar el iframe sin tener que hacer ningún despliegue y el resize funcionaba! WTF?
+Si trabajas en `localhost` tu iframe no puede venir de `localhost` también porque casca, así que un rato después me dió por montar un túnel a mi local para poder probarlo sin tener que hacer ningún despliegue y el resize funcionaba! WTF? 
 
 Parece que **el truco de la redirección funciona genial a no ser que quieras hacer un resize** por alguna razón interna de AMP...
 
 Tras este descubrimiento lo que hice fué deshacer los registros en el DNS y alojar un [nuevo proyecto en Github Pages](https://github.com/asurbernardo/blog-comments) con el fichero de la guía de instalación de Disqus y el dominio `disqus.asur.dev`, en esta ocasión 100% independiente del principal (`asur.dev`).
 
-**¡Y FUNCIONÓ!** 😭
+**¡Y FUNCIONÓ! ¡POR FIN!** 😭
 
-La verdad es que no es la manera más fácil e intuitiva de añadir comentarios a un blog, pero es lo que hay, seguiré iterando y probando otros sistemas de comentarios.
+La verdad es que no es la manera más fácil de añadir comentarios a un blog, pero es lo que hay, seguiré iterando y probando otros sistemas de comentarios nuevos, pero **lo que de verdad me gustaría es hacer el tema agnóstico** a estos!
 
 ## Anuncios con Adsense 🛒
 
@@ -188,9 +188,11 @@ Por supuesto todo esto genera un código de anuncio válido para AMP. El resulta
     layout="fixed"
     slot="9425131909" >}}
 
+Ahora ya sabes, a refrescar la página para darme dinero! 💸
+
 ## Próximo destino 🛣️
 
-Voy a crear nuevos componentes visuales para los artículos, como nuevos bloques para hacer comparativas, bloques para linkear productos de Amazon, leyendas para las imágenes y más... Todo para darle un poco más de flexibilidad al blog y mejorar la experiencia de lectura. *Stay tuned!* 😎
+Voy a crear nuevos componentes visuales para los artículos, como nuevos bloques para hacer comparativas, bloques para linkear productos de Amazon, leyendas para las imágenes y más... Todo para darle un poco más de flexibilidad al blog y mejorar la experiencia de lectura evitando los *wall of text*. *Stay tuned!* 😎
 
 ## Wayback machine ⏰
 
