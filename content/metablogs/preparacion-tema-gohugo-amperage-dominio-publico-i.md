@@ -255,3 +255,5 @@ También para mejorar el reconocimiento multi-idioma por los bots he añadido la
 ## Próximo destino 🛣️
 
 Voy a hacer una segunda parte para este post, parece que tenía más cosas que preparar de las que esperaba. Ya no queda nada! *Stay tuned!* 😎
+
+[Seguir leyendo la segunda parte de este post!]({{< ref "/metablogs/preparacion-tema-gohugo-amperage-dominio-publico-ii.md" >}})
