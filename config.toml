@@ -11,15 +11,15 @@ pygmentsUseClasses = true
         contentDir = "content"
         languageName = "Español"
         languageCode = "es"
-        title = "Blog by Asur 🧐"
-        description = "Bienvenid@ a mi blog, si te gusta el desarrollo web, el SEO, el open source y la tecnología en general echa un vistazo, seguro que encuentras algo interesante."
+        title = "Un blog by Asur 🧐"
+        description = "Bienvenid@ a mi blog, si te gusta el desarrollo web, el SEO, el open source y la tecnología en general echa un vistazo, seguro que encuentras algo interesante!"
         weight = 1
     [languages.en]
         contentDir = "content/english"
         languageName = "English"
         languageCode = "en"
-        title = "Blog by Asur 🧐"
-        description = "This is the English section of my site. It's still work in progress but hey news are coming! Stay tuned!"
+        title = "A blog by Asur 🧐"
+        description = "Welcome to my blog, if you like web development, SEO, open source and technology in general have a look, you may find something interesting!"
         weight = 2
 
 [[menu.main]]
