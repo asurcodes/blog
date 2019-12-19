@@ -46,7 +46,7 @@ keywords = ['blog', 'desarrollo', 'comentarios', 'remark', 'GPC', 'Compute engin
 
 Vuelvo una semana más al formato metablog, creo que hay novedades que merece la pena comentar!
 
-He estado cacharreando con Google Cloud Platform y he desplegado un **sistema de comentarios** dockerizado en Compute engine utilizando la capa gratuita. 
+He estado cacharreando con Google Cloud Platform y he desplegado un **sistema de comentarios** dockerizado en Compute engine utilizando la capa gratuita.
 
 También he avanzado otro poco con el SEO técnico añadiendo **datos estructurados** en toda la web del tipo website, carousel, migas de pan y blog posting.
 
