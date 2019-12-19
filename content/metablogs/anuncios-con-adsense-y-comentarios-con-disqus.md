@@ -110,7 +110,7 @@ Efectivamente el iframe funcionaba sin problemas y no daba ningún fallo, pero n
 
 Me pasé horas debugueando, pero no había ningún error, el `postMessage` se enviaba bien, con la altura correcta pero el componente parecía ignorarlo.
 
-Si trabajas en `localhost` tu iframe no puede venir de `localhost` también porque casca, así que un rato después me dió por montar un túnel a mi local para poder probarlo sin tener que hacer ningún despliegue y el resize funcionaba! WTF? 
+Si trabajas en `localhost` tu iframe no puede venir de `localhost` también porque casca, así que un rato después me dió por montar un túnel a mi local para poder probarlo sin tener que hacer ningún despliegue y el resize funcionaba! WTF?
 
 Parece que **el truco de la redirección funciona genial a no ser que quieras hacer un resize** por alguna razón interna de AMP...
 
@@ -151,7 +151,7 @@ Una versión simplificada del código del shortcode:
 {{ if isset $.Site.Params "adsensepublisher" }}
     {{ with .Params }}
         <fieldset class="ad">
-            <legend><b>#ad</b></legend>      
+            <legend><b>#ad</b></legend>
             <amp-ad type="adsense"
                 {{ with .class }} class="{{ . }}"{{ end }}
                 {{ with .alt }} alt="{{ . }}"{{ end }}
@@ -178,7 +178,7 @@ Un ejemplo de uso:
     slot="9425131909" */>}}
 ```
 
-Lo único que hay que hacer para empezar a utilizarlo es añadir tu código de *publisher* en la configuración del site. 
+Lo único que hay que hacer para empezar a utilizarlo es añadir tu código de *publisher* en la configuración del site.
 
 Por supuesto todo esto genera un código de anuncio válido para AMP. El resultado final:
 
