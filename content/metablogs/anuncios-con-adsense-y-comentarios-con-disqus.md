@@ -1,7 +1,7 @@
 +++
 draft = false
-date = "2019-12-21T11:12:32+02:00"
-publishdate = "2019-12-21T14:09:32+02:00"
+date = "2019-12-23T12:09:32+02:00"
+publishdate = "2019-12-23T12:09:32+02:00"
 
 title = "Metablog #10 - Comentarios con Disqus y anuncios con Adsense"
 
@@ -23,7 +23,7 @@ keywords = ['blog', 'desarrollo', 'anuncios', 'adsense', 'amp', 'comentarios', '
     homepage = "/"
 
 [image]
-    src = "/images/la-primera-iteracion-amp-estilos-y-miscelanea/share-card.jpg"
+    src = "/images/anuncios-con-adsense-y-comentarios-con-disqus/share-card.jpg"
     title = ""
     author = ""
     link = ""
