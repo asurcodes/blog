@@ -118,7 +118,7 @@ My personal choices are:
 
  - **Basic attention tokens (BAT)**: Brave browser has a token system, they reward you for watching ads as you normally would while browsing the web. Then you can donate those tokens to your favourite creators.
 
- Some platforms that offer patronage I really like are [Patreon](https://www.patreon.com/) and [GitHub Sponsor](https://github.com/sponsors). I don't use any of them myself but I know people who do and these can add up until the point they become a small salary.
+ Some platforms that offer patronage I really like are [Patreon](https://www.patreon.com/) and [GitHub Sponsor](https://github.com/sponsors). I don't use any of them myself but I know people who do and these can add up to the point they become a small salary.
 
  Another tip service I have heard good things about is [Buy Me A Coffee](https://www.buymeacoffee.com/). It is a fun and fast way of donating, and you pay in coffees, not in dollars, so it doesn't count right?
 
