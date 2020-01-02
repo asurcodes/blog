@@ -47,7 +47,7 @@ In this post I present you the 3 ways I use to monetize my tech and software blo
 
 ## Displaying ads
 
-This is the most obvious option, but may be the most difficult to monetize. The reason is you need a great amount of traffic to make a decent amount.
+This is the most obvious option, but may be the most difficult to monetize. The reason is you need a great amount of traffic to make a decent amount of money.
 
 {{< amp-image
     alt="Displaying ads"
@@ -83,7 +83,7 @@ This one is my personal favourite, you can provide value suggesting really good 
     height="720"
     layout="responsive" >}}
 
-I personally only feel comfortable recommending things I'm using or have used in the past. This is also the best way to preserve credibility with your readers.
+Personally, I only feel comfortable recommending things I'm using or have used in the past. This is also the best way to preserve credibility with your readers.
 
 I would suggest making a review of these products as well, this way people can see more in-depth the reasoning behind your recommendations.
 
@@ -114,11 +114,11 @@ It is the most direct way of income because it is cash (or crypto 😜) and does
 
 My personal choices are:
 
- - **Monero**: Bitcoin fees are really expensive for small donations to be worth while, Monero fills this gap because transactions are almost free. For a waller I recommend [MyMonero](https://mymonero.com/), secure, modern and open source, doesn't get better than that.
+ - **Monero**: Bitcoin fees are really expensive for small donations to be worth while, Monero fills this gap because transactions are almost free. For a wallet I recommend [MyMonero](https://mymonero.com/), secure, modern and open source, doesn't get better than that.
 
- - **Basic attention tokens (BAT)**: Brave browser has a token system, they reward you for watching ads as you normally would browsing the web. Then you can donate those tokens to your favourite creators.
+ - **Basic attention tokens (BAT)**: Brave browser has a token system, they reward you for watching ads as you normally would while browsing the web. Then you can donate those tokens to your favourite creators.
 
- Some platforms that offer patronage I really like are [Patreon](https://www.patreon.com/) and [GitHub Sponsor](https://github.com/sponsors). I don't personally use any of them but I know people who do and these can add up until the point they become a small salary.
+ Some platforms that offer patronage I really like are [Patreon](https://www.patreon.com/) and [GitHub Sponsor](https://github.com/sponsors). I don't use any of them myself but I know people who do and these can add up to the point they become a small salary.
 
  Another tip service I have heard good things about is [Buy Me A Coffee](https://www.buymeacoffee.com/). It is a fun and fast way of donating, and you pay in coffees, not in dollars, so it doesn't count right?
 

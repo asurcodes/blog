@@ -3,9 +3,9 @@ draft = false
 date = "2019-10-15T11:12:32+02:00"
 publishdate = "2019-10-19T14:09:32+02:00"
 
-title = "Metablog #1 - AMP, estilos y otras miscelaneas"
+title = "Metablog #1 - AMP, estilos y otras misceláneas"
 
-description = "La primera iteración del blog está aquí, hablaré de AMP, diseño, estilos y otras miscelaneas como vulnerabilidades de links, BEM y el elementos sticky"
+description = "La primera iteración del blog está aquí, hablaré de AMP, diseño, estilos y otras misceláneas como vulnerabilidades de links, BEM y el elementos sticky"
 
 summary = "Bueno, bueno, bueno, parece que la primera iteración del blog ya está aquí! Hay bastantes novedades como una mejora de **layout**, la implementación inicial de **AMP** y más, así que vamos a echarles un ojo, explicarlas y hablar sobre lo que he trasteado y que he aprendido."
 
@@ -253,9 +253,9 @@ En cuanto a los contenidos relacionados tenemos que acceder a los elementos rela
 
 Muy buena pregunta, y la respuesta la verdad es que me ha volado la cabeza... Seguramente pensaseis, como yo, que lo podemos introducir en los metadatos del post al crear el contenido, pero no! Hugo lo detecta automágicamente, y te digo más, puedes [ajustar el algoritmo](https://gohugo.io/content-management/related/#configure-related-content) a tu gusto! Brutal!
 
-## Miscelanea 🧪
+## Miscelánea 🧪
 
-Como miscelanea ha habido un par de cosas que creo que merece la pena comentar.
+Como miscelánea ha habido un par de cosas que creo que merece la pena comentar.
 
 ### La vulnerabilidad del target blank
 
