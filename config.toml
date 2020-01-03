@@ -63,3 +63,6 @@ pygmentsUseClasses = true
     publisherLogo = "/logo-amp-article.png"
     publisherLogoWidth = 600
     publisherLogoHeight = 60
+
+[markup]
+    defaultMarkdownHandler = "blackfriday"
