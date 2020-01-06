@@ -53,7 +53,7 @@ Si utilizas Brave Browser también estoy dado de alta como creator, así que pue
 
 **Si insites en gastarte efectivo lo primero es que te plantees otras alternativas, seguro que hay gente y causas que lo necesitan más que yo.** Algunas ideas:
 
-- <a href="https://teamtrees.org/" target="_blank" rel="nofollow noopener noreferrer" >Team Trees</a>: Esta <i>non-profit</i> por cada dolar que donas plantan un árbol para luchar contra la deforestación.</li>
+- <a href="https://teamtrees.org/" target="_blank" rel="nofollow noopener noreferrer" >Team Trees</a>: Esta <i>non-profit</i> por cada dolar que donas plantan un árbol para luchar contra la deforestación.
 - <a href="https://www.fesbal.org/involucrate/donaciones/" target="_blank" rel="nofollow noopener noreferrer">FESBAL</a>: La <i>Federación Española de Bancos de Alimentos</i> recupera los excedentes alimenticios que producimos y los redistribuye a través de entidades benéficas entre las personas más necesitadas para evitar su despilfarro.
 
 Si sigues insitiendo en ello este es mi <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZPEPDV2UMSUYS&source=url" target="_blank" rel="nofollow noopener noreferrer">Paypal</a>.
