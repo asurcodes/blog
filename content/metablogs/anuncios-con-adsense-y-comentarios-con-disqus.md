@@ -14,7 +14,7 @@ tags = ['Evolutivo']
 keywords = ['blog', 'desarrollo', 'anuncios', 'adsense', 'amp', 'comentarios', 'disqus']
 
 [amp]
-    elements = ['amp-twitter']
+    elements = ['amp-twitter', 'amp-ad']
 
 [author]
     name = "Asur"
