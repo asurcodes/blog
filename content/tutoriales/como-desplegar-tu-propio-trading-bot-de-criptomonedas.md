@@ -118,6 +118,8 @@ Pues con esto ya lo tenemos casi todo hecho, ahora tenemos que clonar el reposit
 
 {{< highlight sh >}}
 
+git clone https://github.com/askmike/gekko.git
+cd gekko
 docker-compose build
 HOST=mydomain.com PORT=3001 docker-compose up -d
 
