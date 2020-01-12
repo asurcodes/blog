@@ -114,7 +114,7 @@ docker-compose --version
 
 {{< / highlight >}}
 
-Pues con esto ya lo tenemos casi todo hecho, ahora tenemos que clonar el repositorio y ejecutar su `docker-compose.yml`:
+Pues con esto ya lo tenemos casi todo hecho, ahora solo hay que clonar el repositorio y ejecutar su `docker-compose.yml`:
 
 {{< highlight sh >}}
 
