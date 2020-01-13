@@ -177,7 +177,7 @@ Para hacer pruebas, en la sección *Backtesting* podemos ahora ver nuestros dato
 
 Los parámetros de cada estrategia pueden variar, te recomiendo hacer una búsqueda rápida en Google para ver en que consiste y que significa cada una de las opciones. También puedes aprovechar e informarte sobre estrategias que haya hecho la comunidad, ¡hay de todo!
 
-Una vez haya análizado los datos que le pases se te mostrará un resumen de las compras y ventas que se hubiesen ejecutado de haber sido en vivo.
+Una vez haya analizado los datos que le pases se te mostrará un resumen de las compras y ventas que se hubiesen ejecutado de haber sido en vivo.
 
 Cuando tengas ajustada una estrategia con la que te sientas cómod@ puedes empezar a hacer pruebas live con *paper trading*, que es básicamente utilizar tu trading bot en modo simulado pero esta vez en *real time*.
 
