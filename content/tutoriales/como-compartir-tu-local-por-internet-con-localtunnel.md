@@ -3,15 +3,15 @@ draft = false
 date = "2019-11-14T21:08:32+02:00"
 publishdate = "2019-11-14T21:08:32+02:00"
 
-title = "¿Cómo compartir tu entorno local por internet con ngrok? 📡"
+title = "¿Cómo compartir tu entorno local por internet con Ngrok? 📡"
 
-description = "Explico http tunneling, cómo exponer tu entorno local al internet, su funcionamiento y a usar ngrok, localtunnel y docker en nuestro proyecto"
+description = "Explico HTTP tunneling, cómo exponer tu entorno local al internet, su funcionamiento y a usar Ngrok, localtunnel y docker en nuestro proyecto"
 
-summary = "¿Alguna vez te has preguntado como puedo hacer una demo a ese cliente sin un entorno de staging? La respuesta viene de la mano de **http tunneling**, una técnica que te permite compartir tu entorno local a internet. Vamos a averiguar cómo funciona, las diferentes herramientas disponibles y como utilizar la librerías **ngrok** y **localtunnel** en nuestros propios proyectos."
+summary = "¿Alguna vez te has preguntado como puedo hacer una demo a ese cliente sin un entorno de staging? La respuesta viene de la mano de **HTTP tunneling**, una técnica que te permite compartir tu entorno local a internet. Vamos a averiguar cómo funciona, las diferentes herramientas disponibles y como utilizar la librerías **Ngrok** y **Localtunnel** en nuestros propios proyectos."
 
 tags = ['Tutorial']
 
-keywords = ['tutorial', 'http tunneling', 'ngrok', 'localtunnel', 'docker']
+keywords = ['tutorial', 'http tunneling', 'Ngrok', 'Localtunnel', 'docker']
 
 [amp]
     elements = ['amp-iframe']
@@ -46,7 +46,7 @@ keywords = ['tutorial', 'http tunneling', 'ngrok', 'localtunnel', 'docker']
 
 ¿Alguna vez te has preguntado como puedo hacer una demo a ese cliente sin un entorno de staging? ¿O cómo puedo probar esos webhooks que estoy programando sin hacer un despliegue? La respuesta viene de la mano de **http tunneling**, una técnica que te permite compartir tu entorno local a internet.
 
-Vamos a averiguar como funciona, las diferentes herramientas disponibles y como utilizar la librerías **ngrok** y **localtunnel** en nuestros propios proyectos.
+Vamos a averiguar como funciona, las diferentes herramientas disponibles y como utilizar la librerías **Ngrok** y **Localtunnel** en nuestros propios proyectos.
 
 {{% toc %}}
 
@@ -64,13 +64,13 @@ Todos estos casos de uso, aunque se aplican a tecnologías distintas, suelen gir
 
 ### Exponer tu entorno local al internet para demos
 
-Este es el caso de uso por excelencia y es en lo que se especializan varias de las librerias de las que vamos a hablar a continuación. 
+Este es el caso de uso por excelencia y es en lo que se especializan varias de las librerias de las que vamos a hablar a continuación.
 
-Consiste en generar una url por la que se puede acceder al servidor de tunneling, este servidor consume datos del cliente y devuelve una respuesta HTTP, de esta manera podemos acceder al servidor como si estuviesemos viendo nuestro local, pero desde cualquier sitio que tenga acceso a internet.
+Consiste en generar una URL por la que se puede acceder al servidor de tunneling, este servidor consume datos del cliente y devuelve una respuesta HTTP, de esta manera podemos acceder al servidor como si estuviesemos viendo nuestro local, pero desde cualquier sitio que tenga acceso a internet.
 
 {{< amp-image
     src="/images/como-compartir-tu-local-por-internet-con-localtunnel/demo-ngrok-cliente.jpg"
-    alt="Esquema de ngrok describiendo una demo a un cliente"
+    alt="Esquema de Ngrok describiendo una demo a un cliente"
     width="1200"
     height="678"
     layout="responsive" >}}
@@ -81,10 +81,10 @@ Consiste en generar una url por la que se puede acceder al servidor de tunneling
 
 Probar webhooks es también un caso bastante conocido, incluso los desarrolladores de aplicaciones como Slack recomiendan este workflow.
 
-Las aplicaciones que soportan webhooks suelen requerir una url de la que consumir datos que sea accesible desde internet, al levantar un túnel puedes configurar la url que te proporciona y hacer cambios en tiempo real (con ngrok incluso puedes lanzar request custom desde su GUI).
+Las aplicaciones que soportan webhooks suelen requerir una URL de la que consumir datos que sea accesible desde internet, al levantar un túnel puedes configurar la URL que te proporciona y hacer cambios en tiempo real (con Ngrok incluso puedes lanzar request custom desde su GUI).
 
 {{< amp-image
-    alt="Esquema de ngrok describiendo un testeo de webhooks"
+    alt="Esquema de Ngrok describiendo un testeo de webhooks"
     src="/images/como-compartir-tu-local-por-internet-con-localtunnel/demo-ngrok-webhooks.jpg"
     width="750"
     height="422"
@@ -97,7 +97,7 @@ Las aplicaciones que soportan webhooks suelen requerir una url de la que consumi
 Prácticamente todas las aplicaciones dinámicas y aparatos IOT requieren algún tipo de API de la que consumir datos, para hacer pruebas en tiempo real mientras se desarrolla puedes configurar el endpoint de tu túnel en tu consumidor y ponerte a testear.
 
 {{< amp-image
-    alt="Esquema de ngrok describiendo un testeo de API en aparatos IOT"
+    alt="Esquema de Ngrok describiendo un testeo de API en aparatos IOT"
     src="/images/como-compartir-tu-local-por-internet-con-localtunnel/demo-ngrok-iot.jpg"
     width="1200"
     height="800"
@@ -117,7 +117,7 @@ Como veis solo hay que echarle originalidad, seguro que hay muchas más aplicaci
 
  - Crear un cluster con Minikube y utilizarlo como uno de Kubernetes normal.
 
-## ¿Qué herramientas hay de http tunneling? ⚒️
+## ¿Qué herramientas hay de HTTP tunneling? ⚒️
 
 Ahora que ya hemos visto algún caso de uso y hemos echado a andar la imaginación, vamos a ver de que herramientas disponemos para llevar a cabo nuestra idea:
 
@@ -147,7 +147,7 @@ Ngrok es quizás el nombre más reconocible en esta materia, es un SaaS que tien
 
 ### Localtunnel - expose yourself
 
-Aunque su eslogan se puede malinterpretar facilmente, localtunnel es el proyecto open source más reconocible de http tunneling y lleva desde el 2012 siendo desarrollado y mantenido. Es la alternativa más frecuente a ngrok y no sin razón:
+Aunque su eslogan se puede malinterpretar facilmente, Localtunnel es el proyecto open source más reconocible de HTTP tunneling y lleva desde el 2012 siendo desarrollado y mantenido. Es la alternativa más frecuente a Ngrok y no sin razón:
 
 **Pros**
 
@@ -165,7 +165,7 @@ Repositorio: https://github.com/localtunnel/localtunnel
 
 ### Chisel - A fast TCP tunnel over HTTP
 
-El nuevo de la clase, se promociona como una herramienta de http tunneling rápida y segura. Con más de 3K estrellas en Github parece que ha convencido a los usuarios, lamentablemente aún no lo he podido probar, pero su rápido crecimiento es prueba más que suficiente de que merece la pena darle una oportunidad.
+El nuevo de la clase, se promociona como una herramienta de HTTP tunneling rápida y segura. Con más de 3K estrellas en Github parece que ha convencido a los usuarios, lamentablemente aún no lo he podido probar, pero su rápido crecimiento es prueba más que suficiente de que merece la pena darle una oportunidad.
 
 **Pros**
 
@@ -183,9 +183,9 @@ El nuevo de la clase, se promociona como una herramienta de http tunneling rápi
 
 Repositorio: https://github.com/jpillora/chisel
 
-## ¿Cómo utilizar ngrok en tu proyecto web? 👩‍🏭
+## ¿Cómo utilizar Ngrok en tu proyecto web? 👩‍🏭
 
-Nos ponemos manos a la obra, al final me he decantado por publicar mi webapp al internet utilizando ngrok porque al proporcionar un binario descargable es muy fácil y rápido, ni siquiera requiere instalación. El proceso a seguir es el siguiente:
+Nos ponemos manos a la obra, al final me he decantado por publicar mi webapp al internet utilizando Ngrok porque al proporcionar un binario descargable es muy fácil y rápido, ni siquiera requiere instalación. El proceso a seguir es el siguiente:
 
 Nos descargamos el zip con el código de la web oficial:
 
@@ -208,7 +208,7 @@ Ejecutamos el comando especificando el procolo y el puerto de escucha:
 La consola nos mostrará todos los datos de nuestro nuevo túnel, con ambos links para entrar a nuestro túnel, tanto http como https. Pinta algo así:
 
 {{< amp-image
-    alt="Output de consola del cliente de ngrok"
+    alt="Output de consola del cliente de Ngrok"
     src="/images/como-compartir-tu-local-por-internet-con-localtunnel/ngrok-output-consola.jpg"
     width="1970"
     height="932"
@@ -220,11 +220,13 @@ Ngrok ofrece una GUI para analizar los requests que llegan a tu servidor, e incl
 
 En la web oficial también hay analítica y un dashboard, pero para eso hay que registrarse, puedes ver como configurarlo todo en su documentación oficial.
 
-**OJO**: La capa gratuita de ngrok es bastante limitada, para hacer pruebas en una web sencilla sin muchos subrequest funciona perfectamente, si lo necesitas para algo más complejo o en un entorno profesional quizás te merezca la pena pagar por un plan premium.
+{{% post-it title="Cuidado 🚨" %}}
+La capa gratuita de Ngrok es bastante limitada, para hacer pruebas en una web sencilla sin muchos subrequest funciona perfectamente, si lo necesitas para algo más complejo o en un entorno profesional quizás te merezca la pena pagar por un plan premium.
+{{% /post-it %}}
 
-## Setup alternativo con localtunnel y docker 🐳
+## Setup alternativo con Localtunnel y docker 🐳
 
-Está muy bien eso de instalar globalmente una herramienta o descargarte un binario, pero yo soy mucho más fan de utilizar contenedores para mi workflow, así que he estado haciendo pruebas con docker a ver si se puede integrar localtunnel y ha resultado que si!
+Está muy bien eso de instalar globalmente una herramienta o descargarte un binario, pero yo soy mucho más fan de utilizar contenedores para mi workflow, así que he estado haciendo pruebas con docker a ver si se puede integrar Localtunnel y ha resultado que si!
 
 Ya tengo un [entorno dockerizado para este mismo blog](https://asur.dev/metablogs/mejorando-workflow-docker-makefile-github-actions/#dockerizando), así que lo he aprovechado para hacer pruebas.
 
@@ -257,15 +259,15 @@ services:
 
 Vamos a ver que se hace en cada paso:
 
- - **Línea 13:** Declaramos el nuevo servicio de localtunnel.
+ - **Línea 13:** Declaramos el nuevo servicio de Localtunnel.
 
  - **Línea 14:** Especificamos la imagen que vamos a usar en este servicio, en este caso `efrecon/localtunnel`, que está alojada en DockerHub.
 
  - **Línea 15-16:** Linkeamos el servicio de tunneling con el servidor web para que sean conscientes el uno del otro y se puedan comunicar por la red por defecto.
 
- - **Línea 17-18:** Lanzamos el comando de localtunnel especificando la dirección y el puerto del servicio web.
+ - **Línea 17-18:** Lanzamos el comando de Localtunnel especificando la dirección y el puerto del servicio web.
 
-Y eso es todo, al lanzarlo se nos inicia un cliente de localtunnel listo para usar como en el paso anterior, pero sin instalar software en tu equipo, mucho mejor!
+Y eso es todo, al lanzarlo se nos inicia un cliente de Localtunnel listo para usar como en el paso anterior, pero sin instalar software en tu equipo, mucho mejor!
 
 ## Presentación en diapositivas
 
