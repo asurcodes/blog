@@ -14,9 +14,14 @@ kind = "page"
 
 [author]
     name = "Asur"
+    homepage = "/"
 
 [twitter]
     site = "@asurbernardo"
+
+[alternatives.en]
+    code = "en"
+    url = "https://asur.dev/en/support/"
 
 [sitemap]
   changefreq = "monthly"

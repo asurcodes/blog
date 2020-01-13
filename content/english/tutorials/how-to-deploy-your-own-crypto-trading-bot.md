@@ -26,6 +26,10 @@ keywords = ['tutorial', 'cryptocurrency', 'trading bot', 'gekko', 'javascript']
 [twitter]
     site = "@asurbernardo"
 
+[alternatives.es]
+    code = "es"
+    url = "https://asur.dev/como-desplegar-tu-propio-trading-bot-de-criptomonedas/"
+
 [sitemap]
   changefreq = "monthly"
   priority = 0.5

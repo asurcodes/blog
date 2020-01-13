@@ -18,20 +18,16 @@ keywords = ['tutorial', 'http tunneling', 'Ngrok', 'Localtunnel', 'docker']
 
 [author]
     name = "Asur"
-    image = ""
-    bio = ""
-    homepage = "/"
 
 [image]
     src = "/images/como-compartir-tu-local-por-internet-con-localtunnel/share-card.jpg"
-    title = ""
-    author = ""
-    link = ""
-    license = ""
-    licenseLink = ""
 
 [twitter]
     site = "@asurbernardo"
+
+[alternatives.en]
+    code = "en"
+    url = "https://asur.dev/en/how-to-share-your-local-on-the-internet-with-ngrok/"
 
 [sitemap]
   changefreq = "monthly"

@@ -26,6 +26,10 @@ keywords = ['tutorial', 'http tunneling', 'ngrok', 'localtunnel', 'docker']
 [twitter]
     site = "@asurbernardo"
 
+[alternatives.es]
+    code = "es"
+    url = "https://asur.dev/como-compartir-tu-local-por-internet-con-localtunnel/"
+
 [sitemap]
   changefreq = "monthly"
   priority = 0.5
