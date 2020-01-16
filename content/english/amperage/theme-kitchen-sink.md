@@ -187,21 +187,18 @@ How to:
 {{< highlight md "linenos=table" >}}
 
 {{%/* post-it title="Warning! 🚨" */%}}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
-
+Lorem **ipsum** dolor sit amet, consectetur adipiscing elit.
+Sed eiusmod tempor incidunt ut labore et *dolore* magna aliqua.
 {{%/* / post-it */%}}
 
 {{%/* post-it type="danger" title="Danger! ☠️" */%}}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
-
+Lorem **ipsum** dolor sit amet, consectetur adipiscing elit.
+Sed eiusmod tempor incidunt ut labore et *dolore* magna aliqua.
 {{%/* / post-it */%}}
 
 {{%/* post-it type="info" title="Info! ℹ️" */%}}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
-
+Lorem **ipsum** dolor sit amet, consectetur adipiscing elit.
+Sed eiusmod tempor incidunt ut labore et *dolore* magna aliqua.
 {{%/* / post-it */%}}
 
 {{< / highlight >}}
@@ -210,19 +207,22 @@ Result:
 
 {{% post-it title="Warning! 🚨" %}}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+Lorem **ipsum** dolor sit amet, consectetur adipiscing elit.
+Sed eiusmod tempor incidunt ut labore et *dolore* magna aliqua.
 
 {{% / post-it %}}
 
 {{% post-it type="danger" title="Danger! 💀" %}}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+Lorem **ipsum** dolor sit amet, consectetur adipiscing elit.
+Sed eiusmod tempor incidunt ut labore et *dolore* magna aliqua.
 
 {{% / post-it %}}
 
 {{% post-it type="info" title="Info! 💬" %}}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+Lorem **ipsum** dolor sit amet, consectetur adipiscing elit.
+Sed eiusmod tempor incidunt ut labore et *dolore* magna aliqua.
 
 {{% / post-it %}}
 
@@ -274,7 +274,7 @@ Result:
     height="600"
     layout="responsive" >}}
 
-## Product
+## Products
 
 How to:
 
@@ -283,9 +283,9 @@ How to:
 {{</* product
     title="Yellow rubber duck 🦆"
     description="A programmer's best friend when you don't have anyone to talk to."
-    image="https://images-na.ssl-images-amazon.com/images/I/8166xCVDGnL._SL1500_.jpg"
+    image="https://example.com/your-image.jpg"
     cta="Find out price!"
-    link="https://www.amazon.com/Munchkin-White-Safety-Bath-Ducky/dp/B000GUZC2A/ref=sr_1_3" */>}}
+    link="https://example.com/your-product" */>}}
 
 {{< / highlight >}}
 
