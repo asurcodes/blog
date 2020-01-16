@@ -7,7 +7,7 @@ title = "Amperage theme kitchen sink"
 
 description = "This a demo page for all the components in the Amperage theme for GoHugo"
 
-summary = "This is a demo page for all the components in the Amperage theme. This posts is updated on every version release of Amperage. **Last updated on December 11th, 2019**."
+summary = "This is a demo page for all the components in the Amperage theme. This posts is updated on every version release of Amperage. **Last updated on January 16th, 2020**."
 
 tags = ['Amperage']
 
@@ -36,7 +36,7 @@ keywords = ['amperage', 'theme', 'gohugo', 'kitchen sink', 'demo', 'components']
 
 {{% under-title %}}
 
-This is a demo page for all the components in the Amperage theme. This posts is updated on every version release of Amperage. **Last updated on December 11th, 2019**.
+This is a demo page for all the components in the Amperage theme. This posts is updated on every version release of Amperage. **Last updated on January 16th, 2020**.
 
 ## Titles
 
@@ -61,11 +61,11 @@ How to:
 {{</* highlight html "linenos=table" */>}}
 
 <link rel="manifest" href="https://example.com/manifest.json">
-<link rel="icon" type="image/png" 
+<link rel="icon" type="image/png"
     sizes="32x32" href="https://example.com/icons/favicon-32x32.png">
-<link rel="icon" type="image/png" 
+<link rel="icon" type="image/png"
     sizes="16x16" href="https://example.com/icons/favicon-16x16.png">
-<link rel="apple-touch-icon" 
+<link rel="apple-touch-icon"
     sizes="180x180" href="https://example.com/icons/apple-touch-icon.png">
 
 {{</* /highlight */>}}
@@ -77,11 +77,11 @@ Result:
 {{< highlight html "linenos=table" >}}
 
 <link rel="manifest" href="https://example.com/manifest.json">
-<link rel="icon" type="image/png" 
+<link rel="icon" type="image/png"
     sizes="32x32" href="https://example.com/icons/favicon-32x32.png">
-<link rel="icon" type="image/png" 
+<link rel="icon" type="image/png"
     sizes="16x16" href="https://example.com/icons/favicon-16x16.png">
-<link rel="apple-touch-icon" 
+<link rel="apple-touch-icon"
     sizes="180x180" href="https://example.com/icons/apple-touch-icon.png">
 
 {{< / highlight >}}
@@ -108,6 +108,28 @@ Result:
 | col 2 is |    centered   |   $12 |
 | col 3 is | right-aligned |    $1 |
 
+## Ads
+
+How to:
+
+{{< highlight markdown "linenos=table" >}}
+
+{{</* amp-adsense
+    width="320"
+    height="320"
+    layout="fixed"
+    slot="123456789" */>}}
+
+{{< / highlight >}}
+
+Result:
+
+{{< amp-adsense
+    width="320"
+    height="320"
+    layout="fixed"
+    slot="9425131909" >}}
+
 ## Images
 
 How to:
@@ -131,6 +153,78 @@ Result:
     width="1280"
     height="720"
     layout="responsive" >}}
+
+## Images with caption
+
+How to:
+
+{{< highlight md "linenos=table" >}}
+
+{{</* amp-image
+    alt="Amperage image demo"
+    caption="Welcome to the Amperage theme kitchen sink!"
+    src="/images/your-image.jpg"
+    width="1280"
+    height="720"
+    layout="responsive" */>}}
+
+{{< / highlight >}}
+
+Result:
+
+{{< amp-image
+    alt="Amperage image demo"
+    caption="Welcome to the Amperage theme kitchen sink!"
+    src="/images/amperage-theme-kitchen-sink/share-card.jpg"
+    width="1280"
+    height="720"
+    layout="responsive" >}}
+
+## Post-its
+
+How to:
+
+{{< highlight md "linenos=table" >}}
+
+{{%/* post-it title="Warning! 🚨" */%}}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+
+{{%/* / post-it */%}}
+
+{{%/* post-it type="danger" title="Danger! ☠️" */%}}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+
+{{%/* / post-it */%}}
+
+{{%/* post-it type="info" title="Info! ℹ️" */%}}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+
+{{%/* / post-it */%}}
+
+{{< / highlight >}}
+
+Result:
+
+{{% post-it title="Warning! 🚨" %}}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+
+{{% / post-it %}}
+
+{{% post-it type="danger" title="Danger! 💀" %}}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+
+{{% / post-it %}}
+
+{{% post-it type="info" title="Info! 💬" %}}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+
+{{% / post-it %}}
 
 ## Videos
 
@@ -175,10 +269,34 @@ Result:
 
 {{< amp-gif
     alt="Amperage GIF demo"
-    src="/images/mejorando-workflow-docker-makefile-github-actions/make-command.gif"
-    width="1367"
-    height="1112"
+    src="/images/how-to-deploy-your-own-crypto-trading-bot/docker-nyan-cat.gif"
+    width="800"
+    height="600"
     layout="responsive" >}}
+
+## Product
+
+How to:
+
+{{< highlight md "linenos=table" >}}
+
+{{</* product
+    title="Yellow rubber duck 🦆"
+    description="A programmer's best friend when you don't have anyone to talk to."
+    image="https://images-na.ssl-images-amazon.com/images/I/8166xCVDGnL._SL1500_.jpg"
+    cta="Find out price!"
+    link="https://www.amazon.com/Munchkin-White-Safety-Bath-Ducky/dp/B000GUZC2A/ref=sr_1_3" */>}}
+
+{{< / highlight >}}
+
+Result:
+
+{{< product
+    title="Yellow rubber duck!"
+    description="A programmer's best friend when you don't have anyone to talk to. He will always be there! 🦆"
+    image="https://images-na.ssl-images-amazon.com/images/I/8166xCVDGnL._SL1500_.jpg"
+    cta="Find out price!"
+    link="https://www.amazon.com/Munchkin-White-Safety-Bath-Ducky/dp/B000GUZC2A/ref=sr_1_3" >}}
 
 ## Iframes
 
