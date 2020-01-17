@@ -3,7 +3,7 @@ draft = false
 date = "2020-01-11T14:12:32+02:00"
 publishdate = "2020-01-11T14:12:32+02:00"
 
-title = "How to deploy your own crypto trading bot? 💰"
+title = "How to deploy your own cryptocurrency trading bot? 💰"
 
 description = "Learn how to deploy your own Bitcoin trading bot on the cloud or on a Raspberry Pi using the open source platform Gekko"
 
@@ -37,7 +37,7 @@ keywords = ['tutorial', 'cryptocurrency', 'trading bot', 'gekko', 'javascript']
 
 +++
 
-# How to deploy your own crypto trading bot?
+# How to deploy your own cryptocurrency trading bot?
 
 {{% under-title %}}
 
