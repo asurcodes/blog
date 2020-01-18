@@ -191,6 +191,11 @@ Lorem **ipsum** dolor sit amet, consectetur adipiscing elit.
 Sed eiusmod tempor incidunt ut labore et *dolore* magna aliqua.
 {{%/* / post-it */%}}
 
+{{% post-it type="success" title="Success! 🎉" %}}
+Lorem **ipsum** dolor sit amet, consectetur adipiscing elit.
+Sed eiusmod tempor incidunt ut labore et *dolore* magna aliqua.
+{{% / post-it %}}
+
 {{%/* post-it type="danger" title="Danger! ☠️" */%}}
 Lorem **ipsum** dolor sit amet, consectetur adipiscing elit.
 Sed eiusmod tempor incidunt ut labore et *dolore* magna aliqua.
@@ -206,6 +211,13 @@ Sed eiusmod tempor incidunt ut labore et *dolore* magna aliqua.
 Result:
 
 {{% post-it title="Warning! 🚨" %}}
+
+Lorem **ipsum** dolor sit amet, consectetur adipiscing elit.
+Sed eiusmod tempor incidunt ut labore et *dolore* magna aliqua.
+
+{{% / post-it %}}
+
+{{% post-it type="success" title="Success! 🎉" %}}
 
 Lorem **ipsum** dolor sit amet, consectetur adipiscing elit.
 Sed eiusmod tempor incidunt ut labore et *dolore* magna aliqua.
