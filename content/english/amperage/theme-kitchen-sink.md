@@ -196,12 +196,12 @@ Lorem **ipsum** dolor sit amet, consectetur adipiscing elit.
 Sed eiusmod tempor incidunt ut labore et *dolore* magna aliqua.
 {{%/* / post-it */%}}
 
-{{%/* post-it type="danger" title="Danger! ☠️" */%}}
+{{%/* post-it type="danger" title="Danger! 💀" */%}}
 Lorem **ipsum** dolor sit amet, consectetur adipiscing elit.
 Sed eiusmod tempor incidunt ut labore et *dolore* magna aliqua.
 {{%/* / post-it */%}}
 
-{{%/* post-it type="info" title="Info! ℹ️" */%}}
+{{%/* post-it type="info" title="Info! 💬" */%}}
 Lorem **ipsum** dolor sit amet, consectetur adipiscing elit.
 Sed eiusmod tempor incidunt ut labore et *dolore* magna aliqua.
 {{%/* / post-it */%}}
