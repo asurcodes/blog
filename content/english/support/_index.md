@@ -7,8 +7,6 @@ description = "Support me and the blog for free!"
 
 menu = "main"
 
-kind = "page"
-
 [amp]
     elements = []
 

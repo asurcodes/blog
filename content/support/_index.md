@@ -7,8 +7,6 @@ description = "Apoyame a mí y a este blog sin que te cueste nada!"
 
 menu = "main"
 
-kind = "page"
-
 [amp]
     elements = []
 
