@@ -1,4 +1,4 @@
 [submodule "amperage"]
 	path = themes/amperage
 	url = https://github.com/asurbernardo/amperage.git
-	branch = master
+	branch = development
