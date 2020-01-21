@@ -37,7 +37,7 @@ Hey! The mere fact that you are here is an achievement for me! Thank you so much
     layout="fixed"
     slot="9425131909" >}}
 
-I don't normally use ads on my blog, so if you like my content, find it useful or amusing you may like some of the ways you can support me listed below! You don't need to spend a dime!
+I don't **normally** use ads on my blog, so if you like my content, find it useful or amusing you may like some of the ways you can support me listed below! You don't need to spend a dime!
 
 ## Referral links and affiliate marketing
 

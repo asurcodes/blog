@@ -37,7 +37,7 @@ Hey! El mero hecho de que hayas entrado en esta página ya es todo un logro para
     layout="fixed"
     slot="9425131909" >}}
 
-No pongo publicidad en mi blog así que si te ha gustado mi contenido, lo has podido usar en alguno de tus proyectos o por puro altruismo aquí te listo alguna de las maneras con las que puedes apoyarme! No hace falta que te gastes un duro!
+No pongo publicidad en mi blog (**normalmente**) así que si te ha gustado mi contenido, lo has podido usar en alguno de tus proyectos o por puro altruismo aquí te listo alguna de las maneras con las que puedes apoyarme! No hace falta que te gastes un duro!
 
 ## Links de referidos y afiliados
 
