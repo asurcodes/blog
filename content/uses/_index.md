@@ -14,6 +14,9 @@ menu = "main"
     name = "Asur"
     homepage = "/"
 
+[image]
+    src = "/images/uses/share-card.jpg"
+
 [twitter]
     site = "@asurbernardo"
 
@@ -73,7 +76,7 @@ Me encanta que mis equipos sean muy sólidos y duraderos, que sean ligeros y por
 
 ## Software 💾
 
-Principalmente me dedico al desarrollo web, estas son las herramientas que más uso y que siempre están instaladas en el portatil que uso para desarrollar:
+Principalmente me dedico al desarrollo web, estas son las herramientas que más uso y que siempre están instaladas en el portatil que uso para programar:
 
 ### Sistema operativo
 
@@ -102,7 +105,7 @@ Principalmente me dedico al desarrollo web, estas son las herramientas que más 
     cta="Ver en GitHub"
     link="" >}}
 
-### Infrastructura
+### Infraestructura
 
 {{< product
     title="Docker"
