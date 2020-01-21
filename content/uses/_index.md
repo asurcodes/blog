@@ -36,7 +36,7 @@ Voy a ir actualizándola para poder mostrar en todo momento que estoy usando en 
 
 ## Hardware 💻
 
-Me encanta que mis equipos sean muy sólidos y duraderos, que sean ligeros y portables y que tengan una estética limpia. Creo que todos estos cumplen esas características:
+Me encanta que mis equipos sean sólidos y duraderos, pero ligeros y portables al mismo tiempo. Además si tienen una estética limpia y minimalista pueden contar con mi dinero. Creo que todos estos cumplen esas características:
 
 ### Portátil
 
