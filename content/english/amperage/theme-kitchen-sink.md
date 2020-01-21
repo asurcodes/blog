@@ -308,7 +308,7 @@ Result:
     description="A programmer's best friend when you don't have anyone to talk to. He will always be there! 🦆"
     image="https://images-na.ssl-images-amazon.com/images/I/8166xCVDGnL._SL1500_.jpg"
     cta="Find out price!"
-    link="https://www.amazon.com/Munchkin-White-Safety-Bath-Ducky/dp/B000GUZC2A/ref=sr_1_3" >}}
+    link="https://asur.dev/en/" >}}
 
 ## Iframes
 
