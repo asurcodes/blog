@@ -29,7 +29,13 @@ menu = "main"
 
 # Apoya al blog *for free*! 💰
 
-Hey! El mero hecho de que hayas entrado en esta página ya es todo un logro para mí! Muchas gracias!
+Hey! El mero hecho de que hayas entrado en esta página ya es todo un logro para mí! Muchas gracias! Toma, aquí tienes un anuncio:
+
+{{< amp-adsense
+    width="320"
+    height="320"
+    layout="fixed"
+    slot="9425131909" >}}
 
 No pongo publicidad en mi blog así que si te ha gustado mi contenido, lo has podido usar en alguno de tus proyectos o por puro altruismo aquí te listo alguna de las maneras con las que puedes apoyarme! No hace falta que te gastes un duro!
 
