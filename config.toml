@@ -32,11 +32,6 @@ pygmentsUseClasses = true
     name = "GitHub"
     url = "https://github.com/asurbernardo"
     weight = 10
-[[menu.main]]
-    identifier = "linkedin"
-    name = "LinkedIn"
-    url = "https://www.linkedin.com/in/asur-bernardo/"
-    weight = 10
 
 [taxonomies]
     tag = "tags"
