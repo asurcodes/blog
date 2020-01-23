@@ -8,7 +8,7 @@ description = "Support me and the blog for free!"
 menu = "main"
 
 [amp]
-    elements = []
+    elements = ['amp-ad']
 
 [author]
     name = "Asur"

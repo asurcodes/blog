@@ -8,7 +8,7 @@ description = "Apoyame a mí y a este blog sin que te cueste nada!"
 menu = "main"
 
 [amp]
-    elements = []
+    elements = ['amp-ad']
 
 [author]
     name = "Asur"
