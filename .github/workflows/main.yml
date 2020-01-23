@@ -2,7 +2,7 @@ name: Deploy blog
 on:
   push:
     branches:
-    - master
+    - development
 
 jobs:
   build-deploy:
@@ -10,7 +10,7 @@ jobs:
     steps:
 
     - name: Pull source
-      uses: actions/checkout@master
+      uses: actions/checkout@development
 
     - name: Pull theme
       uses: actions/checkout@v2-beta
