@@ -50,7 +50,7 @@ This is a demo page for all the components in the Amperage theme. This posts is 
 
 ## Paragraphs and inline modifications
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. **Fusce eget mauris augue**. Ut auctor nunc nec blandit malesuada. Suspendisse posuere tincidunt magna consequat pretium. In facilisis ultricies aliquam. *Ut vitae quam convallis*, facilisis lacus eget, tempus dolor. `Pellentesque eu justo` nec turpis sollicitudin malesuada. Proin vel mattis nisl.
+Ulysses, Ulysses — Soaring through all the galaxies. In search of Earth, flying in to the night. Ulysses, Ulysses — Fighting **evil and tyranny**, with all his power, and with all of his might. Ulysses — no-one else can do the things you do. Ulysses — like a *bolt of thunder from the blue*. Ulysses — always fighting all the evil forces bringing `peace` and `justice` to all.
 
 ## Code highlights
 
