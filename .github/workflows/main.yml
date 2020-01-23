@@ -2,7 +2,7 @@ name: Deploy blog
 on:
   push:
     branches:
-    - development
+    - master
 
 jobs:
   build-deploy:
@@ -10,12 +10,13 @@ jobs:
     steps:
 
     - name: Pull source
-      uses: actions/checkout@development
+      uses: actions/checkout@master
 
     - name: Pull theme
-      uses: actions/checkout@v2-beta
+      uses: actions/checkout@v2
       with:
         repository: 'asurbernardo/amperage'
+        ref: 'development'
         path: 'themes/amperage'
 
     - name: Setup Hugo
