@@ -17,8 +17,10 @@ keywords = ['blog', 'desarrollo', 'gohugo', 'amperage', 'publicación', 'tema']
     elements = []
 
 [author]
-    name = "Asur"
+    name = "Asur Bernardo"
     homepage = "/"
+    image="/images/me.jpg"
+    bio="Back end developer sin ningún tipo de gusto estético. Me encanta el cacharreo y la tecnología. Siempre intento aprender cosas nuevas."
 
 [image]
     src = "/images/preparacion-tema-gohugo-amperage-dominio-publico/share-card.jpg"
@@ -151,7 +153,7 @@ Pues a eso me he dedicado. De momento no es muy extenso pero espero ir actualiz�
 
 ## Navegación instantanea ⚡
 
-Una de las features que no estaba aprovechando de los service workers es el *link prefetch*. 
+Una de las features que no estaba aprovechando de los service workers es el *link prefetch*.
 
 Esta feature permite que un enlace se cargue de manera proactiva (*eager loading*). De esta manera al navegar la página se recupera de cache en vez de hacer una petición, lo que da la sensación de navegación instantanea.
 

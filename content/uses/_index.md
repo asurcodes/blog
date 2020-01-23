@@ -10,10 +10,6 @@ menu = "main"
 [amp]
     elements = []
 
-[author]
-    name = "Asur"
-    homepage = "/"
-
 [image]
     src = "/images/uses/share-card.jpg"
 

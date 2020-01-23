@@ -17,10 +17,10 @@ keywords = ['blog', 'desarrollo', 'amp', 'compartir', 'redes sociales', 'dominio
     elements = []
 
 [author]
-    name = "Asur"
-    image = ""
-    bio = ""
+    name = "Asur Bernardo"
     homepage = "/"
+    image="/images/me.jpg"
+    bio="Back end developer sin ningún tipo de gusto estético. Me encanta el cacharreo y la tecnología. Siempre intento aprender cosas nuevas."
 
 [image]
     src = "/images/nuevo-dominio-legibilidad-integracion-amp-scripts/share-card.jpg"
@@ -167,7 +167,7 @@ Para añadir en cada entrada los scripts le he añadido a la metadata del ficher
     elements = ['amp-video', 'amp-anim']
 ```
 
-También he aprovechado y he hecho lo mismo para la configuración global de la web, de esta manera se pueden añadir scripts globales también sin tocar código. ¿Ya véis por donde van los tiros? 
+También he aprovechado y he hecho lo mismo para la configuración global de la web, de esta manera se pueden añadir scripts globales también sin tocar código. ¿Ya véis por donde van los tiros?
 
 Ahora al transpilar cada post puedo mirar los scripts especificados en estas dos configuraciones, matchearlos con el fichero json e insertarlos en el HTML!!
 
@@ -191,7 +191,7 @@ Ahora al transpilar cada post puedo mirar los scripts especificados en estas dos
         {{ if in $.Site.Params.ampElements . }}
         {{ else }}
             {{- if (index (index $.Site.Data "amp-modules") .) -}}
-                <script async custom-element="{{ . }}" 
+                <script async custom-element="{{ . }}"
                   src="{{ (index (index $.Site.Data "amp-modules") .) }}"></script>
             {{- end }}
         {{ end }}

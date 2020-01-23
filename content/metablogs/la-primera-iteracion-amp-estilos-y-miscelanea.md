@@ -17,10 +17,10 @@ keywords = ['blog', 'desarrollo', 'html', 'sass', 'amp', 'web safe fonts', 'grid
     elements = []
 
 [author]
-    name = "Asur"
-    image = ""
-    bio = ""
+    name = "Asur Bernardo"
     homepage = "/"
+    image="/images/me.jpg"
+    bio="Back end developer sin ningún tipo de gusto estético. Me encanta el cacharreo y la tecnología. Siempre intento aprender cosas nuevas."
 
 [image]
     src = "/images/la-primera-iteracion-amp-estilos-y-miscelanea/share-card.jpg"
@@ -50,7 +50,7 @@ Bueno, bueno, bueno, parece que la primera iteración del blog ya está aquí! L
 
 ## Los estilos 💅🏻
 
-Para bien o para mal este site siempre va a estar diseñado por mí, puedo pedir feedback o tomar inspiración de otros sites, pero estoy orgulloso de poder decir que todo lo que veis es **100% original**. 
+Para bien o para mal este site siempre va a estar diseñado por mí, puedo pedir feedback o tomar inspiración de otros sites, pero estoy orgulloso de poder decir que todo lo que veis es **100% original**.
 
 Ya os habréis dado cuenta de que esto ya tiene otra pinta, atrás han quedado los días de estilos por defecto de navegadores y con tan solo **\~100 lineas de Sass** le he dado un rollo más minimalista con un toque de imprenta con el que estoy bastante contento.
 
@@ -91,7 +91,7 @@ footer {
     justify-content: flex-end;
 }
 /*
-Al main le damos 3/5 y al aside 2/5 a continuación del main, así quedará a su derecha 
+Al main le damos 3/5 y al aside 2/5 a continuación del main, así quedará a su derecha
 */
 main {
     grid-column: 1 / span 3;

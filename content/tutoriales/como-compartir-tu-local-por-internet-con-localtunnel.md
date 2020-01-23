@@ -17,7 +17,10 @@ keywords = ['tutorial', 'http tunneling', 'Ngrok', 'Localtunnel', 'docker']
     elements = ['amp-iframe']
 
 [author]
-    name = "Asur"
+    name = "Asur Bernardo"
+    homepage = "/"
+    image="/images/me.jpg"
+    bio="Back end developer sin ningún tipo de gusto estético. Me encanta el cacharreo y la tecnología. Siempre intento aprender cosas nuevas."
 
 [image]
     src = "/images/como-compartir-tu-local-por-internet-con-localtunnel/share-card.jpg"

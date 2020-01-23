@@ -17,10 +17,10 @@ keywords = ['blog', 'desarrollo', 'comentarios', 'remark', 'GPC', 'Compute engin
     elements = []
 
 [author]
-    name = "Asur"
-    image = ""
-    bio = ""
+    name = "Asur Bernardo"
     homepage = "/"
+    image="/images/me.jpg"
+    bio="Back end developer sin ningún tipo de gusto estético. Me encanta el cacharreo y la tecnología. Siempre intento aprender cosas nuevas."
 
 [image]
     src = "/images/sistema-de-comentarios-gcp-y-datos-estructurados/share-card.jpg"

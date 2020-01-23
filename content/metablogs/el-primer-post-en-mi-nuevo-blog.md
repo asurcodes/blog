@@ -17,10 +17,10 @@ keywords = ['blog', 'desarrollo', 'git', 'deploy']
     elements = []
 
 [author]
-    name = "Asur"
-    image = ""
-    bio = ""
+    name = "Asur Bernardo"
     homepage = "/"
+    image="/images/me.jpg"
+    bio="Back end developer sin ningún tipo de gusto estético. Me encanta el cacharreo y la tecnología. Siempre intento aprender cosas nuevas."
 
 [image]
     src = "/images/el-primer-post-en-mi-nuevo-blog/share-card.jpg"
@@ -76,7 +76,7 @@ Este site al ser estático no necesita de mucho en cuanto a infraestructura, lo 
 
 Github pages me parece una opción ideal ya que lo iba a utilizar de todas formas para alojar los repositorios, así que mato dos pájaros de un tiro. Para poner un frontal con CDN, políticas personalizadas, así como mi propio dominio utilizo **Cloudflare**, que de nuevo es gratis (vais captando el patrón aquí?).
 
-La verdad es que lo único que me ha costado averiguar de esta parte es la convención que tiene Github para alojar tu site. Para que la web esté accesible en la url `{user}.github.io` tienes que crear un repositorio que se llame igual y esa es tu única opción, si no te gusta, pues bailas. 
+La verdad es que lo único que me ha costado averiguar de esta parte es la convención que tiene Github para alojar tu site. Para que la web esté accesible en la url `{user}.github.io` tienes que crear un repositorio que se llame igual y esa es tu única opción, si no te gusta, pues bailas.
 
 ### La estructura de repositorios
 

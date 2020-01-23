@@ -8,12 +8,6 @@ description = "Posts con la tag tutorial"
 [amp]
     elements = []
 
-[author]
-    name = "Asur"
-    image = ""
-    bio = ""
-    homepage = ""
-
 [image]
     src = ""
     title = ""

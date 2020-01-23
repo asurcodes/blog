@@ -17,10 +17,10 @@ keywords = ['blog', 'desarrollo', 'anuncios', 'adsense', 'amp', 'comentarios', '
     elements = ['amp-twitter', 'amp-ad']
 
 [author]
-    name = "Asur"
-    image = ""
-    bio = ""
+    name = "Asur Bernardo"
     homepage = "/"
+    image="/images/me.jpg"
+    bio="Back end developer sin ningún tipo de gusto estético. Me encanta el cacharreo y la tecnología. Siempre intento aprender cosas nuevas."
 
 [image]
     src = "/images/anuncios-con-adsense-y-comentarios-con-disqus/share-card.jpg"

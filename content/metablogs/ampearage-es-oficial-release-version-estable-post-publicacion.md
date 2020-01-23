@@ -7,7 +7,7 @@ title = "Metablog #11 - Amperage es gold! Release de la primera versión estable
 
 description = "Amperage ya es oficialmente un tema de GoHugo. Tras la primera revisión y el release de la versión 1.0 recopilo las mejoras más relevantes, nuevos componentes, etiquetas hreflang y más"
 
-summary = "No sé si te has enterado pero Amperage es oficialmente un tema de Hugo! Tras la primera revisión y el release de la versión estable 1.0 he recopilado las mejoras más relevantes como algunos nuevos componentes, etiquetas hreflang configurables y más!"
+summary = "No sé si te has enterado pero **Amperage es oficialmente un tema de Hugo!** Tras la primera revisión y el release de la versión estable 1.0 he recopilado las mejoras más relevantes como algunos **nuevos componentes**, etiquetas **hreflang configurables** y más!"
 
 tags = ['Evolutivo']
 
@@ -17,8 +17,10 @@ keywords = ['blog', 'desarrollo', 'amperage', 'comento', 'gohugo', 'open source'
     elements = ['amp-twitter']
 
 [author]
-    name = "Asur"
+    name = "Asur Bernardo"
     homepage = "/"
+    image="/images/me.jpg"
+    bio="Back end developer sin ningún tipo de gusto estético. Me encanta el cacharreo y la tecnología. Siempre intento aprender cosas nuevas."
 
 [twitter]
     site = "@asurbernardo"

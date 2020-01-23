@@ -17,8 +17,10 @@ keywords = ['blog', 'desarrollo', 'gohugo', 'amperage', 'i18n', 'amp', 'service 
     elements = ['amp-twitter']
 
 [author]
-    name = "Asur"
+    name = "Asur Bernardo"
     homepage = "/"
+    image="/images/me.jpg"
+    bio="Back end developer sin ningún tipo de gusto estético. Me encanta el cacharreo y la tecnología. Siempre intento aprender cosas nuevas."
 
 [image]
     src = "/images/pwa-en-amp-con-service-worker-e-i18n/share-card.jpg"
@@ -166,11 +168,11 @@ Ya casi estamos, ahora con linkearlo en nuestras metatags junto con los iconos d
 {{< highlight html "linenos=table" >}}
 
 <link rel="manifest" href="https://asur.dev/manifest.json">
-<link rel="icon" type="image/png" 
+<link rel="icon" type="image/png"
     sizes="32x32" href="https://asur.dev/icons/favicon-32x32.png">
-<link rel="icon" type="image/png" 
+<link rel="icon" type="image/png"
     sizes="16x16" href="https://asur.dev/icons/favicon-16x16.png">
-<link rel="apple-touch-icon" 
+<link rel="apple-touch-icon"
     sizes="180x180" href="https://asur.dev/icons/apple-touch-icon.png">
 
 {{< / highlight >}}
@@ -234,8 +236,8 @@ DefaultContentLanguage = "es"
         languageName = "Español"
         languageCode = "es"
         title = "Bienvenid@ a mi blog | By Asur 🧐"
-        description = "Bienvenid@ a mi blog, si te gusta el desarrollo web, el SEO, 
-          el open source y la tecnología en general echa un vistazo, seguro que 
+        description = "Bienvenid@ a mi blog, si te gusta el desarrollo web, el SEO,
+          el open source y la tecnología en general echa un vistazo, seguro que
           encuentras algo interesante."
         weight = 1
     [languages.en]
@@ -243,7 +245,7 @@ DefaultContentLanguage = "es"
         languageName = "English"
         languageCode = "en"
         title = "Welcome to my blog | By Asur 🧐"
-        description = "This is the English section of my site. It's still a 
+        description = "This is the English section of my site. It's still a
           work in progress but news are coming! Stay tuned!"
         weight = 2
 

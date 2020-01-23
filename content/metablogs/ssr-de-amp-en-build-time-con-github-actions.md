@@ -17,8 +17,10 @@ keywords = ['blog', 'desarrollo', 'gohugo', 'github actions', 'ssr', 'amp', 'opt
     elements = []
 
 [author]
-    name = "Asur"
+    name = "Asur Bernardo"
     homepage = "/"
+    image="/images/me.jpg"
+    bio="Back end developer sin ningún tipo de gusto estético. Me encanta el cacharreo y la tecnología. Siempre intento aprender cosas nuevas."
 
 [image]
     src = "/images/amp-ssr-en-build-time-con-github-actions/share-card.jpg"
@@ -100,7 +102,7 @@ Esta es a la solución a la que he llegado utilizando un script de bash:
 
 for file in $(find ${INPUT_ROOT} -name "*.html"); do
     [ -f "$file" ] || break
-    echo "Optimizing $file" 
+    echo "Optimizing $file"
     ! $GOPATH/bin/transform $file > /tmp/optimized.txt
     [ -s /tmp/optimized.txt ] && cat /tmp/optimized.txt > $file \
       || echo "Not a valid AMP page. Omitting..."
@@ -145,7 +147,7 @@ También necesitas un fichero de configuración:
 {{< highlight yml "linenos=table" >}}
 
 name: 'AMP optimizer action'
-description: 'GitHub Action to optimize AMP HTML files :zap: 
+description: 'GitHub Action to optimize AMP HTML files :zap:
   It uses AMP Transformer library. Designed for static web generator pipelines.'
 author: 'asurbernardo'
 runs:

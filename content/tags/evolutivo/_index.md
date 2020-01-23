@@ -8,12 +8,6 @@ description = "Documento las mejoras e iteraciones que voy haciendo en formato d
 [amp]
     elements = []
 
-[author]
-    name = "Asur"
-    image = ""
-    bio = ""
-    homepage = ""
-
 [image]
     src = ""
     title = ""

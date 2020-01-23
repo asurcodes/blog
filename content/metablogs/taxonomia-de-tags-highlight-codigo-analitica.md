@@ -17,10 +17,10 @@ keywords = ['blog', 'desarrollo', 'tags', 'syntax highlighting', 'google analyti
     elements = []
 
 [author]
-    name = "Asur"
-    image = ""
-    bio = ""
+    name = "Asur Bernardo"
     homepage = "/"
+    image="/images/me.jpg"
+    bio="Back end developer sin ningún tipo de gusto estético. Me encanta el cacharreo y la tecnología. Siempre intento aprender cosas nuevas."
 
 [image]
     src = "/images/taxonomia-de-tags-highlight-codigo-analitica/share-card.jpg"
@@ -250,7 +250,7 @@ Las partes a las que prestaré más atención son:
 
 ### Cloudflare
 
-Con Cloudflare no he tenido que hacer nada, ya estaba montado desde el principio como proxy de esta web, pero sigue teniendo una parte de analítica muy interesante, que está más orientada a los datos técnicos y son mucho más crudos que en el resto de plataformas ya que son recaudados a nivel DNS y proxy. 
+Con Cloudflare no he tenido que hacer nada, ya estaba montado desde el principio como proxy de esta web, pero sigue teniendo una parte de analítica muy interesante, que está más orientada a los datos técnicos y son mucho más crudos que en el resto de plataformas ya que son recaudados a nivel DNS y proxy.
 
 Las partes más interesantes son:
 

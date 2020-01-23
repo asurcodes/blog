@@ -17,8 +17,10 @@ keywords = ['blog', 'desarrollo', 'gohugo', 'amperage', 'publicación', 'tema']
     elements = []
 
 [author]
-    name = "Asur"
+    name = "Asur Bernardo"
     homepage = "/"
+    image="/images/me.jpg"
+    bio="Back end developer sin ningún tipo de gusto estético. Me encanta el cacharreo y la tecnología. Siempre intento aprender cosas nuevas."
 
 [image]
     src = "/images/preparacion-tema-gohugo-amperage-dominio-publico/share-card.jpg"
