@@ -44,7 +44,7 @@ Me encanta que mis equipos sean sólidos y duraderos, pero ligeros y portables a
     title="Dell XPS 13' Negro"
     description="Este es mi portatil de trabajo en el que tengo Linux y es donde programo principalmente. Tiene un Intel i7 y 16GB de RAM en un tamaño de 13 pulgadas."
     image="/images/uses/dell-xps-13.jpg"
-    cta="Ver en tienda"
+    cta="Ver en Amazon"
     link="https://amzn.to/30Iic6j" >}}
 
 ### Teléfono móvil
@@ -53,7 +53,7 @@ Me encanta que mis equipos sean sólidos y duraderos, pero ligeros y portables a
     title="OnePlus 5T 6GB"
     description="Mi móvil, ya tiene un tiempo y está descatalogado pero ha aguantado como un campeón el maltrato al que le expongo a diario."
     image="/images/uses/oneplus-5t.jpg"
-    cta="Ver el nuevo modelo"
+    cta="Ver en OnePlus Store"
     link="https://www.oneplus.com/es/7t-pro" >}}
 
 ### Escritorio
@@ -62,7 +62,7 @@ Me encanta que mis equipos sean sólidos y duraderos, pero ligeros y portables a
     title="IKEA Bekant standing desk"
     description="Un salvavidas para evitar estar sentado todo el día, si puedes júntalo con una pelota de squash o unas platillas de gel es lo mejor!"
     image="/images/uses/ikea-bekant-standing-desk.jpg"
-    cta="Ver en tienda"
+    cta="Ver en IKEA"
     link="https://www.ikea.com/es/es/p/bekant-escritorio-sentado-de-pie-blanco-s69022537/" >}}
 
 ### Pantalla
@@ -71,8 +71,26 @@ Me encanta que mis equipos sean sólidos y duraderos, pero ligeros y portables a
     title="Monitor LG 4K 32 pulgadas"
     description="El rey del multitasking, con un tamaño de 32 pulgadas puedo tener 4 ventanas 100% usables, una en cada esquina."
     image="/images/uses/lg-32.jpg"
-    cta="Ver en tienda"
+    cta="Ver en Amazon"
     link="https://amzn.to/2Gb7Rq3" >}}
+
+### Teclado
+
+{{< product
+    title="Logitech G6 V2 Cherry Brown"
+    description="La sensación de pulsación de un buen teclado cuando te pasas tanto tiempo picando código es genial y el sonido es súper satisfactorio, aunque los demás lo odien..."
+    image="/images/uses/steelseries-6g-v2.png"
+    cta="Ver en PcComponentes"
+    link="https://www.pccomponentes.com/steelseries-6g-v2-versi-n-espa-ola" >}}
+
+### Dock
+
+{{< product
+    title="Caldigit TS3 Thundelbolt 3 Dock"
+    description="No hay nada mejor que sentarte en tu escritorio, conectar un solo cable y que a la vez que cargue tu ordenador, conecte teclado, ratón, ethernet y dos pantallas."
+    image="/images/uses/caldigit-ts3-dock.jpg"
+    cta="Ver en Amazon"
+    link="https://amzn.to/2TOGqdD" >}}
 
 ## Software 💾
 
@@ -84,7 +102,7 @@ Principalmente me dedico al desarrollo web, estas son las herramientas que más 
     title="Manjaro + XFCE"
     description="El descubrimiento top de este año, es básicamente Arch Linux pero con un montaje más sencillo para torpes como yo."
     image="/images/uses/manjaro.png"
-    cta="Ver la web"
+    cta="Ver en la web"
     link="https://manjaro.org/" >}}
 
 ### Editor de código
@@ -120,7 +138,7 @@ Principalmente me dedico al desarrollo web, estas son las herramientas que más 
     title="Zoho Workplace"
     description="Un rebranding reciente de Zoho para hacer la competencia a Google, no me puedo creer que sea gratis incluso cuando usas un dominio personalizado!"
     image="/images/uses/zoho-workplace.png"
-    cta="Ver la web"
+    cta="Ver en la web"
     link="https://www.zoho.com/workplace/" >}}
 
 ## Este blog ✒️
@@ -133,7 +151,7 @@ No pago ni un solo euro por nada relacionado con este blog, todas estas herramie
     title="GitHub"
     description="Ya veréis que soy muy fan de GitHub en general y por supuesto es la opción que he elegido para alojar mi repositorio de git."
     image="/images/uses/github.png"
-    cta="Ver la web"
+    cta="Ver en la web"
     link="https://github.com" >}}
 
 ### Hosting web
@@ -142,7 +160,7 @@ No pago ni un solo euro por nada relacionado con este blog, todas estas herramie
     title="GitHub Pages"
     description="Pues eso, que GitHub te permite alojar y servir estáticos GRATIS, así que es donde he metido todos los ficheros de mi blog y va como un tiro!"
     image="/images/uses/github-pages.png"
-    cta="Ver la web"
+    cta="Ver en la web"
     link="https://pages.github.com/" >}}
 
 ### CI/CD
@@ -160,7 +178,7 @@ No pago ni un solo euro por nada relacionado con este blog, todas estas herramie
     title="GoHugo.io"
     description="El generador de sites estáticos más rápido a este lado del Misisipi. Con una comunidad enorme y escrito en GoLang, muy top!"
     image="/images/uses/gohugo.png"
-    cta="Ver la web"
+    cta="Ver en la web"
     link="https://gohugo.io" >}}
 
 ### Tema
@@ -187,7 +205,7 @@ No pago ni un solo euro por nada relacionado con este blog, todas estas herramie
     title="Google Analytics + Search Console"
     description="Este es un clásico para conocer el tráfico de tu web, junto con Search Console para los datos de SEO son prácticamente obligatorios si tienes un blog / web / aplicación."
     image="/images/uses/google-analytics.png"
-    cta="Ver la web"
+    cta="Ver en la web"
     link="https://analytics.google.com" >}}
 
 ### Comentarios
@@ -196,7 +214,7 @@ No pago ni un solo euro por nada relacionado con este blog, todas estas herramie
     title="Disqus"
     description="El provider de comentarios para páginas web más grande que hay, tiene login social, herramientas de moderación y es 100% gratis. Muy contento de momento."
     image="/images/uses/disqus.png"
-    cta="Ver la web"
+    cta="Ver en la web"
     link="https://disqus.com" >}}
 
 Espero que te haya gustado la lista, puedes ver listas de más personas de donde surgió la idea originalmente: [uses.tech](https://uses.tech)! 🤩
