@@ -17,8 +17,10 @@ keywords = ['post', 'monetize', 'money', 'tech', 'blog', 'freelance', 'FIRE', 'o
     elements = ['amp-ad']
 
 [author]
-    name = "Asur"
+    name = "Asur Bernardo"
     homepage = "/"
+    image="/images/me.jpg"
+    bio="Back end developer with no aesthetic sense. I love programming, tinkering and technology in general. Always trying to learn new things."
 
 [image]
     src = "/images/top-3-ways-i-monetize-my-tech-blog-no-traffic-required/share-card.jpg"

@@ -20,7 +20,7 @@ keywords = ['blog', 'desarrollo', 'gohugo', 'despliegue continuo', 'github actio
     name = "Asur Bernardo"
     homepage = "/"
     image="/images/me.jpg"
-    bio="Back end developer sin ningún tipo de gusto estético. Me encanta el cacharreo y la tecnología. Siempre intento aprender cosas nuevas."
+    bio="Back end developer sin ningún tipo de gusto estético. Me encanta la programación, el cacharreo y la tecnología en general. Siempre intento aprender cosas nuevas."
 
 [image]
     src = "/images/mejorando-workflow-docker-makefile-github-actions/share-card.jpg"

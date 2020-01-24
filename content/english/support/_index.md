@@ -10,10 +10,6 @@ menu = "main"
 [amp]
     elements = ['amp-ad']
 
-[author]
-    name = "Asur"
-    homepage = "/"
-
 [twitter]
     site = "@asurbernardo"
 

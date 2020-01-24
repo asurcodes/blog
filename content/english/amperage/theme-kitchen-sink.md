@@ -17,8 +17,10 @@ keywords = ['amperage', 'theme', 'gohugo', 'kitchen sink', 'demo', 'components']
     elements = ['amp-ad', 'amp-anim', 'amp-iframe', 'amp-video']
 
 [author]
-    name = "Asur"
+    name = "Asur Bernardo"
     homepage = "/"
+    image="/images/me.jpg"
+    bio="Back end developer with no aesthetic sense. I love programming, tinkering and technology in general. Always trying to learn new things."
 
 [image]
     src = "/images/amperage-theme-kitchen-sink/share-card.jpg"
