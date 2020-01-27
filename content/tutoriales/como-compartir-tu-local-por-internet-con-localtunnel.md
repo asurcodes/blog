@@ -124,7 +124,9 @@ Ahora que ya hemos visto algún caso de uso y hemos echado a andar la imaginaci�
 
 Ngrok es quizás el nombre más reconocible en esta materia, es un SaaS que tiene la facilidad de uso por bandera. Sus características son las siguientes:
 
-**Pros**
+{{% post-it
+    type="success"
+    title="Pros 😍" %}}
 
  - Binario descargable para multitud de plataformas, rápido montaje.
 
@@ -136,7 +138,11 @@ Ngrok es quizás el nombre más reconocible en esta materia, es un SaaS que tien
 
  - Al ser un negocio te asegura el mantenimiento y futuras actualizaciones.
 
-**Contras**
+{{% /post-it %}}
+
+{{% post-it
+    type="danger"
+    title="Contras 😟" %}}
 
  - No es Open Source, al menos la nueva versión 2.x, aún se puede encontrar [la antigua versión en Github](https://github.com/inconshreveable/ngrok), aunque no está mantenida.
 
@@ -144,11 +150,15 @@ Ngrok es quizás el nombre más reconocible en esta materia, es un SaaS que tien
 
  - La capa gratuita en sus servidores es algo limitada, es evidente que buscan la conversión.
 
+{{% /post-it %}}
+
 ### Localtunnel - expose yourself
 
 Aunque su eslogan se puede malinterpretar facilmente, Localtunnel es el proyecto open source más reconocible de HTTP tunneling y lleva desde el 2012 siendo desarrollado y mantenido. Es la alternativa más frecuente a Ngrok y no sin razón:
 
-**Pros**
+{{% post-it
+    type="success"
+    title="Pros 😍" %}}
 
  - Es Open Source, tanto el cliente como el servidor.
 
@@ -156,9 +166,15 @@ Aunque su eslogan se puede malinterpretar facilmente, Localtunnel es el proyecto
 
  - Gran comunidad y muy asentada, con más de 9K estrellas en Github.
 
-**Contras**
+{{% /post-it %}}
+
+{{% post-it
+    type="danger"
+    title="Contras 😟" %}}
 
  - Puede ser algo más lento que el resto al estar escrito en Nodejs, pero para la mayoría de casos de uso ni se nota.
+
+{{% /post-it %}}
 
 Repositorio: https://github.com/localtunnel/localtunnel
 
@@ -166,7 +182,9 @@ Repositorio: https://github.com/localtunnel/localtunnel
 
 El nuevo de la clase, se promociona como una herramienta de HTTP tunneling rápida y segura. Con más de 3K estrellas en Github parece que ha convencido a los usuarios, lamentablemente aún no lo he podido probar, pero su rápido crecimiento es prueba más que suficiente de que merece la pena darle una oportunidad.
 
-**Pros**
+{{% post-it
+    type="success"
+    title="Pros 😍" %}}
 
  - Es Open Source, puedes ver el código en Github, tanto el cliente como el servidor.
 
@@ -176,9 +194,15 @@ El nuevo de la clase, se promociona como una herramienta de HTTP tunneling rápi
 
  - Dockeriación oficial.
 
-**Contras**
+{{% /post-it %}}
+
+{{% post-it
+    type="danger"
+    title="Contras 😟" %}}
 
  - No tiene servidores *as a service*, te lo tienes que montar tu todo.
+
+{{% /post-it %}}
 
 Repositorio: https://github.com/jpillora/chisel
 
