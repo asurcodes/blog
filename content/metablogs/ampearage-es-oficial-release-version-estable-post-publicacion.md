@@ -59,3 +59,15 @@ He movido la actividad de desarrollo a la rama `development` como medida para pr
 Pero antes de que todo esto ocurriese me dió tiempo a meter alguna funcionalidad extra en la versión 1.0, aquí están:
 
 ## Primera versión estable
+
+### Los post-its
+
+### La tarjeta para producto
+
+## ¿Y ahora qué?
+
+Bueno, lo primero es decir que el desarrollo del tema no va a parar, pero se va a ralentizar de manera notable y con ello la cantidad de metablogs.
+
+Por supuesto seguiré manteniendo el proyecto con bugfixes y posibles pull requests que puedan ir llegando.
+
+Tengo en la cabeza ya el siguiente proyecto, que ya tengo bastante avanzado y claro, cuando lo publique escribiré un post sobre ello. *Stay tuned!* 😎
