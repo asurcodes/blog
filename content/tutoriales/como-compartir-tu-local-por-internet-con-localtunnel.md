@@ -127,29 +127,19 @@ Ngrok es quizás el nombre más reconocible en esta materia, es un SaaS que tien
 {{% post-it
     type="success"
     title="Pros 😍" %}}
-
  - Binario descargable para multitud de plataformas, rápido montaje.
-
  - Capa gratuita de servidores SaaS.
-
  - Cuenta con una GUI web en la que puedes analizar los request y hacer respuestas custom.
-
  - Posibilidad de acceder a un dashboard con analítica si te registras en su web.
-
  - Al ser un negocio te asegura el mantenimiento y futuras actualizaciones.
-
 {{% /post-it %}}
 
 {{% post-it
     type="danger"
     title="Contras 😟" %}}
-
  - No es Open Source, al menos la nueva versión 2.x, aún se puede encontrar [la antigua versión en Github](https://github.com/inconshreveable/ngrok), aunque no está mantenida.
-
  - No tiene la opción de montar tu propio servidor.
-
  - La capa gratuita en sus servidores es algo limitada, es evidente que buscan la conversión.
-
 {{% /post-it %}}
 
 ### Localtunnel - expose yourself
@@ -159,21 +149,15 @@ Aunque su eslogan se puede malinterpretar facilmente, Localtunnel es el proyecto
 {{% post-it
     type="success"
     title="Pros 😍" %}}
-
  - Es Open Source, tanto el cliente como el servidor.
-
  - Capa gratuita de servidores SaaS.
-
  - Gran comunidad y muy asentada, con más de 9K estrellas en Github.
-
 {{% /post-it %}}
 
 {{% post-it
     type="danger"
     title="Contras 😟" %}}
-
  - Puede ser algo más lento que el resto al estar escrito en Nodejs, pero para la mayoría de casos de uso ni se nota.
-
 {{% /post-it %}}
 
 Repositorio: https://github.com/localtunnel/localtunnel
@@ -185,23 +169,16 @@ El nuevo de la clase, se promociona como una herramienta de HTTP tunneling rápi
 {{% post-it
     type="success"
     title="Pros 😍" %}}
-
  - Es Open Source, puedes ver el código en Github, tanto el cliente como el servidor.
-
  - Es rápido, está escrito en Go.
-
  - Facilidad de uso.
-
  - Dockeriación oficial.
-
 {{% /post-it %}}
 
 {{% post-it
     type="danger"
     title="Contras 😟" %}}
-
  - No tiene servidores *as a service*, te lo tienes que montar tu todo.
-
 {{% /post-it %}}
 
 Repositorio: https://github.com/jpillora/chisel

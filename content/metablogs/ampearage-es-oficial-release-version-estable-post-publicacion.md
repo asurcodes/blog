@@ -58,13 +58,117 @@ He movido la actividad de desarrollo a la rama `development` como medida para pr
 
 Pero antes de que todo esto ocurriese me dió tiempo a meter alguna funcionalidad extra en la versión 1.0, aquí están:
 
-## Primera versión estable
+**EDIT:** He tardado tanto en escribir este post que ya va por la versión 1.1. He estado ocupado, ¡¿VALE?!
 
-### Los post-its
+## Nuevas features! 🥳
+
+Aquí te dejo la lista de todas las novedades. Recuerda que lo puedes ver todo en acción en la [kitchen sink de Amperage](https://asur.dev/en/amperage/theme-kitchen-sink/).
 
 ### La tarjeta para producto
 
-## ¿Y ahora qué?
+Este componente lo he creado principalmente para resaltar productos con un CTA (*call to action*).
+
+Es perfecto para marketing de afiliados o para hacer reviews, aunque lo he creado con la idea de que sea flexible y que sirva para todo un poco.
+
+Aquí tienes un ejemplo:
+
+{{< product
+    title="Un patito de goma!!"
+    description="El mejor amigo de un programador no es el perro, es un simple patito de goma, cuando nadie te quiera escuchar él siempre estará ahí para ti. 🦆"
+    image="https://images-na.ssl-images-amazon.com/images/I/8166xCVDGnL._SL1500_.jpg"
+    cta="Averigua el precio!"
+    link="https://amzn.to/33GCvRh" >}}
+
+Lo he hecho en un shortcode que acepta: `title`, `image`, `description`, `cta` y `link`.
+
+El ejemplo de arriba al escribirlo sería así:
+
+{{< highlight md "linenos=table" >}}
+
+{{</* product
+    title="Un patito de goma!!"
+    description="El mejor amigo de un programador no es el perro, es un simple patito de goma, cuando nadie te quiera escuchar él siempre estará ahí para ti. 🦆"
+    image="https://example.com/your-image.jpg"
+    cta="Averigua el precio!"
+    link="https://example.com/your-link" */>}}
+
+{{< / highlight >}}
+
+Algo que me gustaría mejorar en el futuro es añadir la posibilidad de usar markdown en la descripción, ahora mismo solo admite texto plano.
+
+Lo puedes ver en acción en la [página de /uses](https://asur.dev/uses) del menú.
+
+### Los post-its
+
+Me parecía que este blog al ser bastante técnico había puntos que los *muros de texto* eran insalvables. Por eso he decidido desarrollar este componente.
+
+No dejan de ser tarjetas de colores pero su cometido es romper el flujo de lectura para hacerlo menos pesado.
+
+A diferencia de los productos aquí si se puede utilizar markdown dentro de los shortcodes, lo que los hace bastante más polivalentes.
+
+{{% post-it type="info" title="¿Sabías qué...? 💡 " %}}
+  En la mitología griega, Niké (en griego, Νίκη) es la diosa de la victoria. Se la representaba a menudo como una pequeña escultura alada.
+
+  Es la escultura que adorna el frontal de los Rolls Royce.
+
+  Según la leyenda fué la última palabra que pronunció Filípides trás correr la primera maratón para anunciar la victoria ateniense contra los persas.
+
+  La palabra fué registrada en 1964 por una marca de calzado estadounidense.
+{{% / post-it %}}
+
+¿Ves?¿A que funciona bastante bien?
+
+He hecho que aceptasen un parámetro `type` que puede tomar cuatro valores: `tip`, `warning`, `danger` e `info`, que son azul, amarillo, rojo y azul respectivamente.
+
+Además se les puede añadir un `title` que aparecerá en grande en la parte superior.
+
+Ambos parámetros son opcionales, y el tipo tiene `warning` como fallback.
+
+El ejemplo anterior sería así:
+
+{{< highlight md "linenos=table" >}}
+
+{{%/* post-it type="info" title="¿Sabías qué...? 💡 " */%}}
+
+El texto iría aquí.
+
+{{%/* / post-it */%}}
+
+{{< / highlight >}}
+
+### Etiquetas hreflang configurables
+
+No podía faltar el toque de SEO técnico en esta actualización. Pues eso, ahora se pueden configurar a mano las tags *hreflang* de cada post.
+
+Esta feature la tenía pensada desde que metí la internacionalización y por fin está aquí.
+
+Simplemente en la *frontmatter* del post puedes añadir algo así:
+
+{{< highlight toml "linenos=table" >}}
+
+[alternatives.en]
+    code = "en"
+    url = "https://asur.dev/en/how-to-deploy-your-own-crypto-trading-bot/"
+
+{{< / highlight >}}
+
+Con esto los motores de búsqueda podrán encontrar más facilmente la página dependiendo del idioma de búsqueda.
+
+Recuerda que los contenidos tienen que ser equivalentes, no se debe linkear una página que no tenga nada que ver con la original.
+
+### La tarjeta de autor
+
+¡Esta es la incorporación más reciente! Ahora se puede crear una tarjeta de autor desde la configuración del post.
+
+Era algo que estaba claro que faltaba. Además he aprovechado a añadir un recordatorio para compartir y comentar al final del post, que es el lugar más lógico para sugestionar a los lectores.
+
+La tarjeta es totalmente adaptable, y ninguno de sus parámetros son obligatorios.
+
+También he incluido esos datos extra en los *structured data* del blog siempre que haya un autor, en el de `Article` por ejemplo.
+
+Puedes ver el resultado al final de este post (aún tengo que actualizar la foto).
+
+## ¿Y ahora qué? 🤔
 
 Bueno, lo primero es decir que el desarrollo del tema no va a parar, pero se va a ralentizar de manera notable y con ello la cantidad de metablogs.
 

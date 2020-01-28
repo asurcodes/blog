@@ -209,27 +209,19 @@ Top Cat! The most effectual **Top Cat**! Who’s intellectual close friends get 
 Result:
 
 {{% post-it title="Warning! 🚨" %}}
-
 Hong Kong Phooey, number one super guy. **Hong Kong Phooey**, quicker than the human eye. He’s got style, *a groovy style*, and a car that just won’t stop.
-
 {{% / post-it %}}
 
 {{% post-it type="success" title="Success! 🎉" %}}
-
 Mutley, you snickering, *floppy eared hound*. When courage is needed, you’re never around. Those medals you wear on your moth-eaten chest should be there _for bungling_ at which you are best.
-
 {{% / post-it %}}
 
 {{% post-it type="danger" title="Danger! 💀" %}}
-
 Top Cat! The most effectual **Top Cat**! Who’s intellectual close friends get to call him T.C., providing it’s with dignity. Top Cat! The indisputable leader of the gang.
-
 {{% / post-it %}}
 
 {{% post-it type="info" title="Info! 💬" %}}
-
 80 days around the world, we’ll find a pot of gold just sitting where the rainbow’s ending. Time — we’ll fight against the time, and we’ll fly on the white wings of the wind.
-
 {{% / post-it %}}
 
 ## Videos

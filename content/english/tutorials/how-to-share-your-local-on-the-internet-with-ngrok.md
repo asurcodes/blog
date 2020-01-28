@@ -122,23 +122,19 @@ Ngrok is the most well-known tool in this matter. It's a SaaS and its main chara
 {{% post-it
     type="success"
     title="Pros 😍" %}}
-
  - Downloadable binary for multiple operating systems that enables quick setup.
  - Free tier using their servers.
  - An account with web GUI from which you can analyze requests and make custom responses, very useful for testing.
  - Local stats dashboard if you have a Ngrok account.
  - It's a successful business, which ensures future updates and a level of service stability.
-
 {{% /post-it %}}
 
 {{% post-it
     type="danger"
     title="Cons 😟" %}}
-
  - It's not open source, at least the 2.x version. The original project is [public on Github](https://github.com/inconshreveable/ngrok), but it's not longer being maintained.
  - There are no self-hosted options.
  - The free tier is very limited to encourage conversion.
-
 {{% /post-it %}}
 
 ### Localtunnel - expose yourself
@@ -148,19 +144,15 @@ Even though their slogan may lead to misinterpretation, Localtunnel is the open-
 {{% post-it
     type="success"
     title="Pros 😍" %}}
-
  - It's open source, client and server.
  - Free tier for SaaS servers.
  - Great community and stable project, with more than 9K stars on GitHub.
-
 {{% /post-it %}}
 
 {{% post-it
     type="danger"
     title="Cons 😟" %}}
-
  - To be picky, it's written in NodeJS that could be slower than Ngrok or Chisel, which are based in GoLang.
-
 {{% /post-it %}}
 
 Repository: https://github.com/localtunnel/localtunnel
@@ -172,19 +164,15 @@ The new kid in the block, providing a fast and secure http tunneling experience.
 {{% post-it
     type="success"
     title="Pros 😍" %}}
-
  - It's open-source and the client and server are on the same project.
  - It's fast because it's written in GoLang with a clear focus on performance.
  - Official dockerize environment for ease of use.
-
 {{% /post-it %}}
 
 {{% post-it
     type="danger"
     title="Cons 😟" %}}
-
  - No *as a service* available, this means you need to set up client and server.
-
 {{% /post-it %}}
 
 Repository: https://github.com/jpillora/chisel
