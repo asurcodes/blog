@@ -22,6 +22,9 @@ keywords = ['blog', 'desarrollo', 'amperage', 'comento', 'gohugo', 'open source'
     image="/images/me.jpg"
     bio="Back end developer sin ningún tipo de gusto estético. Me encanta la programación, el cacharreo y la tecnología en general. Siempre intento aprender cosas nuevas."
 
+[image]
+    src = "/images/amperage-es-oficial-release-version-estable-post-publicacion/share-card.jpg"
+
 [twitter]
     site = "@asurbernardo"
 
@@ -60,7 +63,7 @@ Pero antes de que todo esto ocurriese me dió tiempo a meter alguna funcionalida
 
 **EDIT:** He tardado tanto en escribir este post que ya va por la versión 1.1. He estado ocupado, ¡¿VALE?!
 
-Puedes ver los releases en GitHub: https://github.com/asurbernardo/amperage/releases
+Puedes ver los releases con sus respectivas ramas y tags en GitHub: https://github.com/asurbernardo/amperage/releases
 
 ## Nuevas features! 🥳
 
@@ -70,35 +73,33 @@ Aquí te dejo la lista de todas las novedades. Recuerda que lo puedes ver todo e
 
 Este componente lo he creado principalmente para resaltar productos con un CTA (*call to action*).
 
-Es perfecto para marketing de afiliados o para hacer reviews, aunque lo he creado con la idea de que sea flexible y que sirva para todo un poco.
+Es perfecto para marketing de afiliados o para hacer reviews, aunque lo he hecho con la idea de que sea flexible y que sirva para todo un poco.
 
 Aquí tienes un ejemplo:
 
 {{< product
     title="Un patito de goma"
-    description="El mejor amigo de un programador no es el perro, es un simple patito de goma, cuando nadie te quiera escuchar él siempre estará ahí para ti. 🦆"
+    description="El mejor amigo de un programador es un patito de goma, cuando nadie quiera escucharte él siempre estará ahí. 🦆"
     image="https://images-na.ssl-images-amazon.com/images/I/8166xCVDGnL._SL1500_.jpg"
-    cta="Averigua el precio!"
-    link="https://amzn.to/33GCvRh" >}}
+    cta="¡Cómpralo en Amazon!"
+    link="https://amzn.to/2GzjKq8" >}}
 
-Lo he hecho en un shortcode que acepta: `title`, `image`, `description`, `cta` y `link`.
-
-El ejemplo de arriba al escribirlo sería así:
+Lo he hecho en un shortcode que acepta: `title`, `image`, `description`, `cta` y `link`. El ejemplo de arriba al escribirlo sería así:
 
 {{< highlight md "linenos=table" >}}
 
 {{</* product
     title="Un patito de goma"
-    description="El mejor amigo de un programador no es el perro, es un simple patito de goma, cuando nadie te quiera escuchar él siempre estará ahí para ti. 🦆"
+    description="El mejor amigo de un programador es un patito de goma, cuando nadie quiera escucharte él siempre estará ahí. 🦆"
     image="https://example.com/your-image.jpg"
-    cta="Averigua el precio!"
+    cta="¡Cómpralo en Amazon!"
     link="https://example.com/your-link" */>}}
 
 {{< / highlight >}}
 
 Algo que me gustaría mejorar en el futuro es añadir la posibilidad de usar markdown en la descripción, ahora mismo solo admite texto plano.
 
-Lo puedes ver en acción en la [página de /uses](https://asur.dev/uses) del menú.
+Lo puedes ver en acción en la [página de /uses](https://asur.dev/uses) del menú donde listo las cosas que uso en mi día a día y con que está hecho este mismo blog.
 
 ### Los post-its
 
@@ -119,12 +120,12 @@ Mira, un ejemplo:
 
   - Según la leyenda fué la última palabra que pronunció Filípides trás correr la primera maratón para anunciar la victoria ateniense contra los persas.
 
-  - La palabra fué registrada en 1964 por una marca de calzado estadounidense.
+  - La palabra fué registrada en 1964 por una marca de calzado estadounidense que seguro que te suena vagamente...
 {{% / post-it %}}
 
 ¿Ves? ¿A que funciona bastante bien?
 
-He hecho que aceptasen un parámetro `type` que puede tomar cuatro valores: `tip`, `warning`, `danger` e `info`, que son azul, amarillo, rojo y azul respectivamente.
+He hecho que aceptasen un parámetro `type` que puede ser: `tip`, `warning`, `danger` e `info`, con fondo azul, amarillo, rojo y azul respectivamente.
 
 Además se les puede añadir un `title` que aparecerá en grande en la parte superior.
 
@@ -148,7 +149,7 @@ No podía faltar el toque de SEO técnico en esta actualización. Pues eso, ahor
 
 Esta feature la tenía pensada desde que metí la internacionalización y por fin está aquí.
 
-Simplemente en la *frontmatter* del post puedes añadir algo así:
+Simplemente en la *frontmatter* del post puedes añadir los post equivalentes y su respectivo idioma:
 
 {{< highlight toml "linenos=table" >}}
 
@@ -160,19 +161,21 @@ Simplemente en la *frontmatter* del post puedes añadir algo así:
 
 Con esto los motores de búsqueda podrán encontrar más facilmente la página dependiendo del idioma de búsqueda.
 
-Recuerda que los contenidos tienen que ser equivalentes, no se debe linkear una página que no tenga nada que ver con la original.
+Recuerda que los contenidos tienen que ser equivalentes y preferiblemente una traducción directa, no se debe linkear una página que no tenga nada que ver con la original.
 
 ### La tarjeta de autor
 
 ¡Esta es la incorporación más reciente! Ahora se puede crear una tarjeta de autor desde la configuración del post.
 
-Era algo que estaba claro que faltaba. Además he aprovechado a añadir un recordatorio para compartir y comentar al final del post, que es el lugar más lógico para sugestionar a los lectores.
+Era algo que estaba claro que faltaba en los posts, de esta manera puedo atraer a ese grupo de usuarios un poco más narcisista. 😜
+
+También he aprovechado a añadir un recordatorio para compartir y comentar al final del post, que es el lugar más lógico para sugestionar a tus lectores por lo que he leido...
 
 La tarjeta es totalmente adaptable, y ninguno de sus parámetros son obligatorios.
 
-También he incluido esos datos extra en los *structured data* del blog siempre que haya un autor, en el de tipo `Article` por ejemplo.
+También he incluido esos datos extra en los datos estructurados del blog siempre que haya un autor, en el de tipo `Article` por ejemplo.
 
-Puedes ver el resultado al final de este post (aún tengo que actualizar la foto).
+Puedes ver el resultado al final de este post (**foto 100% real no fake BTW**).
 
 ## ¿Y ahora qué? 🤔
 
@@ -180,4 +183,6 @@ Bueno, lo primero es decir que el desarrollo del tema no va a parar, pero se va 
 
 Por supuesto seguiré manteniendo el proyecto con bugfixes y posibles pull requests que puedan ir llegando.
 
-Tengo en la cabeza ya el siguiente proyecto, que ya tengo bastante avanzado y claro, cuando lo publique escribiré un post sobre ello. *Stay tuned!* 😎
+ > ¿Pero vas a abandonar el blog? 😢
+
+¿¡Pero que dices!? Tengo en la cabeza que me va a mil últimamente y ya he pensado en el siguiente proyecto, de hecho ya está bastante avanzado y, por supuesto, cuando lo publique escribiré un post. *Stay tuned!* 😎
