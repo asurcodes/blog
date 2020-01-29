@@ -60,6 +60,8 @@ Pero antes de que todo esto ocurriese me dió tiempo a meter alguna funcionalida
 
 **EDIT:** He tardado tanto en escribir este post que ya va por la versión 1.1. He estado ocupado, ¡¿VALE?!
 
+Puedes ver los releases en GitHub: https://github.com/asurbernardo/amperage/releases
+
 ## Nuevas features! 🥳
 
 Aquí te dejo la lista de todas las novedades. Recuerda que lo puedes ver todo en acción en la [kitchen sink de Amperage](https://asur.dev/en/amperage/theme-kitchen-sink/).
@@ -130,7 +132,7 @@ El ejemplo anterior sería así:
 
 {{%/* post-it type="info" title="¿Sabías qué...? 💡 " */%}}
 
-El texto iría aquí.
+El texto iría aquí...
 
 {{%/* / post-it */%}}
 
