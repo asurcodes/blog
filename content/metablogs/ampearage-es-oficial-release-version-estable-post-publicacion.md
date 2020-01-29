@@ -75,7 +75,7 @@ Es perfecto para marketing de afiliados o para hacer reviews, aunque lo he cread
 Aquí tienes un ejemplo:
 
 {{< product
-    title="Un patito de goma!!"
+    title="Un patito de goma"
     description="El mejor amigo de un programador no es el perro, es un simple patito de goma, cuando nadie te quiera escuchar él siempre estará ahí para ti. 🦆"
     image="https://images-na.ssl-images-amazon.com/images/I/8166xCVDGnL._SL1500_.jpg"
     cta="Averigua el precio!"
@@ -88,7 +88,7 @@ El ejemplo de arriba al escribirlo sería así:
 {{< highlight md "linenos=table" >}}
 
 {{</* product
-    title="Un patito de goma!!"
+    title="Un patito de goma"
     description="El mejor amigo de un programador no es el perro, es un simple patito de goma, cuando nadie te quiera escuchar él siempre estará ahí para ti. 🦆"
     image="https://example.com/your-image.jpg"
     cta="Averigua el precio!"
@@ -108,17 +108,21 @@ No dejan de ser tarjetas de colores pero su cometido es romper el flujo de lectu
 
 A diferencia de los productos aquí si se puede utilizar markdown dentro de los shortcodes, lo que los hace bastante más polivalentes.
 
-{{% post-it type="info" title="¿Sabías qué...? 💡 " %}}
-  En la mitología griega, Niké (en griego, Νίκη) es la diosa de la victoria. Se la representaba a menudo como una pequeña escultura alada.
+Mira, un ejemplo:
 
-  Es la escultura que adorna el frontal de los Rolls Royce.
+{{% post-it type="info" title=" 💡 Sabías qué... " %}}
+  En la mitología griega, *Niké* (en griego, Νίκη) es la diosa de la victoria. Algunos datos random:
 
-  Según la leyenda fué la última palabra que pronunció Filípides trás correr la primera maratón para anunciar la victoria ateniense contra los persas.
+  - Se la representaba a menudo como una pequeña escultura alada.
 
-  La palabra fué registrada en 1964 por una marca de calzado estadounidense.
+  - Su imagen adorna el frontal de los Rolls Royce.
+
+  - Según la leyenda fué la última palabra que pronunció Filípides trás correr la primera maratón para anunciar la victoria ateniense contra los persas.
+
+  - La palabra fué registrada en 1964 por una marca de calzado estadounidense.
 {{% / post-it %}}
 
-¿Ves?¿A que funciona bastante bien?
+¿Ves? ¿A que funciona bastante bien?
 
 He hecho que aceptasen un parámetro `type` que puede tomar cuatro valores: `tip`, `warning`, `danger` e `info`, que son azul, amarillo, rojo y azul respectivamente.
 
@@ -166,7 +170,7 @@ Era algo que estaba claro que faltaba. Además he aprovechado a añadir un recor
 
 La tarjeta es totalmente adaptable, y ninguno de sus parámetros son obligatorios.
 
-También he incluido esos datos extra en los *structured data* del blog siempre que haya un autor, en el de `Article` por ejemplo.
+También he incluido esos datos extra en los *structured data* del blog siempre que haya un autor, en el de tipo `Article` por ejemplo.
 
 Puedes ver el resultado al final de este post (aún tengo que actualizar la foto).
 
