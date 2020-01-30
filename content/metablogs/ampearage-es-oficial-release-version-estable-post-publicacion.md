@@ -63,7 +63,7 @@ Pero antes de que todo esto ocurriese me dió tiempo a meter alguna funcionalida
 
 **EDIT:** He tardado tanto en escribir este post que ya va por la versión 1.1. He estado ocupado, ¡¿VALE?!
 
-Puedes ver los releases con sus respectivas ramas y tags en GitHub: https://github.com/asurbernardo/amperage/releases
+Puedes ver los releases con sus respectivas ramas y tags en GitHub: [asurbernardo/amperage/releases](https://github.com/asurbernardo/amperage/releases)
 
 ## Nuevas features! 🥳
 
