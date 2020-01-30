@@ -171,7 +171,7 @@ También he aprovechado a añadir un recordatorio para compartir y comentar al f
 
 La tarjeta es totalmente adaptable, y ninguno de sus parámetros son obligatorios.
 
-También he incluido esos datos extra en los datos estructurados del blog siempre que haya un autor, en el de tipo `Article` por ejemplo.
+Esos datos extra que se introducen ahora los he incluido en los datos estructurados del blog para enriquecerlos más, en el de tipo `Article` por ejemplo.
 
 Puedes ver el resultado al final de este post (**foto 100% real no fake BTW**).
 
