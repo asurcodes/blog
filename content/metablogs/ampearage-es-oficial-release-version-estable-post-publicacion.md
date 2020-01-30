@@ -188,5 +188,3 @@ Por supuesto seguiré manteniendo el proyecto con bugfixes y posibles pull reque
 ## Wayback machine ⏰
 
 Ver la [versión original de este post](https://web.archive.org/web/20200130165858/https://asur.dev/metablogs/ampearage-es-oficial-release-version-estable-post-publicacion/ "Versión original del post").
-
-Ver la [versión original de la homepage](https://web.archive.org/web/20191214175520/https://asur.dev/ "Versión original de la homepage").
