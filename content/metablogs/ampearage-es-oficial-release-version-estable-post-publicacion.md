@@ -1,7 +1,7 @@
 +++
-draft = true
-date = "2020-01-26T12:12:13+02:00"
-publishdate = "2020-01-26T12:12:13+02:00"
+draft = false
+date = "2020-01-30T17:50:13+02:00"
+publishdate = "2020-01-30T17:50:13+02:00"
 
 title = "Metablog #11 - Amperage es gold! Release de la primera versión estable"
 
@@ -165,9 +165,7 @@ Recuerda que los contenidos tienen que ser equivalentes y preferiblemente una tr
 
 ### La tarjeta de autor
 
-¡Esta es la incorporación más reciente! Ahora se puede crear una tarjeta de autor desde la configuración del post.
-
-Era algo que estaba claro que faltaba en los posts, de esta manera puedo atraer a ese grupo de usuarios un poco más narcisista. 😜
+¡Esta es la incorporación más reciente y era algo que estaba claro que le faltaba al blog! Ahora se puede crear una tarjeta de autor desde la configuración.
 
 También he aprovechado a añadir un recordatorio para compartir y comentar al final del post, que es el lugar más lógico para sugestionar a tus lectores por lo que he leido...
 
@@ -186,3 +184,9 @@ Por supuesto seguiré manteniendo el proyecto con bugfixes y posibles pull reque
  > ¿Pero vas a abandonar el blog? 😢
 
 ¿¡Pero que dices!? Tengo en la cabeza que me va a mil últimamente y ya he pensado en el siguiente proyecto, de hecho ya está bastante avanzado y, por supuesto, cuando lo publique escribiré un post. *Stay tuned!* 😎
+
+## Wayback machine ⏰
+
+Ver la [versión original de este post](# "Versión original del post").
+
+Ver la [versión original de la homepage](# "Versión original de la homepage").
