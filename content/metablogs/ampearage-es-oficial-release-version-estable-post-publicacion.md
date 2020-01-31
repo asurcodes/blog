@@ -99,7 +99,7 @@ Lo he hecho en un shortcode que acepta: `title`, `image`, `description`, `cta` y
 
 Algo que me gustaría mejorar en el futuro es añadir la posibilidad de usar markdown en la descripción, ahora mismo solo admite texto plano.
 
-Lo puedes ver en acción en la [página de /uses](https://asur.dev/uses) del menú donde listo las cosas que uso en mi día a día y con que está hecho este mismo blog.
+Lo puedes ver en acción en la [página de /uses](https://asur.dev/uses) del menú donde listo las cosas que utilizo en mi día a día y con qué está hecho este mismo blog.
 
 ### Los post-its
 
@@ -129,7 +129,7 @@ He hecho que aceptasen un parámetro `type` que puede ser: `tip`, `warning`, `da
 
 Además se les puede añadir un `title` que aparecerá en grande en la parte superior.
 
-Ambos parámetros son opcionales, y el tipo tiene `warning` como fallback.
+Ambos parámetros son opcionales y el tipo tiene `warning` como fallback.
 
 El ejemplo anterior sería así:
 
@@ -169,9 +169,9 @@ Recuerda que los contenidos tienen que ser equivalentes y preferiblemente una tr
 
 También he aprovechado a añadir un recordatorio para compartir y comentar al final del post, que es el lugar más lógico para sugestionar a tus lectores por lo que he leido...
 
-La tarjeta es totalmente adaptable, y ninguno de sus parámetros son obligatorios.
+La tarjeta es totalmente adaptable y ninguno de sus atributos son obligatorios.
 
-Esos datos extra que se introducen ahora los he incluido en los datos estructurados del blog para enriquecerlos más, en el de tipo `Article` por ejemplo.
+Esos parámetros extra que se introducen ahora los he incluido en los datos estructurados del blog para enriquecerlos más, en el de tipo `Article` por ejemplo.
 
 Puedes ver el resultado al final de este post (**foto 100% real no fake BTW**).
 
