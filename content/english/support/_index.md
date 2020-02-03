@@ -1,7 +1,7 @@
 +++
 draft = false
 
-title = "Support me"
+title = "Support me and the blog for free! 💰"
 
 description = "Support me and the blog for free!"
 

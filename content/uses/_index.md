@@ -1,7 +1,7 @@
 +++
 draft = false
 
-title = "/Uses"
+title = "Mis /uses como programador"
 
 description = "El hardware y el software que uso en mi día a día como programador de backend! Esta lista está actualizada al día! Idea sacada de la web uses.tech 🤓"
 
