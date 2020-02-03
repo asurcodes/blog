@@ -5,7 +5,10 @@ title = "Support me"
 
 description = "Support me and the blog for free!"
 
-menu = "main"
+[languages.en]
+    [menu.main]
+        name = "Support me"
+        weight = 15
 
 [amp]
     elements = ['amp-ad']

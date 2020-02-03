@@ -5,7 +5,10 @@ title = "/Uses"
 
 description = "El hardware y el software que uso en mi día a día como programador de backend! Esta lista está actualizada al día! Idea sacada de la web uses.tech 🤓"
 
-menu = "main"
+[languages.es]
+    [menu.main]
+        name = "Mis /uses"
+        weight = 15
 
 [amp]
     elements = []

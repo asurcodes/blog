@@ -1,11 +1,14 @@
 +++
 draft = false
 
-title = "Apóyame"
+title = "Apóyame a mí y al blog for free! 💰"
 
 description = "Apoyame a mí y a este blog sin que te cueste nada!"
 
-menu = "main"
+[languages.es]
+    [menu.main]
+        name = "Apóyame"
+        weight = 20
 
 [amp]
     elements = ['amp-ad']
