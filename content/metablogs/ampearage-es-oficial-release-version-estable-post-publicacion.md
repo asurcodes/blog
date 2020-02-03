@@ -42,7 +42,7 @@ keywords = ['blog', 'desarrollo', 'amperage', 'comento', 'gohugo', 'open source'
 No sé si te has enterado pero Amperage es oficialmente un tema de Hugo! La semana pasada fué añadido a la web the themes.hugo.io e incluso me han mencionado en su cuenta de twitter:
 
 <amp-twitter
-  width="450"
+  width="380"
   height="330"
   layout="fixed"
   data-tweetid="1214969181155794946"></amp-twitter>
