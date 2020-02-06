@@ -22,16 +22,39 @@ pygmentsUseClasses = true
         description = "Welcome to my blog, if you like web development, SEO, open source and technology in general have a look, you may find something interesting!"
         weight = 2
 
-[[menu.main]]
+[[languages.es.menu.main]]
     identifier = "twitter"
     name = "Twitter"
     url = "https://twitter.com/asurbernardo"
     weight = 5
-[[menu.main]]
+[[languages.es.menu.main]]
     identifier = "github"
     name = "GitHub"
     url = "https://github.com/asurbernardo"
     weight = 10
+[[languages.es.menu.main]]
+    url = "https://asur.dev/uses"
+    name = "Mis /uses"
+    weight = 15
+[[languages.es.menu.main]]
+    url = "https://asur.dev/support"
+    name = "Apóyame"
+    weight = 20
+
+[[languages.en.menu.main]]
+    identifier = "twitter"
+    name = "Twitter"
+    url = "https://twitter.com/asurbernardo"
+    weight = 5
+[[languages.en.menu.main]]
+    identifier = "github"
+    name = "GitHub"
+    url = "https://github.com/asurbernardo"
+    weight = 10
+[[languages.en.menu.main]]
+    url = "https://asur.dev/en/support"
+    name = "Support me"
+    weight = 15
 
 [taxonomies]
     tag = "tags"
