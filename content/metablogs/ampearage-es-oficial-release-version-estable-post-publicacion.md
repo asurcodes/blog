@@ -43,7 +43,7 @@ No sé si te has enterado pero Amperage es oficialmente un tema de Hugo! La sema
 
 <amp-twitter
   width="380"
-  height="330"
+  height="550"
   layout="fixed"
   data-tweetid="1214969181155794946"></amp-twitter>
 
