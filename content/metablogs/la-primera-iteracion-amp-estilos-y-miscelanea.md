@@ -206,13 +206,15 @@ Lo que tenemos que hacer en vez de compilar en resource en un archivo directamen
 
 Para acabar, como no tengo ningún elemento especial de momento solo he tenido que añadir la tag de HTML el emoji del rayo (⚡) y el script raíz de AMP (la primera vez que le dije a alguien que se podía sustituir el `<html amp lang="es">` por un emoji pensó que le estaba tomando el pelo, pero os juro que es verdad!)
 
-```
+{{< highlight html "linenos=table" >}}
+
 <!DOCTYPE html>
 <html ⚡ lang="es">
     <head>
         [...]
         <script async src="https://cdn.ampproject.org/v0.js"></script>
-```
+
+{{< / highlight >}}
 
 Después de asegurarnos de que los posts tienen la etiqueta title y un par de validaciones menores más, listo, ya tenemos una página AMP super básica, pero funcional! 🥳
 
