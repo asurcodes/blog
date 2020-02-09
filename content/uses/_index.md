@@ -115,7 +115,7 @@ Principalmente me dedico al desarrollo web, estas son las herramientas que más 
     description="La mejor manera de mejorar tu experiencia con el terminal, puedes ver con un vistazo el directorio en el que estás y el estado de tu repositorio actual. Uso el tema Robbyrussell."
     image="/images/uses/ohmyzsh.png"
     cta="Ver en GitHub"
-    link="" >}}
+    link="https://github.com/ohmyzsh/ohmyzsh" >}}
 
 ### Infraestructura
 
@@ -123,8 +123,8 @@ Principalmente me dedico al desarrollo web, estas son las herramientas que más 
     title="Docker"
     description="Antes tenía un Mac y me cambié a Linux única y exclusivamente por Docker. Para desplegar infraestructuras y desarrollar en local es lo mejor que hay!"
     image="/images/uses/docker.png"
-    cta="Ver en GitHub"
-    link="" >}}
+    cta="Ver en la web"
+    link="https://www.docker.com/" >}}
 
 ### Suite de gestión
 
