@@ -9,7 +9,7 @@ description = "Aprende a desplegar tu propio trading bot para Bitcoin en la nube
 
 summary = "Parece que el boom de las **criptomonedas** ya ha pasado, pero hay gente que se sigue ganando la vida haciendo trading en plataformas online, vamos a ver como podemos automatizar este proceso desplegando un **trading bot** que compra y venda automáticamente basandose en unas reglas predefinidas con la librería open source de **Gekko**."
 
-tags = ['Tutorial']
+tags = ['Tutorial', 'Criptomonedas']
 
 keywords = ['tutorial', 'criptomonedas', 'trading bot', 'gekko', 'javascript']
 
