@@ -9,7 +9,7 @@ description = "Los microprocesadores están en todo lo que requiera una mínima 
 
 summary = "Los procesadores dominan la sociedad actual, hoy en día están por todas partes, desde microcontroladores como Arduino, pasando por el portatil en el que estoy escribiendo esto, hasta llegar a enormes sistemas distribuidos de cómputo ¿Pero cómo funcionan en realidad y de que están hechos?"
 
-tags = ['Hardware']
+tags = ['Ciencia']
 
 keywords = ['blog', 'ciencia', 'transistores', 'cpu', 'procesadores']
 
