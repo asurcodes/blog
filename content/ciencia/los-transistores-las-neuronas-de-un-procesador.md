@@ -41,7 +41,7 @@ keywords = ['blog', 'ciencia', 'transistores', 'cpu', 'procesadores']
 
 Los procesadores dominan la sociedad actual, hoy en día están por todas partes y todo lo que requiera una mínima cantidad de procesamiento contiene una (o varias) unidades de procesamiento, desde microcontroladores como Arduino, pasando por el portatil en el que estoy escribiendo esto, hasta llegar a enormes sistemas distribuidos de cómputo.
 
-Pero nunca me había parado a observar estos artefactos que han pasado a gobernar nuestras vidas en pocas décadas hasta hace relativamente poco, que leí la noticia de que TSMC (Taiwan SemiConductors) había patentado un proceso de fabricación de transistores de 5nm.
+Pero nunca me había parado a observar estos aparatos que han pasado a gobernar nuestras vidas en pocas décadas hasta hace relativamente poco, que leí la noticia de que TSMC (Taiwan SemiConductors) había iniciado el proceso de fabricación de transistores de 5nm.
 
 Me picó el interés y me puse a investigar, llevándome por una madriguera profunda a la par que interesante y me pareció un desperdicio no compartir todo lo que he aprendido.
 
@@ -71,6 +71,10 @@ Los transistores son imposiblemente pequeños e increiblemente rápidos, por hac
 Probablemente te estés preguntando cómo se fabrican los transistores, que máquina hay en el mundo que pueda trabajar a una escala no solo microscópica sino atómica. Lo cierto es que esa máquina no existe. La verdad es que los días en los transistores se fabricaban mecánicamente han quedado muy atrás. La solución actual es **química**.
 
 Seguro que te suena el silicio, además uno de los elementos más abundantes de la corteza terrestre es también un **semiconductor**, y es la base sobre la que se fabrican prácticamente todos los microchips del mundo.
+
+{{% post-it type="info" title=" 💡 Sabías qué... " %}}
+Un átomo de silicio mide 0.2 nanómetros, esto quiere decir que en su parte más ancha **un transistor moderno tiene apróximadamente 30 átomos de ancho.**
+{{% / post-it %}}
 
 El hecho de tener que elegir semiconductores para la electrónica se debe a que sus propiedades a temperatura ambiente **se encuentran en el punto medio ideal entre un material conductivo y uno aislante**, porque si conduce demasiado bien la corriente sería complicado apagarlos, y por el contrario si aisla en exceso que los electrones fluyan correctamente es difícil. La idea es que a los semiconductores puedes transformarlos en un tipo u otro con distintos aditivos, lo que los hace la base perfecta para trabajar.
 
