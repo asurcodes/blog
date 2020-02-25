@@ -5,7 +5,7 @@ publishdate = "2020-02-21T12:47:23+02:00"
 
 title = "Los transistores, las neuronas de un procesador"
 
-description = "Los microprocesadores están en todo lo que requiera una mínima cantidad de procesamiento, hay una CPU desde microcontroladores Arduino hasta superordenadores, ¿pero en realidad cómo funcionan por dentro y cómo se hacen?"
+description = "Los microprocesadores están en todo lo que requiera una mínima cantidad de procesamiento, hay una CPU desde microcontroladores Arduino hasta superordenadores, ¿pero en realidad cómo funcionan y cómo se hacen?"
 
 summary = "Los procesadores dominan la sociedad actual, hoy en día están por todas partes, desde microcontroladores como Arduino, pasando por el portatil en el que estoy escribiendo esto, hasta llegar a enormes sistemas distribuidos de cómputo ¿Pero cómo funcionan en realidad y de que están hechos?"
 
