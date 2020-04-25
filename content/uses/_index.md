@@ -35,11 +35,11 @@ Me encanta que mis equipos sean sólidos y duraderos, pero ligeros y portables a
 ### Portátil
 
 {{< product
-    title="Dell XPS 13' Negro"
-    description="Este es mi portatil de trabajo en el que tengo Linux y es donde programo principalmente. Tiene un Intel i7 y 16GB de RAM en un tamaño de 13 pulgadas."
-    image="/images/uses/dell-xps-13.jpg"
-    cta="Ver en Amazon"
-    link="https://amzn.to/30Iic6j" >}}
+    title="Lenovo Thinkpad 480s 14'"
+    description="Este es mi portatil en el que tengo Linux y es donde programo principalmente. Tiene un Intel i7 4C/8T y 16GB de RAM en un tamaño de 14 pulgadas."
+    image="/images/uses/lenovo-thinkpad-480s.jpg"
+    cta="Ver en la web"
+    link="https://www.lenovo.com/us/en/laptops/thinkpad/thinkpad-t-series/ThinkPad-T480s/p/20L7002AUS" >}}
 
 ### Teléfono móvil
 
@@ -190,7 +190,7 @@ No pago ni un solo euro por nada relacionado con este blog, todas estas herramie
     title="Cloudflare"
     description="Otra gran herramienta que es como una navaja suiza, es mi DNS y mi CDN, también me añade HTTP/3 y varios tipos de compresión a los frontales del site."
     image="/images/uses/cloudflare.png"
-    cta="Ver en GitHub"
+    cta="Ver en la web"
     link="https://cloudflare.com" >}}
 
 ### Analytics
