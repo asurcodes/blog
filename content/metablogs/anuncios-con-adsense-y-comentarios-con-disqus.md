@@ -151,7 +151,7 @@ Una versión simplificada del código del shortcode:
 {{ if isset $.Site.Params "adsensepublisher" }}
     {{ with .Params }}
         <fieldset class="ad">
-            <legend><b>#ad</b></legend>
+            <legend><strong>#ad</strong></legend>
             <amp-ad type="adsense"
                 {{ with .class }} class="{{ . }}"{{ end }}
                 {{ with .alt }} alt="{{ . }}"{{ end }}

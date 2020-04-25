@@ -47,7 +47,7 @@ Solo listo productos que yo mismo uso y con los que estoy contento así que éch
 
 ## Donaciones
 
-A mí lo que más me gusta en estos casos son las criptomonedas, en concreto <b>Monero</b> porque es privada y tiene tranferencias baratas. Esta es mi cartera:
+A mí lo que más me gusta en estos casos son las criptomonedas, en concreto <strong>Monero</strong> porque es privada y tiene tranferencias baratas. Esta es mi cartera:
 
 ```
 42L5dys2z4jKwPmh9XVJpTfCBHL5vJHKr9jc87sNiPNWX4VtcSEzkzkjRGB3J3pRGHEnAbLC7hg6iNDZ6Ezfgf8Z1gFEa6X

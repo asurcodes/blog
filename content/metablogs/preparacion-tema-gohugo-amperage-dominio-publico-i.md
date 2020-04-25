@@ -232,7 +232,7 @@ El snippet:
   {{ if .Site.IsMultiLingual }}
     {{ range .Site.Languages }}
       {{ if eq .LanguageName $.Site.Language.LanguageName }}
-        <b>{{ .LanguageName }}</b>
+        <strong>{{ .LanguageName }}</strong>
       {{ else }}
         <a href="{{ . | absURL }}">{{ .LanguageName }}</a>
       {{ end }}
