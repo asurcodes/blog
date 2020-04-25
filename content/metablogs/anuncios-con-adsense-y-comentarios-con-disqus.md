@@ -24,11 +24,6 @@ keywords = ['blog', 'desarrollo', 'anuncios', 'adsense', 'amp', 'comentarios', '
 
 [image]
     src = "/images/anuncios-con-adsense-y-comentarios-con-disqus/share-card.jpg"
-    title = ""
-    author = ""
-    link = ""
-    license = ""
-    licenseLink = ""
 
 [twitter]
     site = "@asurbernardo"

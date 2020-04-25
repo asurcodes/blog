@@ -24,11 +24,6 @@ keywords = ['blog', 'desarrollo', 'tags', 'syntax highlighting', 'google analyti
 
 [image]
     src = "/images/taxonomia-de-tags-highlight-codigo-analitica/share-card.jpg"
-    title = ""
-    author = ""
-    link = ""
-    license = ""
-    licenseLink = ""
 
 [twitter]
     site = "@asurbernardo"

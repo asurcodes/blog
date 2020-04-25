@@ -24,11 +24,6 @@ keywords = ['blog', 'desarrollo', 'html', 'sass', 'amp', 'web safe fonts', 'grid
 
 [image]
     src = "/images/la-primera-iteracion-amp-estilos-y-miscelanea/share-card.jpg"
-    title = ""
-    author = ""
-    link = ""
-    license = ""
-    licenseLink = ""
 
 [twitter]
     site = "@asurbernardo"

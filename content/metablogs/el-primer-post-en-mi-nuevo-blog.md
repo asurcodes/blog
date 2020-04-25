@@ -24,11 +24,6 @@ keywords = ['blog', 'desarrollo', 'git', 'deploy']
 
 [image]
     src = "/images/el-primer-post-en-mi-nuevo-blog/share-card.jpg"
-    title = ""
-    author = ""
-    link = ""
-    license = ""
-    licenseLink = ""
 
 [twitter]
     site = "@asurbernardo"

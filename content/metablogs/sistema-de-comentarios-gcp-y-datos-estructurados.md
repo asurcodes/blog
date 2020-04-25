@@ -24,11 +24,6 @@ keywords = ['blog', 'desarrollo', 'comentarios', 'remark', 'GPC', 'Compute engin
 
 [image]
     src = "/images/sistema-de-comentarios-gcp-y-datos-estructurados/share-card.jpg"
-    title = ""
-    author = ""
-    link = ""
-    license = ""
-    licenseLink = ""
 
 [twitter]
     site = "@asurbernardo"

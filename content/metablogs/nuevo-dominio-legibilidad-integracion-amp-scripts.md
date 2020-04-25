@@ -24,11 +24,6 @@ keywords = ['blog', 'desarrollo', 'amp', 'compartir', 'redes sociales', 'dominio
 
 [image]
     src = "/images/nuevo-dominio-legibilidad-integracion-amp-scripts/share-card.jpg"
-    title = ""
-    author = ""
-    link = ""
-    license = ""
-    licenseLink = ""
 
 [twitter]
     site = "@asurbernardo"

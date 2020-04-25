@@ -24,11 +24,6 @@ keywords = ['blog', 'desarrollo', 'gohugo', 'despliegue continuo', 'github actio
 
 [image]
     src = "/images/mejorando-workflow-docker-makefile-github-actions/share-card.jpg"
-    title = ""
-    author = ""
-    link = ""
-    license = ""
-    licenseLink = ""
 
 [twitter]
     site = "@asurbernardo"
