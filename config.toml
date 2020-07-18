@@ -84,3 +84,13 @@ pygmentsUseClasses = true
 
 [markup]
     defaultMarkdownHandler = "blackfriday"
+
+[outputFormats]
+    [outputFormats.SearchIndex]
+        mediaType= "application/json"
+        baseName= "search"
+        isPlainText= true
+        notAlternative= true
+
+[outputs]
+    home = [ "HTML", "RSS", "SearchIndex"]
