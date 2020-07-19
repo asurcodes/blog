@@ -63,7 +63,7 @@ pygmentsUseClasses = true
     copyright = "asur.dev"
     themeColor = "#333"
 
-    ampElements = ["amp-analytics", "amp-social-share", "amp-install-serviceworker", "amp-iframe", "amp-form", "amp-autocomplete", "amp-mustache"]
+    ampElements = ["amp-analytics", "amp-social-share", "amp-install-serviceworker", "amp-iframe", "amp-autocomplete"]
 
     adsensePublisher = "ca-pub-8268925024957381"
     googleAnalytics = "UA-128498798-1"
