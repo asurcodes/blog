@@ -37,7 +37,7 @@ keywords = ['blog', 'desarrollo', 'gohugo', 'amperage', 'publicación', 'tema']
 
 # Preparando Amperage para el dominio público (I)
 
-{{% under-title %}}
+{{< under-title >}}
 
 La fecha de publicación de **Amperage** cada vez está más cerca. Ha llegado un punto es el que estoy satisfecho con el proyecto para crear una versión inicial `1.0.0`.
 

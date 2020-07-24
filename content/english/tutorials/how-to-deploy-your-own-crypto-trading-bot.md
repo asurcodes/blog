@@ -41,7 +41,7 @@ keywords = ['tutorial', 'cryptocurrency', 'trading bot', 'gekko', 'javascript']
 
 # How to deploy your own cryptocurrency trading bot?
 
-{{% under-title %}}
+{{< under-title >}}
 
 You might be thinking:
 

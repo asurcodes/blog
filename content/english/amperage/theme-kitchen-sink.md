@@ -36,7 +36,7 @@ keywords = ['amperage', 'theme', 'gohugo', 'kitchen sink', 'demo', 'components']
 
 # Amperage theme kitchen sink
 
-{{% under-title %}}
+{{< under-title >}}
 
 This is a demo page for all the components in the Amperage theme. This posts is updated on every version release of Amperage. **Last updated on January 16th, 2020**.
 
@@ -145,6 +145,10 @@ How to:
     height="720"
     layout="responsive" */>}}
 
+// OR
+
+![Amperage image demo](/images/your-image.jpg)
+
 {{< / highlight >}}
 
 Result:
@@ -170,6 +174,10 @@ How to:
     height="720"
     layout="responsive" */>}}
 
+// OR
+
+![Amperage image demo](/images/your-image.jpg "Welcome to the Amperage theme kitchen sink!")
+
 {{< / highlight >}}
 
 Result:
@@ -180,6 +188,58 @@ Result:
     src="/images/amperage-theme-kitchen-sink/share-card.jpg"
     width="1280"
     height="720"
+    layout="responsive" >}}
+
+## GIFs
+
+How to:
+
+{{< highlight md "linenos=table" >}}
+
+{{</* amp-gif
+    alt="Amperage GIF demo"
+    src="/images/your-animation.gif"
+    width="1367"
+    height="1112"
+    layout="responsive" */>}}
+
+// OR
+
+![Amperage GIF demo](/images/your-animation.gif)
+
+{{< / highlight >}}
+
+Result:
+
+{{< amp-gif
+    alt="Amperage GIF demo"
+    src="/images/how-to-deploy-your-own-crypto-trading-bot/docker-nyan-cat.gif"
+    width="800"
+    height="600"
+    layout="responsive" >}}
+
+## Videos
+
+How to:
+
+{{< highlight md "linenos=table" >}}
+
+{{</* amp-video
+    alt="Amperage video demo"
+    src="/videos/your-video.m4v"
+    width="1280"
+    height="576"
+    layout="responsive" */>}}
+
+{{< / highlight >}}
+
+Result:
+
+{{< amp-video
+    alt="Amperage video demo"
+    src="/videos/gh-actions-workflow.m4v"
+    width="1280"
+    height="576"
     layout="responsive" >}}
 
 ## Post-its
@@ -223,54 +283,6 @@ Top Cat! The most effectual **Top Cat**! Who’s intellectual close friends get 
 {{% post-it type="info" title="Info! 💬" %}}
 80 days around the world, we’ll find a pot of gold just sitting where the rainbow’s ending. Time — we’ll fight against the time, and we’ll fly on the white wings of the wind.
 {{% / post-it %}}
-
-## Videos
-
-How to:
-
-{{< highlight md "linenos=table" >}}
-
-{{</* amp-video
-    alt="Amperage video demo"
-    src="/videos/your-video.m4v"
-    width="1280"
-    height="576"
-    layout="responsive" */>}}
-
-{{< / highlight >}}
-
-Result:
-
-{{< amp-video
-    alt="Amperage video demo"
-    src="/videos/gh-actions-workflow.m4v"
-    width="1280"
-    height="576"
-    layout="responsive" >}}
-
-## GIFs
-
-How to:
-
-{{< highlight md "linenos=table" >}}
-
-{{</* amp-gif
-    alt="Amperage GIF demo"
-    src="/images/your-animation.gif"
-    width="1367"
-    height="1112"
-    layout="responsive" */>}}
-
-{{< / highlight >}}
-
-Result:
-
-{{< amp-gif
-    alt="Amperage GIF demo"
-    src="/images/how-to-deploy-your-own-crypto-trading-bot/docker-nyan-cat.gif"
-    width="800"
-    height="600"
-    layout="responsive" >}}
 
 ## Products
 

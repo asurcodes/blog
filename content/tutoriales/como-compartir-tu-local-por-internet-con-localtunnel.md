@@ -41,7 +41,7 @@ keywords = ['tutorial', 'http tunneling', 'Ngrok', 'Localtunnel', 'docker']
 
 # ¿Cómo compartir tu entorno local por internet?
 
-{{% under-title %}}
+{{< under-title >}}
 
 ¿Alguna vez te has preguntado como puedo hacer una demo a ese cliente sin un entorno de staging? ¿O cómo puedo probar esos webhooks que estoy programando sin hacer un despliegue? La respuesta viene de la mano de **http tunneling**, una técnica que te permite compartir tu entorno local a internet.
 

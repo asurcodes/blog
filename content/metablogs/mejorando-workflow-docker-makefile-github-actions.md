@@ -37,7 +37,7 @@ keywords = ['blog', 'desarrollo', 'gohugo', 'despliegue continuo', 'github actio
 
 # Nuevo workflow: docker, makefile y CD con GH actions
 
-{{% under-title %}}
+{{< under-title >}}
 
 Si antes comento en el primer post que he escrito en el blog que estoy contento con el workflow antes lo cambio, ahora cuento con un **entorno dockerizado**, un **Makefile** para mantener todos mis scripts ordenados y **despliegue continuo** con Github Actions, que se dice pronto.
 

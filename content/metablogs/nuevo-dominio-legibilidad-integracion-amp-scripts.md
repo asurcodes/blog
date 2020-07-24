@@ -37,7 +37,7 @@ keywords = ['blog', 'desarrollo', 'amp', 'compartir', 'redes sociales', 'dominio
 
 # Nuevo dominio, nuevo layout y más AMP!
 
-{{% under-title %}}
+{{< under-title >}}
 
 Un nuevo lavado de cara del blog, no solo visual, sino que **he cambiado el dominio!** Atrás quedan los días de **asurbernardo.com**, un dominio largo y dificil de recordar, el nuevo dominio es **asur.dev**, algo mejor eh? Ah, y también he mejorado algunas cosas de **AMP** y alguna miscelanea, pero que bonito mi nuevo dominio...
 

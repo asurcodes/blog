@@ -37,7 +37,7 @@ keywords = ['blog', 'ciencia', 'transistores', 'cpu', 'procesadores']
 
 # Los transistores, las neuronas de un procesador
 
-{{% under-title %}}
+{{< under-title >}}
 
 Los procesadores dominan la sociedad actual, hoy en día están por todas partes y todo lo que requiera una mínima cantidad de procesamiento contiene una (o varias) unidades de procesamiento, desde microcontroladores como Arduino, pasando por el portatil en el que estoy escribiendo esto, hasta llegar a enormes sistemas distribuidos de cómputo.
 

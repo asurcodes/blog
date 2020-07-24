@@ -37,7 +37,7 @@ keywords = ['post', 'monetize', 'money', 'tech', 'blog', 'freelance', 'FIRE', 'o
 
 # Top 3 ways I monetize my tech blog! 💸
 
-{{% under-title %}}
+{{< under-title >}}
 
 Many people romanticize the idea of becoming a freelance blogger, being your own boss and reaching location independence. It is definitely possible, but it is not simple nor easy.
 

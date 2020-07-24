@@ -37,7 +37,7 @@ keywords = ['blog', 'desarrollo', 'html', 'sass', 'amp', 'web safe fonts', 'grid
 
 # La primera iteración! AMP, estilos y otras miscelaneas
 
-{{% under-title %}}
+{{< under-title >}}
 
 Bueno, bueno, bueno, parece que la primera iteración del blog ya está aquí! La verdad que antes de lo que me esperaba, he empezado este proyecto con muchas ganas. Hay bastantes novedades así que vamos a echarles un ojo, explicarlas y hablar sobre las cosas nuevas con las que he trasteado y que he aprendido.
 

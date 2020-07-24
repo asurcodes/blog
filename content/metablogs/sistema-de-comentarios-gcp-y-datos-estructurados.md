@@ -37,7 +37,7 @@ keywords = ['blog', 'desarrollo', 'comentarios', 'remark', 'GPC', 'Compute engin
 
 # Sistema de comentarios y datos estructurados
 
-{{% under-title %}}
+{{< under-title >}}
 
 Vuelvo una semana más al formato metablog, creo que hay novedades que merece la pena comentar!
 

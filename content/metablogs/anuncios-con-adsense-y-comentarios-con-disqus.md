@@ -37,7 +37,7 @@ keywords = ['blog', 'desarrollo', 'anuncios', 'adsense', 'amp', 'comentarios', '
 
 # Comentarios con Disqus y anuncios con Adsense
 
-{{% under-title %}}
+{{< under-title >}}
 
 Pues parece que sí que había tareas en la recámara al final, ¿no? Una nueva revisión de Amperage ya está aquí y trae novedades muy top con historias de superación incluidas! 😬
 

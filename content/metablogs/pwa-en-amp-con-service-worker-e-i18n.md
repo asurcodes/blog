@@ -37,7 +37,7 @@ keywords = ['blog', 'desarrollo', 'gohugo', 'amperage', 'i18n', 'amp', 'service 
 
 # PWA y soporte multi-idioma
 
-{{% under-title %}}
+{{< under-title >}}
 
 Una nueva semana, una nueva mejora! No os voy a engañar, van quedando pocas cosas que hacer además de seguir iterando en estilos y cambios pequeños, pero estos dos son muy top.
 

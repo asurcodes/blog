@@ -37,7 +37,7 @@ keywords = ['blog', 'desarrollo', 'gohugo', 'amperage', 'publicación', 'tema']
 
 # Preparando Amperage para el dominio público (II)
 
-{{% under-title %}}
+{{< under-title >}}
 
 Un solo post se me quedó corto la semana pasada así que aquí está la segunda remesa de cambios para el tema!
 
