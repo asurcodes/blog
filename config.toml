@@ -66,6 +66,8 @@ pygmentsUseClasses = true
     ampElements = ["amp-analytics", "amp-social-share", "amp-install-serviceworker", "amp-iframe", "amp-autocomplete"]
 
     adsensePublisher = "ca-pub-8268925024957381"
+    autoAdsEnabled = true
+
     googleAnalytics = "UA-128498798-1"
     commentsEmbedUrl = "https://comments.asur.dev"
 
@@ -85,12 +87,12 @@ pygmentsUseClasses = true
 [markup]
     defaultMarkdownHandler = "blackfriday"
 
+[outputs]
+    home = [ "HTML", "RSS", "SearchIndex"]
+
 [outputFormats]
     [outputFormats.SearchIndex]
         mediaType= "application/json"
         baseName= "search"
         isPlainText= true
         notAlternative= true
-
-[outputs]
-    home = [ "HTML", "RSS", "SearchIndex"]
