@@ -33,11 +33,11 @@ pygmentsUseClasses = true
     url = "https://github.com/asurbernardo"
     weight = 10
 [[languages.es.menu.main]]
-    url = "https://asur.dev/uses"
+    url = "/uses"
     name = "Mis /uses"
     weight = 15
 [[languages.es.menu.main]]
-    url = "https://asur.dev/support"
+    url = "/support"
     name = "Apóyame"
     weight = 20
 
@@ -52,7 +52,7 @@ pygmentsUseClasses = true
     url = "https://github.com/asurbernardo"
     weight = 10
 [[languages.en.menu.main]]
-    url = "https://asur.dev/en/support"
+    url = "/en/support"
     name = "Support me"
     weight = 15
 
@@ -83,9 +83,6 @@ pygmentsUseClasses = true
     publisherLogo = "/logo-amp-article.png"
     publisherLogoWidth = 600
     publisherLogoHeight = 60
-
-[markup]
-    defaultMarkdownHandler = "blackfriday"
 
 [outputs]
     home = [ "HTML", "RSS", "SearchIndex"]
