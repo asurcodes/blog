@@ -41,7 +41,7 @@ keywords = ['blog', 'desarrollo', 'gohugo', 'github actions', 'ssr', 'amp', 'opt
 
 Toda la idea sobre el proyecto de **AMP** es ofrecer una web más rápida y segura, ¿pero sabías que se puede optimizar aún más con **Server Side Rendering**? Pues si, y adivina qué, lo he implementado en mi propia **GitHub Action**!
 
-{{% toc %}}
+{{< toc >}}
 
 ## ¿Para qué sirve el SSR en AMP? 🤔
 

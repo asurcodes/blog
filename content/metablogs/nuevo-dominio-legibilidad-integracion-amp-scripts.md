@@ -41,7 +41,7 @@ keywords = ['blog', 'desarrollo', 'amp', 'compartir', 'redes sociales', 'dominio
 
 Un nuevo lavado de cara del blog, no solo visual, sino que **he cambiado el dominio!** Atrás quedan los días de **asurbernardo.com**, un dominio largo y dificil de recordar, el nuevo dominio es **asur.dev**, algo mejor eh? Ah, y también he mejorado algunas cosas de **AMP** y alguna miscelanea, pero que bonito mi nuevo dominio...
 
-{{% toc %}}
+{{< toc >}}
 
 ## Nuevo dominio! 🌍
 
@@ -105,7 +105,7 @@ Con el objetivo de mejorar la lectura en todas las plataformas y aplicar un poco
 
 El primer cambio y el más evidente es la eliminación de la columna sticky derecha en desktop (RIP `display:sticky` 😔). Esto hace que en mobile, que es un \~25% del tráfico, no se mueva la tabla de contenidos al final de la página, donde pierde su función. La tabla de contenidos se ha movido dentro del propio contenido, debajo de la introducción y los posts relacionados al final, por si se quiere seguir leyendo, mejor UX en general en mi opinión!
 
-El segundo es mover el autor y las tags debajo del título. Para conseguir meter estos datos y tabla de contenidos dentro del cuerpo del artículo hay que hacer un workaround en Hugo, ya que no es HTML, es markdown, por lo que hay que crear un shortcode como `{{%/* toc */%}}` en tu carpeta `layouts > shortcodes > toc.html` y usarlo donde lo veas preciso dentro del post. Esto conyeva que hay que meter estos shortcodes manualmente cuando se redacta el post pero también puedes elegir si incluirlos o no, lo que da flexibilidad.
+El segundo es mover el autor y las tags debajo del título. Para conseguir meter estos datos y tabla de contenidos dentro del cuerpo del artículo hay que hacer un workaround en Hugo, ya que no es HTML, es markdown, por lo que hay que crear un shortcode como `{{</* toc */>}}` en tu carpeta `layouts > shortcodes > toc.html` y usarlo donde lo veas preciso dentro del post. Esto conyeva que hay que meter estos shortcodes manualmente cuando se redacta el post pero también puedes elegir si incluirlos o no, lo que da flexibilidad.
 
 ### Nuevo logo
 

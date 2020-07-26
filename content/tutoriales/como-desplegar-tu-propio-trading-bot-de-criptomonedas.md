@@ -53,13 +53,13 @@ La verdad es que en la mayoría de los casos, nosotros, los mortales, no tenemos
 
 ¡Trading bots al rescate! Estos programas se encargan de observar los mercados y ejecutar compras y ventas automáticas basándose en una estrategia que tu les proporcionas.
 
-{{% post-it
+{{< post-it
     type="tip"
-    title="Disclaimer 🚨" %}}
+    title="Disclaimer 🚨" >}}
 Ten en cuenta que si ejecutas tu trading bot en producción te arriegas a perder dinero ¡Procede con precaución! 😬
-{{% /post-it %}}
+{{< /post-it >}}
 
-{{% toc %}}
+{{< toc >}}
 
 ## La plataforma Gekko
 
@@ -78,9 +78,9 @@ Todo esto lo puedes leer con más detalle en la [documentación de Gekko](https:
 
 Resulta que la idea de este proyecto me surgió investigando usos interesantes que se le podía dar a una Raspberry Pi, una de ellas era hostear un trading bot... 🤔
 
-{{% post-it %}}
+{{< post-it >}}
 Estas instrucciones no se limitan a solo una Raspberry, solo necesitas una distribución de Linux basada en Debian, así que también puedes hacerlo en un VPS como <a href="https://www.linode.com/?r=ca90aa0a45540066ec753ff02b33a332d566e243" target="_blank" rel="nofollow noopener noreferrer" >Linode</a>, la idea es que siempre esté online.
-{{% /post-it %}}
+{{< /post-it >}}
 
 Me voy a saltar toda la parte de instalar de cero Raspian y conectarte por SSH, doy por sentado que si tienes una Raspy por casa alguna que otra vez ya te habrás visto en esta situación.
 

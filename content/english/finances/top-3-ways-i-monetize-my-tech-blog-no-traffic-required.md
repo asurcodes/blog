@@ -45,7 +45,7 @@ In this post I present you the 3 ways I use to monetize my tech and software blo
 
 **DISCLAIMER**: None of the links shared in this posts are referred, feel free to choose the products you like assured there is no monetary bias from my part.
 
-{{% toc %}}
+{{< toc >}}
 
 ## Displaying ads
 

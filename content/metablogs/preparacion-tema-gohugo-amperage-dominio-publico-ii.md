@@ -43,7 +43,7 @@ Un solo post se me quedó corto la semana pasada así que aquí está la segunda
 
 Estos cambios son bastante menos interesantes (*IMHO*) pero son necesarios para poder llegar a publicar Amperage y he querido documentarlos igualmente.
 
-{{% toc %}}
+{{< toc >}}
 
 ## Shortcodes para usabilidad 💻
 
@@ -53,7 +53,7 @@ Los shortcodes son una funcionalidad de Hugo, son plantillas que luego puedes us
 
 {{< highlight md "linenos=table" >}}
 
-{{%/* toc */%}}
+{{</* toc */>}}
 
 {{</* amp-image
     alt="El texto alternativo para la imagen"

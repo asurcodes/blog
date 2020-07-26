@@ -45,7 +45,7 @@ He estado cacharreando con Google Cloud Platform y he desplegado un **sistema de
 
 También he avanzado otro poco con el SEO técnico añadiendo **datos estructurados** en toda la web del tipo website, carousel, migas de pan y blog posting.
 
-{{% toc %}}
+{{< toc >}}
 
 ## Sistema de comentarios 🦜
 

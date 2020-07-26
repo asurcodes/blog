@@ -49,7 +49,7 @@ No sé si te has enterado pero Amperage es oficialmente un tema de Hugo! La sema
 
 Como puedes imaginar me hace muchísima ilusión, ya que **este ha sido mi primer proyecto Open Source que ha llegado a su fase final!**
 
-{{% toc %}}
+{{< toc >}}
 
 ## Primera versión estable
 
@@ -111,7 +111,7 @@ A diferencia de los productos aquí si se puede utilizar markdown dentro de los 
 
 Mira, un ejemplo:
 
-{{% post-it type="info" title=" 💡 Sabías qué... " %}}
+{{< post-it type="info" title=" 💡 Sabías qué... " >}}
   En la mitología griega, *Niké* (en griego, Νίκη) es la diosa de la victoria. Algunos datos random:
 
   - Se la representaba a menudo como una pequeña escultura alada.
@@ -121,7 +121,7 @@ Mira, un ejemplo:
   - Según la leyenda fué la última palabra que pronunció Filípides trás correr la primera maratón para anunciar la victoria ateniense contra los persas.
 
   - La palabra fué registrada en 1964 por una marca de calzado estadounidense que seguro que te suena vagamente...
-{{% / post-it %}}
+{{< / post-it >}}
 
 ¿Ves? ¿A que funciona bastante bien?
 
@@ -135,11 +135,11 @@ El ejemplo anterior sería así:
 
 {{< highlight md "linenos=table" >}}
 
-{{%/* post-it type="info" title="¿Sabías qué...? 💡 " */%}}
+{{</* post-it type="info" title="¿Sabías qué...? 💡 " */>}}
 
 El texto iría aquí...
 
-{{%/* / post-it */%}}
+{{</* / post-it */>}}
 
 {{< / highlight >}}
 

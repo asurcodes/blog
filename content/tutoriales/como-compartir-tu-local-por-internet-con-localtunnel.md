@@ -47,7 +47,7 @@ keywords = ['tutorial', 'http tunneling', 'Ngrok', 'Localtunnel', 'docker']
 
 Vamos a averiguar como funciona, las diferentes herramientas disponibles y como utilizar la librerías **Ngrok** y **Localtunnel** en nuestros propios proyectos.
 
-{{% toc %}}
+{{< toc >}}
 
 ## ¿Qué es http tunneling y cómo funciona? 🕳️
 
@@ -124,41 +124,41 @@ Ahora que ya hemos visto algún caso de uso y hemos echado a andar la imaginaci�
 
 Ngrok es quizás el nombre más reconocible en esta materia, es un SaaS que tiene la facilidad de uso por bandera. Sus características son las siguientes:
 
-{{% post-it
+{{< post-it
     type="success"
-    title="Pros 😍" %}}
+    title="Pros 😍" >}}
  - Binario descargable para multitud de plataformas, rápido montaje.
  - Capa gratuita de servidores SaaS.
  - Cuenta con una GUI web en la que puedes analizar los request y hacer respuestas custom.
  - Posibilidad de acceder a un dashboard con analítica si te registras en su web.
  - Al ser un negocio te asegura el mantenimiento y futuras actualizaciones.
-{{% /post-it %}}
+{{< /post-it >}}
 
-{{% post-it
+{{< post-it
     type="danger"
-    title="Contras 😟" %}}
+    title="Contras 😟" >}}
  - No es Open Source, al menos la nueva versión 2.x, aún se puede encontrar [la antigua versión en Github](https://github.com/inconshreveable/ngrok), aunque no está mantenida.
  - No tiene la opción de montar tu propio servidor.
  - La capa gratuita en sus servidores es algo limitada, es evidente que buscan la conversión.
-{{% /post-it %}}
+{{< /post-it >}}
 
 ### Localtunnel - expose yourself
 
 Aunque su eslogan se puede malinterpretar facilmente, Localtunnel es el proyecto open source más reconocible de HTTP tunneling y lleva desde el 2012 siendo desarrollado y mantenido. Es la alternativa más frecuente a Ngrok y no sin razón:
 
-{{% post-it
+{{< post-it
     type="success"
-    title="Pros 😍" %}}
+    title="Pros 😍" >}}
  - Es Open Source, tanto el cliente como el servidor.
  - Capa gratuita de servidores SaaS.
  - Gran comunidad y muy asentada, con más de 9K estrellas en Github.
-{{% /post-it %}}
+{{< /post-it >}}
 
-{{% post-it
+{{< post-it
     type="danger"
-    title="Contras 😟" %}}
+    title="Contras 😟" >}}
  - Puede ser algo más lento que el resto al estar escrito en Nodejs, pero para la mayoría de casos de uso ni se nota.
-{{% /post-it %}}
+{{< /post-it >}}
 
 Repositorio: https://github.com/localtunnel/localtunnel
 
@@ -166,20 +166,20 @@ Repositorio: https://github.com/localtunnel/localtunnel
 
 El nuevo de la clase, se promociona como una herramienta de HTTP tunneling rápida y segura. Con más de 3K estrellas en Github parece que ha convencido a los usuarios, lamentablemente aún no lo he podido probar, pero su rápido crecimiento es prueba más que suficiente de que merece la pena darle una oportunidad.
 
-{{% post-it
+{{< post-it
     type="success"
-    title="Pros 😍" %}}
+    title="Pros 😍" >}}
  - Es Open Source, puedes ver el código en Github, tanto el cliente como el servidor.
  - Es rápido, está escrito en Go.
  - Facilidad de uso.
  - Dockeriación oficial.
-{{% /post-it %}}
+{{< /post-it >}}
 
-{{% post-it
+{{< post-it
     type="danger"
-    title="Contras 😟" %}}
+    title="Contras 😟" >}}
  - No tiene servidores *as a service*, te lo tienes que montar tu todo.
-{{% /post-it %}}
+{{< /post-it >}}
 
 Repositorio: https://github.com/jpillora/chisel
 
@@ -220,9 +220,9 @@ Ngrok ofrece una GUI para analizar los requests que llegan a tu servidor, e incl
 
 En la web oficial también hay analítica y un dashboard, pero para eso hay que registrarse, puedes ver como configurarlo todo en su documentación oficial.
 
-{{% post-it title="Cuidado 🚨" %}}
+{{< post-it title="Cuidado 🚨" >}}
 La capa gratuita de Ngrok es bastante limitada, para hacer pruebas en una web sencilla sin muchos subrequest funciona perfectamente, si lo necesitas para algo más complejo o en un entorno profesional quizás te merezca la pena pagar por un plan premium.
-{{% /post-it %}}
+{{< /post-it >}}
 
 ## Setup alternativo con Localtunnel y docker 🐳
 

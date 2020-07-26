@@ -43,7 +43,7 @@ Una nueva semana, una nueva mejora! No os voy a engañar, van quedando pocas cos
 
 Para empezar he transformado mi web en una **PWA** (Progressive Web App) utilizando una librería de **service workers** para AMP, además he añadido soporte a mi tema Amperage para **multi-idioma**, traducciones y con una nueva sección en inglés incluida! 🎉
 
-{{% toc %}}
+{{< toc >}}
 
 ## Convirtiendo una web con AMP en PWA 🤖
 

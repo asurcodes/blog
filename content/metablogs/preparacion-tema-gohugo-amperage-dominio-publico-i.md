@@ -49,7 +49,7 @@ Existe un [procedimiento a seguir](https://github.com/gohugoio/hugoThemes/blob/m
 
 De esto voy a hablar en este metablog, de los toques finales antes de mandar mi solicitud! A por ello!!
 
-{{% toc %}}
+{{< toc >}}
 
 ## Paginación de listados 📖
 

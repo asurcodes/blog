@@ -72,9 +72,9 @@ Probablemente te estés preguntando cómo se fabrican los transistores, que máq
 
 Seguro que te suena el silicio, además uno de los elementos más abundantes de la corteza terrestre es también un **semiconductor**, y es la base sobre la que se fabrican prácticamente todos los microchips del mundo.
 
-{{% post-it type="info" title=" 💡 Sabías qué... " %}}
+{{< post-it type="info" title=" 💡 Sabías qué... " >}}
 Un átomo de silicio mide 0.2 nanómetros, esto quiere decir que en su parte más ancha **un transistor moderno tiene apróximadamente 30 átomos de ancho.**
-{{% / post-it %}}
+{{< / post-it >}}
 
 El hecho de tener que elegir semiconductores para la electrónica se debe a que sus propiedades a temperatura ambiente **se encuentran en el punto medio ideal entre un material conductivo y uno aislante**, porque si conduce demasiado bien la corriente sería complicado apagarlos, y por el contrario si aisla en exceso que los electrones fluyan correctamente es difícil. La idea es que a los semiconductores puedes transformarlos en un tipo u otro con distintos aditivos, lo que los hace la base perfecta para trabajar.
 
@@ -89,17 +89,17 @@ La primera tarea es crear un cristal de silicio lo más puro posible, esto se co
 
 Una vez se forma un cilindro, este se corta en discos de menos de un milímetro, se pulen mecánicamente y después con una serie de ácidos hasta que llega a ser una oblea perfectamente lisa.
 
-{{% post-it type="info" title=" 💡 Sabías qué... " %}}
+{{< post-it type="info" title=" 💡 Sabías qué... " >}}
 Los *wafers* de silicio son una de las superficies más planas hechas por el hombre, con un índice de rugosidad menor a 0.1 nanómetros.
-{{% / post-it %}}
+{{< / post-it >}}
 
 Con el material ya listo se pasa al proceso de impresión, por ejemplo, el más actual, la **litografía con luz ultravioleta**, donde se impregna la placa de silicio con un material fotosensible, se expone a la luz cubriéndolo con una plantilla translúcida y el reactivo forma los componentes al verse expuesto al haz luminoso.
 
 En las distintas capas de impresión se le introducen *impurezas* al silicio por un proceso llamado *doping*, como átomos de boro y fósforo para crear exceso o carencia de electrones en sus vículos moleculares, promoviendo así el flujo de electrones entre estas.
 
-{{% post-it type="info" title=" 💡 Sabías qué... " %}}
+{{< post-it type="info" title=" 💡 Sabías qué... " >}}
 Que se usen rayos UV en el proceso de fabricación no es por capricho, se debe a que la longitud de onda del espectro visible es demasido grande para ser capaz de "tallar" componentes tan pequeños con el suficiente detalle.
-{{% / post-it %}}
+{{< / post-it >}}
 
 Esto finalmente produce pequeñas impresiones tridimensional en la superficie de silicio que, tras ser recortadas, ya están listas para conectarse a un sustrato o PCB para su posterior uso.
 
@@ -111,9 +111,9 @@ Sus tamaños eran estandar y siempre se reducian por un factor de 0.7 cada gener
 
 Esta progresión se debe a una profecía autocumplida por la industria: la **ley de Moore**, pues si cada año se reduce el tamaño del transistor por un factor de 0.7, ¿adivina que? ¡cada dos años el tamaño de los transistores se reduce a la mitad!
 
-{{% post-it type="info" title=" 💡 Sabías qué... " %}}
+{{< post-it type="info" title=" 💡 Sabías qué... " >}}
 La **ley de Moore** expresa que aproximadamente cada dos años se duplica el número de transistores en un microprocesador.
-{{% / post-it %}}
+{{< / post-it >}}
 
 {{< amp-image
     alt="Evolución en la cantidad de transistores por año - Ley de Moore"

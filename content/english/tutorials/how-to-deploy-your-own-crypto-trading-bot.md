@@ -53,13 +53,13 @@ The truth is that in most cases, us, mere mortals, don't have the skills necessa
 
 ¡Trading bots to the rescue! This programs watch the markets and execute orders automatically based on a given strategy.
 
-{{% post-it
+{{< post-it
     type="tip"
-    title="Disclaimer 🚨" %}}
+    title="Disclaimer 🚨" >}}
 Take into consideration that real trading might cause you to lose money. Proceed with caution! 😬
-{{% /post-it %}}
+{{< /post-it >}}
 
-{{% toc %}}
+{{< toc >}}
 
 ## The Gekko project
 
@@ -78,9 +78,9 @@ You can read more about these features in [Gekko's official documentation](https
 
 I was browsing the internet for cool and useful ways to use a Raspberry Pi I had lying around the house, one of those uses was to host a trading bot... 🤔
 
-{{% post-it %}}
+{{< post-it >}}
 This set of instructions are not only meant for a Raspberry Pi, you just need a Debian based Linux distro, so you could use a VPS like <a href="https://www.linode.com/?r=ca90aa0a45540066ec753ff02b33a332d566e243" target="_blank" rel="nofollow noopener noreferrer" >Linode</a> too.
-{{% /post-it %}}
+{{< /post-it >}}
 
 I'm going to omit the whole Raspbian  and SSH setup, I assume if you are the proud owner of a Raspi you have done this before.
 

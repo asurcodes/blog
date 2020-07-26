@@ -41,7 +41,7 @@ keywords = ['blog', 'desarrollo', 'anuncios', 'adsense', 'amp', 'comentarios', '
 
 Pues parece que sí que había tareas en la recámara al final, ¿no? Una nueva revisión de Amperage ya está aquí y trae novedades muy top con historias de superación incluidas! 😬
 
-{{% toc %}}
+{{< toc >}}
 
 ## Comentarios con Disqus 💬
 
