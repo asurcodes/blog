@@ -126,15 +126,6 @@ Principalmente me dedico al desarrollo web, estas son las herramientas que más 
     cta="Ver en la web"
     link="https://www.docker.com/" >}}
 
-### Suite de gestión
-
-{{< product
-    title="Zoho Workplace"
-    description="Un rebranding reciente de Zoho para hacer la competencia a Google, no me puedo creer que sea gratis incluso cuando usas un dominio personalizado!"
-    image="/images/uses/zoho-workplace.png"
-    cta="Ver en la web"
-    link="https://www.zoho.com/workplace/" >}}
-
 ## Este blog ✒️
 
 No pago ni un solo euro por nada relacionado con este blog, todas estas herramientas que forman el stack tecnológico de mi blog listadas continuación son gratuitas:
