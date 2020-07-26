@@ -6,5 +6,22 @@
   "background_color": "#fff",
   "theme_color": "#ef8b80",
   "description": "Bienvenid@ a mi blog, si te gusta el desarrollo web, el SEO, el open source y la tecnología en general echa un vistazo, seguro que encuentras algo interesante.",
-  "icons":[{"src":"/icons/android-chrome-192x192.png","sizes":"192x192","type":"image/png"},{"src":"/icons/android-chrome-512x512.png","sizes":"512x512","type":"image/png"}]
+  "icons":[
+    {
+      "src":"/icons/android-chrome-192x192.png",
+      "sizes":"192x192",
+      "type":"image/png"
+    },
+    {
+      "src":"/icons/android-chrome-512x512.png",
+      "sizes":"512x512",
+      "type":"image/png"
+    },
+    {
+      "src": "/icons/maskable-icon.png",
+      "sizes": "196x196",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
 }
