@@ -26,7 +26,7 @@ jobs:
         extended: true
 
     - name: Build
-      run: hugo -t amperage --gc
+      run: hugo -t amperage --gc --minify
 
     - name: Optimize AMP
       uses: asurbernardo/amp-optimizer-action@1.0.2
