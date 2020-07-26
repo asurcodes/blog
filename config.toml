@@ -93,3 +93,9 @@ pygmentsUseClasses = true
         baseName= "search"
         isPlainText= true
         notAlternative= true
+
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
