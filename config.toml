@@ -25,12 +25,12 @@ pygmentsUseClasses = true
 [[languages.es.menu.main]]
     identifier = "twitter"
     name = "Twitter"
-    url = "https://twitter.com/asurbernardo"
+    url = "https://twitter.com/asurcodes"
     weight = 5
 [[languages.es.menu.main]]
     identifier = "github"
     name = "GitHub"
-    url = "https://github.com/asurbernardo"
+    url = "https://github.com/asurcodes"
     weight = 10
 [[languages.es.menu.main]]
     url = "/uses"
@@ -44,12 +44,12 @@ pygmentsUseClasses = true
 [[languages.en.menu.main]]
     identifier = "twitter"
     name = "Twitter"
-    url = "https://twitter.com/asurbernardo"
+    url = "https://twitter.com/asurcodes"
     weight = 5
 [[languages.en.menu.main]]
     identifier = "github"
     name = "GitHub"
-    url = "https://github.com/asurbernardo"
+    url = "https://github.com/asurcodes"
     weight = 10
 [[languages.en.menu.main]]
     url = "/en/support"
@@ -72,8 +72,8 @@ pygmentsUseClasses = true
     commentsEmbedUrl = "https://comments.asur.dev"
 
     facebookSite = "asur.dev"
-    twitterSite = "@asurbernardo"
-    socialProfiles = ["https://twitter.com/asurbernardo","https://www.linkedin.com/in/asur-bernardo/","https://github.com/asurbernardo","https://stackoverflow.com/users/4524353/asur"]
+    twitterSite = "@asurcodes"
+    socialProfiles = ["https://twitter.com/asurcodes","https://www.linkedin.com/in/asur-bernardo/","https://github.com/asurcodes","https://stackoverflow.com/users/4524353/asur"]
 
     alternatePageName = "asur.dev"
     organizationLogo = "/logo.png"
